@@ -158,6 +158,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var oldPassword = oldPassword_example;  // string | 
             var newPassword = newPassword_example;  // string | 
@@ -189,7 +194,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -219,6 +224,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var options = options_example;  // string |  (optional) 
 
@@ -249,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -279,6 +289,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var options = options_example;  // string |  (optional) 
 
@@ -309,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -339,6 +354,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var uid = uid_example;  // string | 
             var token = token_example;  // string | 
@@ -372,7 +392,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -402,6 +422,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
 
@@ -432,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -462,6 +487,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var filter = filter_example;  // string | Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
 
@@ -492,7 +522,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -522,6 +552,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var filter = filter_example;  // string | Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
 
@@ -552,7 +587,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -582,6 +617,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var where = where_example;  // string | Criteria to match model instances (optional) 
@@ -614,7 +654,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -644,6 +684,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -673,7 +718,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -703,6 +748,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for accessTokens
@@ -734,7 +784,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -764,6 +814,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for accessTokens
@@ -796,7 +851,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -826,6 +881,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for accessTokens
@@ -860,7 +920,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -890,6 +950,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var filter = filter_example;  // string |  (optional) 
@@ -922,7 +987,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -952,6 +1017,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new TeamMemberAccessToken(); // TeamMemberAccessToken |  (optional) 
@@ -984,7 +1054,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1014,6 +1084,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id or email
 
@@ -1044,7 +1119,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1074,6 +1149,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
 
@@ -1104,7 +1184,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1134,6 +1214,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var where = where_example;  // string | Criteria to match model instances (optional) 
@@ -1166,7 +1251,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1196,6 +1281,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -1225,7 +1315,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1255,6 +1345,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for designs
@@ -1286,7 +1381,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1316,6 +1411,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for designs
@@ -1348,7 +1448,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1378,6 +1478,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for designs
@@ -1412,7 +1517,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1442,6 +1547,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var filter = filter_example;  // string |  (optional) 
@@ -1474,7 +1584,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1504,6 +1614,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new Design(); // Design |  (optional) 
@@ -1536,7 +1651,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1566,6 +1681,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
 
@@ -1596,7 +1716,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1626,6 +1746,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
             var filter = filter_example;  // string | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
@@ -1658,7 +1783,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1688,6 +1813,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
 
@@ -1718,7 +1848,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1748,6 +1878,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var where = where_example;  // string | Criteria to match model instances (optional) 
@@ -1780,7 +1915,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1810,6 +1945,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -1839,7 +1979,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1869,6 +2009,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for invitationTickets
@@ -1900,7 +2045,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1930,6 +2075,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for invitationTickets
@@ -1962,7 +2112,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1992,6 +2142,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for invitationTickets
@@ -2026,7 +2181,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2056,6 +2211,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var filter = filter_example;  // string |  (optional) 
@@ -2088,7 +2248,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2118,6 +2278,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new InvitationTicket(); // InvitationTicket |  (optional) 
@@ -2150,7 +2315,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2180,6 +2345,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new Customer(); // Customer | An object of model property name/value pairs (optional) 
@@ -2212,7 +2382,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2242,6 +2412,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -2271,7 +2446,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2301,6 +2476,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var refresh = true;  // bool? |  (optional) 
@@ -2333,7 +2513,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2363,6 +2543,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new CustomerPermissionSet(); // CustomerPermissionSet |  (optional) 
@@ -2395,7 +2580,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2425,6 +2610,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new CustomerPermissionSet(); // CustomerPermissionSet |  (optional) 
@@ -2457,7 +2647,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2487,6 +2677,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var id2 = id_example;  // string | Customer id
@@ -2521,7 +2716,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2551,6 +2746,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
             var data = new Customer(); // Customer | Model instance data (optional) 
@@ -2583,7 +2783,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2613,6 +2813,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Model id
             var data = new Customer(); // Customer | Model instance data (optional) 
@@ -2645,7 +2850,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2675,6 +2880,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var where = where_example;  // string | Criteria to match model instances (optional) 
@@ -2707,7 +2917,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2737,6 +2947,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -2766,7 +2981,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2796,6 +3011,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -2827,7 +3047,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2857,6 +3077,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -2889,7 +3114,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2919,6 +3144,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -2953,7 +3183,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2983,6 +3213,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var filter = filter_example;  // string |  (optional) 
@@ -3015,7 +3250,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3045,6 +3280,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3076,7 +3316,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3106,6 +3346,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3140,7 +3385,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3170,6 +3415,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3204,7 +3454,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3234,6 +3484,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3268,7 +3523,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3298,6 +3553,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3332,7 +3592,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3362,6 +3622,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3393,7 +3658,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3423,6 +3688,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3456,7 +3726,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3486,6 +3756,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3520,7 +3795,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3550,6 +3825,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3586,7 +3866,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3616,6 +3896,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3650,7 +3935,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3680,6 +3965,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3714,7 +4004,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3744,6 +4034,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3778,7 +4073,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3808,6 +4103,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3839,7 +4139,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3869,6 +4169,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3902,7 +4207,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3932,6 +4237,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -3966,7 +4276,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -3996,6 +4306,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4032,7 +4347,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4062,6 +4377,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4096,7 +4416,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4126,6 +4446,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4160,7 +4485,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4190,6 +4515,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4224,7 +4554,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4254,6 +4584,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4285,7 +4620,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4315,6 +4650,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4348,7 +4688,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4378,6 +4718,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4412,7 +4757,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4442,6 +4787,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4478,7 +4828,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4508,6 +4858,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4542,7 +4897,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4572,6 +4927,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4606,7 +4966,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4636,6 +4996,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4669,7 +5034,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4699,6 +5064,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4733,7 +5103,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4763,6 +5133,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4799,7 +5174,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4829,6 +5204,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4863,7 +5243,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4893,6 +5273,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4924,7 +5309,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -4954,6 +5339,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -4987,7 +5377,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5017,6 +5407,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5051,7 +5446,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5081,6 +5476,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5117,7 +5517,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5147,6 +5547,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5181,7 +5586,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5211,6 +5616,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5245,7 +5655,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5275,6 +5685,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5309,7 +5724,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5339,6 +5754,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5370,7 +5790,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5400,6 +5820,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5433,7 +5858,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5463,6 +5888,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5497,7 +5927,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5527,6 +5957,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5563,7 +5998,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5593,6 +6028,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5627,7 +6067,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5657,6 +6097,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5691,7 +6136,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5721,6 +6166,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5755,7 +6205,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5785,6 +6235,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5816,7 +6271,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5846,6 +6301,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5879,7 +6339,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5909,6 +6369,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -5943,7 +6408,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -5973,6 +6438,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6009,7 +6479,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6039,6 +6509,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6073,7 +6548,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6103,6 +6578,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6137,7 +6617,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6167,6 +6647,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6201,7 +6686,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6231,6 +6716,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6262,7 +6752,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6292,6 +6782,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6325,7 +6820,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6355,6 +6850,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6389,7 +6889,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6419,6 +6919,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6455,7 +6960,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6485,6 +6990,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6519,7 +7029,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6549,6 +7059,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6583,7 +7098,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6613,6 +7128,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6647,7 +7167,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6677,6 +7197,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6708,7 +7233,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6738,6 +7263,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6771,7 +7301,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6801,6 +7331,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6835,7 +7370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6865,6 +7400,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6901,7 +7441,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6931,6 +7471,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -6965,7 +7510,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -6995,6 +7540,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var nk = nk_example;  // string | Foreign key for teams.
@@ -7029,7 +7579,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7059,6 +7609,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var data = new Team(); // Team |  (optional) 
@@ -7091,7 +7646,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7121,6 +7676,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -7152,7 +7712,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7182,6 +7742,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -7214,7 +7779,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7244,6 +7809,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var fk = fk_example;  // string | Foreign key for teams
@@ -7278,7 +7848,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7308,6 +7878,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var id2 = id_example;  // string | Customer id
@@ -7342,7 +7917,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7372,6 +7947,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var id2 = id_example;  // string | Customer id
@@ -7408,7 +7988,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7438,6 +8018,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
             var id2 = id_example;  // string | Customer id
@@ -7470,7 +8055,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7500,6 +8085,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var id = id_example;  // string | Customer id
 
@@ -7529,7 +8119,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7559,6 +8149,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var token = token_example;  // string | Token describing invitation ticket
             var data = new Customer(); // Customer | Customer data in case new customer (optional) 
@@ -7591,7 +8186,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7621,6 +8216,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var token = token_example;  // string | Token describing invitation ticket
 
@@ -7651,7 +8251,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7681,6 +8281,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var credentials = ;  // Object | 
             var include = include_example;  // string | Related objects to include in the response. See the description of return value for more details. (optional) 
@@ -7713,7 +8318,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7743,6 +8348,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
 
             try
@@ -7768,7 +8378,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7798,6 +8408,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var data = new Customer(); // Customer | Model instance data (optional) 
 
@@ -7828,7 +8443,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7858,6 +8473,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var data = new Customer(); // Customer | Model instance data (optional) 
 
@@ -7888,7 +8508,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7918,6 +8538,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var data = new Customer(); // Customer | Model instance data (optional) 
 
@@ -7948,7 +8573,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -7978,6 +8603,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var data = new Customer(); // Customer | Model instance data (optional) 
 
@@ -8008,7 +8638,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -8038,6 +8668,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var data = new Customer(); // Customer | Model instance data (optional) 
 
@@ -8068,7 +8703,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -8098,6 +8733,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var newPassword = newPassword_example;  // string | 
 
@@ -8127,7 +8767,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -8157,6 +8797,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var options = ;  // Object | 
 
@@ -8186,7 +8831,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -8216,6 +8861,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
             var data = new Customer(); // Customer | An object of model property name/value pairs (optional) 
@@ -8248,7 +8898,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -8278,6 +8928,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
             var data = new Customer(); // Customer | An object of model property name/value pairs (optional) 
@@ -8310,7 +8965,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

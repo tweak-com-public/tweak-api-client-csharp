@@ -6431,6 +6431,12 @@ namespace TweakApi.Api
             if (oldPassword != null) localVarFormParams.Add("oldPassword", Configuration.ApiClient.ParameterToString(oldPassword)); // form parameter
             if (newPassword != null) localVarFormParams.Add("newPassword", Configuration.ApiClient.ParameterToString(newPassword)); // form parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
@@ -6515,6 +6521,11 @@ namespace TweakApi.Api
             if (oldPassword != null) localVarFormParams.Add("oldPassword", Configuration.ApiClient.ParameterToString(oldPassword)); // form parameter
             if (newPassword != null) localVarFormParams.Add("newPassword", Configuration.ApiClient.ParameterToString(newPassword)); // form parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -6589,6 +6600,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (options != null) localVarQueryParams.Add("options", Configuration.ApiClient.ParameterToString(options)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -6666,6 +6683,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (options != null) localVarQueryParams.Add("options", Configuration.ApiClient.ParameterToString(options)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -6740,6 +6762,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (options != null) localVarFormParams.Add("options", Configuration.ApiClient.ParameterToString(options)); // form parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -6817,6 +6845,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (options != null) localVarFormParams.Add("options", Configuration.ApiClient.ParameterToString(options)); // form parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -6902,6 +6935,12 @@ namespace TweakApi.Api
             if (uid != null) localVarQueryParams.Add("uid", Configuration.ApiClient.ParameterToString(uid)); // query parameter
             if (token != null) localVarQueryParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // query parameter
             if (redirect != null) localVarQueryParams.Add("redirect", Configuration.ApiClient.ParameterToString(redirect)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -6990,6 +7029,11 @@ namespace TweakApi.Api
             if (token != null) localVarQueryParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // query parameter
             if (redirect != null) localVarQueryParams.Add("redirect", Configuration.ApiClient.ParameterToString(redirect)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7064,6 +7108,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7141,6 +7191,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7215,6 +7270,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7292,6 +7353,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7366,6 +7432,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7443,6 +7515,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7523,6 +7600,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7606,6 +7689,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7682,6 +7770,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7761,6 +7855,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -7843,6 +7942,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -7928,6 +8033,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8011,6 +8121,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -8097,6 +8213,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8189,6 +8310,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -8286,6 +8413,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8366,6 +8498,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -8449,6 +8587,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8535,6 +8678,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -8626,6 +8775,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8703,6 +8857,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -8783,6 +8943,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -8860,6 +9025,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -8940,6 +9111,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9020,6 +9196,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -9103,6 +9285,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9179,6 +9366,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -9258,6 +9451,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9340,6 +9538,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -9425,6 +9629,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9508,6 +9717,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -9594,6 +9809,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9686,6 +9906,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -9783,6 +10009,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -9863,6 +10094,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -9946,6 +10183,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10032,6 +10274,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -10123,6 +10371,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10200,6 +10453,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -10280,6 +10539,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10360,6 +10624,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -10443,6 +10713,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10520,6 +10795,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -10600,6 +10881,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10680,6 +10966,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -10763,6 +11055,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -10839,6 +11136,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -10918,6 +11221,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11000,6 +11308,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -11085,6 +11399,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11168,6 +11487,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -11254,6 +11579,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11346,6 +11676,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -11443,6 +11779,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11523,6 +11864,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -11606,6 +11953,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11692,6 +12044,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -11783,6 +12141,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -11869,6 +12232,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -11960,6 +12329,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12036,6 +12410,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -12115,6 +12495,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12195,6 +12580,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -12278,6 +12669,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12364,6 +12760,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -12455,6 +12857,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12541,6 +12948,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -12632,6 +13045,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12727,6 +13145,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -12827,6 +13251,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -12913,6 +13342,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -13004,6 +13439,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13090,6 +13530,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -13181,6 +13627,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13261,6 +13712,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -13344,6 +13801,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13420,6 +13882,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -13499,6 +13967,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13581,6 +14054,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -13666,6 +14145,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13749,6 +14233,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -13835,6 +14325,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -13927,6 +14422,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -14024,6 +14525,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14104,6 +14610,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -14187,6 +14699,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14269,6 +14786,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -14354,6 +14877,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14440,6 +14968,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -14529,6 +15063,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14621,6 +15160,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -14718,6 +15263,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14810,6 +15360,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -14907,6 +15463,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -14993,6 +15554,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -15082,6 +15649,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -15164,6 +15736,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -15249,6 +15827,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -15337,6 +15920,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -15428,6 +16017,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -15517,6 +16111,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -15609,6 +16209,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -15707,6 +16312,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -15810,6 +16421,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -15896,6 +16512,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -15985,6 +16607,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16077,6 +16704,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -16174,6 +16807,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16260,6 +16898,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -16349,6 +16993,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16431,6 +17080,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -16516,6 +17171,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16604,6 +17264,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -16695,6 +17361,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16784,6 +17455,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -16876,6 +17553,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -16974,6 +17656,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -17077,6 +17765,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -17163,6 +17856,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -17252,6 +17951,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -17344,6 +18048,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -17441,6 +18151,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -17527,6 +18242,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -17616,6 +18337,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -17698,6 +18424,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -17783,6 +18515,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -17871,6 +18608,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -17962,6 +18705,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18051,6 +18799,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -18143,6 +18897,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18241,6 +19000,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -18344,6 +19109,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18430,6 +19200,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -18519,6 +19295,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18611,6 +19392,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -18708,6 +19495,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18796,6 +19588,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -18887,6 +19685,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -18976,6 +19779,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -19068,6 +19877,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -19166,6 +19980,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -19269,6 +20089,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -19355,6 +20180,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -19444,6 +20275,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -19526,6 +20362,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -19611,6 +20453,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -19699,6 +20546,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -19790,6 +20643,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -19879,6 +20737,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -19971,6 +20835,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20069,6 +20938,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -20172,6 +21047,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20258,6 +21138,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -20347,6 +21233,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20439,6 +21330,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -20536,6 +21433,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20622,6 +21524,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -20711,6 +21619,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20793,6 +21706,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -20878,6 +21797,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -20966,6 +21890,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -21057,6 +21987,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -21146,6 +22081,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -21238,6 +22179,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -21336,6 +22282,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -21439,6 +22391,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -21525,6 +22482,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -21614,6 +22577,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -21706,6 +22674,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -21803,6 +22777,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -21889,6 +22868,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -21978,6 +22963,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22060,6 +23050,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -22145,6 +23141,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22233,6 +23234,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -22324,6 +23331,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22413,6 +23425,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -22505,6 +23523,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22603,6 +23626,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -22706,6 +23735,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22792,6 +23826,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -22881,6 +23921,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -22973,6 +24018,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -23070,6 +24121,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -23156,6 +24212,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -23245,6 +24307,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -23327,6 +24394,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -23412,6 +24485,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -23500,6 +24578,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -23591,6 +24675,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -23680,6 +24769,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -23772,6 +24867,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -23870,6 +24970,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -23973,6 +25079,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24059,6 +25170,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -24148,6 +25265,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24240,6 +25362,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -24337,6 +25465,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24423,6 +25556,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -24512,6 +25651,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24594,6 +25738,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -24679,6 +25829,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24767,6 +25922,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -24858,6 +26019,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -24947,6 +26113,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -25039,6 +26211,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -25137,6 +26314,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -25240,6 +26423,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -25326,6 +26514,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -25415,6 +26609,11 @@ namespace TweakApi.Api
             if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
             if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -25507,6 +26706,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -25604,6 +26809,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -25690,6 +26900,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -25781,6 +26997,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -25863,6 +27084,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -25948,6 +27175,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26031,6 +27263,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -26117,6 +27355,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26209,6 +27452,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -26306,6 +27555,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26395,6 +27649,12 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
             if (teamId != null) localVarPathParams.Add("teamId", Configuration.ApiClient.ParameterToString(teamId)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -26487,6 +27747,11 @@ namespace TweakApi.Api
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
             if (teamId != null) localVarPathParams.Add("teamId", Configuration.ApiClient.ParameterToString(teamId)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26582,6 +27847,12 @@ namespace TweakApi.Api
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
             if (teamId != null) localVarPathParams.Add("teamId", Configuration.ApiClient.ParameterToString(teamId)); // path parameter
             if (portalId != null) localVarPathParams.Add("portalId", Configuration.ApiClient.ParameterToString(portalId)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -26680,6 +27951,11 @@ namespace TweakApi.Api
             if (teamId != null) localVarPathParams.Add("teamId", Configuration.ApiClient.ParameterToString(teamId)); // path parameter
             if (portalId != null) localVarPathParams.Add("portalId", Configuration.ApiClient.ParameterToString(portalId)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26763,6 +28039,12 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -26849,6 +28131,11 @@ namespace TweakApi.Api
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -26925,6 +28212,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -27004,6 +28297,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27090,6 +28388,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -27181,6 +28485,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27258,6 +28567,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (token != null) localVarPathParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -27338,6 +28653,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (token != null) localVarPathParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // path parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27424,6 +28744,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = credentials; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -27515,6 +28841,11 @@ namespace TweakApi.Api
                 localVarPostBody = credentials; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27585,6 +28916,12 @@ namespace TweakApi.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -27658,6 +28995,11 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27738,6 +29080,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -27823,6 +29171,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -27903,6 +29256,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -27988,6 +29347,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28068,6 +29432,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -28153,6 +29523,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28233,6 +29608,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -28318,6 +29699,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28398,6 +29784,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -28483,6 +29875,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28559,6 +29956,12 @@ namespace TweakApi.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (newPassword != null) localVarFormParams.Add("newPassword", Configuration.ApiClient.ParameterToString(newPassword)); // form parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
 
             // make the HTTP request
@@ -28638,6 +30041,11 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (newPassword != null) localVarFormParams.Add("newPassword", Configuration.ApiClient.ParameterToString(newPassword)); // form parameter
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28720,6 +30128,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = options; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -28807,6 +30221,11 @@ namespace TweakApi.Api
                 localVarPostBody = options; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -28890,6 +30309,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -28978,6 +30403,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -29061,6 +30491,12 @@ namespace TweakApi.Api
             else
             {
                 localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
             }
 
 
@@ -29149,6 +30585,11 @@ namespace TweakApi.Api
                 localVarPostBody = data; // byte array
             }
 
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,

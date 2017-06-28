@@ -52,6 +52,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new CustomerApi();
             var oldPassword = oldPassword_example;  // string | 
             var newPassword = newPassword_example;  // string | 
@@ -1516,4 +1521,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
+### access_token
+
+- **Type**: API key
+- **API key parameter name**: access_token
+- **Location**: URL query string
+
