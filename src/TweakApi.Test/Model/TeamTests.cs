@@ -101,6 +101,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Subdomain'
         }
         /// <summary>
+        /// Test the property 'Country'
+        /// </summary>
+        [Test]
+        public void CountryTest()
+        {
+            // TODO unit test for the property 'Country'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]
@@ -251,6 +259,22 @@ namespace TweakApi.Test
         public void ImageFoldersTest()
         {
             // TODO unit test for the property 'ImageFolders'
+        }
+        /// <summary>
+        /// Test the property 'Billing'
+        /// </summary>
+        [Test]
+        public void BillingTest()
+        {
+            // TODO unit test for the property 'Billing'
+        }
+        /// <summary>
+        /// Test the property 'Permission'
+        /// </summary>
+        [Test]
+        public void PermissionTest()
+        {
+            // TODO unit test for the property 'Permission'
         }
 
     }

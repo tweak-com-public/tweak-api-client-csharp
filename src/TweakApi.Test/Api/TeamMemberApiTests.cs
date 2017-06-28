@@ -1390,6 +1390,133 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamBillingAvailablePlansGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingAvailablePlansGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string filter = null;
+            //var response = instance.TeamMembersIdTeamBillingAvailablePlansGet(id, filter);
+            //Assert.IsInstanceOf<List<BillingPlan>> (response, "response is List<BillingPlan>");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingCachedGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingCachedGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingCachedGet(id);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingCardDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingCardDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingCardDelete(id);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingCardPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingCardPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingCardPost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingCardPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingCardPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingCardPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamMembersIdTeamBillingDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.TeamMembersIdTeamBillingGet(id, refresh);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //Billing data = null;
+            //var response = instance.TeamMembersIdTeamBillingPost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //Billing data = null;
+            //var response = instance.TeamMembersIdTeamBillingPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingSubscriptionPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingSubscriptionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingSubscriptionPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamBrandDelete
         /// </summary>
         [Test]
@@ -1778,6 +1905,57 @@ namespace TweakApi.Test
             //TeamMember data = null;
             //var response = instance.TeamMembersIdTeamMembersRelFkPut(id, fk, data);
             //Assert.IsInstanceOf<TeamMember> (response, "response is TeamMember");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamPermissionDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamMembersIdTeamPermissionDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamPermissionGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.TeamMembersIdTeamPermissionGet(id, refresh);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamPermissionPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamPermissionSet data = null;
+            //var response = instance.TeamMembersIdTeamPermissionPost(id, data);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamPermissionPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamPermissionSet data = null;
+            //var response = instance.TeamMembersIdTeamPermissionPut(id, data);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
         }
         
         /// <summary>

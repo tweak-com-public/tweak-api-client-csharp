@@ -50,6 +50,7 @@ namespace TweakApi.Model
         /// <param name="Name">Name (required).</param>
         /// <param name="Logo">Logo.</param>
         /// <param name="Subdomain">Subdomain.</param>
+        /// <param name="Country">Country (required).</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id (required).</param>
@@ -69,7 +70,9 @@ namespace TweakApi.Model
         /// <param name="Workflows">Workflows.</param>
         /// <param name="Images">Images.</param>
         /// <param name="ImageFolders">ImageFolders.</param>
-        public Team(string Name = null, Object Logo = null, string Subdomain = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string Icon = null, string ClientKey = null, string JavaScriptKey = null, string RestApiKey = null, string WindowsKey = null, string MasterKey = null, string Status = null, List<Customer> Members = null, List<TeamMember> TeamMembers = null, List<Portal> Portals = null, List<Template> Templates = null, TeamBrand Brand = null, List<TeamTemplateFolder> TemplateFolders = null, List<Workflow> Workflows = null, List<Image> Images = null, List<ImageFolder> ImageFolders = null)
+        /// <param name="Billing">Billing.</param>
+        /// <param name="Permission">Permission.</param>
+        public Team(string Name = null, Object Logo = null, string Subdomain = null, string Country = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string Icon = null, string ClientKey = null, string JavaScriptKey = null, string RestApiKey = null, string WindowsKey = null, string MasterKey = null, string Status = null, List<Customer> Members = null, List<TeamMember> TeamMembers = null, List<Portal> Portals = null, List<Template> Templates = null, TeamBrand Brand = null, List<TeamTemplateFolder> TemplateFolders = null, List<Workflow> Workflows = null, List<Image> Images = null, List<ImageFolder> ImageFolders = null, Billing Billing = null, TeamPermissionSet Permission = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -79,6 +82,15 @@ namespace TweakApi.Model
             else
             {
                 this.Name = Name;
+            }
+            // to ensure "Country" is required (not null)
+            if (Country == null)
+            {
+                throw new InvalidDataException("Country is a required property for Team and cannot be null");
+            }
+            else
+            {
+                this.Country = Country;
             }
             // to ensure "Id" is required (not null)
             if (Id == null)
@@ -117,6 +129,8 @@ namespace TweakApi.Model
             this.Workflows = Workflows;
             this.Images = Images;
             this.ImageFolders = ImageFolders;
+            this.Billing = Billing;
+            this.Permission = Permission;
         }
         
         /// <summary>
@@ -134,6 +148,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="subdomain", EmitDefaultValue=false)]
         public string Subdomain { get; set; }
+        /// <summary>
+        /// Gets or Sets Country
+        /// </summary>
+        [DataMember(Name="country", EmitDefaultValue=false)]
+        public string Country { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -232,6 +251,16 @@ namespace TweakApi.Model
         [DataMember(Name="imageFolders", EmitDefaultValue=false)]
         public List<ImageFolder> ImageFolders { get; set; }
         /// <summary>
+        /// Gets or Sets Billing
+        /// </summary>
+        [DataMember(Name="billing", EmitDefaultValue=false)]
+        public Billing Billing { get; set; }
+        /// <summary>
+        /// Gets or Sets Permission
+        /// </summary>
+        [DataMember(Name="permission", EmitDefaultValue=false)]
+        public TeamPermissionSet Permission { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -242,6 +271,7 @@ namespace TweakApi.Model
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Logo: ").Append(Logo).Append("\n");
             sb.Append("  Subdomain: ").Append(Subdomain).Append("\n");
+            sb.Append("  Country: ").Append(Country).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
@@ -261,6 +291,8 @@ namespace TweakApi.Model
             sb.Append("  Workflows: ").Append(Workflows).Append("\n");
             sb.Append("  Images: ").Append(Images).Append("\n");
             sb.Append("  ImageFolders: ").Append(ImageFolders).Append("\n");
+            sb.Append("  Billing: ").Append(Billing).Append("\n");
+            sb.Append("  Permission: ").Append(Permission).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -311,6 +343,11 @@ namespace TweakApi.Model
                     this.Subdomain == other.Subdomain ||
                     this.Subdomain != null &&
                     this.Subdomain.Equals(other.Subdomain)
+                ) && 
+                (
+                    this.Country == other.Country ||
+                    this.Country != null &&
+                    this.Country.Equals(other.Country)
                 ) && 
                 (
                     this.Created == other.Created ||
@@ -406,6 +443,16 @@ namespace TweakApi.Model
                     this.ImageFolders == other.ImageFolders ||
                     this.ImageFolders != null &&
                     this.ImageFolders.SequenceEqual(other.ImageFolders)
+                ) && 
+                (
+                    this.Billing == other.Billing ||
+                    this.Billing != null &&
+                    this.Billing.Equals(other.Billing)
+                ) && 
+                (
+                    this.Permission == other.Permission ||
+                    this.Permission != null &&
+                    this.Permission.Equals(other.Permission)
                 );
         }
 
@@ -426,6 +473,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Logo.GetHashCode();
                 if (this.Subdomain != null)
                     hash = hash * 59 + this.Subdomain.GetHashCode();
+                if (this.Country != null)
+                    hash = hash * 59 + this.Country.GetHashCode();
                 if (this.Created != null)
                     hash = hash * 59 + this.Created.GetHashCode();
                 if (this.Modified != null)
@@ -464,6 +513,10 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Images.GetHashCode();
                 if (this.ImageFolders != null)
                     hash = hash * 59 + this.ImageFolders.GetHashCode();
+                if (this.Billing != null)
+                    hash = hash * 59 + this.Billing.GetHashCode();
+                if (this.Permission != null)
+                    hash = hash * 59 + this.Permission.GetHashCode();
                 return hash;
             }
         }

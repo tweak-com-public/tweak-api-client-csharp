@@ -51,6 +51,10 @@ Method | HTTP request | Description
 [**CustomersIdTeamsFkGet**](CustomerApi.md#customersidteamsfkget) | **GET** /Customers/{id}/teams/{fk} | Find a related item by id for teams.
 [**CustomersIdTeamsFkPut**](CustomerApi.md#customersidteamsfkput) | **PUT** /Customers/{id}/teams/{fk} | Update a related item by id for teams.
 [**CustomersIdTeamsGet**](CustomerApi.md#customersidteamsget) | **GET** /Customers/{id}/teams | Queries teams of Customer.
+[**CustomersIdTeamsNkBillingDelete**](CustomerApi.md#customersidteamsnkbillingdelete) | **DELETE** /Customers/{id}/teams/{nk}/billing | Deletes billing of this model.
+[**CustomersIdTeamsNkBillingGet**](CustomerApi.md#customersidteamsnkbillingget) | **GET** /Customers/{id}/teams/{nk}/billing | Fetches hasOne relation billing.
+[**CustomersIdTeamsNkBillingPost**](CustomerApi.md#customersidteamsnkbillingpost) | **POST** /Customers/{id}/teams/{nk}/billing | Creates a new instance in billing of this model.
+[**CustomersIdTeamsNkBillingPut**](CustomerApi.md#customersidteamsnkbillingput) | **PUT** /Customers/{id}/teams/{nk}/billing | Update billing of this model.
 [**CustomersIdTeamsNkBrandDelete**](CustomerApi.md#customersidteamsnkbranddelete) | **DELETE** /Customers/{id}/teams/{nk}/brand | Deletes brand of this model.
 [**CustomersIdTeamsNkBrandGet**](CustomerApi.md#customersidteamsnkbrandget) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**CustomersIdTeamsNkBrandPost**](CustomerApi.md#customersidteamsnkbrandpost) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
@@ -79,6 +83,10 @@ Method | HTTP request | Description
 [**CustomersIdTeamsNkMembersRelFkDelete**](CustomerApi.md#customersidteamsnkmembersrelfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
 [**CustomersIdTeamsNkMembersRelFkHead**](CustomerApi.md#customersidteamsnkmembersrelfkhead) | **HEAD** /Customers/{id}/teams/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**CustomersIdTeamsNkMembersRelFkPut**](CustomerApi.md#customersidteamsnkmembersrelfkput) | **PUT** /Customers/{id}/teams/{nk}/members/rel/{fk} | Add a related item by id for members.
+[**CustomersIdTeamsNkPermissionDelete**](CustomerApi.md#customersidteamsnkpermissiondelete) | **DELETE** /Customers/{id}/teams/{nk}/permission | Deletes permission of this model.
+[**CustomersIdTeamsNkPermissionGet**](CustomerApi.md#customersidteamsnkpermissionget) | **GET** /Customers/{id}/teams/{nk}/permission | Fetches hasOne relation permission.
+[**CustomersIdTeamsNkPermissionPost**](CustomerApi.md#customersidteamsnkpermissionpost) | **POST** /Customers/{id}/teams/{nk}/permission | Creates a new instance in permission of this model.
+[**CustomersIdTeamsNkPermissionPut**](CustomerApi.md#customersidteamsnkpermissionput) | **PUT** /Customers/{id}/teams/{nk}/permission | Update permission of this model.
 [**CustomersIdTeamsNkPortalsCountGet**](CustomerApi.md#customersidteamsnkportalscountget) | **GET** /Customers/{id}/teams/{nk}/portals/count | Counts portals of Team.
 [**CustomersIdTeamsNkPortalsDelete**](CustomerApi.md#customersidteamsnkportalsdelete) | **DELETE** /Customers/{id}/teams/{nk}/portals | Deletes all portals of this model.
 [**CustomersIdTeamsNkPortalsFkDelete**](CustomerApi.md#customersidteamsnkportalsfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/portals/{fk} | Delete a related item by id for portals.
@@ -3259,6 +3267,279 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="customersidteamsnkbillingdelete"></a>
+# **CustomersIdTeamsNkBillingDelete**
+> void CustomersIdTeamsNkBillingDelete (string id, string nk)
+
+Deletes billing of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBillingDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+
+            try
+            {
+                // Deletes billing of this model.
+                apiInstance.CustomersIdTeamsNkBillingDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbillingget"></a>
+# **CustomersIdTeamsNkBillingGet**
+> Billing CustomersIdTeamsNkBillingGet (string id, string nk, bool? refresh = null)
+
+Fetches hasOne relation billing.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBillingGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation billing.
+                Billing result = apiInstance.CustomersIdTeamsNkBillingGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbillingpost"></a>
+# **CustomersIdTeamsNkBillingPost**
+> Billing CustomersIdTeamsNkBillingPost (string id, string nk, Billing data = null)
+
+Creates a new instance in billing of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBillingPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new Billing(); // Billing |  (optional) 
+
+            try
+            {
+                // Creates a new instance in billing of this model.
+                Billing result = apiInstance.CustomersIdTeamsNkBillingPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbillingput"></a>
+# **CustomersIdTeamsNkBillingPut**
+> Billing CustomersIdTeamsNkBillingPut (string id, string nk, Billing data = null)
+
+Update billing of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBillingPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new Billing(); // Billing |  (optional) 
+
+            try
+            {
+                // Update billing of this model.
+                Billing result = apiInstance.CustomersIdTeamsNkBillingPut(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="customersidteamsnkbranddelete"></a>
 # **CustomersIdTeamsNkBrandDelete**
 > void CustomersIdTeamsNkBrandDelete (string id, string nk)
@@ -5171,6 +5452,279 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkpermissiondelete"></a>
+# **CustomersIdTeamsNkPermissionDelete**
+> void CustomersIdTeamsNkPermissionDelete (string id, string nk)
+
+Deletes permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkPermissionDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+
+            try
+            {
+                // Deletes permission of this model.
+                apiInstance.CustomersIdTeamsNkPermissionDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkPermissionDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkpermissionget"></a>
+# **CustomersIdTeamsNkPermissionGet**
+> TeamPermissionSet CustomersIdTeamsNkPermissionGet (string id, string nk, bool? refresh = null)
+
+Fetches hasOne relation permission.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkPermissionGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation permission.
+                TeamPermissionSet result = apiInstance.CustomersIdTeamsNkPermissionGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkPermissionGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkpermissionpost"></a>
+# **CustomersIdTeamsNkPermissionPost**
+> TeamPermissionSet CustomersIdTeamsNkPermissionPost (string id, string nk, TeamPermissionSet data = null)
+
+Creates a new instance in permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkPermissionPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new TeamPermissionSet(); // TeamPermissionSet |  (optional) 
+
+            try
+            {
+                // Creates a new instance in permission of this model.
+                TeamPermissionSet result = apiInstance.CustomersIdTeamsNkPermissionPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkPermissionPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkpermissionput"></a>
+# **CustomersIdTeamsNkPermissionPut**
+> TeamPermissionSet CustomersIdTeamsNkPermissionPut (string id, string nk, TeamPermissionSet data = null)
+
+Update permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkPermissionPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new TeamPermissionSet(); // TeamPermissionSet |  (optional) 
+
+            try
+            {
+                // Update permission of this model.
+                TeamPermissionSet result = apiInstance.CustomersIdTeamsNkPermissionPut(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkPermissionPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
 
 ### Authorization
 

@@ -137,6 +137,57 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamsIdBillingDelete
+        /// </summary>
+        [Test]
+        public void TeamsIdBillingDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamsIdBillingDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamsIdBillingGet
+        /// </summary>
+        [Test]
+        public void TeamsIdBillingGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.TeamsIdBillingGet(id, refresh);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdBillingPost
+        /// </summary>
+        [Test]
+        public void TeamsIdBillingPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //Billing data = null;
+            //var response = instance.TeamsIdBillingPost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdBillingPut
+        /// </summary>
+        [Test]
+        public void TeamsIdBillingPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //Billing data = null;
+            //var response = instance.TeamsIdBillingPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
         /// Test TeamsIdBrandDelete
         /// </summary>
         [Test]
@@ -1249,6 +1300,57 @@ namespace TweakApi.Test
             //Team data = null;
             //var response = instance.TeamsIdPatch(id, data);
             //Assert.IsInstanceOf<Team> (response, "response is Team");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPermissionDelete
+        /// </summary>
+        [Test]
+        public void TeamsIdPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamsIdPermissionDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPermissionGet
+        /// </summary>
+        [Test]
+        public void TeamsIdPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.TeamsIdPermissionGet(id, refresh);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPermissionPost
+        /// </summary>
+        [Test]
+        public void TeamsIdPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamPermissionSet data = null;
+            //var response = instance.TeamsIdPermissionPost(id, data);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPermissionPut
+        /// </summary>
+        [Test]
+        public void TeamsIdPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamPermissionSet data = null;
+            //var response = instance.TeamsIdPermissionPut(id, data);
+            //Assert.IsInstanceOf<TeamPermissionSet> (response, "response is TeamPermissionSet");
         }
         
         /// <summary>

@@ -1102,6 +1102,104 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of List&lt;Team&gt;</returns>
         ApiResponse<List<Team>> CustomersIdTeamsGetWithHttpInfo (string id, string filter = null);
         /// <summary>
+        /// Deletes billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkBillingDelete (string id, string nk);
+
+        /// <summary>
+        /// Deletes billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkBillingDeleteWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation billing.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing CustomersIdTeamsNkBillingGet (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation billing.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> CustomersIdTeamsNkBillingGetWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing CustomersIdTeamsNkBillingPost (string id, string nk, Billing data = null);
+
+        /// <summary>
+        /// Creates a new instance in billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> CustomersIdTeamsNkBillingPostWithHttpInfo (string id, string nk, Billing data = null);
+        /// <summary>
+        /// Update billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing CustomersIdTeamsNkBillingPut (string id, string nk, Billing data = null);
+
+        /// <summary>
+        /// Update billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> CustomersIdTeamsNkBillingPutWithHttpInfo (string id, string nk, Billing data = null);
+        /// <summary>
         /// Deletes brand of this model.
         /// </summary>
         /// <remarks>
@@ -1801,6 +1899,104 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of TeamMember</returns>
         ApiResponse<TeamMember> CustomersIdTeamsNkMembersRelFkPutWithHttpInfo (string id, string nk, string fk, TeamMember data = null);
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkPermissionDelete (string id, string nk);
+
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkPermissionDeleteWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        TeamPermissionSet CustomersIdTeamsNkPermissionGet (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        ApiResponse<TeamPermissionSet> CustomersIdTeamsNkPermissionGetWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        TeamPermissionSet CustomersIdTeamsNkPermissionPost (string id, string nk, TeamPermissionSet data = null);
+
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        ApiResponse<TeamPermissionSet> CustomersIdTeamsNkPermissionPostWithHttpInfo (string id, string nk, TeamPermissionSet data = null);
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        TeamPermissionSet CustomersIdTeamsNkPermissionPut (string id, string nk, TeamPermissionSet data = null);
+
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        ApiResponse<TeamPermissionSet> CustomersIdTeamsNkPermissionPutWithHttpInfo (string id, string nk, TeamPermissionSet data = null);
         /// <summary>
         /// Counts portals of Team.
         /// </summary>
@@ -4213,6 +4409,104 @@ namespace TweakApi.Api
         /// <returns>Task of ApiResponse (List&lt;Team&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Team>>> CustomersIdTeamsGetAsyncWithHttpInfo (string id, string filter = null);
         /// <summary>
+        /// Deletes billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkBillingDeleteAsync (string id, string nk);
+
+        /// <summary>
+        /// Deletes billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkBillingDeleteAsyncWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation billing.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingGetAsync (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation billing.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingPostAsync (string id, string nk, Billing data = null);
+
+        /// <summary>
+        /// Creates a new instance in billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingPostAsyncWithHttpInfo (string id, string nk, Billing data = null);
+        /// <summary>
+        /// Update billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingPutAsync (string id, string nk, Billing data = null);
+
+        /// <summary>
+        /// Update billing of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingPutAsyncWithHttpInfo (string id, string nk, Billing data = null);
+        /// <summary>
         /// Deletes brand of this model.
         /// </summary>
         /// <remarks>
@@ -4912,6 +5206,104 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (TeamMember)</returns>
         System.Threading.Tasks.Task<ApiResponse<TeamMember>> CustomersIdTeamsNkMembersRelFkPutAsyncWithHttpInfo (string id, string nk, string fk, TeamMember data = null);
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkPermissionDeleteAsync (string id, string nk);
+
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkPermissionDeleteAsyncWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionGetAsync (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionPostAsync (string id, string nk, TeamPermissionSet data = null);
+
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionPostAsyncWithHttpInfo (string id, string nk, TeamPermissionSet data = null);
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionPutAsync (string id, string nk, TeamPermissionSet data = null);
+
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionPutAsyncWithHttpInfo (string id, string nk, TeamPermissionSet data = null);
         /// <summary>
         /// Counts portals of Team.
         /// </summary>
@@ -14725,6 +15117,770 @@ namespace TweakApi.Api
         }
 
         /// <summary>
+        /// Deletes billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkBillingDelete (string id, string nk)
+        {
+             CustomersIdTeamsNkBillingDeleteWithHttpInfo(id, nk);
+        }
+
+        /// <summary>
+        /// Deletes billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkBillingDeleteWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkBillingDeleteAsync (string id, string nk)
+        {
+             await CustomersIdTeamsNkBillingDeleteAsyncWithHttpInfo(id, nk);
+
+        }
+
+        /// <summary>
+        /// Deletes billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkBillingDeleteAsyncWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation billing. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing CustomersIdTeamsNkBillingGet (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<Billing> localVarResponse = CustomersIdTeamsNkBillingGetWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation billing. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > CustomersIdTeamsNkBillingGetWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation billing. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingGetAsync (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<Billing> localVarResponse = await CustomersIdTeamsNkBillingGetAsyncWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation billing. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing CustomersIdTeamsNkBillingPost (string id, string nk, Billing data = null)
+        {
+             ApiResponse<Billing> localVarResponse = CustomersIdTeamsNkBillingPostWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > CustomersIdTeamsNkBillingPostWithHttpInfo (string id, string nk, Billing data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingPostAsync (string id, string nk, Billing data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await CustomersIdTeamsNkBillingPostAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingPostAsyncWithHttpInfo (string id, string nk, Billing data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing CustomersIdTeamsNkBillingPut (string id, string nk, Billing data = null)
+        {
+             ApiResponse<Billing> localVarResponse = CustomersIdTeamsNkBillingPutWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > CustomersIdTeamsNkBillingPutWithHttpInfo (string id, string nk, Billing data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> CustomersIdTeamsNkBillingPutAsync (string id, string nk, Billing data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await CustomersIdTeamsNkBillingPutAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update billing of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> CustomersIdTeamsNkBillingPutAsyncWithHttpInfo (string id, string nk, Billing data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkBillingPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkBillingPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/billing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkBillingPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
         /// Deletes brand of this model. 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
@@ -20111,6 +21267,770 @@ namespace TweakApi.Api
             return new ApiResponse<TeamMember>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (TeamMember) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMember)));
+            
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkPermissionDelete (string id, string nk)
+        {
+             CustomersIdTeamsNkPermissionDeleteWithHttpInfo(id, nk);
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkPermissionDeleteWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkPermissionDeleteAsync (string id, string nk)
+        {
+             await CustomersIdTeamsNkPermissionDeleteAsyncWithHttpInfo(id, nk);
+
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkPermissionDeleteAsyncWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        public TeamPermissionSet CustomersIdTeamsNkPermissionGet (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = CustomersIdTeamsNkPermissionGetWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        public ApiResponse< TeamPermissionSet > CustomersIdTeamsNkPermissionGetWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        public async System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionGetAsync (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = await CustomersIdTeamsNkPermissionGetAsyncWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        public TeamPermissionSet CustomersIdTeamsNkPermissionPost (string id, string nk, TeamPermissionSet data = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = CustomersIdTeamsNkPermissionPostWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        public ApiResponse< TeamPermissionSet > CustomersIdTeamsNkPermissionPostWithHttpInfo (string id, string nk, TeamPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        public async System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionPostAsync (string id, string nk, TeamPermissionSet data = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = await CustomersIdTeamsNkPermissionPostAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionPostAsyncWithHttpInfo (string id, string nk, TeamPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>TeamPermissionSet</returns>
+        public TeamPermissionSet CustomersIdTeamsNkPermissionPut (string id, string nk, TeamPermissionSet data = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = CustomersIdTeamsNkPermissionPutWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of TeamPermissionSet</returns>
+        public ApiResponse< TeamPermissionSet > CustomersIdTeamsNkPermissionPutWithHttpInfo (string id, string nk, TeamPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of TeamPermissionSet</returns>
+        public async System.Threading.Tasks.Task<TeamPermissionSet> CustomersIdTeamsNkPermissionPutAsync (string id, string nk, TeamPermissionSet data = null)
+        {
+             ApiResponse<TeamPermissionSet> localVarResponse = await CustomersIdTeamsNkPermissionPutAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (TeamPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamPermissionSet>> CustomersIdTeamsNkPermissionPutAsyncWithHttpInfo (string id, string nk, TeamPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkPermissionPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkPermissionPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkPermissionPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamPermissionSet)));
             
         }
 
