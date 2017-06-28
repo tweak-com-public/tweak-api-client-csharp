@@ -60,17 +60,17 @@ namespace TweakApi.Client
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default configuration and base path (https://apistagecdn.tweak.com/api).
+        /// with default configuration and base path (https://apidevcdn.tweak.com/api).
         /// </summary>
         public ApiClient()
         {
             Configuration = Configuration.Default;
-            RestClient = new RestClient("https://apistagecdn.tweak.com/api");
+            RestClient = new RestClient("https://apidevcdn.tweak.com/api");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://apistagecdn.tweak.com/api).
+        /// with default base path (https://apidevcdn.tweak.com/api).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config = null)
@@ -80,7 +80,7 @@ namespace TweakApi.Client
             else
                 Configuration = config;
 
-            RestClient = new RestClient("https://apistagecdn.tweak.com/api");
+            RestClient = new RestClient("https://apidevcdn.tweak.com/api");
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace TweakApi.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://apistagecdn.tweak.com/api")
+        public ApiClient(String basePath = "https://apidevcdn.tweak.com/api")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
