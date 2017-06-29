@@ -6855,7 +6855,7 @@ Name | Type | Description  | Notes
 
 <a name="teammembersidtargetmodeltargetidinvitepost"></a>
 # **TeamMembersIdTargetModelTargetIdInvitePost**
-> List<XAny> TeamMembersIdTargetModelTargetIdInvitePost (string id, string id2, string targetModel, string targetId, List<XAny> data = null)
+> List<InvitationTicket> TeamMembersIdTargetModelTargetIdInvitePost (string id, string id2, string targetModel, string targetId, List<Object> data = null)
 
 Invite a group of people to join a team, portal or other targets
 
@@ -6884,12 +6884,12 @@ namespace Example
             var id2 = id_example;  // string | 
             var targetModel = targetModel_example;  // string | 
             var targetId = targetId_example;  // string | 
-            var data = new List<XAny>(); // List<XAny> |  (optional) 
+            var data = ;  // List<Object> |  (optional) 
 
             try
             {
                 // Invite a group of people to join a team, portal or other targets
-                List&lt;XAny&gt; result = apiInstance.TeamMembersIdTargetModelTargetIdInvitePost(id, id2, targetModel, targetId, data);
+                List&lt;InvitationTicket&gt; result = apiInstance.TeamMembersIdTargetModelTargetIdInvitePost(id, id2, targetModel, targetId, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6909,11 +6909,11 @@ Name | Type | Description  | Notes
  **id2** | **string**|  | 
  **targetModel** | **string**|  | 
  **targetId** | **string**|  | 
- **data** | [**List<XAny>**](XAny.md)|  | [optional] 
+ **data** | **List<Object>**|  | [optional] 
 
 ### Return type
 
-[**List<XAny>**](XAny.md)
+[**List<InvitationTicket>**](InvitationTicket.md)
 
 ### Authorization
 

@@ -8179,7 +8179,7 @@ void (empty response body)
 
 <a name="portalsidtemplatesfkdesignsgeneratebulkpost"></a>
 # **PortalsIdTemplatesFkDesignsGenerateBulkPost**
-> List<Design> PortalsIdTemplatesFkDesignsGenerateBulkPost (string id, string id2, string fk, List<XAny> data = null)
+> List<Design> PortalsIdTemplatesFkDesignsGenerateBulkPost (string id, string id2, string fk, List<Object> data = null)
 
 Generate Design from Template
 
@@ -8207,7 +8207,7 @@ namespace Example
             var id = id_example;  // string | Portal id
             var id2 = id_example;  // string | 
             var fk = fk_example;  // string | 
-            var data = new List<XAny>(); // List<XAny> |  (optional) 
+            var data = ;  // List<Object> |  (optional) 
 
             try
             {
@@ -8231,7 +8231,7 @@ Name | Type | Description  | Notes
  **id** | **string**| Portal id | 
  **id2** | **string**|  | 
  **fk** | **string**|  | 
- **data** | [**List<XAny>**](XAny.md)|  | [optional] 
+ **data** | **List<Object>**|  | [optional] 
 
 ### Return type
 
