@@ -85,6 +85,38 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Roles'
         }
         /// <summary>
+        /// Test the property 'Position'
+        /// </summary>
+        [Test]
+        public void PositionTest()
+        {
+            // TODO unit test for the property 'Position'
+        }
+        /// <summary>
+        /// Test the property 'OfficePhone'
+        /// </summary>
+        [Test]
+        public void OfficePhoneTest()
+        {
+            // TODO unit test for the property 'OfficePhone'
+        }
+        /// <summary>
+        /// Test the property 'MobilePhone'
+        /// </summary>
+        [Test]
+        public void MobilePhoneTest()
+        {
+            // TODO unit test for the property 'MobilePhone'
+        }
+        /// <summary>
+        /// Test the property 'Website'
+        /// </summary>
+        [Test]
+        public void WebsiteTest()
+        {
+            // TODO unit test for the property 'Website'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]
