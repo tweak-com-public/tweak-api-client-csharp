@@ -4,6 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Roles** | **List&lt;string&gt;** |  | 
+**Position** | **string** |  | [optional] 
+**OfficePhone** | **string** |  | [optional] 
+**MobilePhone** | **string** |  | [optional] 
+**Website** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

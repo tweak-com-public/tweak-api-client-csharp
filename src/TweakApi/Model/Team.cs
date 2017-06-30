@@ -50,7 +50,7 @@ namespace TweakApi.Model
         /// <param name="Name">Name (required).</param>
         /// <param name="Logo">Logo.</param>
         /// <param name="Subdomain">Subdomain.</param>
-        /// <param name="Country">Country (required).</param>
+        /// <param name="Country">Country (default to &quot;Ireland&quot;).</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id (required).</param>
@@ -83,15 +83,6 @@ namespace TweakApi.Model
             {
                 this.Name = Name;
             }
-            // to ensure "Country" is required (not null)
-            if (Country == null)
-            {
-                throw new InvalidDataException("Country is a required property for Team and cannot be null");
-            }
-            else
-            {
-                this.Country = Country;
-            }
             // to ensure "Id" is required (not null)
             if (Id == null)
             {
@@ -103,6 +94,15 @@ namespace TweakApi.Model
             }
             this.Logo = Logo;
             this.Subdomain = Subdomain;
+            // use default value if no "Country" provided
+            if (Country == null)
+            {
+                this.Country = "Ireland";
+            }
+            else
+            {
+                this.Country = Country;
+            }
             this.Created = Created;
             this.Modified = Modified;
             this.Icon = Icon;

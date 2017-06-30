@@ -48,6 +48,10 @@ namespace TweakApi.Model
         /// Initializes a new instance of the <see cref="TeamMember" /> class.
         /// </summary>
         /// <param name="Roles">Roles (required).</param>
+        /// <param name="Position">Position.</param>
+        /// <param name="OfficePhone">OfficePhone.</param>
+        /// <param name="MobilePhone">MobilePhone.</param>
+        /// <param name="Website">Website.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -68,7 +72,7 @@ namespace TweakApi.Model
         /// <param name="DesignFolders">DesignFolders.</param>
         /// <param name="Workflows">Workflows.</param>
         /// <param name="ImageFolders">ImageFolders.</param>
-        public TeamMember(List<string> Roles = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
+        public TeamMember(List<string> Roles = null, string Position = null, string OfficePhone = null, string MobilePhone = null, string Website = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
         {
             // to ensure "Roles" is required (not null)
             if (Roles == null)
@@ -79,6 +83,10 @@ namespace TweakApi.Model
             {
                 this.Roles = Roles;
             }
+            this.Position = Position;
+            this.OfficePhone = OfficePhone;
+            this.MobilePhone = MobilePhone;
+            this.Website = Website;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;
@@ -106,6 +114,26 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="roles", EmitDefaultValue=false)]
         public List<string> Roles { get; set; }
+        /// <summary>
+        /// Gets or Sets Position
+        /// </summary>
+        [DataMember(Name="position", EmitDefaultValue=false)]
+        public string Position { get; set; }
+        /// <summary>
+        /// Gets or Sets OfficePhone
+        /// </summary>
+        [DataMember(Name="officePhone", EmitDefaultValue=false)]
+        public string OfficePhone { get; set; }
+        /// <summary>
+        /// Gets or Sets MobilePhone
+        /// </summary>
+        [DataMember(Name="mobilePhone", EmitDefaultValue=false)]
+        public string MobilePhone { get; set; }
+        /// <summary>
+        /// Gets or Sets Website
+        /// </summary>
+        [DataMember(Name="website", EmitDefaultValue=false)]
+        public string Website { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -215,6 +243,10 @@ namespace TweakApi.Model
             var sb = new StringBuilder();
             sb.Append("class TeamMember {\n");
             sb.Append("  Roles: ").Append(Roles).Append("\n");
+            sb.Append("  Position: ").Append(Position).Append("\n");
+            sb.Append("  OfficePhone: ").Append(OfficePhone).Append("\n");
+            sb.Append("  MobilePhone: ").Append(MobilePhone).Append("\n");
+            sb.Append("  Website: ").Append(Website).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
@@ -275,6 +307,26 @@ namespace TweakApi.Model
                     this.Roles == other.Roles ||
                     this.Roles != null &&
                     this.Roles.SequenceEqual(other.Roles)
+                ) && 
+                (
+                    this.Position == other.Position ||
+                    this.Position != null &&
+                    this.Position.Equals(other.Position)
+                ) && 
+                (
+                    this.OfficePhone == other.OfficePhone ||
+                    this.OfficePhone != null &&
+                    this.OfficePhone.Equals(other.OfficePhone)
+                ) && 
+                (
+                    this.MobilePhone == other.MobilePhone ||
+                    this.MobilePhone != null &&
+                    this.MobilePhone.Equals(other.MobilePhone)
+                ) && 
+                (
+                    this.Website == other.Website ||
+                    this.Website != null &&
+                    this.Website.Equals(other.Website)
                 ) && 
                 (
                     this.Created == other.Created ||
@@ -391,6 +443,14 @@ namespace TweakApi.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Roles != null)
                     hash = hash * 59 + this.Roles.GetHashCode();
+                if (this.Position != null)
+                    hash = hash * 59 + this.Position.GetHashCode();
+                if (this.OfficePhone != null)
+                    hash = hash * 59 + this.OfficePhone.GetHashCode();
+                if (this.MobilePhone != null)
+                    hash = hash * 59 + this.MobilePhone.GetHashCode();
+                if (this.Website != null)
+                    hash = hash * 59 + this.Website.GetHashCode();
                 if (this.Created != null)
                     hash = hash * 59 + this.Created.GetHashCode();
                 if (this.Modified != null)
