@@ -121,7 +121,7 @@ namespace TweakApi.Model
         /// <param name="TargetModel">TargetModel (required).</param>
         /// <param name="TargetId">TargetId (required).</param>
         /// <param name="TargetAttrs">TargetAttrs.</param>
-        /// <param name="Status">Status (default to &quot;pending&quot;).</param>
+        /// <param name="Status">Status.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -177,15 +177,7 @@ namespace TweakApi.Model
             this.Token = Token;
             this.InviteeEmail = InviteeEmail;
             this.TargetAttrs = TargetAttrs;
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "pending";
-            }
-            else
-            {
-                this.Status = Status;
-            }
+            this.Status = Status;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;

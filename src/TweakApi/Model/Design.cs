@@ -115,8 +115,8 @@ namespace TweakApi.Model
         /// <param name="_Object">_Object (required).</param>
         /// <param name="Thumbnail">Thumbnail.</param>
         /// <param name="Description">Description (default to &quot;&quot;).</param>
-        /// <param name="Purpose">Purpose (default to &quot;none&quot;).</param>
-        /// <param name="Status">Status (default to &quot;pendingAction&quot;).</param>
+        /// <param name="Purpose">Purpose.</param>
+        /// <param name="Status">Status.</param>
         /// <param name="RejectionReason">RejectionReason (default to &quot;&quot;).</param>
         /// <param name="FormData">FormData.</param>
         /// <param name="HighResPdfUrl">HighResPdfUrl (default to &quot;&quot;).</param>
@@ -178,24 +178,8 @@ namespace TweakApi.Model
             {
                 this.Description = Description;
             }
-            // use default value if no "Purpose" provided
-            if (Purpose == null)
-            {
-                this.Purpose = "none";
-            }
-            else
-            {
-                this.Purpose = Purpose;
-            }
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "pendingAction";
-            }
-            else
-            {
-                this.Status = Status;
-            }
+            this.Purpose = Purpose;
+            this.Status = Status;
             // use default value if no "RejectionReason" provided
             if (RejectionReason == null)
             {

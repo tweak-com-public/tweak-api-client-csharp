@@ -82,7 +82,7 @@ namespace TweakApi.Model
         /// <param name="FirstName">FirstName (required).</param>
         /// <param name="LastName">LastName (required).</param>
         /// <param name="Initials">Initials (required).</param>
-        /// <param name="Status">Status (default to &quot;active&quot;).</param>
+        /// <param name="Status">Status.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Realm">Realm.</param>
@@ -134,15 +134,7 @@ namespace TweakApi.Model
                 this.Email = Email;
             }
             this.ProfilePicture = ProfilePicture;
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "active";
-            }
-            else
-            {
-                this.Status = Status;
-            }
+            this.Status = Status;
             this.Created = Created;
             this.Modified = Modified;
             this.Realm = Realm;

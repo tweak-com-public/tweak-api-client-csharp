@@ -84,7 +84,7 @@ namespace TweakApi.Model
         /// <param name="Description">Description (default to &quot;&quot;).</param>
         /// <param name="Edited">Edited.</param>
         /// <param name="TeamPath">TeamPath (default to &quot;/&quot;).</param>
-        /// <param name="Status">Status (default to &quot;pendingApproval&quot;).</param>
+        /// <param name="Status">Status.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -143,15 +143,7 @@ namespace TweakApi.Model
             {
                 this.TeamPath = TeamPath;
             }
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "pendingApproval";
-            }
-            else
-            {
-                this.Status = Status;
-            }
+            this.Status = Status;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;

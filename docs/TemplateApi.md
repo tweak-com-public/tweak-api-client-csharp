@@ -81,6 +81,7 @@ Method | HTTP request | Description
 [**TemplatesIdTemplateMembersGet**](TemplateApi.md#templatesidtemplatemembersget) | **GET** /Templates/{id}/templateMembers | Queries templateMembers of Template.
 [**TemplatesIdTemplateMembersPost**](TemplateApi.md#templatesidtemplatememberspost) | **POST** /Templates/{id}/templateMembers | Creates a new instance in templateMembers of this model.
 [**TemplatesIdUploaderGet**](TemplateApi.md#templatesiduploaderget) | **GET** /Templates/{id}/uploader | Fetches belongsTo relation uploader.
+[**TemplatesIdUrlReviewGet**](TemplateApi.md#templatesidurlreviewget) | **GET** /Templates/{id}/url/review | Get URL to review a template
 [**TemplatesIdWorkflowGet**](TemplateApi.md#templatesidworkflowget) | **GET** /Templates/{id}/workflow | Fetches belongsTo relation workflow.
 [**TemplatesPatch**](TemplateApi.md#templatespatch) | **PATCH** /Templates | Patch an existing model instance or insert a new one into the data source.
 [**TemplatesPost**](TemplateApi.md#templatespost) | **POST** /Templates | Create a new instance of the model and persist it into the data source.
@@ -5220,6 +5221,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="templatesidurlreviewget"></a>
+# **TemplatesIdUrlReviewGet**
+> string TemplatesIdUrlReviewGet (string id)
+
+Get URL to review a template
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TemplatesIdUrlReviewGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TemplateApi();
+            var id = id_example;  // string | Template id
+
+            try
+            {
+                // Get URL to review a template
+                string result = apiInstance.TemplatesIdUrlReviewGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TemplateApi.TemplatesIdUrlReviewGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Template id | 
+
+### Return type
+
+**string**
 
 ### Authorization
 

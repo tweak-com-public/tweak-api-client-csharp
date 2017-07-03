@@ -75,7 +75,7 @@ namespace TweakApi.Model
         /// <param name="Comment">Comment (required).</param>
         /// <param name="Position">Position.</param>
         /// <param name="PageIndex">PageIndex (default to 0.0).</param>
-        /// <param name="Status">Status (default to &quot;unsolved&quot;).</param>
+        /// <param name="Status">Status.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -107,15 +107,7 @@ namespace TweakApi.Model
             {
                 this.PageIndex = PageIndex;
             }
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "unsolved";
-            }
-            else
-            {
-                this.Status = Status;
-            }
+            this.Status = Status;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;
