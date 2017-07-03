@@ -2297,6 +2297,19 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamTemplatesFkUrlReviewGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamTemplatesFkUrlReviewGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //var response = instance.TeamMembersIdTeamTemplatesFkUrlReviewGet(id, fk);
+            //Assert.IsInstanceOf<string> (response, "response is string");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamTemplatesGet
         /// </summary>
         [Test]

@@ -1078,6 +1078,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TemplatesIdUrlReviewGet
+        /// </summary>
+        [Test]
+        public void TemplatesIdUrlReviewGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TemplatesIdUrlReviewGet(id);
+            //Assert.IsInstanceOf<string> (response, "response is string");
+        }
+        
+        /// <summary>
         /// Test TemplatesIdWorkflowGet
         /// </summary>
         [Test]
