@@ -999,8 +999,8 @@ namespace TweakApi.Model
         /// </summary>
         /// <param name="Name">Name (required).</param>
         /// <param name="Logo">Logo.</param>
-        /// <param name="Status">Status (default to &quot;private&quot;).</param>
-        /// <param name="Language">Language (default to &quot;en&quot;).</param>
+        /// <param name="Status">Status.</param>
+        /// <param name="Language">Language.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -1026,24 +1026,8 @@ namespace TweakApi.Model
                 this.Name = Name;
             }
             this.Logo = Logo;
-            // use default value if no "Status" provided
-            if (Status == null)
-            {
-                this.Status = "private";
-            }
-            else
-            {
-                this.Status = Status;
-            }
-            // use default value if no "Language" provided
-            if (Language == null)
-            {
-                this.Language = "en";
-            }
-            else
-            {
-                this.Language = Language;
-            }
+            this.Status = Status;
+            this.Language = Language;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;
