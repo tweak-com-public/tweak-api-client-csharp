@@ -40,6 +40,31 @@ namespace TweakApi.Model
     public partial class BillingPlan :  IEquatable<BillingPlan>
     {
         /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum TypeEnum
+        {
+            
+            /// <summary>
+            /// Enum Plan for "plan"
+            /// </summary>
+            [EnumMember(Value = "plan")]
+            Plan,
+            
+            /// <summary>
+            /// Enum Additional for "additional"
+            /// </summary>
+            [EnumMember(Value = "additional")]
+            Additional
+        }
+
+        /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public TypeEnum? Type { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="BillingPlan" /> class.
         /// </summary>
         [JsonConstructorAttribute]
@@ -56,8 +81,9 @@ namespace TweakApi.Model
         /// <param name="StatementDescriptor">StatementDescriptor.</param>
         /// <param name="StatementDescription">StatementDescription.</param>
         /// <param name="TrialPeriodDays">TrialPeriodDays.</param>
+        /// <param name="Type">Type.</param>
         /// <param name="Created">Created.</param>
-        public BillingPlan(string Id = null, string Name = null, double? Amount = null, string Currency = null, string Interval = null, double? IntervalCount = null, string StatementDescriptor = null, string StatementDescription = null, double? TrialPeriodDays = null, DateTime? Created = null)
+        public BillingPlan(string Id = null, string Name = null, double? Amount = null, string Currency = null, string Interval = null, double? IntervalCount = null, string StatementDescriptor = null, string StatementDescription = null, double? TrialPeriodDays = null, TypeEnum? Type = null, DateTime? Created = null)
         {
             // to ensure "Id" is required (not null)
             if (Id == null)
@@ -76,6 +102,7 @@ namespace TweakApi.Model
             this.StatementDescriptor = StatementDescriptor;
             this.StatementDescription = StatementDescription;
             this.TrialPeriodDays = TrialPeriodDays;
+            this.Type = Type;
             this.Created = Created;
         }
         
@@ -146,6 +173,7 @@ namespace TweakApi.Model
             sb.Append("  StatementDescriptor: ").Append(StatementDescriptor).Append("\n");
             sb.Append("  StatementDescription: ").Append(StatementDescription).Append("\n");
             sb.Append("  TrialPeriodDays: ").Append(TrialPeriodDays).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -229,6 +257,11 @@ namespace TweakApi.Model
                     this.TrialPeriodDays.Equals(other.TrialPeriodDays)
                 ) && 
                 (
+                    this.Type == other.Type ||
+                    this.Type != null &&
+                    this.Type.Equals(other.Type)
+                ) && 
+                (
                     this.Created == other.Created ||
                     this.Created != null &&
                     this.Created.Equals(other.Created)
@@ -264,6 +297,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.StatementDescription.GetHashCode();
                 if (this.TrialPeriodDays != null)
                     hash = hash * 59 + this.TrialPeriodDays.GetHashCode();
+                if (this.Type != null)
+                    hash = hash * 59 + this.Type.GetHashCode();
                 if (this.Created != null)
                     hash = hash * 59 + this.Created.GetHashCode();
                 return hash;

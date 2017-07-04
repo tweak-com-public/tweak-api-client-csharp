@@ -1478,6 +1478,44 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamBillingInvoicesFkPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingInvoicesFkPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //var response = instance.TeamMembersIdTeamBillingInvoicesFkPost(id, fk);
+            //Assert.IsInstanceOf<BillingInvoice> (response, "response is BillingInvoice");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingInvoicesGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingInvoicesGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string filter = null;
+            //var response = instance.TeamMembersIdTeamBillingInvoicesGet(id, filter);
+            //Assert.IsInstanceOf<List<BillingInvoice>> (response, "response is List<BillingInvoice>");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingInvoicesUpcomingGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingInvoicesUpcomingGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingInvoicesUpcomingGet(id);
+            //Assert.IsInstanceOf<BillingInvoice> (response, "response is BillingInvoice");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamBillingPost
         /// </summary>
         [Test]
