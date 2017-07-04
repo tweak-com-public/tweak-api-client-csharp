@@ -111,6 +111,9 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBillingCardPut**](TeamMemberApi.md#teammembersidteambillingcardput) | **PUT** /TeamMembers/{id}/team/billing/card | Update Team Billing Card
 [**TeamMembersIdTeamBillingDelete**](TeamMemberApi.md#teammembersidteambillingdelete) | **DELETE** /TeamMembers/{id}/team/billing | Deletes billing of this model.
 [**TeamMembersIdTeamBillingGet**](TeamMemberApi.md#teammembersidteambillingget) | **GET** /TeamMembers/{id}/team/billing | Fetches hasOne relation billing.
+[**TeamMembersIdTeamBillingInvoicesFkPost**](TeamMemberApi.md#teammembersidteambillinginvoicesfkpost) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
+[**TeamMembersIdTeamBillingInvoicesGet**](TeamMemberApi.md#teammembersidteambillinginvoicesget) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
+[**TeamMembersIdTeamBillingInvoicesUpcomingGet**](TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 [**TeamMembersIdTeamBillingPost**](TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 [**TeamMembersIdTeamBillingPut**](TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
 [**TeamMembersIdTeamBillingSubscriptionPut**](TeamMemberApi.md#teammembersidteambillingsubscriptionput) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
@@ -7377,6 +7380,205 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillinginvoicesfkpost"></a>
+# **TeamMembersIdTeamBillingInvoicesFkPost**
+> BillingInvoice TeamMembersIdTeamBillingInvoicesFkPost (string id, string fk)
+
+Pay Team Billing Invoice
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingInvoicesFkPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Billing Invoice id
+
+            try
+            {
+                // Pay Team Billing Invoice
+                BillingInvoice result = apiInstance.TeamMembersIdTeamBillingInvoicesFkPost(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingInvoicesFkPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Billing Invoice id | 
+
+### Return type
+
+[**BillingInvoice**](BillingInvoice.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillinginvoicesget"></a>
+# **TeamMembersIdTeamBillingInvoicesGet**
+> List<BillingInvoice> TeamMembersIdTeamBillingInvoicesGet (string id, string filter = null)
+
+List Team Billing Invoices
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingInvoicesGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
+
+            try
+            {
+                // List Team Billing Invoices
+                List&lt;BillingInvoice&gt; result = apiInstance.TeamMembersIdTeamBillingInvoicesGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingInvoicesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+[**List<BillingInvoice>**](BillingInvoice.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillinginvoicesupcomingget"></a>
+# **TeamMembersIdTeamBillingInvoicesUpcomingGet**
+> BillingInvoice TeamMembersIdTeamBillingInvoicesUpcomingGet (string id)
+
+List Upcoming Team Billing Invoices
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingInvoicesUpcomingGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // List Upcoming Team Billing Invoices
+                BillingInvoice result = apiInstance.TeamMembersIdTeamBillingInvoicesUpcomingGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingInvoicesUpcomingGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**BillingInvoice**](BillingInvoice.md)
 
 ### Authorization
 

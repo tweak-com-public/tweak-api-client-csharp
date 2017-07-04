@@ -1199,6 +1199,9 @@ Class | Method | HTTP request | Description
 *TeamMemberApi* | [**TeamMembersIdTeamBillingCardPut**](docs/TeamMemberApi.md#teammembersidteambillingcardput) | **PUT** /TeamMembers/{id}/team/billing/card | Update Team Billing Card
 *TeamMemberApi* | [**TeamMembersIdTeamBillingDelete**](docs/TeamMemberApi.md#teammembersidteambillingdelete) | **DELETE** /TeamMembers/{id}/team/billing | Deletes billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingGet**](docs/TeamMemberApi.md#teammembersidteambillingget) | **GET** /TeamMembers/{id}/team/billing | Fetches hasOne relation billing.
+*TeamMemberApi* | [**TeamMembersIdTeamBillingInvoicesFkPost**](docs/TeamMemberApi.md#teammembersidteambillinginvoicesfkpost) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
+*TeamMemberApi* | [**TeamMembersIdTeamBillingInvoicesGet**](docs/TeamMemberApi.md#teammembersidteambillinginvoicesget) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
+*TeamMemberApi* | [**TeamMembersIdTeamBillingInvoicesUpcomingGet**](docs/TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPost**](docs/TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPut**](docs/TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingSubscriptionPut**](docs/TeamMemberApi.md#teammembersidteambillingsubscriptionput) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
@@ -1543,6 +1546,8 @@ Class | Method | HTTP request | Description
  - [Model.Axes](docs/Axes.md)
  - [Model.Billing](docs/Billing.md)
  - [Model.BillingCard](docs/BillingCard.md)
+ - [Model.BillingInvoice](docs/BillingInvoice.md)
+ - [Model.BillingInvoiceLine](docs/BillingInvoiceLine.md)
  - [Model.BillingPlan](docs/BillingPlan.md)
  - [Model.BillingSubscription](docs/BillingSubscription.md)
  - [Model.BillingSubscriptionItem](docs/BillingSubscriptionItem.md)
