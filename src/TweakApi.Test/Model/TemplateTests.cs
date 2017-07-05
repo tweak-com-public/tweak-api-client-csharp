@@ -117,12 +117,12 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Edited'
         }
         /// <summary>
-        /// Test the property 'TeamPath'
+        /// Test the property 'Path'
         /// </summary>
         [Test]
-        public void TeamPathTest()
+        public void PathTest()
         {
-            // TODO unit test for the property 'TeamPath'
+            // TODO unit test for the property 'Path'
         }
         /// <summary>
         /// Test the property 'Status'
