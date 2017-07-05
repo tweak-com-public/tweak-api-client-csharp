@@ -4,6 +4,16 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Roles** | **List&lt;string&gt;** |  | 
+**Position** | **string** |  | [optional] 
+**OfficePhone** | **string** |  | [optional] 
+**MobilePhone** | **string** |  | [optional] 
+**Website** | **string** |  | [optional] 
+**AddressCity** | **string** |  | [optional] 
+**AddressCountry** | **string** |  | [optional] 
+**AddressLine1** | **string** |  | [optional] 
+**AddressLine2** | **string** |  | [optional] 
+**AddressState** | **string** |  | [optional] 
+**AddressZip** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

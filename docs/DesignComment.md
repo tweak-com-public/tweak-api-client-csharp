@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Comment** | **string** |  | 
 **Position** | [**Axes**](Axes.md) |  | [optional] 
 **PageIndex** | **double?** |  | [optional] [default to 0.0]
-**Status** | **string** |  | [optional] [default to "unsolved"]
+**Status** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

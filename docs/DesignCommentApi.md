@@ -1,6 +1,6 @@
 # TweakApi.Api.DesignCommentApi
 
-All URIs are relative to *https://apistagecdn.tweak.com/api*
+All URIs are relative to *https://apicdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -55,6 +55,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var options = options_example;  // string |  (optional) 
 
@@ -85,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -115,6 +120,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var options = options_example;  // string |  (optional) 
 
@@ -145,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -175,6 +185,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
 
@@ -205,7 +220,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -235,6 +250,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var filter = filter_example;  // string | Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
 
@@ -265,7 +285,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -295,6 +315,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var filter = filter_example;  // string | Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
 
@@ -325,7 +350,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -355,6 +380,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var refresh = true;  // bool? |  (optional) 
@@ -387,7 +417,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -417,6 +447,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
 
@@ -447,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -477,6 +512,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var refresh = true;  // bool? |  (optional) 
@@ -509,7 +549,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -539,6 +579,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
 
@@ -569,7 +614,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -599,6 +644,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
             var filter = filter_example;  // string | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
@@ -631,7 +681,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -661,6 +711,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
 
@@ -691,7 +746,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -721,6 +776,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var data = new DesignComment(); // DesignComment | An object of model property name/value pairs (optional) 
@@ -753,7 +813,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -783,6 +843,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
@@ -815,7 +880,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -845,6 +910,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | Model id
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
@@ -877,7 +947,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -907,6 +977,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var where = where_example;  // string | Criteria to match model instances (optional) 
@@ -939,7 +1014,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -969,6 +1044,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
 
@@ -998,7 +1078,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1028,6 +1108,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var fk = fk_example;  // string | Foreign key for replies
@@ -1059,7 +1144,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1089,6 +1174,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var fk = fk_example;  // string | Foreign key for replies
@@ -1121,7 +1211,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1151,6 +1241,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var fk = fk_example;  // string | Foreign key for replies
@@ -1185,7 +1280,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1215,6 +1310,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var filter = filter_example;  // string |  (optional) 
@@ -1247,7 +1347,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1277,6 +1377,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var data = new DesignComment(); // DesignComment |  (optional) 
@@ -1309,7 +1414,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1339,6 +1444,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var id = id_example;  // string | DesignComment id
             var refresh = true;  // bool? |  (optional) 
@@ -1371,7 +1481,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1401,6 +1511,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
 
@@ -1431,7 +1546,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1461,6 +1576,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
 
@@ -1491,7 +1611,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1521,6 +1641,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
 
@@ -1551,7 +1676,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1581,6 +1706,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var data = new DesignComment(); // DesignComment | Model instance data (optional) 
 
@@ -1611,7 +1741,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1641,6 +1771,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
             var data = new DesignComment(); // DesignComment | An object of model property name/value pairs (optional) 
@@ -1673,7 +1808,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1703,6 +1838,11 @@ namespace Example
         public void main()
         {
             
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
             var apiInstance = new DesignCommentApi();
             var where = where_example;  // string | Criteria to match model instances (optional) 
             var data = new DesignComment(); // DesignComment | An object of model property name/value pairs (optional) 
@@ -1735,7 +1875,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

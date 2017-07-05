@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Logo** | **Object** |  | [optional] 
 **Subdomain** | **string** |  | [optional] 
+**Country** | **string** |  | [optional] [default to "Ireland"]
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | 
@@ -25,6 +26,8 @@ Name | Type | Description | Notes
 **Workflows** | [**List&lt;Workflow&gt;**](Workflow.md) |  | [optional] 
 **Images** | [**List&lt;Image&gt;**](Image.md) |  | [optional] 
 **ImageFolders** | [**List&lt;ImageFolder&gt;**](ImageFolder.md) |  | [optional] 
+**Billing** | [**Billing**](Billing.md) |  | [optional] 
+**Permission** | [**TeamPermissionSet**](TeamPermissionSet.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

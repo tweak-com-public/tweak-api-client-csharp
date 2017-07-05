@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **TargetModel** | **string** |  | 
 **TargetId** | **string** |  | 
 **TargetAttrs** | **Object** |  | [optional] 
-**Status** | **string** |  | [optional] [default to "pending"]
+**Status** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
