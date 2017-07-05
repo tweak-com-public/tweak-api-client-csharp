@@ -83,7 +83,7 @@ namespace TweakApi.Model
         /// <param name="_Object">_Object (required).</param>
         /// <param name="Description">Description (default to &quot;&quot;).</param>
         /// <param name="Edited">Edited.</param>
-        /// <param name="TeamPath">TeamPath (default to &quot;/&quot;).</param>
+        /// <param name="Path">Path (default to &quot;/&quot;).</param>
         /// <param name="Status">Status.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
@@ -103,7 +103,7 @@ namespace TweakApi.Model
         /// <param name="PortalFolders">PortalFolders.</param>
         /// <param name="Workflow">Workflow.</param>
         /// <param name="Uploader">Uploader.</param>
-        public Template(string Name = null, string Thumbnail = null, Object _Object = null, string Description = null, DateTime? Edited = null, string TeamPath = null, StatusEnum? Status = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string TeamId = null, string UploaderId = null, string TeamFolderId = null, string WorkflowId = null, List<Portal> Portals = null, Team Team = null, List<TeamMember> Members = null, List<TemplateMember> TemplateMembers = null, TemplatePermissionSet Permission = null, List<Design> Designs = null, List<Tag> Tags = null, TeamTemplateFolder TeamFolder = null, List<PortalTemplateFolder> PortalFolders = null, Workflow Workflow = null, TeamMember Uploader = null)
+        public Template(string Name = null, string Thumbnail = null, Object _Object = null, string Description = null, DateTime? Edited = null, string Path = null, StatusEnum? Status = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string TeamId = null, string UploaderId = null, string TeamFolderId = null, string WorkflowId = null, List<Portal> Portals = null, Team Team = null, List<TeamMember> Members = null, List<TemplateMember> TemplateMembers = null, TemplatePermissionSet Permission = null, List<Design> Designs = null, List<Tag> Tags = null, TeamTemplateFolder TeamFolder = null, List<PortalTemplateFolder> PortalFolders = null, Workflow Workflow = null, TeamMember Uploader = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -134,14 +134,14 @@ namespace TweakApi.Model
                 this.Description = Description;
             }
             this.Edited = Edited;
-            // use default value if no "TeamPath" provided
-            if (TeamPath == null)
+            // use default value if no "Path" provided
+            if (Path == null)
             {
-                this.TeamPath = "/";
+                this.Path = "/";
             }
             else
             {
-                this.TeamPath = TeamPath;
+                this.Path = Path;
             }
             this.Status = Status;
             this.Created = Created;
@@ -190,10 +190,10 @@ namespace TweakApi.Model
         [DataMember(Name="edited", EmitDefaultValue=false)]
         public DateTime? Edited { get; set; }
         /// <summary>
-        /// Gets or Sets TeamPath
+        /// Gets or Sets Path
         /// </summary>
-        [DataMember(Name="teamPath", EmitDefaultValue=false)]
-        public string TeamPath { get; set; }
+        [DataMember(Name="path", EmitDefaultValue=false)]
+        public string Path { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -297,7 +297,7 @@ namespace TweakApi.Model
             sb.Append("  _Object: ").Append(_Object).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  Edited: ").Append(Edited).Append("\n");
-            sb.Append("  TeamPath: ").Append(TeamPath).Append("\n");
+            sb.Append("  Path: ").Append(Path).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
@@ -379,9 +379,9 @@ namespace TweakApi.Model
                     this.Edited.Equals(other.Edited)
                 ) && 
                 (
-                    this.TeamPath == other.TeamPath ||
-                    this.TeamPath != null &&
-                    this.TeamPath.Equals(other.TeamPath)
+                    this.Path == other.Path ||
+                    this.Path != null &&
+                    this.Path.Equals(other.Path)
                 ) && 
                 (
                     this.Status == other.Status ||
@@ -501,8 +501,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Description.GetHashCode();
                 if (this.Edited != null)
                     hash = hash * 59 + this.Edited.GetHashCode();
-                if (this.TeamPath != null)
-                    hash = hash * 59 + this.TeamPath.GetHashCode();
+                if (this.Path != null)
+                    hash = hash * 59 + this.Path.GetHashCode();
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
                 if (this.Created != null)

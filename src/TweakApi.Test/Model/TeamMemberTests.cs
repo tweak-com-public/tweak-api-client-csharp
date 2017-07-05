@@ -117,6 +117,54 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Website'
         }
         /// <summary>
+        /// Test the property 'AddressCity'
+        /// </summary>
+        [Test]
+        public void AddressCityTest()
+        {
+            // TODO unit test for the property 'AddressCity'
+        }
+        /// <summary>
+        /// Test the property 'AddressCountry'
+        /// </summary>
+        [Test]
+        public void AddressCountryTest()
+        {
+            // TODO unit test for the property 'AddressCountry'
+        }
+        /// <summary>
+        /// Test the property 'AddressLine1'
+        /// </summary>
+        [Test]
+        public void AddressLine1Test()
+        {
+            // TODO unit test for the property 'AddressLine1'
+        }
+        /// <summary>
+        /// Test the property 'AddressLine2'
+        /// </summary>
+        [Test]
+        public void AddressLine2Test()
+        {
+            // TODO unit test for the property 'AddressLine2'
+        }
+        /// <summary>
+        /// Test the property 'AddressState'
+        /// </summary>
+        [Test]
+        public void AddressStateTest()
+        {
+            // TODO unit test for the property 'AddressState'
+        }
+        /// <summary>
+        /// Test the property 'AddressZip'
+        /// </summary>
+        [Test]
+        public void AddressZipTest()
+        {
+            // TODO unit test for the property 'AddressZip'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]
