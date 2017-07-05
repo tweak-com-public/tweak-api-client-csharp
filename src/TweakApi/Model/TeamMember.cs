@@ -52,6 +52,12 @@ namespace TweakApi.Model
         /// <param name="OfficePhone">OfficePhone.</param>
         /// <param name="MobilePhone">MobilePhone.</param>
         /// <param name="Website">Website.</param>
+        /// <param name="AddressCity">AddressCity.</param>
+        /// <param name="AddressCountry">AddressCountry.</param>
+        /// <param name="AddressLine1">AddressLine1.</param>
+        /// <param name="AddressLine2">AddressLine2.</param>
+        /// <param name="AddressState">AddressState.</param>
+        /// <param name="AddressZip">AddressZip.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -72,7 +78,7 @@ namespace TweakApi.Model
         /// <param name="DesignFolders">DesignFolders.</param>
         /// <param name="Workflows">Workflows.</param>
         /// <param name="ImageFolders">ImageFolders.</param>
-        public TeamMember(List<string> Roles = null, string Position = null, string OfficePhone = null, string MobilePhone = null, string Website = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
+        public TeamMember(List<string> Roles = null, string Position = null, string OfficePhone = null, string MobilePhone = null, string Website = null, string AddressCity = null, string AddressCountry = null, string AddressLine1 = null, string AddressLine2 = null, string AddressState = null, string AddressZip = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
         {
             // to ensure "Roles" is required (not null)
             if (Roles == null)
@@ -87,6 +93,12 @@ namespace TweakApi.Model
             this.OfficePhone = OfficePhone;
             this.MobilePhone = MobilePhone;
             this.Website = Website;
+            this.AddressCity = AddressCity;
+            this.AddressCountry = AddressCountry;
+            this.AddressLine1 = AddressLine1;
+            this.AddressLine2 = AddressLine2;
+            this.AddressState = AddressState;
+            this.AddressZip = AddressZip;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;
@@ -134,6 +146,36 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="website", EmitDefaultValue=false)]
         public string Website { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressCity
+        /// </summary>
+        [DataMember(Name="addressCity", EmitDefaultValue=false)]
+        public string AddressCity { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressCountry
+        /// </summary>
+        [DataMember(Name="addressCountry", EmitDefaultValue=false)]
+        public string AddressCountry { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressLine1
+        /// </summary>
+        [DataMember(Name="addressLine1", EmitDefaultValue=false)]
+        public string AddressLine1 { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressLine2
+        /// </summary>
+        [DataMember(Name="addressLine2", EmitDefaultValue=false)]
+        public string AddressLine2 { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressState
+        /// </summary>
+        [DataMember(Name="addressState", EmitDefaultValue=false)]
+        public string AddressState { get; set; }
+        /// <summary>
+        /// Gets or Sets AddressZip
+        /// </summary>
+        [DataMember(Name="addressZip", EmitDefaultValue=false)]
+        public string AddressZip { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -247,6 +289,12 @@ namespace TweakApi.Model
             sb.Append("  OfficePhone: ").Append(OfficePhone).Append("\n");
             sb.Append("  MobilePhone: ").Append(MobilePhone).Append("\n");
             sb.Append("  Website: ").Append(Website).Append("\n");
+            sb.Append("  AddressCity: ").Append(AddressCity).Append("\n");
+            sb.Append("  AddressCountry: ").Append(AddressCountry).Append("\n");
+            sb.Append("  AddressLine1: ").Append(AddressLine1).Append("\n");
+            sb.Append("  AddressLine2: ").Append(AddressLine2).Append("\n");
+            sb.Append("  AddressState: ").Append(AddressState).Append("\n");
+            sb.Append("  AddressZip: ").Append(AddressZip).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
@@ -327,6 +375,36 @@ namespace TweakApi.Model
                     this.Website == other.Website ||
                     this.Website != null &&
                     this.Website.Equals(other.Website)
+                ) && 
+                (
+                    this.AddressCity == other.AddressCity ||
+                    this.AddressCity != null &&
+                    this.AddressCity.Equals(other.AddressCity)
+                ) && 
+                (
+                    this.AddressCountry == other.AddressCountry ||
+                    this.AddressCountry != null &&
+                    this.AddressCountry.Equals(other.AddressCountry)
+                ) && 
+                (
+                    this.AddressLine1 == other.AddressLine1 ||
+                    this.AddressLine1 != null &&
+                    this.AddressLine1.Equals(other.AddressLine1)
+                ) && 
+                (
+                    this.AddressLine2 == other.AddressLine2 ||
+                    this.AddressLine2 != null &&
+                    this.AddressLine2.Equals(other.AddressLine2)
+                ) && 
+                (
+                    this.AddressState == other.AddressState ||
+                    this.AddressState != null &&
+                    this.AddressState.Equals(other.AddressState)
+                ) && 
+                (
+                    this.AddressZip == other.AddressZip ||
+                    this.AddressZip != null &&
+                    this.AddressZip.Equals(other.AddressZip)
                 ) && 
                 (
                     this.Created == other.Created ||
@@ -451,6 +529,18 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.MobilePhone.GetHashCode();
                 if (this.Website != null)
                     hash = hash * 59 + this.Website.GetHashCode();
+                if (this.AddressCity != null)
+                    hash = hash * 59 + this.AddressCity.GetHashCode();
+                if (this.AddressCountry != null)
+                    hash = hash * 59 + this.AddressCountry.GetHashCode();
+                if (this.AddressLine1 != null)
+                    hash = hash * 59 + this.AddressLine1.GetHashCode();
+                if (this.AddressLine2 != null)
+                    hash = hash * 59 + this.AddressLine2.GetHashCode();
+                if (this.AddressState != null)
+                    hash = hash * 59 + this.AddressState.GetHashCode();
+                if (this.AddressZip != null)
+                    hash = hash * 59 + this.AddressZip.GetHashCode();
                 if (this.Created != null)
                     hash = hash * 59 + this.Created.GetHashCode();
                 if (this.Modified != null)
