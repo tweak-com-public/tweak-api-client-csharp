@@ -157,6 +157,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Type'
         }
         /// <summary>
+        /// Test the property 'Limit'
+        /// </summary>
+        [Test]
+        public void LimitTest()
+        {
+            // TODO unit test for the property 'Limit'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]

@@ -72,7 +72,7 @@ namespace TweakApi.Model
         /// <param name="Subtotal">Subtotal.</param>
         /// <param name="Tax">Tax.</param>
         /// <param name="Total">Total.</param>
-        public BillingInvoice(string Id = null, double? AmountDue = null, double? AttemptCount = null, bool? Attempted = null, bool? Charged = null, bool? Closed = null, string Currency = null, string Customer = null, DateTime? Date = null, string Description = null, double? EndingBalance = null, bool? Forgiven = null, BillingInvoiceLine Lines = null, DateTime? NextPaymentAttempt = null, bool? Paid = null, DateTime? PeriodEnd = null, DateTime? PeriodStart = null, string ReciptNumber = null, double? StartingBalance = null, string StatementDescriptor = null, string Subscription = null, double? SubscriptionProrationDate = null, double? Subtotal = null, double? Tax = null, double? Total = null)
+        public BillingInvoice(string Id = null, double? AmountDue = null, double? AttemptCount = null, bool? Attempted = null, bool? Charged = null, bool? Closed = null, string Currency = null, string Customer = null, DateTime? Date = null, string Description = null, double? EndingBalance = null, bool? Forgiven = null, List<BillingInvoiceLine> Lines = null, DateTime? NextPaymentAttempt = null, bool? Paid = null, DateTime? PeriodEnd = null, DateTime? PeriodStart = null, string ReciptNumber = null, double? StartingBalance = null, string StatementDescriptor = null, string Subscription = null, double? SubscriptionProrationDate = null, double? Subtotal = null, double? Tax = null, double? Total = null)
         {
             // to ensure "Id" is required (not null)
             if (Id == null)
@@ -173,7 +173,7 @@ namespace TweakApi.Model
         /// Gets or Sets Lines
         /// </summary>
         [DataMember(Name="lines", EmitDefaultValue=false)]
-        public BillingInvoiceLine Lines { get; set; }
+        public List<BillingInvoiceLine> Lines { get; set; }
         /// <summary>
         /// Gets or Sets NextPaymentAttempt
         /// </summary>
@@ -366,7 +366,7 @@ namespace TweakApi.Model
                 (
                     this.Lines == other.Lines ||
                     this.Lines != null &&
-                    this.Lines.Equals(other.Lines)
+                    this.Lines.SequenceEqual(other.Lines)
                 ) && 
                 (
                     this.NextPaymentAttempt == other.NextPaymentAttempt ||

@@ -2744,6 +2744,167 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of TeamBrand</returns>
         ApiResponse<TeamBrand> TeamMembersIdTeamBrandPutWithHttpInfo (string id, TeamBrand data = null);
         /// <summary>
+        /// Counts dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 TeamMembersIdTeamDataSourcesCountGet (string id, string where = null);
+
+        /// <summary>
+        /// Counts dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> TeamMembersIdTeamDataSourcesCountGetWithHttpInfo (string id, string where = null);
+        /// <summary>
+        /// Deletes all dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns></returns>
+        void TeamMembersIdTeamDataSourcesDelete (string id);
+
+        /// <summary>
+        /// Deletes all dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> TeamMembersIdTeamDataSourcesDeleteWithHttpInfo (string id);
+        /// <summary>
+        /// Delete a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns></returns>
+        void TeamMembersIdTeamDataSourcesFkDelete (string id, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> TeamMembersIdTeamDataSourcesFkDeleteWithHttpInfo (string id, string fk);
+        /// <summary>
+        /// Find a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>DataSource</returns>
+        DataSource TeamMembersIdTeamDataSourcesFkGet (string id, string fk);
+
+        /// <summary>
+        /// Find a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        ApiResponse<DataSource> TeamMembersIdTeamDataSourcesFkGetWithHttpInfo (string id, string fk);
+        /// <summary>
+        /// Update a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>DataSource</returns>
+        DataSource TeamMembersIdTeamDataSourcesFkPut (string id, string fk, DataSource data = null);
+
+        /// <summary>
+        /// Update a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        ApiResponse<DataSource> TeamMembersIdTeamDataSourcesFkPutWithHttpInfo (string id, string fk, DataSource data = null);
+        /// <summary>
+        /// Queries dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;DataSource&gt;</returns>
+        List<DataSource> TeamMembersIdTeamDataSourcesGet (string id, string filter = null);
+
+        /// <summary>
+        /// Queries dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;DataSource&gt;</returns>
+        ApiResponse<List<DataSource>> TeamMembersIdTeamDataSourcesGetWithHttpInfo (string id, string filter = null);
+        /// <summary>
+        /// Creates a new instance in dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>DataSource</returns>
+        DataSource TeamMembersIdTeamDataSourcesPost (string id, DataSource data = null);
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        ApiResponse<DataSource> TeamMembersIdTeamDataSourcesPostWithHttpInfo (string id, DataSource data = null);
+        /// <summary>
         /// Fetches belongsTo relation team.
         /// </summary>
         /// <remarks>
@@ -7891,6 +8052,167 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (TeamBrand)</returns>
         System.Threading.Tasks.Task<ApiResponse<TeamBrand>> TeamMembersIdTeamBrandPutAsyncWithHttpInfo (string id, TeamBrand data = null);
+        /// <summary>
+        /// Counts dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> TeamMembersIdTeamDataSourcesCountGetAsync (string id, string where = null);
+
+        /// <summary>
+        /// Counts dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> TeamMembersIdTeamDataSourcesCountGetAsyncWithHttpInfo (string id, string where = null);
+        /// <summary>
+        /// Deletes all dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task TeamMembersIdTeamDataSourcesDeleteAsync (string id);
+
+        /// <summary>
+        /// Deletes all dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamDataSourcesDeleteAsyncWithHttpInfo (string id);
+        /// <summary>
+        /// Delete a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task TeamMembersIdTeamDataSourcesFkDeleteAsync (string id, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamDataSourcesFkDeleteAsyncWithHttpInfo (string id, string fk);
+        /// <summary>
+        /// Find a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of DataSource</returns>
+        System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesFkGetAsync (string id, string fk);
+
+        /// <summary>
+        /// Find a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesFkGetAsyncWithHttpInfo (string id, string fk);
+        /// <summary>
+        /// Update a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of DataSource</returns>
+        System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesFkPutAsync (string id, string fk, DataSource data = null);
+
+        /// <summary>
+        /// Update a related item by id for dataSources.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesFkPutAsyncWithHttpInfo (string id, string fk, DataSource data = null);
+        /// <summary>
+        /// Queries dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;DataSource&gt;</returns>
+        System.Threading.Tasks.Task<List<DataSource>> TeamMembersIdTeamDataSourcesGetAsync (string id, string filter = null);
+
+        /// <summary>
+        /// Queries dataSources of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;DataSource&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<DataSource>>> TeamMembersIdTeamDataSourcesGetAsyncWithHttpInfo (string id, string filter = null);
+        /// <summary>
+        /// Creates a new instance in dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of DataSource</returns>
+        System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesPostAsync (string id, DataSource data = null);
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesPostAsyncWithHttpInfo (string id, DataSource data = null);
         /// <summary>
         /// Fetches belongsTo relation team.
         /// </summary>
@@ -31649,6 +31971,1266 @@ namespace TweakApi.Api
             return new ApiResponse<TeamBrand>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (TeamBrand) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamBrand)));
+            
+        }
+
+        /// <summary>
+        /// Counts dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 TeamMembersIdTeamDataSourcesCountGet (string id, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = TeamMembersIdTeamDataSourcesCountGetWithHttpInfo(id, where);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Counts dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse< InlineResponse200 > TeamMembersIdTeamDataSourcesCountGetWithHttpInfo (string id, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesCountGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Counts dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> TeamMembersIdTeamDataSourcesCountGetAsync (string id, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = await TeamMembersIdTeamDataSourcesCountGetAsyncWithHttpInfo(id, where);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Counts dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> TeamMembersIdTeamDataSourcesCountGetAsyncWithHttpInfo (string id, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesCountGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Deletes all dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns></returns>
+        public void TeamMembersIdTeamDataSourcesDelete (string id)
+        {
+             TeamMembersIdTeamDataSourcesDeleteWithHttpInfo(id);
+        }
+
+        /// <summary>
+        /// Deletes all dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> TeamMembersIdTeamDataSourcesDeleteWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes all dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task TeamMembersIdTeamDataSourcesDeleteAsync (string id)
+        {
+             await TeamMembersIdTeamDataSourcesDeleteAsyncWithHttpInfo(id);
+
+        }
+
+        /// <summary>
+        /// Deletes all dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamDataSourcesDeleteAsyncWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns></returns>
+        public void TeamMembersIdTeamDataSourcesFkDelete (string id, string fk)
+        {
+             TeamMembersIdTeamDataSourcesFkDeleteWithHttpInfo(id, fk);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> TeamMembersIdTeamDataSourcesFkDeleteWithHttpInfo (string id, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task TeamMembersIdTeamDataSourcesFkDeleteAsync (string id, string fk)
+        {
+             await TeamMembersIdTeamDataSourcesFkDeleteAsyncWithHttpInfo(id, fk);
+
+        }
+
+        /// <summary>
+        /// Delete a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamDataSourcesFkDeleteAsyncWithHttpInfo (string id, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Find a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>DataSource</returns>
+        public DataSource TeamMembersIdTeamDataSourcesFkGet (string id, string fk)
+        {
+             ApiResponse<DataSource> localVarResponse = TeamMembersIdTeamDataSourcesFkGetWithHttpInfo(id, fk);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Find a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        public ApiResponse< DataSource > TeamMembersIdTeamDataSourcesFkGetWithHttpInfo (string id, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
+            
+        }
+
+        /// <summary>
+        /// Find a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of DataSource</returns>
+        public async System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesFkGetAsync (string id, string fk)
+        {
+             ApiResponse<DataSource> localVarResponse = await TeamMembersIdTeamDataSourcesFkGetAsyncWithHttpInfo(id, fk);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Find a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesFkGetAsyncWithHttpInfo (string id, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>DataSource</returns>
+        public DataSource TeamMembersIdTeamDataSourcesFkPut (string id, string fk, DataSource data = null)
+        {
+             ApiResponse<DataSource> localVarResponse = TeamMembersIdTeamDataSourcesFkPutWithHttpInfo(id, fk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        public ApiResponse< DataSource > TeamMembersIdTeamDataSourcesFkPutWithHttpInfo (string id, string fk, DataSource data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkPut");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of DataSource</returns>
+        public async System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesFkPutAsync (string id, string fk, DataSource data = null)
+        {
+             ApiResponse<DataSource> localVarResponse = await TeamMembersIdTeamDataSourcesFkPutAsyncWithHttpInfo(id, fk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update a related item by id for dataSources. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="fk">Foreign key for dataSources</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesFkPutAsyncWithHttpInfo (string id, string fk, DataSource data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesFkPut");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
+            
+        }
+
+        /// <summary>
+        /// Queries dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;DataSource&gt;</returns>
+        public List<DataSource> TeamMembersIdTeamDataSourcesGet (string id, string filter = null)
+        {
+             ApiResponse<List<DataSource>> localVarResponse = TeamMembersIdTeamDataSourcesGetWithHttpInfo(id, filter);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Queries dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;DataSource&gt;</returns>
+        public ApiResponse< List<DataSource> > TeamMembersIdTeamDataSourcesGetWithHttpInfo (string id, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<DataSource>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<DataSource>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<DataSource>)));
+            
+        }
+
+        /// <summary>
+        /// Queries dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;DataSource&gt;</returns>
+        public async System.Threading.Tasks.Task<List<DataSource>> TeamMembersIdTeamDataSourcesGetAsync (string id, string filter = null)
+        {
+             ApiResponse<List<DataSource>> localVarResponse = await TeamMembersIdTeamDataSourcesGetAsyncWithHttpInfo(id, filter);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Queries dataSources of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;DataSource&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<DataSource>>> TeamMembersIdTeamDataSourcesGetAsyncWithHttpInfo (string id, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<DataSource>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<DataSource>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<DataSource>)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>DataSource</returns>
+        public DataSource TeamMembersIdTeamDataSourcesPost (string id, DataSource data = null)
+        {
+             ApiResponse<DataSource> localVarResponse = TeamMembersIdTeamDataSourcesPostWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of DataSource</returns>
+        public ApiResponse< DataSource > TeamMembersIdTeamDataSourcesPostWithHttpInfo (string id, DataSource data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of DataSource</returns>
+        public async System.Threading.Tasks.Task<DataSource> TeamMembersIdTeamDataSourcesPostAsync (string id, DataSource data = null)
+        {
+             ApiResponse<DataSource> localVarResponse = await TeamMembersIdTeamDataSourcesPostAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in dataSources of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (DataSource)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DataSource>> TeamMembersIdTeamDataSourcesPostAsyncWithHttpInfo (string id, DataSource data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamDataSourcesPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/dataSources";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamDataSourcesPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DataSource>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DataSource) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DataSource)));
             
         }
 

@@ -121,6 +121,13 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBrandGet**](TeamMemberApi.md#teammembersidteambrandget) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
 [**TeamMembersIdTeamBrandPost**](TeamMemberApi.md#teammembersidteambrandpost) | **POST** /TeamMembers/{id}/team/brand | Creates a new instance in brand of this model.
 [**TeamMembersIdTeamBrandPut**](TeamMemberApi.md#teammembersidteambrandput) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
+[**TeamMembersIdTeamDataSourcesCountGet**](TeamMemberApi.md#teammembersidteamdatasourcescountget) | **GET** /TeamMembers/{id}/team/dataSources/count | Counts dataSources of Team.
+[**TeamMembersIdTeamDataSourcesDelete**](TeamMemberApi.md#teammembersidteamdatasourcesdelete) | **DELETE** /TeamMembers/{id}/team/dataSources | Deletes all dataSources of this model.
+[**TeamMembersIdTeamDataSourcesFkDelete**](TeamMemberApi.md#teammembersidteamdatasourcesfkdelete) | **DELETE** /TeamMembers/{id}/team/dataSources/{fk} | Delete a related item by id for dataSources.
+[**TeamMembersIdTeamDataSourcesFkGet**](TeamMemberApi.md#teammembersidteamdatasourcesfkget) | **GET** /TeamMembers/{id}/team/dataSources/{fk} | Find a related item by id for dataSources.
+[**TeamMembersIdTeamDataSourcesFkPut**](TeamMemberApi.md#teammembersidteamdatasourcesfkput) | **PUT** /TeamMembers/{id}/team/dataSources/{fk} | Update a related item by id for dataSources.
+[**TeamMembersIdTeamDataSourcesGet**](TeamMemberApi.md#teammembersidteamdatasourcesget) | **GET** /TeamMembers/{id}/team/dataSources | Queries dataSources of Team.
+[**TeamMembersIdTeamDataSourcesPost**](TeamMemberApi.md#teammembersidteamdatasourcespost) | **POST** /TeamMembers/{id}/team/dataSources | Creates a new instance in dataSources of this model.
 [**TeamMembersIdTeamGet**](TeamMemberApi.md#teammembersidteamget) | **GET** /TeamMembers/{id}/team | Fetches belongsTo relation team.
 [**TeamMembersIdTeamImageFoldersCountGet**](TeamMemberApi.md#teammembersidteamimagefolderscountget) | **GET** /TeamMembers/{id}/team/imageFolders/count | Counts imageFolders of Team.
 [**TeamMembersIdTeamImageFoldersDelete**](TeamMemberApi.md#teammembersidteamimagefoldersdelete) | **DELETE** /TeamMembers/{id}/team/imageFolders | Deletes all imageFolders of this model.
@@ -8046,6 +8053,473 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBrand**](TeamBrand.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcescountget"></a>
+# **TeamMembersIdTeamDataSourcesCountGet**
+> InlineResponse200 TeamMembersIdTeamDataSourcesCountGet (string id, string where = null)
+
+Counts dataSources of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts dataSources of Team.
+                InlineResponse200 result = apiInstance.TeamMembersIdTeamDataSourcesCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcesdelete"></a>
+# **TeamMembersIdTeamDataSourcesDelete**
+> void TeamMembersIdTeamDataSourcesDelete (string id)
+
+Deletes all dataSources of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Deletes all dataSources of this model.
+                apiInstance.TeamMembersIdTeamDataSourcesDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcesfkdelete"></a>
+# **TeamMembersIdTeamDataSourcesFkDelete**
+> void TeamMembersIdTeamDataSourcesFkDelete (string id, string fk)
+
+Delete a related item by id for dataSources.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dataSources
+
+            try
+            {
+                // Delete a related item by id for dataSources.
+                apiInstance.TeamMembersIdTeamDataSourcesFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dataSources | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcesfkget"></a>
+# **TeamMembersIdTeamDataSourcesFkGet**
+> DataSource TeamMembersIdTeamDataSourcesFkGet (string id, string fk)
+
+Find a related item by id for dataSources.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dataSources
+
+            try
+            {
+                // Find a related item by id for dataSources.
+                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dataSources | 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcesfkput"></a>
+# **TeamMembersIdTeamDataSourcesFkPut**
+> DataSource TeamMembersIdTeamDataSourcesFkPut (string id, string fk, DataSource data = null)
+
+Update a related item by id for dataSources.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dataSources
+            var data = new DataSource(); // DataSource |  (optional) 
+
+            try
+            {
+                // Update a related item by id for dataSources.
+                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dataSources | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcesget"></a>
+# **TeamMembersIdTeamDataSourcesGet**
+> List<DataSource> TeamMembersIdTeamDataSourcesGet (string id, string filter = null)
+
+Queries dataSources of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries dataSources of Team.
+                List&lt;DataSource&gt; result = apiInstance.TeamMembersIdTeamDataSourcesGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DataSource>**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdatasourcespost"></a>
+# **TeamMembersIdTeamDataSourcesPost**
+> DataSource TeamMembersIdTeamDataSourcesPost (string id, DataSource data = null)
+
+Creates a new instance in dataSources of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDataSourcesPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new DataSource(); // DataSource |  (optional) 
+
+            try
+            {
+                // Creates a new instance in dataSources of this model.
+                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
 
 ### Authorization
 

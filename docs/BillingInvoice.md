@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] 
 **EndingBalance** | **double?** |  | [optional] 
 **Forgiven** | **bool?** |  | [optional] 
-**Lines** | [**BillingInvoiceLine**](BillingInvoiceLine.md) |  | [optional] 
+**Lines** | [**List&lt;BillingInvoiceLine&gt;**](BillingInvoiceLine.md) |  | [optional] 
 **NextPaymentAttempt** | **DateTime?** |  | [optional] 
 **Paid** | **bool?** |  | [optional] 
 **PeriodEnd** | **DateTime?** |  | [optional] 

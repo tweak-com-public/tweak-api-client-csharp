@@ -1606,6 +1606,97 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesCountGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesCountGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string where = null;
+            //var response = instance.TeamMembersIdTeamDataSourcesCountGet(id, where);
+            //Assert.IsInstanceOf<InlineResponse200> (response, "response is InlineResponse200");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamMembersIdTeamDataSourcesDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesFkDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesFkDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //instance.TeamMembersIdTeamDataSourcesFkDelete(id, fk);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesFkGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesFkGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //var response = instance.TeamMembersIdTeamDataSourcesFkGet(id, fk);
+            //Assert.IsInstanceOf<DataSource> (response, "response is DataSource");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesFkPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesFkPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //DataSource data = null;
+            //var response = instance.TeamMembersIdTeamDataSourcesFkPut(id, fk, data);
+            //Assert.IsInstanceOf<DataSource> (response, "response is DataSource");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string filter = null;
+            //var response = instance.TeamMembersIdTeamDataSourcesGet(id, filter);
+            //Assert.IsInstanceOf<List<DataSource>> (response, "response is List<DataSource>");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamDataSourcesPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamDataSourcesPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //DataSource data = null;
+            //var response = instance.TeamMembersIdTeamDataSourcesPost(id, data);
+            //Assert.IsInstanceOf<DataSource> (response, "response is DataSource");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamGet
         /// </summary>
         [Test]

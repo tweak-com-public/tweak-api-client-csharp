@@ -48,6 +48,7 @@ namespace TweakApi.Model
         /// Initializes a new instance of the <see cref="TeamMember" /> class.
         /// </summary>
         /// <param name="Roles">Roles (required).</param>
+        /// <param name="PreviousRoles">PreviousRoles.</param>
         /// <param name="Position">Position.</param>
         /// <param name="OfficePhone">OfficePhone.</param>
         /// <param name="MobilePhone">MobilePhone.</param>
@@ -78,7 +79,7 @@ namespace TweakApi.Model
         /// <param name="DesignFolders">DesignFolders.</param>
         /// <param name="Workflows">Workflows.</param>
         /// <param name="ImageFolders">ImageFolders.</param>
-        public TeamMember(List<string> Roles = null, string Position = null, string OfficePhone = null, string MobilePhone = null, string Website = null, string AddressCity = null, string AddressCountry = null, string AddressLine1 = null, string AddressLine2 = null, string AddressState = null, string AddressZip = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
+        public TeamMember(List<string> Roles = null, List<string> PreviousRoles = null, string Position = null, string OfficePhone = null, string MobilePhone = null, string Website = null, string AddressCity = null, string AddressCountry = null, string AddressLine1 = null, string AddressLine2 = null, string AddressState = null, string AddressZip = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string TeamId = null, Customer Customer = null, Team Team = null, List<Portal> Portals = null, List<Template> UploadedTemplates = null, List<Template> Templates = null, List<InvitationTicket> InvitationTickets = null, List<Design> RequestedDesigns = null, List<DesignExport> RequestedDesignExports = null, List<Design> AssignedDesigns = null, List<Design> ReviewedDesigns = null, List<Design> CommentedDesigns = null, List<DesignComment> DesignComments = null, List<DesignFolder> DesignFolders = null, List<Workflow> Workflows = null, List<ImageFolder> ImageFolders = null)
         {
             // to ensure "Roles" is required (not null)
             if (Roles == null)
@@ -89,6 +90,7 @@ namespace TweakApi.Model
             {
                 this.Roles = Roles;
             }
+            this.PreviousRoles = PreviousRoles;
             this.Position = Position;
             this.OfficePhone = OfficePhone;
             this.MobilePhone = MobilePhone;
@@ -126,6 +128,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="roles", EmitDefaultValue=false)]
         public List<string> Roles { get; set; }
+        /// <summary>
+        /// Gets or Sets PreviousRoles
+        /// </summary>
+        [DataMember(Name="previousRoles", EmitDefaultValue=false)]
+        public List<string> PreviousRoles { get; set; }
         /// <summary>
         /// Gets or Sets Position
         /// </summary>
@@ -285,6 +292,7 @@ namespace TweakApi.Model
             var sb = new StringBuilder();
             sb.Append("class TeamMember {\n");
             sb.Append("  Roles: ").Append(Roles).Append("\n");
+            sb.Append("  PreviousRoles: ").Append(PreviousRoles).Append("\n");
             sb.Append("  Position: ").Append(Position).Append("\n");
             sb.Append("  OfficePhone: ").Append(OfficePhone).Append("\n");
             sb.Append("  MobilePhone: ").Append(MobilePhone).Append("\n");
@@ -355,6 +363,11 @@ namespace TweakApi.Model
                     this.Roles == other.Roles ||
                     this.Roles != null &&
                     this.Roles.SequenceEqual(other.Roles)
+                ) && 
+                (
+                    this.PreviousRoles == other.PreviousRoles ||
+                    this.PreviousRoles != null &&
+                    this.PreviousRoles.SequenceEqual(other.PreviousRoles)
                 ) && 
                 (
                     this.Position == other.Position ||
@@ -521,6 +534,8 @@ namespace TweakApi.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Roles != null)
                     hash = hash * 59 + this.Roles.GetHashCode();
+                if (this.PreviousRoles != null)
+                    hash = hash * 59 + this.PreviousRoles.GetHashCode();
                 if (this.Position != null)
                     hash = hash * 59 + this.Position.GetHashCode();
                 if (this.OfficePhone != null)

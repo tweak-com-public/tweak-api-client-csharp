@@ -197,6 +197,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Members'
         }
         /// <summary>
+        /// Test the property 'DataSources'
+        /// </summary>
+        [Test]
+        public void DataSourcesTest()
+        {
+            // TODO unit test for the property 'DataSources'
+        }
+        /// <summary>
         /// Test the property 'TeamMembers'
         /// </summary>
         [Test]
