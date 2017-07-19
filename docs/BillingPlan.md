@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **StatementDescription** | **string** |  | [optional] 
 **TrialPeriodDays** | **double?** |  | [optional] 
 **Type** | **string** |  | [optional] 
+**Limit** | [**BillingLimit**](BillingLimit.md) |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
