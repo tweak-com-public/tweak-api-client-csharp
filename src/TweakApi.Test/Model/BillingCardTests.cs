@@ -125,6 +125,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Cvc'
         }
         /// <summary>
+        /// Test the property 'CvcCheck'
+        /// </summary>
+        [Test]
+        public void CvcCheckTest()
+        {
+            // TODO unit test for the property 'CvcCheck'
+        }
+        /// <summary>
         /// Test the property 'Last4'
         /// </summary>
         [Test]
