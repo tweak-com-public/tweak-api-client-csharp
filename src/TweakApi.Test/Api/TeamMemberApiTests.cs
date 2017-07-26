@@ -1555,6 +1555,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamBillingTaxEvidenceGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingTaxEvidenceGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingTaxEvidenceGet(id);
+            //Assert.IsInstanceOf<Object> (response, "response is Object");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamBrandDelete
         /// </summary>
         [Test]

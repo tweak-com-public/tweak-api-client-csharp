@@ -162,6 +162,19 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test BillingsTaxEvidenceCountryVatGet
+        /// </summary>
+        [Test]
+        public void BillingsTaxEvidenceCountryVatGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string country = null;
+            //string vat = null;
+            //var response = instance.BillingsTaxEvidenceCountryVatGet(country, vat);
+            //Assert.IsInstanceOf<Object> (response, "response is Object");
+        }
+        
+        /// <summary>
         /// Test BillingsUpsertWithWherePost
         /// </summary>
         [Test]
