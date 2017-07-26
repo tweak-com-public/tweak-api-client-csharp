@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**BillingsIdReplacePost**](BillingApi.md#billingsidreplacepost) | **POST** /Billings/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**BillingsPut**](BillingApi.md#billingsput) | **PUT** /Billings | Replace an existing model instance or insert a new one into the data source.
 [**BillingsReplaceOrCreatePost**](BillingApi.md#billingsreplaceorcreatepost) | **POST** /Billings/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+[**BillingsTaxEvidenceCountryVatGet**](BillingApi.md#billingstaxevidencecountryvatget) | **GET** /Billings/taxEvidence/{country}/{vat} | Get Tax Evidence by country and VAT
 [**BillingsUpsertWithWherePost**](BillingApi.md#billingsupsertwithwherepost) | **POST** /Billings/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
@@ -457,6 +458,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="billingstaxevidencecountryvatget"></a>
+# **BillingsTaxEvidenceCountryVatGet**
+> Object BillingsTaxEvidenceCountryVatGet (string country, string vat)
+
+Get Tax Evidence by country and VAT
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class BillingsTaxEvidenceCountryVatGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new BillingApi();
+            var country = country_example;  // string | 
+            var vat = vat_example;  // string | 
+
+            try
+            {
+                // Get Tax Evidence by country and VAT
+                Object result = apiInstance.BillingsTaxEvidenceCountryVatGet(country, vat);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingApi.BillingsTaxEvidenceCountryVatGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **country** | **string**|  | 
+ **vat** | **string**|  | 
+
+### Return type
+
+**Object**
 
 ### Authorization
 

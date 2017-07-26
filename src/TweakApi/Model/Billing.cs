@@ -48,13 +48,14 @@ namespace TweakApi.Model
         /// <param name="CompanyCard">CompanyCard.</param>
         /// <param name="Subscription">Subscription.</param>
         /// <param name="Limit">Limit.</param>
+        /// <param name="TaxPercent">TaxPercent (default to 0.0).</param>
         /// <param name="StripeCustomerId">StripeCustomerId.</param>
         /// <param name="StripeCardId">StripeCardId.</param>
         /// <param name="StripeSubscriptionId">StripeSubscriptionId.</param>
         /// <param name="Id">Id.</param>
         /// <param name="TeamId">TeamId.</param>
         /// <param name="Team">Team.</param>
-        public Billing(string CompanyName = null, string CompanyEmail = null, string CompanyVat = null, BillingCard CompanyCard = null, BillingSubscription Subscription = null, BillingLimit Limit = null, string StripeCustomerId = null, string StripeCardId = null, string StripeSubscriptionId = null, string Id = null, string TeamId = null, Team Team = null)
+        public Billing(string CompanyName = null, string CompanyEmail = null, string CompanyVat = null, BillingCard CompanyCard = null, BillingSubscription Subscription = null, BillingLimit Limit = null, double? TaxPercent = null, string StripeCustomerId = null, string StripeCardId = null, string StripeSubscriptionId = null, string Id = null, string TeamId = null, Team Team = null)
         {
             this.CompanyName = CompanyName;
             this.CompanyEmail = CompanyEmail;
@@ -62,6 +63,15 @@ namespace TweakApi.Model
             this.CompanyCard = CompanyCard;
             this.Subscription = Subscription;
             this.Limit = Limit;
+            // use default value if no "TaxPercent" provided
+            if (TaxPercent == null)
+            {
+                this.TaxPercent = 0.0;
+            }
+            else
+            {
+                this.TaxPercent = TaxPercent;
+            }
             this.StripeCustomerId = StripeCustomerId;
             this.StripeCardId = StripeCardId;
             this.StripeSubscriptionId = StripeSubscriptionId;
@@ -100,6 +110,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="limit", EmitDefaultValue=false)]
         public BillingLimit Limit { get; set; }
+        /// <summary>
+        /// Gets or Sets TaxPercent
+        /// </summary>
+        [DataMember(Name="taxPercent", EmitDefaultValue=false)]
+        public double? TaxPercent { get; set; }
         /// <summary>
         /// Gets or Sets StripeCustomerId
         /// </summary>
@@ -144,6 +159,7 @@ namespace TweakApi.Model
             sb.Append("  CompanyCard: ").Append(CompanyCard).Append("\n");
             sb.Append("  Subscription: ").Append(Subscription).Append("\n");
             sb.Append("  Limit: ").Append(Limit).Append("\n");
+            sb.Append("  TaxPercent: ").Append(TaxPercent).Append("\n");
             sb.Append("  StripeCustomerId: ").Append(StripeCustomerId).Append("\n");
             sb.Append("  StripeCardId: ").Append(StripeCardId).Append("\n");
             sb.Append("  StripeSubscriptionId: ").Append(StripeSubscriptionId).Append("\n");
@@ -217,6 +233,11 @@ namespace TweakApi.Model
                     this.Limit.Equals(other.Limit)
                 ) && 
                 (
+                    this.TaxPercent == other.TaxPercent ||
+                    this.TaxPercent != null &&
+                    this.TaxPercent.Equals(other.TaxPercent)
+                ) && 
+                (
                     this.StripeCustomerId == other.StripeCustomerId ||
                     this.StripeCustomerId != null &&
                     this.StripeCustomerId.Equals(other.StripeCustomerId)
@@ -271,6 +292,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Subscription.GetHashCode();
                 if (this.Limit != null)
                     hash = hash * 59 + this.Limit.GetHashCode();
+                if (this.TaxPercent != null)
+                    hash = hash * 59 + this.TaxPercent.GetHashCode();
                 if (this.StripeCustomerId != null)
                     hash = hash * 59 + this.StripeCustomerId.GetHashCode();
                 if (this.StripeCardId != null)

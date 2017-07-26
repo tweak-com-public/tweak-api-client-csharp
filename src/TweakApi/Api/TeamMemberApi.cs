@@ -2654,6 +2654,27 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Billing</returns>
         ApiResponse<Billing> TeamMembersIdTeamBillingSubscriptionPutWithHttpInfo (string id, TeamMember data = null);
         /// <summary>
+        /// Get Team Billing Tax Evidence
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Object</returns>
+        Object TeamMembersIdTeamBillingTaxEvidenceGet (string id);
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> TeamMembersIdTeamBillingTaxEvidenceGetWithHttpInfo (string id);
+        /// <summary>
         /// Deletes brand of this model.
         /// </summary>
         /// <remarks>
@@ -7962,6 +7983,27 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Billing)</returns>
         System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSubscriptionPutAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Get Team Billing Tax Evidence
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> TeamMembersIdTeamBillingTaxEvidenceGetAsync (string id);
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamBillingTaxEvidenceGetAsyncWithHttpInfo (string id);
         /// <summary>
         /// Deletes brand of this model.
         /// </summary>
@@ -31255,6 +31297,174 @@ namespace TweakApi.Api
             return new ApiResponse<Billing>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Object</returns>
+        public Object TeamMembersIdTeamBillingTaxEvidenceGet (string id)
+        {
+             ApiResponse<Object> localVarResponse = TeamMembersIdTeamBillingTaxEvidenceGetWithHttpInfo(id);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > TeamMembersIdTeamBillingTaxEvidenceGetWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingTaxEvidenceGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/taxEvidence";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingTaxEvidenceGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+            
+        }
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> TeamMembersIdTeamBillingTaxEvidenceGetAsync (string id)
+        {
+             ApiResponse<Object> localVarResponse = await TeamMembersIdTeamBillingTaxEvidenceGetAsyncWithHttpInfo(id);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get Team Billing Tax Evidence 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> TeamMembersIdTeamBillingTaxEvidenceGetAsyncWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingTaxEvidenceGet");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/taxEvidence";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingTaxEvidenceGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
             
         }
 

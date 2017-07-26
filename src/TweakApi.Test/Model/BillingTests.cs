@@ -125,6 +125,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Limit'
         }
         /// <summary>
+        /// Test the property 'TaxPercent'
+        /// </summary>
+        [Test]
+        public void TaxPercentTest()
+        {
+            // TODO unit test for the property 'TaxPercent'
+        }
+        /// <summary>
         /// Test the property 'StripeCustomerId'
         /// </summary>
         [Test]

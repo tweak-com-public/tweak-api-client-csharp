@@ -89,6 +89,7 @@ Class | Method | HTTP request | Description
 *BillingApi* | [**BillingsIdReplacePost**](docs/BillingApi.md#billingsidreplacepost) | **POST** /Billings/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *BillingApi* | [**BillingsPut**](docs/BillingApi.md#billingsput) | **PUT** /Billings | Replace an existing model instance or insert a new one into the data source.
 *BillingApi* | [**BillingsReplaceOrCreatePost**](docs/BillingApi.md#billingsreplaceorcreatepost) | **POST** /Billings/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*BillingApi* | [**BillingsTaxEvidenceCountryVatGet**](docs/BillingApi.md#billingstaxevidencecountryvatget) | **GET** /Billings/taxEvidence/{country}/{vat} | Get Tax Evidence by country and VAT
 *BillingApi* | [**BillingsUpsertWithWherePost**](docs/BillingApi.md#billingsupsertwithwherepost) | **POST** /Billings/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *CustomerApi* | [**CustomersChangePasswordPost**](docs/CustomerApi.md#customerschangepasswordpost) | **POST** /Customers/change-password | Change a user's password.
 *CustomerApi* | [**CustomersChangeStreamGet**](docs/CustomerApi.md#customerschangestreamget) | **GET** /Customers/change-stream | Create a change stream.
@@ -1302,6 +1303,7 @@ Class | Method | HTTP request | Description
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPost**](docs/TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPut**](docs/TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingSubscriptionPut**](docs/TeamMemberApi.md#teammembersidteambillingsubscriptionput) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+*TeamMemberApi* | [**TeamMembersIdTeamBillingTaxEvidenceGet**](docs/TeamMemberApi.md#teammembersidteambillingtaxevidenceget) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 *TeamMemberApi* | [**TeamMembersIdTeamBrandDelete**](docs/TeamMemberApi.md#teammembersidteambranddelete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBrandGet**](docs/TeamMemberApi.md#teammembersidteambrandget) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
 *TeamMemberApi* | [**TeamMembersIdTeamBrandPost**](docs/TeamMemberApi.md#teammembersidteambrandpost) | **POST** /TeamMembers/{id}/team/brand | Creates a new instance in brand of this model.
