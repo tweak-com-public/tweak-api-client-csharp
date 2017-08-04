@@ -1542,15 +1542,15 @@ namespace TweakApi.Test
         }
         
         /// <summary>
-        /// Test TeamMembersIdTeamBillingSubscriptionPut
+        /// Test TeamMembersIdTeamBillingSubscriptionPlanPut
         /// </summary>
         [Test]
-        public void TeamMembersIdTeamBillingSubscriptionPutTest()
+        public void TeamMembersIdTeamBillingSubscriptionPlanPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //TeamMember data = null;
-            //var response = instance.TeamMembersIdTeamBillingSubscriptionPut(id, data);
+            //var response = instance.TeamMembersIdTeamBillingSubscriptionPlanPut(id, data);
             //Assert.IsInstanceOf<Billing> (response, "response is Billing");
         }
         

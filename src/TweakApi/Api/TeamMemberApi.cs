@@ -2631,7 +2631,7 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Billing</returns>
         ApiResponse<Billing> TeamMembersIdTeamBillingPutWithHttpInfo (string id, Billing data = null);
         /// <summary>
-        /// Update Team Billing Card
+        /// Update Team Billing Subscription Plan
         /// </summary>
         /// <remarks>
         /// 
@@ -2640,10 +2640,10 @@ namespace TweakApi.Api
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Billing</returns>
-        Billing TeamMembersIdTeamBillingSubscriptionPut (string id, TeamMember data = null);
+        Billing TeamMembersIdTeamBillingSubscriptionPlanPut (string id, TeamMember data = null);
 
         /// <summary>
-        /// Update Team Billing Card
+        /// Update Team Billing Subscription Plan
         /// </summary>
         /// <remarks>
         /// 
@@ -2652,7 +2652,7 @@ namespace TweakApi.Api
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of Billing</returns>
-        ApiResponse<Billing> TeamMembersIdTeamBillingSubscriptionPutWithHttpInfo (string id, TeamMember data = null);
+        ApiResponse<Billing> TeamMembersIdTeamBillingSubscriptionPlanPutWithHttpInfo (string id, TeamMember data = null);
         /// <summary>
         /// Get Team Billing Tax Evidence
         /// </summary>
@@ -7961,7 +7961,7 @@ namespace TweakApi.Api
         /// <returns>Task of ApiResponse (Billing)</returns>
         System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingPutAsyncWithHttpInfo (string id, Billing data = null);
         /// <summary>
-        /// Update Team Billing Card
+        /// Update Team Billing Subscription Plan
         /// </summary>
         /// <remarks>
         /// 
@@ -7970,10 +7970,10 @@ namespace TweakApi.Api
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Task of Billing</returns>
-        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSubscriptionPutAsync (string id, TeamMember data = null);
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSubscriptionPlanPutAsync (string id, TeamMember data = null);
 
         /// <summary>
-        /// Update Team Billing Card
+        /// Update Team Billing Subscription Plan
         /// </summary>
         /// <remarks>
         /// 
@@ -7982,7 +7982,7 @@ namespace TweakApi.Api
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Billing)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSubscriptionPutAsyncWithHttpInfo (string id, TeamMember data = null);
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSubscriptionPlanPutAsyncWithHttpInfo (string id, TeamMember data = null);
         /// <summary>
         /// Get Team Billing Tax Evidence
         /// </summary>
@@ -31113,32 +31113,32 @@ namespace TweakApi.Api
         }
 
         /// <summary>
-        /// Update Team Billing Card 
+        /// Update Team Billing Subscription Plan 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Billing</returns>
-        public Billing TeamMembersIdTeamBillingSubscriptionPut (string id, TeamMember data = null)
+        public Billing TeamMembersIdTeamBillingSubscriptionPlanPut (string id, TeamMember data = null)
         {
-             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingSubscriptionPutWithHttpInfo(id, data);
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingSubscriptionPlanPutWithHttpInfo(id, data);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Update Team Billing Card 
+        /// Update Team Billing Subscription Plan 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of Billing</returns>
-        public ApiResponse< Billing > TeamMembersIdTeamBillingSubscriptionPutWithHttpInfo (string id, TeamMember data = null)
+        public ApiResponse< Billing > TeamMembersIdTeamBillingSubscriptionPlanPutWithHttpInfo (string id, TeamMember data = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSubscriptionPut");
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSubscriptionPlanPut");
 
-            var localVarPath = "/TeamMembers/{id}/team/billing/subscription";
+            var localVarPath = "/TeamMembers/{id}/team/billing/subscription/plan";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -31196,7 +31196,7 @@ namespace TweakApi.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSubscriptionPut", localVarResponse);
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSubscriptionPlanPut", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -31207,33 +31207,33 @@ namespace TweakApi.Api
         }
 
         /// <summary>
-        /// Update Team Billing Card 
+        /// Update Team Billing Subscription Plan 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Task of Billing</returns>
-        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSubscriptionPutAsync (string id, TeamMember data = null)
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSubscriptionPlanPutAsync (string id, TeamMember data = null)
         {
-             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingSubscriptionPutAsyncWithHttpInfo(id, data);
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingSubscriptionPlanPutAsyncWithHttpInfo(id, data);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Update Team Billing Card 
+        /// Update Team Billing Subscription Plan 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">TeamMember id</param>
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Billing)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSubscriptionPutAsyncWithHttpInfo (string id, TeamMember data = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSubscriptionPlanPutAsyncWithHttpInfo (string id, TeamMember data = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSubscriptionPut");
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSubscriptionPlanPut");
 
-            var localVarPath = "/TeamMembers/{id}/team/billing/subscription";
+            var localVarPath = "/TeamMembers/{id}/team/billing/subscription/plan";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -31290,7 +31290,7 @@ namespace TweakApi.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSubscriptionPut", localVarResponse);
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSubscriptionPlanPut", localVarResponse);
                 if (exception != null) throw exception;
             }
 

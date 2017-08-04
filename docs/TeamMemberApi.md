@@ -116,7 +116,7 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBillingInvoicesUpcomingGet**](TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 [**TeamMembersIdTeamBillingPost**](TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 [**TeamMembersIdTeamBillingPut**](TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
-[**TeamMembersIdTeamBillingSubscriptionPut**](TeamMemberApi.md#teammembersidteambillingsubscriptionput) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+[**TeamMembersIdTeamBillingSubscriptionPlanPut**](TeamMemberApi.md#teammembersidteambillingsubscriptionplanput) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 [**TeamMembersIdTeamBillingTaxEvidenceGet**](TeamMemberApi.md#teammembersidteambillingtaxevidenceget) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 [**TeamMembersIdTeamBrandDelete**](TeamMemberApi.md#teammembersidteambranddelete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 [**TeamMembersIdTeamBrandGet**](TeamMemberApi.md#teammembersidteambrandget) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
@@ -7734,11 +7734,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteambillingsubscriptionput"></a>
-# **TeamMembersIdTeamBillingSubscriptionPut**
-> Billing TeamMembersIdTeamBillingSubscriptionPut (string id, TeamMember data = null)
+<a name="teammembersidteambillingsubscriptionplanput"></a>
+# **TeamMembersIdTeamBillingSubscriptionPlanPut**
+> Billing TeamMembersIdTeamBillingSubscriptionPlanPut (string id, TeamMember data = null)
 
-Update Team Billing Card
+Update Team Billing Subscription Plan
 
 ### Example
 ```csharp
@@ -7750,7 +7750,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamBillingSubscriptionPutExample
+    public class TeamMembersIdTeamBillingSubscriptionPlanPutExample
     {
         public void main()
         {
@@ -7766,13 +7766,13 @@ namespace Example
 
             try
             {
-                // Update Team Billing Card
-                Billing result = apiInstance.TeamMembersIdTeamBillingSubscriptionPut(id, data);
+                // Update Team Billing Subscription Plan
+                Billing result = apiInstance.TeamMembersIdTeamBillingSubscriptionPlanPut(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingSubscriptionPut: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingSubscriptionPlanPut: " + e.Message );
             }
         }
     }

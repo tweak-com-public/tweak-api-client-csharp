@@ -1302,7 +1302,7 @@ Class | Method | HTTP request | Description
 *TeamMemberApi* | [**TeamMembersIdTeamBillingInvoicesUpcomingGet**](docs/TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPost**](docs/TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBillingPut**](docs/TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
-*TeamMemberApi* | [**TeamMembersIdTeamBillingSubscriptionPut**](docs/TeamMemberApi.md#teammembersidteambillingsubscriptionput) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+*TeamMemberApi* | [**TeamMembersIdTeamBillingSubscriptionPlanPut**](docs/TeamMemberApi.md#teammembersidteambillingsubscriptionplanput) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 *TeamMemberApi* | [**TeamMembersIdTeamBillingTaxEvidenceGet**](docs/TeamMemberApi.md#teammembersidteambillingtaxevidenceget) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 *TeamMemberApi* | [**TeamMembersIdTeamBrandDelete**](docs/TeamMemberApi.md#teammembersidteambranddelete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 *TeamMemberApi* | [**TeamMembersIdTeamBrandGet**](docs/TeamMemberApi.md#teammembersidteambrandget) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
