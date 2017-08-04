@@ -86,7 +86,7 @@ limitations under the License.
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\TweakApi\TweakApi.csproj">
-          <Project>{84D2071F-2EC7-4BB8-86ED-2C7E9DF51AE6}</Project>
+          <Project>{508E1D13-889B-4FC1-A5BC-D45BB9D96A69}</Project>
           <Name>TweakApi</Name>
       </ProjectReference>
   </ItemGroup>
