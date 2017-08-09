@@ -141,6 +141,7 @@ Method | HTTP request | Description
 [**CustomersInvitationTicketsTokenGet**](CustomerApi.md#customersinvitationticketstokenget) | **GET** /Customers/invitationTickets/{token} | Get invitation details with token
 [**CustomersLoginPost**](CustomerApi.md#customersloginpost) | **POST** /Customers/login | Login a user with username/email and password.
 [**CustomersLogoutPost**](CustomerApi.md#customerslogoutpost) | **POST** /Customers/logout | Logout a user with access token.
+[**CustomersMeTokenGet**](CustomerApi.md#customersmetokenget) | **GET** /Customers/me/token | Get token info
 [**CustomersPatch**](CustomerApi.md#customerspatch) | **PATCH** /Customers | Patch an existing model instance or insert a new one into the data source.
 [**CustomersPost**](CustomerApi.md#customerspost) | **POST** /Customers | Create a new instance of the model and persist it into the data source.
 [**CustomersPut**](CustomerApi.md#customersput) | **PUT** /Customers | Replace an existing model instance or insert a new one into the data source.
@@ -9417,6 +9418,67 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersmetokenget"></a>
+# **CustomersMeTokenGet**
+> TeamMemberAccessToken CustomersMeTokenGet ()
+
+Get token info
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersMeTokenGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+
+            try
+            {
+                // Get token info
+                TeamMemberAccessToken result = apiInstance.CustomersMeTokenGet();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersMeTokenGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**TeamMemberAccessToken**](TeamMemberAccessToken.md)
 
 ### Authorization
 
