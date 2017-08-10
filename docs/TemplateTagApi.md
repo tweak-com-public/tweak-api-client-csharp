@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 <a name="templatetagsidexistsget"></a>
 # **TemplateTagsIdExistsGet**
-> InlineResponse2002 TemplateTagsIdExistsGet (string id)
+> InlineResponse2001 TemplateTagsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -448,7 +448,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplateTagsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TemplateTagsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -550,7 +550,7 @@ Name | Type | Description  | Notes
 
 <a name="templatetagsidhead"></a>
 # **TemplateTagsIdHead**
-> InlineResponse2002 TemplateTagsIdHead (string id)
+> InlineResponse2001 TemplateTagsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -580,7 +580,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplateTagsIdHead(id);
+                InlineResponse2001 result = apiInstance.TemplateTagsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="templatetagsupdatepost"></a>
 # **TemplateTagsUpdatePost**
-> InlineResponse2001 TemplateTagsUpdatePost (string where = null, TemplateTag data = null)
+> InlineResponse2002 TemplateTagsUpdatePost (string where = null, TemplateTag data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TemplateTagsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TemplateTagsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

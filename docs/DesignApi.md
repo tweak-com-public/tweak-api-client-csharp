@@ -2495,7 +2495,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidexistsget"></a>
 # **DesignsIdExistsGet**
-> InlineResponse2002 DesignsIdExistsGet (string id)
+> InlineResponse2001 DesignsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -2525,7 +2525,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.DesignsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2545,7 +2545,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3161,7 +3161,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidhead"></a>
 # **DesignsIdHead**
-> InlineResponse2002 DesignsIdHead (string id)
+> InlineResponse2001 DesignsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -3191,7 +3191,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignsIdHead(id);
+                InlineResponse2001 result = apiInstance.DesignsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3211,7 +3211,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4758,7 +4758,7 @@ Name | Type | Description  | Notes
 
 <a name="designsupdatepost"></a>
 # **DesignsUpdatePost**
-> InlineResponse2001 DesignsUpdatePost (string where = null, Design data = null)
+> InlineResponse2002 DesignsUpdatePost (string where = null, Design data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -4789,7 +4789,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.DesignsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.DesignsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4810,7 +4810,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

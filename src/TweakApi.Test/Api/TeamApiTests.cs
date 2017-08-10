@@ -350,7 +350,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TeamsIdExistsGet(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -375,7 +375,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TeamsIdHead(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -3738,6 +3738,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamsNameNameExistsGet
+        /// </summary>
+        [Test]
+        public void TeamsNameNameExistsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string name = null;
+            //var response = instance.TeamsNameNameExistsGet(name);
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+        }
+        
+        /// <summary>
         /// Test TeamsPatch
         /// </summary>
         [Test]
@@ -3786,6 +3798,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamsSubdomainSubdomainExistsGet
+        /// </summary>
+        [Test]
+        public void TeamsSubdomainSubdomainExistsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string subdomain = null;
+            //var response = instance.TeamsSubdomainSubdomainExistsGet(subdomain);
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+        }
+        
+        /// <summary>
         /// Test TeamsUpdatePost
         /// </summary>
         [Test]
@@ -3795,7 +3819,7 @@ namespace TweakApi.Test
             //string where = null;
             //Team data = null;
             //var response = instance.TeamsUpdatePost(where, data);
-            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
         }
         
         /// <summary>

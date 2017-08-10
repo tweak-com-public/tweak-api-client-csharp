@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**CustomersChangeStreamPost**](CustomerApi.md#customerschangestreampost) | **POST** /Customers/change-stream | Create a change stream.
 [**CustomersConfirmGet**](CustomerApi.md#customersconfirmget) | **GET** /Customers/confirm | Confirm a user registration with identity verification token.
 [**CustomersCountGet**](CustomerApi.md#customerscountget) | **GET** /Customers/count | Count instances of the model matched by where from the data source.
+[**CustomersEmailEmailExistsGet**](CustomerApi.md#customersemailemailexistsget) | **GET** /Customers/email/{email}/exists | Define whether customer exists or not
 [**CustomersFindOneGet**](CustomerApi.md#customersfindoneget) | **GET** /Customers/findOne | Find first instance of the model matched by filter from the data source.
 [**CustomersGet**](CustomerApi.md#customersget) | **GET** /Customers | Find all instances of the model matched by filter from the data source.
 [**CustomersIdAccessTokensCountGet**](CustomerApi.md#customersidaccesstokenscountget) | **GET** /Customers/{id}/accessTokens/count | Counts accessTokens of Customer.
@@ -470,6 +471,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersemailemailexistsget"></a>
+# **CustomersEmailEmailExistsGet**
+> InlineResponse2001 CustomersEmailEmailExistsGet (string email)
+
+Define whether customer exists or not
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersEmailEmailExistsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var email = email_example;  // string | Customer email
+
+            try
+            {
+                // Define whether customer exists or not
+                InlineResponse2001 result = apiInstance.CustomersEmailEmailExistsGet(email);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersEmailEmailExistsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **email** | **string**| Customer email | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1678,7 +1744,7 @@ Name | Type | Description  | Notes
 
 <a name="customersidexistsget"></a>
 # **CustomersIdExistsGet**
-> InlineResponse2002 CustomersIdExistsGet (string id)
+> InlineResponse2001 CustomersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1708,7 +1774,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.CustomersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.CustomersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1728,7 +1794,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1810,7 +1876,7 @@ Name | Type | Description  | Notes
 
 <a name="customersidhead"></a>
 # **CustomersIdHead**
-> InlineResponse2002 CustomersIdHead (string id)
+> InlineResponse2001 CustomersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1840,7 +1906,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.CustomersIdHead(id);
+                InlineResponse2001 result = apiInstance.CustomersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1860,7 +1926,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9946,7 +10012,7 @@ void (empty response body)
 
 <a name="customersupdatepost"></a>
 # **CustomersUpdatePost**
-> InlineResponse2001 CustomersUpdatePost (string where = null, Customer data = null)
+> InlineResponse2002 CustomersUpdatePost (string where = null, Customer data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -9977,7 +10043,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.CustomersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.CustomersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9998,7 +10064,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

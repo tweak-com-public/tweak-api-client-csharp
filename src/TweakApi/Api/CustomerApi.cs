@@ -148,6 +148,27 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of InlineResponse200</returns>
         ApiResponse<InlineResponse200> CustomersCountGetWithHttpInfo (string where = null);
         /// <summary>
+        /// Define whether customer exists or not
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 CustomersEmailEmailExistsGet (string email);
+
+        /// <summary>
+        /// Define whether customer exists or not
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> CustomersEmailEmailExistsGetWithHttpInfo (string email);
+        /// <summary>
         /// Find first instance of the model matched by filter from the data source.
         /// </summary>
         /// <remarks>
@@ -561,8 +582,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 CustomersIdExistsGet (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 CustomersIdExistsGet (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -572,8 +593,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> CustomersIdExistsGetWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> CustomersIdExistsGetWithHttpInfo (string id);
         /// <summary>
         /// Find a model instance by {{id}} from the data source.
         /// </summary>
@@ -605,8 +626,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 CustomersIdHead (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 CustomersIdHead (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -616,8 +637,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> CustomersIdHeadWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> CustomersIdHeadWithHttpInfo (string id);
         /// <summary>
         /// Counts invitationTickets of Customer.
         /// </summary>
@@ -3498,8 +3519,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 CustomersUpdatePost (string where = null, Customer data = null);
+        /// <returns>InlineResponse2002</returns>
+        InlineResponse2002 CustomersUpdatePost (string where = null, Customer data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -3510,8 +3531,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> CustomersUpdatePostWithHttpInfo (string where = null, Customer data = null);
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        ApiResponse<InlineResponse2002> CustomersUpdatePostWithHttpInfo (string where = null, Customer data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -3648,6 +3669,27 @@ namespace TweakApi.Api
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse200)</returns>
         System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> CustomersCountGetAsyncWithHttpInfo (string where = null);
+        /// <summary>
+        /// Define whether customer exists or not
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> CustomersEmailEmailExistsGetAsync (string email);
+
+        /// <summary>
+        /// Define whether customer exists or not
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersEmailEmailExistsGetAsyncWithHttpInfo (string email);
         /// <summary>
         /// Find first instance of the model matched by filter from the data source.
         /// </summary>
@@ -4062,8 +4104,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> CustomersIdExistsGetAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> CustomersIdExistsGetAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -4073,8 +4115,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersIdExistsGetAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersIdExistsGetAsyncWithHttpInfo (string id);
         /// <summary>
         /// Find a model instance by {{id}} from the data source.
         /// </summary>
@@ -4106,8 +4148,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> CustomersIdHeadAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> CustomersIdHeadAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -4117,8 +4159,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersIdHeadAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersIdHeadAsyncWithHttpInfo (string id);
         /// <summary>
         /// Counts invitationTickets of Customer.
         /// </summary>
@@ -6999,8 +7041,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> CustomersUpdatePostAsync (string where = null, Customer data = null);
+        /// <returns>Task of InlineResponse2002</returns>
+        System.Threading.Tasks.Task<InlineResponse2002> CustomersUpdatePostAsync (string where = null, Customer data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -7011,8 +7053,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersUpdatePostAsyncWithHttpInfo (string where = null, Customer data = null);
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersUpdatePostAsyncWithHttpInfo (string where = null, Customer data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -7993,6 +8035,174 @@ namespace TweakApi.Api
             return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Define whether customer exists or not 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 CustomersEmailEmailExistsGet (string email)
+        {
+             ApiResponse<InlineResponse2001> localVarResponse = CustomersEmailEmailExistsGetWithHttpInfo(email);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Define whether customer exists or not 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > CustomersEmailEmailExistsGetWithHttpInfo (string email)
+        {
+            // verify the required parameter 'email' is set
+            if (email == null)
+                throw new ApiException(400, "Missing required parameter 'email' when calling CustomerApi->CustomersEmailEmailExistsGet");
+
+            var localVarPath = "/Customers/email/{email}/exists";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (email != null) localVarPathParams.Add("email", Configuration.ApiClient.ParameterToString(email)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersEmailEmailExistsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+            
+        }
+
+        /// <summary>
+        /// Define whether customer exists or not 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> CustomersEmailEmailExistsGetAsync (string email)
+        {
+             ApiResponse<InlineResponse2001> localVarResponse = await CustomersEmailEmailExistsGetAsyncWithHttpInfo(email);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Define whether customer exists or not 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="email">Customer email</param>
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersEmailEmailExistsGetAsyncWithHttpInfo (string email)
+        {
+            // verify the required parameter 'email' is set
+            if (email == null)
+                throw new ApiException(400, "Missing required parameter 'email' when calling CustomerApi->CustomersEmailEmailExistsGet");
+
+            var localVarPath = "/Customers/email/{email}/exists";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (email != null) localVarPathParams.Add("email", Configuration.ApiClient.ParameterToString(email)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersEmailEmailExistsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -11181,10 +11391,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 CustomersIdExistsGet (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 CustomersIdExistsGet (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = CustomersIdExistsGetWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = CustomersIdExistsGetWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -11193,8 +11403,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > CustomersIdExistsGetWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > CustomersIdExistsGetWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -11254,9 +11464,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -11265,10 +11475,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> CustomersIdExistsGetAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> CustomersIdExistsGetAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await CustomersIdExistsGetAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await CustomersIdExistsGetAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -11278,8 +11488,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersIdExistsGetAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersIdExistsGetAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -11338,9 +11548,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -11523,10 +11733,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 CustomersIdHead (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 CustomersIdHead (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = CustomersIdHeadWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = CustomersIdHeadWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -11535,8 +11745,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > CustomersIdHeadWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > CustomersIdHeadWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -11596,9 +11806,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -11607,10 +11817,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> CustomersIdHeadAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> CustomersIdHeadAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await CustomersIdHeadAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await CustomersIdHeadAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -11620,8 +11830,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersIdHeadAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersIdHeadAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -11680,9 +11890,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -34060,10 +34270,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 CustomersUpdatePost (string where = null, Customer data = null)
+        /// <returns>InlineResponse2002</returns>
+        public InlineResponse2002 CustomersUpdatePost (string where = null, Customer data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = CustomersUpdatePostWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = CustomersUpdatePostWithHttpInfo(where, data);
              return localVarResponse.Data;
         }
 
@@ -34073,8 +34283,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse< InlineResponse2001 > CustomersUpdatePostWithHttpInfo (string where = null, Customer data = null)
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        public ApiResponse< InlineResponse2002 > CustomersUpdatePostWithHttpInfo (string where = null, Customer data = null)
         {
 
             var localVarPath = "/Customers/update";
@@ -34139,9 +34349,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 
@@ -34151,10 +34361,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> CustomersUpdatePostAsync (string where = null, Customer data = null)
+        /// <returns>Task of InlineResponse2002</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2002> CustomersUpdatePostAsync (string where = null, Customer data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await CustomersUpdatePostAsyncWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = await CustomersUpdatePostAsyncWithHttpInfo(where, data);
              return localVarResponse.Data;
 
         }
@@ -34165,8 +34375,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> CustomersUpdatePostAsyncWithHttpInfo (string where = null, Customer data = null)
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> CustomersUpdatePostAsyncWithHttpInfo (string where = null, Customer data = null)
         {
 
             var localVarPath = "/Customers/update";
@@ -34230,9 +34440,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 

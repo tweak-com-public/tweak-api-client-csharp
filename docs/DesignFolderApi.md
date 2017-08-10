@@ -1367,7 +1367,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersidexistsget"></a>
 # **DesignFoldersIdExistsGet**
-> InlineResponse2002 DesignFoldersIdExistsGet (string id)
+> InlineResponse2001 DesignFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1397,7 +1397,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignFoldersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.DesignFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1417,7 +1417,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1499,7 +1499,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersidhead"></a>
 # **DesignFoldersIdHead**
-> InlineResponse2002 DesignFoldersIdHead (string id)
+> InlineResponse2001 DesignFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1529,7 +1529,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignFoldersIdHead(id);
+                InlineResponse2001 result = apiInstance.DesignFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1549,7 +1549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2226,7 +2226,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersupdatepost"></a>
 # **DesignFoldersUpdatePost**
-> InlineResponse2001 DesignFoldersUpdatePost (string where = null, DesignFolder data = null)
+> InlineResponse2002 DesignFoldersUpdatePost (string where = null, DesignFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2257,7 +2257,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.DesignFoldersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.DesignFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2278,7 +2278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

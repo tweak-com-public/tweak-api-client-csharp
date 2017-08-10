@@ -426,7 +426,7 @@ Name | Type | Description  | Notes
 
 <a name="invitationticketsidexistsget"></a>
 # **InvitationTicketsIdExistsGet**
-> InlineResponse2002 InvitationTicketsIdExistsGet (string id)
+> InlineResponse2001 InvitationTicketsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -456,7 +456,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.InvitationTicketsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.InvitationTicketsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -476,7 +476,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -558,7 +558,7 @@ Name | Type | Description  | Notes
 
 <a name="invitationticketsidhead"></a>
 # **InvitationTicketsIdHead**
-> InlineResponse2002 InvitationTicketsIdHead (string id)
+> InlineResponse2001 InvitationTicketsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -588,7 +588,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.InvitationTicketsIdHead(id);
+                InlineResponse2001 result = apiInstance.InvitationTicketsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1754,7 +1754,7 @@ Name | Type | Description  | Notes
 
 <a name="invitationticketsupdatepost"></a>
 # **InvitationTicketsUpdatePost**
-> InlineResponse2001 InvitationTicketsUpdatePost (string where = null, InvitationTicket data = null)
+> InlineResponse2002 InvitationTicketsUpdatePost (string where = null, InvitationTicket data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1785,7 +1785,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.InvitationTicketsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.InvitationTicketsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1806,7 +1806,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

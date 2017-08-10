@@ -170,8 +170,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 TemplatePermissionSetsIdExistsGet (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 TemplatePermissionSetsIdExistsGet (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -181,8 +181,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> TemplatePermissionSetsIdExistsGetWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> TemplatePermissionSetsIdExistsGetWithHttpInfo (string id);
         /// <summary>
         /// Find a model instance by {{id}} from the data source.
         /// </summary>
@@ -214,8 +214,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 TemplatePermissionSetsIdHead (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 TemplatePermissionSetsIdHead (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -225,8 +225,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> TemplatePermissionSetsIdHeadWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> TemplatePermissionSetsIdHeadWithHttpInfo (string id);
         /// <summary>
         /// Patch attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -412,8 +412,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null);
+        /// <returns>InlineResponse2002</returns>
+        InlineResponse2002 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -424,8 +424,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> TemplatePermissionSetsUpdatePostWithHttpInfo (string where = null, TemplatePermissionSet data = null);
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        ApiResponse<InlineResponse2002> TemplatePermissionSetsUpdatePostWithHttpInfo (string where = null, TemplatePermissionSet data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -585,8 +585,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsIdExistsGetAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsIdExistsGetAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -596,8 +596,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo (string id);
         /// <summary>
         /// Find a model instance by {{id}} from the data source.
         /// </summary>
@@ -629,8 +629,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsIdHeadAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsIdHeadAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -640,8 +640,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsIdHeadAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsIdHeadAsyncWithHttpInfo (string id);
         /// <summary>
         /// Patch attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -827,8 +827,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsUpdatePostAsync (string where = null, TemplatePermissionSet data = null);
+        /// <returns>Task of InlineResponse2002</returns>
+        System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsUpdatePostAsync (string where = null, TemplatePermissionSet data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -839,8 +839,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsUpdatePostAsyncWithHttpInfo (string where = null, TemplatePermissionSet data = null);
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsUpdatePostAsyncWithHttpInfo (string where = null, TemplatePermissionSet data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -1959,10 +1959,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 TemplatePermissionSetsIdExistsGet (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 TemplatePermissionSetsIdExistsGet (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = TemplatePermissionSetsIdExistsGetWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = TemplatePermissionSetsIdExistsGetWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -1971,8 +1971,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > TemplatePermissionSetsIdExistsGetWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > TemplatePermissionSetsIdExistsGetWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2032,9 +2032,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2043,10 +2043,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsIdExistsGetAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsIdExistsGetAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -2056,8 +2056,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsIdExistsGetAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2116,9 +2116,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2301,10 +2301,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 TemplatePermissionSetsIdHead (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 TemplatePermissionSetsIdHead (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = TemplatePermissionSetsIdHeadWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = TemplatePermissionSetsIdHeadWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -2313,8 +2313,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > TemplatePermissionSetsIdHeadWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > TemplatePermissionSetsIdHeadWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2374,9 +2374,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2385,10 +2385,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsIdHeadAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsIdHeadAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await TemplatePermissionSetsIdHeadAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await TemplatePermissionSetsIdHeadAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -2398,8 +2398,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsIdHeadAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsIdHeadAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2458,9 +2458,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -3912,10 +3912,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null)
+        /// <returns>InlineResponse2002</returns>
+        public InlineResponse2002 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = TemplatePermissionSetsUpdatePostWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = TemplatePermissionSetsUpdatePostWithHttpInfo(where, data);
              return localVarResponse.Data;
         }
 
@@ -3925,8 +3925,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse< InlineResponse2001 > TemplatePermissionSetsUpdatePostWithHttpInfo (string where = null, TemplatePermissionSet data = null)
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        public ApiResponse< InlineResponse2002 > TemplatePermissionSetsUpdatePostWithHttpInfo (string where = null, TemplatePermissionSet data = null)
         {
 
             var localVarPath = "/TemplatePermissionSets/update";
@@ -3991,9 +3991,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 
@@ -4003,10 +4003,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> TemplatePermissionSetsUpdatePostAsync (string where = null, TemplatePermissionSet data = null)
+        /// <returns>Task of InlineResponse2002</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2002> TemplatePermissionSetsUpdatePostAsync (string where = null, TemplatePermissionSet data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await TemplatePermissionSetsUpdatePostAsyncWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = await TemplatePermissionSetsUpdatePostAsyncWithHttpInfo(where, data);
              return localVarResponse.Data;
 
         }
@@ -4017,8 +4017,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> TemplatePermissionSetsUpdatePostAsyncWithHttpInfo (string where = null, TemplatePermissionSet data = null)
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> TemplatePermissionSetsUpdatePostAsyncWithHttpInfo (string where = null, TemplatePermissionSet data = null)
         {
 
             var localVarPath = "/TemplatePermissionSets/update";
@@ -4082,9 +4082,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 

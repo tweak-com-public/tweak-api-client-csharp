@@ -170,8 +170,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 PortalTemplatesIdExistsGet (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 PortalTemplatesIdExistsGet (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -181,8 +181,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> PortalTemplatesIdExistsGetWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> PortalTemplatesIdExistsGetWithHttpInfo (string id);
         /// <summary>
         /// Fetches belongsTo relation folder.
         /// </summary>
@@ -237,8 +237,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 PortalTemplatesIdHead (string id);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 PortalTemplatesIdHead (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -248,8 +248,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> PortalTemplatesIdHeadWithHttpInfo (string id);
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> PortalTemplatesIdHeadWithHttpInfo (string id);
         /// <summary>
         /// Patch attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -458,8 +458,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null);
+        /// <returns>InlineResponse2002</returns>
+        InlineResponse2002 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -470,8 +470,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> PortalTemplatesUpdatePostWithHttpInfo (string where = null, PortalTemplate data = null);
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        ApiResponse<InlineResponse2002> PortalTemplatesUpdatePostWithHttpInfo (string where = null, PortalTemplate data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -631,8 +631,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesIdExistsGetAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesIdExistsGetAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -642,8 +642,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesIdExistsGetAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesIdExistsGetAsyncWithHttpInfo (string id);
         /// <summary>
         /// Fetches belongsTo relation folder.
         /// </summary>
@@ -698,8 +698,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesIdHeadAsync (string id);
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesIdHeadAsync (string id);
 
         /// <summary>
         /// Check whether a model instance exists in the data source.
@@ -709,8 +709,8 @@ namespace TweakApi.Api
         /// </remarks>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesIdHeadAsyncWithHttpInfo (string id);
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesIdHeadAsyncWithHttpInfo (string id);
         /// <summary>
         /// Patch attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -919,8 +919,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesUpdatePostAsync (string where = null, PortalTemplate data = null);
+        /// <returns>Task of InlineResponse2002</returns>
+        System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesUpdatePostAsync (string where = null, PortalTemplate data = null);
 
         /// <summary>
         /// Update instances of the model matched by {{where}} from the data source.
@@ -931,8 +931,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesUpdatePostAsyncWithHttpInfo (string where = null, PortalTemplate data = null);
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesUpdatePostAsyncWithHttpInfo (string where = null, PortalTemplate data = null);
         /// <summary>
         /// Update an existing model instance or insert a new one into the data source based on the where criteria.
         /// </summary>
@@ -2051,10 +2051,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 PortalTemplatesIdExistsGet (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 PortalTemplatesIdExistsGet (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = PortalTemplatesIdExistsGetWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = PortalTemplatesIdExistsGetWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -2063,8 +2063,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > PortalTemplatesIdExistsGetWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > PortalTemplatesIdExistsGetWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2124,9 +2124,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2135,10 +2135,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesIdExistsGetAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesIdExistsGetAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await PortalTemplatesIdExistsGetAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await PortalTemplatesIdExistsGetAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -2148,8 +2148,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesIdExistsGetAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesIdExistsGetAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2208,9 +2208,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2567,10 +2567,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 PortalTemplatesIdHead (string id)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 PortalTemplatesIdHead (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = PortalTemplatesIdHeadWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = PortalTemplatesIdHeadWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -2579,8 +2579,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse< InlineResponse2002 > PortalTemplatesIdHeadWithHttpInfo (string id)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse< InlineResponse2001 > PortalTemplatesIdHeadWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2640,9 +2640,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -2651,10 +2651,10 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesIdHeadAsync (string id)
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesIdHeadAsync (string id)
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await PortalTemplatesIdHeadAsyncWithHttpInfo(id);
+             ApiResponse<InlineResponse2001> localVarResponse = await PortalTemplatesIdHeadAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -2664,8 +2664,8 @@ namespace TweakApi.Api
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Model id</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesIdHeadAsyncWithHttpInfo (string id)
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesIdHeadAsyncWithHttpInfo (string id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -2724,9 +2724,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
             
         }
 
@@ -4352,10 +4352,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null)
+        /// <returns>InlineResponse2002</returns>
+        public InlineResponse2002 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = PortalTemplatesUpdatePostWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = PortalTemplatesUpdatePostWithHttpInfo(where, data);
              return localVarResponse.Data;
         }
 
@@ -4365,8 +4365,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse< InlineResponse2001 > PortalTemplatesUpdatePostWithHttpInfo (string where = null, PortalTemplate data = null)
+        /// <returns>ApiResponse of InlineResponse2002</returns>
+        public ApiResponse< InlineResponse2002 > PortalTemplatesUpdatePostWithHttpInfo (string where = null, PortalTemplate data = null)
         {
 
             var localVarPath = "/PortalTemplates/update";
@@ -4431,9 +4431,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 
@@ -4443,10 +4443,10 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> PortalTemplatesUpdatePostAsync (string where = null, PortalTemplate data = null)
+        /// <returns>Task of InlineResponse2002</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2002> PortalTemplatesUpdatePostAsync (string where = null, PortalTemplate data = null)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await PortalTemplatesUpdatePostAsyncWithHttpInfo(where, data);
+             ApiResponse<InlineResponse2002> localVarResponse = await PortalTemplatesUpdatePostAsyncWithHttpInfo(where, data);
              return localVarResponse.Data;
 
         }
@@ -4457,8 +4457,8 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="where">Criteria to match model instances (optional)</param>
         /// <param name="data">An object of model property name/value pairs (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> PortalTemplatesUpdatePostAsyncWithHttpInfo (string where = null, PortalTemplate data = null)
+        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> PortalTemplatesUpdatePostAsyncWithHttpInfo (string where = null, PortalTemplate data = null)
         {
 
             var localVarPath = "/PortalTemplates/update";
@@ -4522,9 +4522,9 @@ namespace TweakApi.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2001) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (InlineResponse2002) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
             
         }
 

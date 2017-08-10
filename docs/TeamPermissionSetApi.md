@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="teampermissionsetsidexistsget"></a>
 # **TeamPermissionSetsIdExistsGet**
-> InlineResponse2002 TeamPermissionSetsIdExistsGet (string id)
+> InlineResponse2001 TeamPermissionSetsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -447,7 +447,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamPermissionSetsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TeamPermissionSetsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 <a name="teampermissionsetsidhead"></a>
 # **TeamPermissionSetsIdHead**
-> InlineResponse2002 TeamPermissionSetsIdHead (string id)
+> InlineResponse2001 TeamPermissionSetsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -579,7 +579,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamPermissionSetsIdHead(id);
+                InlineResponse2001 result = apiInstance.TeamPermissionSetsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="teampermissionsetsupdatepost"></a>
 # **TeamPermissionSetsUpdatePost**
-> InlineResponse2001 TeamPermissionSetsUpdatePost (string where = null, TeamPermissionSet data = null)
+> InlineResponse2002 TeamPermissionSetsUpdatePost (string where = null, TeamPermissionSet data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TeamPermissionSetsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TeamPermissionSetsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

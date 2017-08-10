@@ -4289,7 +4289,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidexistsget"></a>
 # **PortalsIdExistsGet**
-> InlineResponse2002 PortalsIdExistsGet (string id)
+> InlineResponse2001 PortalsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4319,7 +4319,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.PortalsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4339,7 +4339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4421,7 +4421,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidhead"></a>
 # **PortalsIdHead**
-> InlineResponse2002 PortalsIdHead (string id)
+> InlineResponse2001 PortalsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4451,7 +4451,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdHead(id);
+                InlineResponse2001 result = apiInstance.PortalsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4471,7 +4471,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9053,7 +9053,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsupdatepost"></a>
 # **PortalsUpdatePost**
-> InlineResponse2001 PortalsUpdatePost (string where = null, Portal data = null)
+> InlineResponse2002 PortalsUpdatePost (string where = null, Portal data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -9084,7 +9084,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.PortalsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.PortalsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9105,7 +9105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

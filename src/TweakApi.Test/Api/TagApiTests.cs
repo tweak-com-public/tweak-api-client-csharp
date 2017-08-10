@@ -288,7 +288,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TagsIdExistsGet(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -313,7 +313,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TagsIdHead(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -544,7 +544,7 @@ namespace TweakApi.Test
             //string where = null;
             //Tag data = null;
             //var response = instance.TagsUpdatePost(where, data);
-            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
         }
         
         /// <summary>

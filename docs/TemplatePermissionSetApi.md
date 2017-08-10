@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="templatepermissionsetsidexistsget"></a>
 # **TemplatePermissionSetsIdExistsGet**
-> InlineResponse2002 TemplatePermissionSetsIdExistsGet (string id)
+> InlineResponse2001 TemplatePermissionSetsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -447,7 +447,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplatePermissionSetsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TemplatePermissionSetsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 <a name="templatepermissionsetsidhead"></a>
 # **TemplatePermissionSetsIdHead**
-> InlineResponse2002 TemplatePermissionSetsIdHead (string id)
+> InlineResponse2001 TemplatePermissionSetsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -579,7 +579,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplatePermissionSetsIdHead(id);
+                InlineResponse2001 result = apiInstance.TemplatePermissionSetsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="templatepermissionsetsupdatepost"></a>
 # **TemplatePermissionSetsUpdatePost**
-> InlineResponse2001 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null)
+> InlineResponse2002 TemplatePermissionSetsUpdatePost (string where = null, TemplatePermissionSet data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TemplatePermissionSetsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TemplatePermissionSetsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

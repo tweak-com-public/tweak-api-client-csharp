@@ -574,7 +574,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TeamMembersIdExistsGet(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -599,7 +599,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.TeamMembersIdHead(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -3069,7 +3069,7 @@ namespace TweakApi.Test
             //string where = null;
             //TeamMember data = null;
             //var response = instance.TeamMembersUpdatePost(where, data);
-            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
         }
         
         /// <summary>
