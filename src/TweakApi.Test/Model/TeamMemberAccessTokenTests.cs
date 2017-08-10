@@ -77,6 +77,14 @@ namespace TweakApi.Test
         }
 
         /// <summary>
+        /// Test the property 'Roles'
+        /// </summary>
+        [Test]
+        public void RolesTest()
+        {
+            // TODO unit test for the property 'Roles'
+        }
+        /// <summary>
         /// Test the property 'Id'
         /// </summary>
         [Test]

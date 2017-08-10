@@ -3324,6 +3324,25 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> CustomersLogoutPostWithHttpInfo ();
         /// <summary>
+        /// Get token info
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>TeamMemberAccessToken</returns>
+        TeamMemberAccessToken CustomersMeTokenGet ();
+
+        /// <summary>
+        /// Get token info
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        ApiResponse<TeamMemberAccessToken> CustomersMeTokenGetWithHttpInfo ();
+        /// <summary>
         /// Patch an existing model instance or insert a new one into the data source.
         /// </summary>
         /// <remarks>
@@ -6805,6 +6824,25 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> CustomersLogoutPostAsyncWithHttpInfo ();
+        /// <summary>
+        /// Get token info
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersMeTokenGetAsync ();
+
+        /// <summary>
+        /// Get token info
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersMeTokenGetAsyncWithHttpInfo ();
         /// <summary>
         /// Patch an existing model instance or insert a new one into the data source.
         /// </summary>
@@ -32632,6 +32670,162 @@ namespace TweakApi.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+
+        /// <summary>
+        /// Get token info 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>TeamMemberAccessToken</returns>
+        public TeamMemberAccessToken CustomersMeTokenGet ()
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = CustomersMeTokenGetWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get token info 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        public ApiResponse< TeamMemberAccessToken > CustomersMeTokenGetWithHttpInfo ()
+        {
+
+            var localVarPath = "/Customers/me/token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersMeTokenGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
+        }
+
+        /// <summary>
+        /// Get token info 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        public async System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersMeTokenGetAsync ()
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = await CustomersMeTokenGetAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get token info 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersMeTokenGetAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "/Customers/me/token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersMeTokenGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
         }
 
         /// <summary>
