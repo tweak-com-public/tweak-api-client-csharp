@@ -48,6 +48,7 @@ namespace TweakApi.Model
         /// Initializes a new instance of the <see cref="DesignFolder" /> class.
         /// </summary>
         /// <param name="Name">Name (required).</param>
+        /// <param name="Description">Description (default to &quot;&quot;).</param>
         /// <param name="Path">Path (default to &quot;/&quot;).</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
@@ -60,7 +61,7 @@ namespace TweakApi.Model
         /// <param name="Parent">Parent.</param>
         /// <param name="Designs">Designs.</param>
         /// <param name="Portal">Portal.</param>
-        public DesignFolder(string Name = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string MemberId = null, string ParentId = null, string PortalId = null, TeamMember Member = null, List<DesignFolder> Children = null, DesignFolder Parent = null, List<Design> Designs = null, Portal Portal = null)
+        public DesignFolder(string Name = null, string Description = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string MemberId = null, string ParentId = null, string PortalId = null, TeamMember Member = null, List<DesignFolder> Children = null, DesignFolder Parent = null, List<Design> Designs = null, Portal Portal = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -70,6 +71,15 @@ namespace TweakApi.Model
             else
             {
                 this.Name = Name;
+            }
+            // use default value if no "Description" provided
+            if (Description == null)
+            {
+                this.Description = "";
+            }
+            else
+            {
+                this.Description = Description;
             }
             // use default value if no "Path" provided
             if (Path == null)
@@ -98,6 +108,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
+        /// <summary>
+        /// Gets or Sets Description
+        /// </summary>
+        [DataMember(Name="description", EmitDefaultValue=false)]
+        public string Description { get; set; }
         /// <summary>
         /// Gets or Sets Path
         /// </summary>
@@ -167,6 +182,7 @@ namespace TweakApi.Model
             var sb = new StringBuilder();
             sb.Append("class DesignFolder {\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  Path: ").Append(Path).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
@@ -219,6 +235,11 @@ namespace TweakApi.Model
                     this.Name == other.Name ||
                     this.Name != null &&
                     this.Name.Equals(other.Name)
+                ) && 
+                (
+                    this.Description == other.Description ||
+                    this.Description != null &&
+                    this.Description.Equals(other.Description)
                 ) && 
                 (
                     this.Path == other.Path ||
@@ -295,6 +316,8 @@ namespace TweakApi.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Name != null)
                     hash = hash * 59 + this.Name.GetHashCode();
+                if (this.Description != null)
+                    hash = hash * 59 + this.Description.GetHashCode();
                 if (this.Path != null)
                     hash = hash * 59 + this.Path.GetHashCode();
                 if (this.Created != null)

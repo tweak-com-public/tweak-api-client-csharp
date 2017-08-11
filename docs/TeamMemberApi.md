@@ -2765,7 +2765,7 @@ Name | Type | Description  | Notes
 
 <a name="teammembersidexistsget"></a>
 # **TeamMembersIdExistsGet**
-> InlineResponse2002 TeamMembersIdExistsGet (string id)
+> InlineResponse2001 TeamMembersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -2795,7 +2795,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamMembersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TeamMembersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2815,7 +2815,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2897,7 +2897,7 @@ Name | Type | Description  | Notes
 
 <a name="teammembersidhead"></a>
 # **TeamMembersIdHead**
-> InlineResponse2002 TeamMembersIdHead (string id)
+> InlineResponse2001 TeamMembersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -2927,7 +2927,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamMembersIdHead(id);
+                InlineResponse2001 result = apiInstance.TeamMembersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2947,7 +2947,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -15500,7 +15500,7 @@ Name | Type | Description  | Notes
 
 <a name="teammembersupdatepost"></a>
 # **TeamMembersUpdatePost**
-> InlineResponse2001 TeamMembersUpdatePost (string where = null, TeamMember data = null)
+> InlineResponse2002 TeamMembersUpdatePost (string where = null, TeamMember data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -15531,7 +15531,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TeamMembersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TeamMembersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -15552,7 +15552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

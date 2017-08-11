@@ -96,6 +96,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**CustomersChangeStreamPost**](docs/CustomerApi.md#customerschangestreampost) | **POST** /Customers/change-stream | Create a change stream.
 *CustomerApi* | [**CustomersConfirmGet**](docs/CustomerApi.md#customersconfirmget) | **GET** /Customers/confirm | Confirm a user registration with identity verification token.
 *CustomerApi* | [**CustomersCountGet**](docs/CustomerApi.md#customerscountget) | **GET** /Customers/count | Count instances of the model matched by where from the data source.
+*CustomerApi* | [**CustomersEmailEmailExistsGet**](docs/CustomerApi.md#customersemailemailexistsget) | **GET** /Customers/email/{email}/exists | Define whether customer exists or not
 *CustomerApi* | [**CustomersFindOneGet**](docs/CustomerApi.md#customersfindoneget) | **GET** /Customers/findOne | Find first instance of the model matched by filter from the data source.
 *CustomerApi* | [**CustomersGet**](docs/CustomerApi.md#customersget) | **GET** /Customers | Find all instances of the model matched by filter from the data source.
 *CustomerApi* | [**CustomersIdAccessTokensCountGet**](docs/CustomerApi.md#customersidaccesstokenscountget) | **GET** /Customers/{id}/accessTokens/count | Counts accessTokens of Customer.
@@ -372,6 +373,7 @@ Class | Method | HTTP request | Description
 *DesignApi* | [**DesignsIdPortalGet**](docs/DesignApi.md#designsidportalget) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 *DesignApi* | [**DesignsIdPut**](docs/DesignApi.md#designsidput) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**DesignsIdRejectPost**](docs/DesignApi.md#designsidrejectpost) | **POST** /Designs/{id}/reject | Reject design
+*DesignApi* | [**DesignsIdRejectionCommentGet**](docs/DesignApi.md#designsidrejectioncommentget) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *DesignApi* | [**DesignsIdReplacePost**](docs/DesignApi.md#designsidreplacepost) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**DesignsIdRequesterGet**](docs/DesignApi.md#designsidrequesterget) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 *DesignApi* | [**DesignsIdReviewerGet**](docs/DesignApi.md#designsidreviewerget) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -675,6 +677,7 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**PortalsIdDesignsNkExportsPost**](docs/PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 *PortalApi* | [**PortalsIdDesignsNkFolderGet**](docs/PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 *PortalApi* | [**PortalsIdDesignsNkPortalGet**](docs/PortalApi.md#portalsiddesignsnkportalget) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+*PortalApi* | [**PortalsIdDesignsNkRejectionCommentGet**](docs/PortalApi.md#portalsiddesignsnkrejectioncommentget) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *PortalApi* | [**PortalsIdDesignsNkRequesterGet**](docs/PortalApi.md#portalsiddesignsnkrequesterget) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 *PortalApi* | [**PortalsIdDesignsNkReviewerGet**](docs/PortalApi.md#portalsiddesignsnkreviewerget) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 *PortalApi* | [**PortalsIdDesignsNkTagsCountGet**](docs/PortalApi.md#portalsiddesignsnktagscountget) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -1185,10 +1188,12 @@ Class | Method | HTTP request | Description
 *TeamApi* | [**TeamsIdWorkflowsFkPut**](docs/TeamApi.md#teamsidworkflowsfkput) | **PUT** /Teams/{id}/workflows/{fk} | Update a related item by id for workflows.
 *TeamApi* | [**TeamsIdWorkflowsGet**](docs/TeamApi.md#teamsidworkflowsget) | **GET** /Teams/{id}/workflows | Queries workflows of Team.
 *TeamApi* | [**TeamsIdWorkflowsPost**](docs/TeamApi.md#teamsidworkflowspost) | **POST** /Teams/{id}/workflows | Creates a new instance in workflows of this model.
+*TeamApi* | [**TeamsNameNameExistsGet**](docs/TeamApi.md#teamsnamenameexistsget) | **GET** /Teams/name/{name}/exists | Define whether team exists or not
 *TeamApi* | [**TeamsPatch**](docs/TeamApi.md#teamspatch) | **PATCH** /Teams | Patch an existing model instance or insert a new one into the data source.
 *TeamApi* | [**TeamsPost**](docs/TeamApi.md#teamspost) | **POST** /Teams | Create a new instance of the model and persist it into the data source.
 *TeamApi* | [**TeamsPut**](docs/TeamApi.md#teamsput) | **PUT** /Teams | Replace an existing model instance or insert a new one into the data source.
 *TeamApi* | [**TeamsReplaceOrCreatePost**](docs/TeamApi.md#teamsreplaceorcreatepost) | **POST** /Teams/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*TeamApi* | [**TeamsSubdomainSubdomainExistsGet**](docs/TeamApi.md#teamssubdomainsubdomainexistsget) | **GET** /Teams/subdomain/{subdomain}/exists | Define whether team exists or not
 *TeamApi* | [**TeamsUpdatePost**](docs/TeamApi.md#teamsupdatepost) | **POST** /Teams/update | Update instances of the model matched by {{where}} from the data source.
 *TeamApi* | [**TeamsUpsertWithWherePost**](docs/TeamApi.md#teamsupsertwithwherepost) | **POST** /Teams/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *TeamMemberApi* | [**TeamMembersChangeStreamGet**](docs/TeamMemberApi.md#teammemberschangestreamget) | **GET** /TeamMembers/change-stream | Create a change stream.

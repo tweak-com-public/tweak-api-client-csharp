@@ -77,12 +77,12 @@ namespace TweakApi.Test
         }
 
         /// <summary>
-        /// Test the property 'Exists'
+        /// Test the property 'Count'
         /// </summary>
         [Test]
-        public void ExistsTest()
+        public void CountTest()
         {
-            // TODO unit test for the property 'Exists'
+            // TODO unit test for the property 'Count'
         }
 
     }

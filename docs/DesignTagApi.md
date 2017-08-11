@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 <a name="designtagsidexistsget"></a>
 # **DesignTagsIdExistsGet**
-> InlineResponse2002 DesignTagsIdExistsGet (string id)
+> InlineResponse2001 DesignTagsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -515,7 +515,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignTagsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.DesignTagsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 <a name="designtagsidhead"></a>
 # **DesignTagsIdHead**
-> InlineResponse2002 DesignTagsIdHead (string id)
+> InlineResponse2001 DesignTagsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -647,7 +647,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignTagsIdHead(id);
+                InlineResponse2001 result = apiInstance.DesignTagsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="designtagsupdatepost"></a>
 # **DesignTagsUpdatePost**
-> InlineResponse2001 DesignTagsUpdatePost (string where = null, DesignTag data = null)
+> InlineResponse2002 DesignTagsUpdatePost (string where = null, DesignTag data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.DesignTagsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.DesignTagsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

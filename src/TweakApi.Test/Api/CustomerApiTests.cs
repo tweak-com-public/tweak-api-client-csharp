@@ -140,6 +140,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test CustomersEmailEmailExistsGet
+        /// </summary>
+        [Test]
+        public void CustomersEmailEmailExistsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string email = null;
+            //var response = instance.CustomersEmailEmailExistsGet(email);
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+        }
+        
+        /// <summary>
         /// Test CustomersFindOneGet
         /// </summary>
         [Test]
@@ -378,7 +390,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.CustomersIdExistsGet(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -403,7 +415,7 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //var response = instance.CustomersIdHead(id);
-            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
         }
         
         /// <summary>
@@ -2030,7 +2042,7 @@ namespace TweakApi.Test
             //string where = null;
             //Customer data = null;
             //var response = instance.CustomersUpdatePost(where, data);
-            //Assert.IsInstanceOf<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf<InlineResponse2002> (response, "response is InlineResponse2002");
         }
         
         /// <summary>

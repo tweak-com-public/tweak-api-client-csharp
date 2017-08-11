@@ -51,6 +51,7 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkExportsPost**](PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**PortalsIdDesignsNkFolderGet**](PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 [**PortalsIdDesignsNkPortalGet**](PortalApi.md#portalsiddesignsnkportalget) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+[**PortalsIdDesignsNkRejectionCommentGet**](PortalApi.md#portalsiddesignsnkrejectioncommentget) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**PortalsIdDesignsNkRequesterGet**](PortalApi.md#portalsiddesignsnkrequesterget) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 [**PortalsIdDesignsNkReviewerGet**](PortalApi.md#portalsiddesignsnkreviewerget) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 [**PortalsIdDesignsNkTagsCountGet**](PortalApi.md#portalsiddesignsnktagscountget) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -3324,6 +3325,75 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="portalsiddesignsnkrejectioncommentget"></a>
+# **PortalsIdDesignsNkRejectionCommentGet**
+> DesignComment PortalsIdDesignsNkRejectionCommentGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkRejectionCommentGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation rejectionComment.
+                DesignComment result = apiInstance.PortalsIdDesignsNkRejectionCommentGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkRejectionCommentGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="portalsiddesignsnkrequesterget"></a>
 # **PortalsIdDesignsNkRequesterGet**
 > TeamMember PortalsIdDesignsNkRequesterGet (string id, string nk, bool? refresh = null)
@@ -4289,7 +4359,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidexistsget"></a>
 # **PortalsIdExistsGet**
-> InlineResponse2002 PortalsIdExistsGet (string id)
+> InlineResponse2001 PortalsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4319,7 +4389,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.PortalsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4339,7 +4409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4421,7 +4491,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidhead"></a>
 # **PortalsIdHead**
-> InlineResponse2002 PortalsIdHead (string id)
+> InlineResponse2001 PortalsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4451,7 +4521,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdHead(id);
+                InlineResponse2001 result = apiInstance.PortalsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4471,7 +4541,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9053,7 +9123,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsupdatepost"></a>
 # **PortalsUpdatePost**
-> InlineResponse2001 PortalsUpdatePost (string where = null, Portal data = null)
+> InlineResponse2002 PortalsUpdatePost (string where = null, Portal data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -9084,7 +9154,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.PortalsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.PortalsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9105,7 +9175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

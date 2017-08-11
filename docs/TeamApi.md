@@ -272,10 +272,12 @@ Method | HTTP request | Description
 [**TeamsIdWorkflowsFkPut**](TeamApi.md#teamsidworkflowsfkput) | **PUT** /Teams/{id}/workflows/{fk} | Update a related item by id for workflows.
 [**TeamsIdWorkflowsGet**](TeamApi.md#teamsidworkflowsget) | **GET** /Teams/{id}/workflows | Queries workflows of Team.
 [**TeamsIdWorkflowsPost**](TeamApi.md#teamsidworkflowspost) | **POST** /Teams/{id}/workflows | Creates a new instance in workflows of this model.
+[**TeamsNameNameExistsGet**](TeamApi.md#teamsnamenameexistsget) | **GET** /Teams/name/{name}/exists | Define whether team exists or not
 [**TeamsPatch**](TeamApi.md#teamspatch) | **PATCH** /Teams | Patch an existing model instance or insert a new one into the data source.
 [**TeamsPost**](TeamApi.md#teamspost) | **POST** /Teams | Create a new instance of the model and persist it into the data source.
 [**TeamsPut**](TeamApi.md#teamsput) | **PUT** /Teams | Replace an existing model instance or insert a new one into the data source.
 [**TeamsReplaceOrCreatePost**](TeamApi.md#teamsreplaceorcreatepost) | **POST** /Teams/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+[**TeamsSubdomainSubdomainExistsGet**](TeamApi.md#teamssubdomainsubdomainexistsget) | **GET** /Teams/subdomain/{subdomain}/exists | Define whether team exists or not
 [**TeamsUpdatePost**](TeamApi.md#teamsupdatepost) | **POST** /Teams/update | Update instances of the model matched by {{where}} from the data source.
 [**TeamsUpsertWithWherePost**](TeamApi.md#teamsupsertwithwherepost) | **POST** /Teams/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
@@ -1669,7 +1671,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidexistsget"></a>
 # **TeamsIdExistsGet**
-> InlineResponse2002 TeamsIdExistsGet (string id)
+> InlineResponse2001 TeamsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1699,7 +1701,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TeamsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1719,7 +1721,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1801,7 +1803,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidhead"></a>
 # **TeamsIdHead**
-> InlineResponse2002 TeamsIdHead (string id)
+> InlineResponse2001 TeamsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1831,7 +1833,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TeamsIdHead(id);
+                InlineResponse2001 result = apiInstance.TeamsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1851,7 +1853,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18520,6 +18522,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teamsnamenameexistsget"></a>
+# **TeamsNameNameExistsGet**
+> InlineResponse2001 TeamsNameNameExistsGet (string name)
+
+Define whether team exists or not
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsNameNameExistsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var name = name_example;  // string | Team name
+
+            try
+            {
+                // Define whether team exists or not
+                InlineResponse2001 result = apiInstance.TeamsNameNameExistsGet(name);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsNameNameExistsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Team name | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teamspatch"></a>
 # **TeamsPatch**
 > Team TeamsPatch (Team data = null)
@@ -18780,9 +18847,74 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teamssubdomainsubdomainexistsget"></a>
+# **TeamsSubdomainSubdomainExistsGet**
+> InlineResponse2001 TeamsSubdomainSubdomainExistsGet (string subdomain)
+
+Define whether team exists or not
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsSubdomainSubdomainExistsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var subdomain = subdomain_example;  // string | Team subdomain
+
+            try
+            {
+                // Define whether team exists or not
+                InlineResponse2001 result = apiInstance.TeamsSubdomainSubdomainExistsGet(subdomain);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsSubdomainSubdomainExistsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subdomain** | **string**| Team subdomain | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teamsupdatepost"></a>
 # **TeamsUpdatePost**
-> InlineResponse2001 TeamsUpdatePost (string where = null, Team data = null)
+> InlineResponse2002 TeamsUpdatePost (string where = null, Team data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -18813,7 +18945,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TeamsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TeamsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -18834,7 +18966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

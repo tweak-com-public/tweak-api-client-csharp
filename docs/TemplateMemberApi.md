@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 <a name="templatemembersidexistsget"></a>
 # **TemplateMembersIdExistsGet**
-> InlineResponse2002 TemplateMembersIdExistsGet (string id)
+> InlineResponse2001 TemplateMembersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -449,7 +449,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplateMembersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TemplateMembersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 <a name="templatemembersidhead"></a>
 # **TemplateMembersIdHead**
-> InlineResponse2002 TemplateMembersIdHead (string id)
+> InlineResponse2001 TemplateMembersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -581,7 +581,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplateMembersIdHead(id);
+                InlineResponse2001 result = apiInstance.TemplateMembersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -601,7 +601,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1278,7 +1278,7 @@ Name | Type | Description  | Notes
 
 <a name="templatemembersupdatepost"></a>
 # **TemplateMembersUpdatePost**
-> InlineResponse2001 TemplateMembersUpdatePost (string where = null, TemplateMember data = null)
+> InlineResponse2002 TemplateMembersUpdatePost (string where = null, TemplateMember data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1309,7 +1309,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TemplateMembersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TemplateMembersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1330,7 +1330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

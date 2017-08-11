@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="qtasksidexistsget"></a>
 # **QTasksIdExistsGet**
-> InlineResponse2002 QTasksIdExistsGet (string id)
+> InlineResponse2001 QTasksIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -447,7 +447,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.QTasksIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.QTasksIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 <a name="qtasksidhead"></a>
 # **QTasksIdHead**
-> InlineResponse2002 QTasksIdHead (string id)
+> InlineResponse2001 QTasksIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -579,7 +579,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.QTasksIdHead(id);
+                InlineResponse2001 result = apiInstance.QTasksIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="qtasksupdatepost"></a>
 # **QTasksUpdatePost**
-> InlineResponse2001 QTasksUpdatePost (string where = null, QTask data = null)
+> InlineResponse2002 QTasksUpdatePost (string where = null, QTask data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.QTasksUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.QTasksUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
