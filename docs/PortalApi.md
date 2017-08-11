@@ -51,6 +51,7 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkExportsPost**](PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**PortalsIdDesignsNkFolderGet**](PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 [**PortalsIdDesignsNkPortalGet**](PortalApi.md#portalsiddesignsnkportalget) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+[**PortalsIdDesignsNkRejectionCommentGet**](PortalApi.md#portalsiddesignsnkrejectioncommentget) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**PortalsIdDesignsNkRequesterGet**](PortalApi.md#portalsiddesignsnkrequesterget) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 [**PortalsIdDesignsNkReviewerGet**](PortalApi.md#portalsiddesignsnkreviewerget) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 [**PortalsIdDesignsNkTagsCountGet**](PortalApi.md#portalsiddesignsnktagscountget) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -3312,6 +3313,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkrejectioncommentget"></a>
+# **PortalsIdDesignsNkRejectionCommentGet**
+> DesignComment PortalsIdDesignsNkRejectionCommentGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkRejectionCommentGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation rejectionComment.
+                DesignComment result = apiInstance.PortalsIdDesignsNkRejectionCommentGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkRejectionCommentGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 

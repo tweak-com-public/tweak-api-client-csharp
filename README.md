@@ -373,6 +373,7 @@ Class | Method | HTTP request | Description
 *DesignApi* | [**DesignsIdPortalGet**](docs/DesignApi.md#designsidportalget) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 *DesignApi* | [**DesignsIdPut**](docs/DesignApi.md#designsidput) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**DesignsIdRejectPost**](docs/DesignApi.md#designsidrejectpost) | **POST** /Designs/{id}/reject | Reject design
+*DesignApi* | [**DesignsIdRejectionCommentGet**](docs/DesignApi.md#designsidrejectioncommentget) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *DesignApi* | [**DesignsIdReplacePost**](docs/DesignApi.md#designsidreplacepost) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**DesignsIdRequesterGet**](docs/DesignApi.md#designsidrequesterget) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 *DesignApi* | [**DesignsIdReviewerGet**](docs/DesignApi.md#designsidreviewerget) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -676,6 +677,7 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**PortalsIdDesignsNkExportsPost**](docs/PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 *PortalApi* | [**PortalsIdDesignsNkFolderGet**](docs/PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 *PortalApi* | [**PortalsIdDesignsNkPortalGet**](docs/PortalApi.md#portalsiddesignsnkportalget) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+*PortalApi* | [**PortalsIdDesignsNkRejectionCommentGet**](docs/PortalApi.md#portalsiddesignsnkrejectioncommentget) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *PortalApi* | [**PortalsIdDesignsNkRequesterGet**](docs/PortalApi.md#portalsiddesignsnkrequesterget) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 *PortalApi* | [**PortalsIdDesignsNkReviewerGet**](docs/PortalApi.md#portalsiddesignsnkreviewerget) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 *PortalApi* | [**PortalsIdDesignsNkTagsCountGet**](docs/PortalApi.md#portalsiddesignsnktagscountget) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.

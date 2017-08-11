@@ -85,6 +85,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Name'
         }
         /// <summary>
+        /// Test the property 'Description'
+        /// </summary>
+        [Test]
+        public void DescriptionTest()
+        {
+            // TODO unit test for the property 'Description'
+        }
+        /// <summary>
         /// Test the property 'Path'
         /// </summary>
         [Test]

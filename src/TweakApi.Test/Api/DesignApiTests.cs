@@ -738,8 +738,22 @@ namespace TweakApi.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string id = null;
             //string id2 = null;
-            //var response = instance.DesignsIdRejectPost(id, id2);
+            //Design data = null;
+            //var response = instance.DesignsIdRejectPost(id, id2, data);
             //Assert.IsInstanceOf<Design> (response, "response is Design");
+        }
+        
+        /// <summary>
+        /// Test DesignsIdRejectionCommentGet
+        /// </summary>
+        [Test]
+        public void DesignsIdRejectionCommentGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.DesignsIdRejectionCommentGet(id, refresh);
+            //Assert.IsInstanceOf<DesignComment> (response, "response is DesignComment");
         }
         
         /// <summary>

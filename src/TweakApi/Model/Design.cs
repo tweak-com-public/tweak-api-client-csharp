@@ -117,7 +117,6 @@ namespace TweakApi.Model
         /// <param name="Description">Description (default to &quot;&quot;).</param>
         /// <param name="Purpose">Purpose.</param>
         /// <param name="Status">Status.</param>
-        /// <param name="RejectionReason">RejectionReason (default to &quot;&quot;).</param>
         /// <param name="FormData">FormData.</param>
         /// <param name="HighResPdfUrl">HighResPdfUrl (default to &quot;&quot;).</param>
         /// <param name="ProofPdfUrl">ProofPdfUrl (default to &quot;&quot;).</param>
@@ -134,19 +133,21 @@ namespace TweakApi.Model
         /// <param name="ReviewerId">ReviewerId.</param>
         /// <param name="TemplateId">TemplateId.</param>
         /// <param name="PortalId">PortalId.</param>
+        /// <param name="RejectionCommentId">RejectionCommentId.</param>
         /// <param name="FolderId">FolderId.</param>
         /// <param name="Tags">Tags.</param>
         /// <param name="Customer">Customer.</param>
         /// <param name="Template">Template.</param>
         /// <param name="Portal">Portal.</param>
         /// <param name="Comments">Comments.</param>
+        /// <param name="RejectionComment">RejectionComment.</param>
         /// <param name="Exports">Exports.</param>
         /// <param name="Requester">Requester.</param>
         /// <param name="Assignee">Assignee.</param>
         /// <param name="Reviewer">Reviewer.</param>
         /// <param name="Commenters">Commenters.</param>
         /// <param name="Folder">Folder.</param>
-        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, string RejectionReason = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null)
+        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string RejectionCommentId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, DesignComment RejectionComment = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -180,15 +181,6 @@ namespace TweakApi.Model
             }
             this.Purpose = Purpose;
             this.Status = Status;
-            // use default value if no "RejectionReason" provided
-            if (RejectionReason == null)
-            {
-                this.RejectionReason = "";
-            }
-            else
-            {
-                this.RejectionReason = RejectionReason;
-            }
             this.FormData = FormData;
             // use default value if no "HighResPdfUrl" provided
             if (HighResPdfUrl == null)
@@ -237,12 +229,14 @@ namespace TweakApi.Model
             this.ReviewerId = ReviewerId;
             this.TemplateId = TemplateId;
             this.PortalId = PortalId;
+            this.RejectionCommentId = RejectionCommentId;
             this.FolderId = FolderId;
             this.Tags = Tags;
             this.Customer = Customer;
             this.Template = Template;
             this.Portal = Portal;
             this.Comments = Comments;
+            this.RejectionComment = RejectionComment;
             this.Exports = Exports;
             this.Requester = Requester;
             this.Assignee = Assignee;
@@ -281,11 +275,6 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="description", EmitDefaultValue=false)]
         public string Description { get; set; }
-        /// <summary>
-        /// Gets or Sets RejectionReason
-        /// </summary>
-        [DataMember(Name="rejectionReason", EmitDefaultValue=false)]
-        public string RejectionReason { get; set; }
         /// <summary>
         /// Gets or Sets FormData
         /// </summary>
@@ -367,6 +356,11 @@ namespace TweakApi.Model
         [DataMember(Name="portalId", EmitDefaultValue=false)]
         public string PortalId { get; set; }
         /// <summary>
+        /// Gets or Sets RejectionCommentId
+        /// </summary>
+        [DataMember(Name="rejectionCommentId", EmitDefaultValue=false)]
+        public string RejectionCommentId { get; set; }
+        /// <summary>
         /// Gets or Sets FolderId
         /// </summary>
         [DataMember(Name="folderId", EmitDefaultValue=false)]
@@ -396,6 +390,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="comments", EmitDefaultValue=false)]
         public List<DesignComment> Comments { get; set; }
+        /// <summary>
+        /// Gets or Sets RejectionComment
+        /// </summary>
+        [DataMember(Name="rejectionComment", EmitDefaultValue=false)]
+        public DesignComment RejectionComment { get; set; }
         /// <summary>
         /// Gets or Sets Exports
         /// </summary>
@@ -442,7 +441,6 @@ namespace TweakApi.Model
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  Purpose: ").Append(Purpose).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
-            sb.Append("  RejectionReason: ").Append(RejectionReason).Append("\n");
             sb.Append("  FormData: ").Append(FormData).Append("\n");
             sb.Append("  HighResPdfUrl: ").Append(HighResPdfUrl).Append("\n");
             sb.Append("  ProofPdfUrl: ").Append(ProofPdfUrl).Append("\n");
@@ -459,12 +457,14 @@ namespace TweakApi.Model
             sb.Append("  ReviewerId: ").Append(ReviewerId).Append("\n");
             sb.Append("  TemplateId: ").Append(TemplateId).Append("\n");
             sb.Append("  PortalId: ").Append(PortalId).Append("\n");
+            sb.Append("  RejectionCommentId: ").Append(RejectionCommentId).Append("\n");
             sb.Append("  FolderId: ").Append(FolderId).Append("\n");
             sb.Append("  Tags: ").Append(Tags).Append("\n");
             sb.Append("  Customer: ").Append(Customer).Append("\n");
             sb.Append("  Template: ").Append(Template).Append("\n");
             sb.Append("  Portal: ").Append(Portal).Append("\n");
             sb.Append("  Comments: ").Append(Comments).Append("\n");
+            sb.Append("  RejectionComment: ").Append(RejectionComment).Append("\n");
             sb.Append("  Exports: ").Append(Exports).Append("\n");
             sb.Append("  Requester: ").Append(Requester).Append("\n");
             sb.Append("  Assignee: ").Append(Assignee).Append("\n");
@@ -548,11 +548,6 @@ namespace TweakApi.Model
                     this.Status.Equals(other.Status)
                 ) && 
                 (
-                    this.RejectionReason == other.RejectionReason ||
-                    this.RejectionReason != null &&
-                    this.RejectionReason.Equals(other.RejectionReason)
-                ) && 
-                (
                     this.FormData == other.FormData ||
                     this.FormData != null &&
                     this.FormData.SequenceEqual(other.FormData)
@@ -633,6 +628,11 @@ namespace TweakApi.Model
                     this.PortalId.Equals(other.PortalId)
                 ) && 
                 (
+                    this.RejectionCommentId == other.RejectionCommentId ||
+                    this.RejectionCommentId != null &&
+                    this.RejectionCommentId.Equals(other.RejectionCommentId)
+                ) && 
+                (
                     this.FolderId == other.FolderId ||
                     this.FolderId != null &&
                     this.FolderId.Equals(other.FolderId)
@@ -661,6 +661,11 @@ namespace TweakApi.Model
                     this.Comments == other.Comments ||
                     this.Comments != null &&
                     this.Comments.SequenceEqual(other.Comments)
+                ) && 
+                (
+                    this.RejectionComment == other.RejectionComment ||
+                    this.RejectionComment != null &&
+                    this.RejectionComment.Equals(other.RejectionComment)
                 ) && 
                 (
                     this.Exports == other.Exports ||
@@ -721,8 +726,6 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Purpose.GetHashCode();
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
-                if (this.RejectionReason != null)
-                    hash = hash * 59 + this.RejectionReason.GetHashCode();
                 if (this.FormData != null)
                     hash = hash * 59 + this.FormData.GetHashCode();
                 if (this.HighResPdfUrl != null)
@@ -755,6 +758,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.TemplateId.GetHashCode();
                 if (this.PortalId != null)
                     hash = hash * 59 + this.PortalId.GetHashCode();
+                if (this.RejectionCommentId != null)
+                    hash = hash * 59 + this.RejectionCommentId.GetHashCode();
                 if (this.FolderId != null)
                     hash = hash * 59 + this.FolderId.GetHashCode();
                 if (this.Tags != null)
@@ -767,6 +772,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Portal.GetHashCode();
                 if (this.Comments != null)
                     hash = hash * 59 + this.Comments.GetHashCode();
+                if (this.RejectionComment != null)
+                    hash = hash * 59 + this.RejectionComment.GetHashCode();
                 if (this.Exports != null)
                     hash = hash * 59 + this.Exports.GetHashCode();
                 if (this.Requester != null)

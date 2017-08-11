@@ -1201,8 +1201,9 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Design</returns>
-        Design DesignsIdRejectPost (string id, string id2);
+        Design DesignsIdRejectPost (string id, string id2, Design data = null);
 
         /// <summary>
         /// Reject design
@@ -1213,8 +1214,32 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of Design</returns>
-        ApiResponse<Design> DesignsIdRejectPostWithHttpInfo (string id, string id2);
+        ApiResponse<Design> DesignsIdRejectPostWithHttpInfo (string id, string id2, Design data = null);
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>DesignComment</returns>
+        DesignComment DesignsIdRejectionCommentGet (string id, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of DesignComment</returns>
+        ApiResponse<DesignComment> DesignsIdRejectionCommentGetWithHttpInfo (string id, bool? refresh = null);
         /// <summary>
         /// Replace attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -2859,8 +2884,9 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Task of Design</returns>
-        System.Threading.Tasks.Task<Design> DesignsIdRejectPostAsync (string id, string id2);
+        System.Threading.Tasks.Task<Design> DesignsIdRejectPostAsync (string id, string id2, Design data = null);
 
         /// <summary>
         /// Reject design
@@ -2871,8 +2897,32 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Design)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Design>> DesignsIdRejectPostAsyncWithHttpInfo (string id, string id2);
+        System.Threading.Tasks.Task<ApiResponse<Design>> DesignsIdRejectPostAsyncWithHttpInfo (string id, string id2, Design data = null);
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of DesignComment</returns>
+        System.Threading.Tasks.Task<DesignComment> DesignsIdRejectionCommentGetAsync (string id, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (DesignComment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DesignComment>> DesignsIdRejectionCommentGetAsyncWithHttpInfo (string id, bool? refresh = null);
         /// <summary>
         /// Replace attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -12448,10 +12498,11 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Design</returns>
-        public Design DesignsIdRejectPost (string id, string id2)
+        public Design DesignsIdRejectPost (string id, string id2, Design data = null)
         {
-             ApiResponse<Design> localVarResponse = DesignsIdRejectPostWithHttpInfo(id, id2);
+             ApiResponse<Design> localVarResponse = DesignsIdRejectPostWithHttpInfo(id, id2, data);
              return localVarResponse.Data;
         }
 
@@ -12461,8 +12512,9 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of Design</returns>
-        public ApiResponse< Design > DesignsIdRejectPostWithHttpInfo (string id, string id2)
+        public ApiResponse< Design > DesignsIdRejectPostWithHttpInfo (string id, string id2, Design data = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -12505,6 +12557,14 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
 
             // authentication (access_token) required
             if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
@@ -12538,10 +12598,11 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Task of Design</returns>
-        public async System.Threading.Tasks.Task<Design> DesignsIdRejectPostAsync (string id, string id2)
+        public async System.Threading.Tasks.Task<Design> DesignsIdRejectPostAsync (string id, string id2, Design data = null)
         {
-             ApiResponse<Design> localVarResponse = await DesignsIdRejectPostAsyncWithHttpInfo(id, id2);
+             ApiResponse<Design> localVarResponse = await DesignsIdRejectPostAsyncWithHttpInfo(id, id2, data);
              return localVarResponse.Data;
 
         }
@@ -12552,8 +12613,9 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Design id</param>
         /// <param name="id2">Customer id</param>
+        /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Design)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Design>> DesignsIdRejectPostAsyncWithHttpInfo (string id, string id2)
+        public async System.Threading.Tasks.Task<ApiResponse<Design>> DesignsIdRejectPostAsyncWithHttpInfo (string id, string id2, Design data = null)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -12596,6 +12658,14 @@ namespace TweakApi.Api
             localVarPathParams.Add("format", "json");
             if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (id2 != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id2)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
 
             // authentication (access_token) required
             if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
@@ -12619,6 +12689,180 @@ namespace TweakApi.Api
             return new ApiResponse<Design>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (Design) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Design)));
+            
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>DesignComment</returns>
+        public DesignComment DesignsIdRejectionCommentGet (string id, bool? refresh = null)
+        {
+             ApiResponse<DesignComment> localVarResponse = DesignsIdRejectionCommentGetWithHttpInfo(id, refresh);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of DesignComment</returns>
+        public ApiResponse< DesignComment > DesignsIdRejectionCommentGetWithHttpInfo (string id, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling DesignApi->DesignsIdRejectionCommentGet");
+
+            var localVarPath = "/Designs/{id}/rejectionComment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DesignsIdRejectionCommentGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DesignComment>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DesignComment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DesignComment)));
+            
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of DesignComment</returns>
+        public async System.Threading.Tasks.Task<DesignComment> DesignsIdRejectionCommentGetAsync (string id, bool? refresh = null)
+        {
+             ApiResponse<DesignComment> localVarResponse = await DesignsIdRejectionCommentGetAsyncWithHttpInfo(id, refresh);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Design id</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (DesignComment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DesignComment>> DesignsIdRejectionCommentGetAsyncWithHttpInfo (string id, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling DesignApi->DesignsIdRejectionCommentGet");
+
+            var localVarPath = "/Designs/{id}/rejectionComment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DesignsIdRejectionCommentGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DesignComment>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DesignComment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DesignComment)));
             
         }
 

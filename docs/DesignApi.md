@@ -55,6 +55,7 @@ Method | HTTP request | Description
 [**DesignsIdPortalGet**](DesignApi.md#designsidportalget) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 [**DesignsIdPut**](DesignApi.md#designsidput) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**DesignsIdRejectPost**](DesignApi.md#designsidrejectpost) | **POST** /Designs/{id}/reject | Reject design
+[**DesignsIdRejectionCommentGet**](DesignApi.md#designsidrejectioncommentget) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**DesignsIdReplacePost**](DesignApi.md#designsidreplacepost) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**DesignsIdRequesterGet**](DesignApi.md#designsidrequesterget) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 [**DesignsIdReviewerGet**](DesignApi.md#designsidreviewerget) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -3427,7 +3428,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidrejectpost"></a>
 # **DesignsIdRejectPost**
-> Design DesignsIdRejectPost (string id, string id2)
+> Design DesignsIdRejectPost (string id, string id2, Design data = null)
 
 Reject design
 
@@ -3454,11 +3455,12 @@ namespace Example
             var apiInstance = new DesignApi();
             var id = id_example;  // string | Design id
             var id2 = id_example;  // string | Customer id
+            var data = new Design(); // Design |  (optional) 
 
             try
             {
                 // Reject design
-                Design result = apiInstance.DesignsIdRejectPost(id, id2);
+                Design result = apiInstance.DesignsIdRejectPost(id, id2, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3476,10 +3478,78 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| Design id | 
  **id2** | **string**| Customer id | 
+ **data** | [**Design**](Design.md)|  | [optional] 
 
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidrejectioncommentget"></a>
+# **DesignsIdRejectionCommentGet**
+> DesignComment DesignsIdRejectionCommentGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdRejectionCommentGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation rejectionComment.
+                DesignComment result = apiInstance.DesignsIdRejectionCommentGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdRejectionCommentGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 

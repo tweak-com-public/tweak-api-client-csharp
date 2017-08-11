@@ -1164,6 +1164,31 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Portal</returns>
         ApiResponse<Portal> PortalsIdDesignsNkPortalGetWithHttpInfo (string id, string nk, bool? refresh = null);
         /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>DesignComment</returns>
+        DesignComment PortalsIdDesignsNkRejectionCommentGet (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of DesignComment</returns>
+        ApiResponse<DesignComment> PortalsIdDesignsNkRejectionCommentGetWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
         /// Fetches belongsTo relation requester.
         /// </summary>
         /// <remarks>
@@ -4343,6 +4368,31 @@ namespace TweakApi.Api
         /// <param name="refresh"> (optional)</param>
         /// <returns>Task of ApiResponse (Portal)</returns>
         System.Threading.Tasks.Task<ApiResponse<Portal>> PortalsIdDesignsNkPortalGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of DesignComment</returns>
+        System.Threading.Tasks.Task<DesignComment> PortalsIdDesignsNkRejectionCommentGetAsync (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (DesignComment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DesignComment>> PortalsIdDesignsNkRejectionCommentGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null);
         /// <summary>
         /// Fetches belongsTo relation requester.
         /// </summary>
@@ -15183,6 +15233,192 @@ namespace TweakApi.Api
             return new ApiResponse<Portal>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (Portal) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Portal)));
+            
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>DesignComment</returns>
+        public DesignComment PortalsIdDesignsNkRejectionCommentGet (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<DesignComment> localVarResponse = PortalsIdDesignsNkRejectionCommentGetWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of DesignComment</returns>
+        public ApiResponse< DesignComment > PortalsIdDesignsNkRejectionCommentGetWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling PortalApi->PortalsIdDesignsNkRejectionCommentGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling PortalApi->PortalsIdDesignsNkRejectionCommentGet");
+
+            var localVarPath = "/Portals/{id}/designs/{nk}/rejectionComment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PortalsIdDesignsNkRejectionCommentGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DesignComment>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DesignComment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DesignComment)));
+            
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of DesignComment</returns>
+        public async System.Threading.Tasks.Task<DesignComment> PortalsIdDesignsNkRejectionCommentGetAsync (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<DesignComment> localVarResponse = await PortalsIdDesignsNkRejectionCommentGetAsyncWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Fetches belongsTo relation rejectionComment. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Portal id</param>
+        /// <param name="nk">Foreign key for designs.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (DesignComment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DesignComment>> PortalsIdDesignsNkRejectionCommentGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling PortalApi->PortalsIdDesignsNkRejectionCommentGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling PortalApi->PortalsIdDesignsNkRejectionCommentGet");
+
+            var localVarPath = "/Portals/{id}/designs/{nk}/rejectionComment";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PortalsIdDesignsNkRejectionCommentGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DesignComment>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (DesignComment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(DesignComment)));
             
         }
 

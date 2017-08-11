@@ -711,6 +711,20 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test PortalsIdDesignsNkRejectionCommentGet
+        /// </summary>
+        [Test]
+        public void PortalsIdDesignsNkRejectionCommentGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //bool? refresh = null;
+            //var response = instance.PortalsIdDesignsNkRejectionCommentGet(id, nk, refresh);
+            //Assert.IsInstanceOf<DesignComment> (response, "response is DesignComment");
+        }
+        
+        /// <summary>
         /// Test PortalsIdDesignsNkRequesterGet
         /// </summary>
         [Test]

@@ -141,14 +141,6 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Status'
         }
         /// <summary>
-        /// Test the property 'RejectionReason'
-        /// </summary>
-        [Test]
-        public void RejectionReasonTest()
-        {
-            // TODO unit test for the property 'RejectionReason'
-        }
-        /// <summary>
         /// Test the property 'FormData'
         /// </summary>
         [Test]
@@ -277,6 +269,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'PortalId'
         }
         /// <summary>
+        /// Test the property 'RejectionCommentId'
+        /// </summary>
+        [Test]
+        public void RejectionCommentIdTest()
+        {
+            // TODO unit test for the property 'RejectionCommentId'
+        }
+        /// <summary>
         /// Test the property 'FolderId'
         /// </summary>
         [Test]
@@ -323,6 +323,14 @@ namespace TweakApi.Test
         public void CommentsTest()
         {
             // TODO unit test for the property 'Comments'
+        }
+        /// <summary>
+        /// Test the property 'RejectionComment'
+        /// </summary>
+        [Test]
+        public void RejectionCommentTest()
+        {
+            // TODO unit test for the property 'RejectionComment'
         }
         /// <summary>
         /// Test the property 'Exports'
