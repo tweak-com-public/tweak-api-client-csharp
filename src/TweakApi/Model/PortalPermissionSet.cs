@@ -34,43 +34,28 @@ using Newtonsoft.Json.Converters;
 namespace TweakApi.Model
 {
     /// <summary>
-    /// TeamPermissionSet
+    /// PortalPermissionSet
     /// </summary>
     [DataContract]
-    public partial class TeamPermissionSet :  IEquatable<TeamPermissionSet>
+    public partial class PortalPermissionSet :  IEquatable<PortalPermissionSet>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TeamPermissionSet" /> class.
+        /// Initializes a new instance of the <see cref="PortalPermissionSet" /> class.
         /// </summary>
-        /// <param name="EmailNotification">EmailNotification (default to true).</param>
         /// <param name="TemplatePermission">TemplatePermission.</param>
         /// <param name="TweakTemplatePermission">TweakTemplatePermission.</param>
         /// <param name="Id">Id.</param>
-        /// <param name="TeamId">TeamId.</param>
-        /// <param name="Team">Team.</param>
-        public TeamPermissionSet(bool? EmailNotification = null, TemplatePermissionSet TemplatePermission = null, TemplatePermissionSet TweakTemplatePermission = null, string Id = null, string TeamId = null, Team Team = null)
+        /// <param name="PortalId">PortalId.</param>
+        /// <param name="Portal">Portal.</param>
+        public PortalPermissionSet(TemplatePermissionSet TemplatePermission = null, TemplatePermissionSet TweakTemplatePermission = null, string Id = null, string PortalId = null, Portal Portal = null)
         {
-            // use default value if no "EmailNotification" provided
-            if (EmailNotification == null)
-            {
-                this.EmailNotification = true;
-            }
-            else
-            {
-                this.EmailNotification = EmailNotification;
-            }
             this.TemplatePermission = TemplatePermission;
             this.TweakTemplatePermission = TweakTemplatePermission;
             this.Id = Id;
-            this.TeamId = TeamId;
-            this.Team = Team;
+            this.PortalId = PortalId;
+            this.Portal = Portal;
         }
         
-        /// <summary>
-        /// Gets or Sets EmailNotification
-        /// </summary>
-        [DataMember(Name="emailNotification", EmitDefaultValue=false)]
-        public bool? EmailNotification { get; set; }
         /// <summary>
         /// Gets or Sets TemplatePermission
         /// </summary>
@@ -87,15 +72,15 @@ namespace TweakApi.Model
         [DataMember(Name="id", EmitDefaultValue=false)]
         public string Id { get; set; }
         /// <summary>
-        /// Gets or Sets TeamId
+        /// Gets or Sets PortalId
         /// </summary>
-        [DataMember(Name="teamId", EmitDefaultValue=false)]
-        public string TeamId { get; set; }
+        [DataMember(Name="portalId", EmitDefaultValue=false)]
+        public string PortalId { get; set; }
         /// <summary>
-        /// Gets or Sets Team
+        /// Gets or Sets Portal
         /// </summary>
-        [DataMember(Name="team", EmitDefaultValue=false)]
-        public Team Team { get; set; }
+        [DataMember(Name="portal", EmitDefaultValue=false)]
+        public Portal Portal { get; set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -103,13 +88,12 @@ namespace TweakApi.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class TeamPermissionSet {\n");
-            sb.Append("  EmailNotification: ").Append(EmailNotification).Append("\n");
+            sb.Append("class PortalPermissionSet {\n");
             sb.Append("  TemplatePermission: ").Append(TemplatePermission).Append("\n");
             sb.Append("  TweakTemplatePermission: ").Append(TweakTemplatePermission).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  TeamId: ").Append(TeamId).Append("\n");
-            sb.Append("  Team: ").Append(Team).Append("\n");
+            sb.Append("  PortalId: ").Append(PortalId).Append("\n");
+            sb.Append("  Portal: ").Append(Portal).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -131,26 +115,21 @@ namespace TweakApi.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as TeamPermissionSet);
+            return this.Equals(obj as PortalPermissionSet);
         }
 
         /// <summary>
-        /// Returns true if TeamPermissionSet instances are equal
+        /// Returns true if PortalPermissionSet instances are equal
         /// </summary>
-        /// <param name="other">Instance of TeamPermissionSet to be compared</param>
+        /// <param name="other">Instance of PortalPermissionSet to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(TeamPermissionSet other)
+        public bool Equals(PortalPermissionSet other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
                 return false;
 
             return 
-                (
-                    this.EmailNotification == other.EmailNotification ||
-                    this.EmailNotification != null &&
-                    this.EmailNotification.Equals(other.EmailNotification)
-                ) && 
                 (
                     this.TemplatePermission == other.TemplatePermission ||
                     this.TemplatePermission != null &&
@@ -167,14 +146,14 @@ namespace TweakApi.Model
                     this.Id.Equals(other.Id)
                 ) && 
                 (
-                    this.TeamId == other.TeamId ||
-                    this.TeamId != null &&
-                    this.TeamId.Equals(other.TeamId)
+                    this.PortalId == other.PortalId ||
+                    this.PortalId != null &&
+                    this.PortalId.Equals(other.PortalId)
                 ) && 
                 (
-                    this.Team == other.Team ||
-                    this.Team != null &&
-                    this.Team.Equals(other.Team)
+                    this.Portal == other.Portal ||
+                    this.Portal != null &&
+                    this.Portal.Equals(other.Portal)
                 );
         }
 
@@ -189,18 +168,16 @@ namespace TweakApi.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.EmailNotification != null)
-                    hash = hash * 59 + this.EmailNotification.GetHashCode();
                 if (this.TemplatePermission != null)
                     hash = hash * 59 + this.TemplatePermission.GetHashCode();
                 if (this.TweakTemplatePermission != null)
                     hash = hash * 59 + this.TweakTemplatePermission.GetHashCode();
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
-                if (this.TeamId != null)
-                    hash = hash * 59 + this.TeamId.GetHashCode();
-                if (this.Team != null)
-                    hash = hash * 59 + this.Team.GetHashCode();
+                if (this.PortalId != null)
+                    hash = hash * 59 + this.PortalId.GetHashCode();
+                if (this.Portal != null)
+                    hash = hash * 59 + this.Portal.GetHashCode();
                 return hash;
             }
         }

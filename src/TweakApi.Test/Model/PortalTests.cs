@@ -212,6 +212,14 @@ namespace TweakApi.Test
         {
             // TODO unit test for the property 'ImageFolders'
         }
+        /// <summary>
+        /// Test the property 'Permission'
+        /// </summary>
+        [Test]
+        public void PermissionTest()
+        {
+            // TODO unit test for the property 'Permission'
+        }
 
     }
 

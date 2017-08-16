@@ -41,6 +41,7 @@ Name | Type | Description | Notes
 **Reviewer** | [**TeamMember**](TeamMember.md) |  | [optional] 
 **Commenters** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
 **Folder** | [**DesignFolder**](DesignFolder.md) |  | [optional] 
+**Permission** | [**DesignPermissionSet**](DesignPermissionSet.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
