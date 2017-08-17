@@ -704,6 +704,57 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test DesignsIdPermissionDelete
+        /// </summary>
+        [Test]
+        public void DesignsIdPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.DesignsIdPermissionDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test DesignsIdPermissionGet
+        /// </summary>
+        [Test]
+        public void DesignsIdPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.DesignsIdPermissionGet(id, refresh);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test DesignsIdPermissionPost
+        /// </summary>
+        [Test]
+        public void DesignsIdPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //DesignPermissionSet data = null;
+            //var response = instance.DesignsIdPermissionPost(id, data);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test DesignsIdPermissionPut
+        /// </summary>
+        [Test]
+        public void DesignsIdPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //DesignPermissionSet data = null;
+            //var response = instance.DesignsIdPermissionPut(id, data);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
         /// Test DesignsIdPortalGet
         /// </summary>
         [Test]

@@ -697,6 +697,61 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test PortalsIdDesignsNkPermissionDelete
+        /// </summary>
+        [Test]
+        public void PortalsIdDesignsNkPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //instance.PortalsIdDesignsNkPermissionDelete(id, nk);
+            
+        }
+        
+        /// <summary>
+        /// Test PortalsIdDesignsNkPermissionGet
+        /// </summary>
+        [Test]
+        public void PortalsIdDesignsNkPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //bool? refresh = null;
+            //var response = instance.PortalsIdDesignsNkPermissionGet(id, nk, refresh);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test PortalsIdDesignsNkPermissionPost
+        /// </summary>
+        [Test]
+        public void PortalsIdDesignsNkPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //DesignPermissionSet data = null;
+            //var response = instance.PortalsIdDesignsNkPermissionPost(id, nk, data);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test PortalsIdDesignsNkPermissionPut
+        /// </summary>
+        [Test]
+        public void PortalsIdDesignsNkPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //DesignPermissionSet data = null;
+            //var response = instance.PortalsIdDesignsNkPermissionPut(id, nk, data);
+            //Assert.IsInstanceOf<DesignPermissionSet> (response, "response is DesignPermissionSet");
+        }
+        
+        /// <summary>
         /// Test PortalsIdDesignsNkPortalGet
         /// </summary>
         [Test]
@@ -1287,6 +1342,57 @@ namespace TweakApi.Test
             //Portal data = null;
             //var response = instance.PortalsIdPatch(id, data);
             //Assert.IsInstanceOf<Portal> (response, "response is Portal");
+        }
+        
+        /// <summary>
+        /// Test PortalsIdPermissionDelete
+        /// </summary>
+        [Test]
+        public void PortalsIdPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.PortalsIdPermissionDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test PortalsIdPermissionGet
+        /// </summary>
+        [Test]
+        public void PortalsIdPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //bool? refresh = null;
+            //var response = instance.PortalsIdPermissionGet(id, refresh);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test PortalsIdPermissionPost
+        /// </summary>
+        [Test]
+        public void PortalsIdPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //PortalPermissionSet data = null;
+            //var response = instance.PortalsIdPermissionPost(id, data);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test PortalsIdPermissionPut
+        /// </summary>
+        [Test]
+        public void PortalsIdPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //PortalPermissionSet data = null;
+            //var response = instance.PortalsIdPermissionPut(id, data);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
         }
         
         /// <summary>

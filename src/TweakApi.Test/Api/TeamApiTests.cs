@@ -2001,6 +2001,61 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamsIdPortalsNkPermissionDelete
+        /// </summary>
+        [Test]
+        public void TeamsIdPortalsNkPermissionDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //instance.TeamsIdPortalsNkPermissionDelete(id, nk);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPortalsNkPermissionGet
+        /// </summary>
+        [Test]
+        public void TeamsIdPortalsNkPermissionGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //bool? refresh = null;
+            //var response = instance.TeamsIdPortalsNkPermissionGet(id, nk, refresh);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPortalsNkPermissionPost
+        /// </summary>
+        [Test]
+        public void TeamsIdPortalsNkPermissionPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //PortalPermissionSet data = null;
+            //var response = instance.TeamsIdPortalsNkPermissionPost(id, nk, data);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
+        }
+        
+        /// <summary>
+        /// Test TeamsIdPortalsNkPermissionPut
+        /// </summary>
+        [Test]
+        public void TeamsIdPortalsNkPermissionPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string nk = null;
+            //PortalPermissionSet data = null;
+            //var response = instance.TeamsIdPortalsNkPermissionPut(id, nk, data);
+            //Assert.IsInstanceOf<PortalPermissionSet> (response, "response is PortalPermissionSet");
+        }
+        
+        /// <summary>
         /// Test TeamsIdPortalsNkPortalMembersCountGet
         /// </summary>
         [Test]

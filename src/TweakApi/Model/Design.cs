@@ -147,7 +147,8 @@ namespace TweakApi.Model
         /// <param name="Reviewer">Reviewer.</param>
         /// <param name="Commenters">Commenters.</param>
         /// <param name="Folder">Folder.</param>
-        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string RejectionCommentId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, DesignComment RejectionComment = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null)
+        /// <param name="Permission">Permission.</param>
+        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string RejectionCommentId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, DesignComment RejectionComment = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null, DesignPermissionSet Permission = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -243,6 +244,7 @@ namespace TweakApi.Model
             this.Reviewer = Reviewer;
             this.Commenters = Commenters;
             this.Folder = Folder;
+            this.Permission = Permission;
         }
         
         /// <summary>
@@ -426,6 +428,11 @@ namespace TweakApi.Model
         [DataMember(Name="folder", EmitDefaultValue=false)]
         public DesignFolder Folder { get; set; }
         /// <summary>
+        /// Gets or Sets Permission
+        /// </summary>
+        [DataMember(Name="permission", EmitDefaultValue=false)]
+        public DesignPermissionSet Permission { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -471,6 +478,7 @@ namespace TweakApi.Model
             sb.Append("  Reviewer: ").Append(Reviewer).Append("\n");
             sb.Append("  Commenters: ").Append(Commenters).Append("\n");
             sb.Append("  Folder: ").Append(Folder).Append("\n");
+            sb.Append("  Permission: ").Append(Permission).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -696,6 +704,11 @@ namespace TweakApi.Model
                     this.Folder == other.Folder ||
                     this.Folder != null &&
                     this.Folder.Equals(other.Folder)
+                ) && 
+                (
+                    this.Permission == other.Permission ||
+                    this.Permission != null &&
+                    this.Permission.Equals(other.Permission)
                 );
         }
 
@@ -786,6 +799,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Commenters.GetHashCode();
                 if (this.Folder != null)
                     hash = hash * 59 + this.Folder.GetHashCode();
+                if (this.Permission != null)
+                    hash = hash * 59 + this.Permission.GetHashCode();
                 return hash;
             }
         }

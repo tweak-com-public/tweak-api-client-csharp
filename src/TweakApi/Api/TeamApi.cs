@@ -3459,6 +3459,104 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of PortalMember</returns>
         ApiResponse<PortalMember> TeamsIdPortalsNkMembersRelFkPutWithHttpInfo (string id, string nk, string fk, PortalMember data = null);
         /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns></returns>
+        void TeamsIdPortalsNkPermissionDelete (string id, string nk);
+
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> TeamsIdPortalsNkPermissionDeleteWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        PortalPermissionSet TeamsIdPortalsNkPermissionGet (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        ApiResponse<PortalPermissionSet> TeamsIdPortalsNkPermissionGetWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        PortalPermissionSet TeamsIdPortalsNkPermissionPost (string id, string nk, PortalPermissionSet data = null);
+
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        ApiResponse<PortalPermissionSet> TeamsIdPortalsNkPermissionPostWithHttpInfo (string id, string nk, PortalPermissionSet data = null);
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        PortalPermissionSet TeamsIdPortalsNkPermissionPut (string id, string nk, PortalPermissionSet data = null);
+
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        ApiResponse<PortalPermissionSet> TeamsIdPortalsNkPermissionPutWithHttpInfo (string id, string nk, PortalPermissionSet data = null);
+        /// <summary>
         /// Counts portalMembers of Portal.
         /// </summary>
         /// <remarks>
@@ -10150,6 +10248,104 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (PortalMember)</returns>
         System.Threading.Tasks.Task<ApiResponse<PortalMember>> TeamsIdPortalsNkMembersRelFkPutAsyncWithHttpInfo (string id, string nk, string fk, PortalMember data = null);
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task TeamsIdPortalsNkPermissionDeleteAsync (string id, string nk);
+
+        /// <summary>
+        /// Deletes permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> TeamsIdPortalsNkPermissionDeleteAsyncWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionGetAsync (string id, string nk, bool? refresh = null);
+
+        /// <summary>
+        /// Fetches hasOne relation permission.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null);
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionPostAsync (string id, string nk, PortalPermissionSet data = null);
+
+        /// <summary>
+        /// Creates a new instance in permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionPostAsyncWithHttpInfo (string id, string nk, PortalPermissionSet data = null);
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionPutAsync (string id, string nk, PortalPermissionSet data = null);
+
+        /// <summary>
+        /// Update permission of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionPutAsyncWithHttpInfo (string id, string nk, PortalPermissionSet data = null);
         /// <summary>
         /// Counts portalMembers of Portal.
         /// </summary>
@@ -40019,6 +40215,770 @@ namespace TweakApi.Api
             return new ApiResponse<PortalMember>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (PortalMember) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalMember)));
+            
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns></returns>
+        public void TeamsIdPortalsNkPermissionDelete (string id, string nk)
+        {
+             TeamsIdPortalsNkPermissionDeleteWithHttpInfo(id, nk);
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> TeamsIdPortalsNkPermissionDeleteWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionDelete");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task TeamsIdPortalsNkPermissionDeleteAsync (string id, string nk)
+        {
+             await TeamsIdPortalsNkPermissionDeleteAsyncWithHttpInfo(id, nk);
+
+        }
+
+        /// <summary>
+        /// Deletes permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> TeamsIdPortalsNkPermissionDeleteAsyncWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionDelete");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        public PortalPermissionSet TeamsIdPortalsNkPermissionGet (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = TeamsIdPortalsNkPermissionGetWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        public ApiResponse< PortalPermissionSet > TeamsIdPortalsNkPermissionGetWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionGet");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        public async System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionGetAsync (string id, string nk, bool? refresh = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = await TeamsIdPortalsNkPermissionGetAsyncWithHttpInfo(id, nk, refresh);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Fetches hasOne relation permission. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="refresh"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionGetAsyncWithHttpInfo (string id, string nk, bool? refresh = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionGet");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        public PortalPermissionSet TeamsIdPortalsNkPermissionPost (string id, string nk, PortalPermissionSet data = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = TeamsIdPortalsNkPermissionPostWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        public ApiResponse< PortalPermissionSet > TeamsIdPortalsNkPermissionPostWithHttpInfo (string id, string nk, PortalPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionPost");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        public async System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionPostAsync (string id, string nk, PortalPermissionSet data = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = await TeamsIdPortalsNkPermissionPostAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionPostAsyncWithHttpInfo (string id, string nk, PortalPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionPost");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>PortalPermissionSet</returns>
+        public PortalPermissionSet TeamsIdPortalsNkPermissionPut (string id, string nk, PortalPermissionSet data = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = TeamsIdPortalsNkPermissionPutWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of PortalPermissionSet</returns>
+        public ApiResponse< PortalPermissionSet > TeamsIdPortalsNkPermissionPutWithHttpInfo (string id, string nk, PortalPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionPut");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
+            
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of PortalPermissionSet</returns>
+        public async System.Threading.Tasks.Task<PortalPermissionSet> TeamsIdPortalsNkPermissionPutAsync (string id, string nk, PortalPermissionSet data = null)
+        {
+             ApiResponse<PortalPermissionSet> localVarResponse = await TeamsIdPortalsNkPermissionPutAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update permission of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Team id</param>
+        /// <param name="nk">Foreign key for portals.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (PortalPermissionSet)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PortalPermissionSet>> TeamsIdPortalsNkPermissionPutAsyncWithHttpInfo (string id, string nk, PortalPermissionSet data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamApi->TeamsIdPortalsNkPermissionPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling TeamApi->TeamsIdPortalsNkPermissionPut");
+
+            var localVarPath = "/Teams/{id}/portals/{nk}/permission";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamsIdPortalsNkPermissionPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PortalPermissionSet>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (PortalPermissionSet) Configuration.ApiClient.Deserialize(localVarResponse, typeof(PortalPermissionSet)));
             
         }
 

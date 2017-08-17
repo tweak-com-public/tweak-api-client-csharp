@@ -146,6 +146,10 @@ Method | HTTP request | Description
 [**TeamsIdPortalsNkMembersRelFkDelete**](TeamApi.md#teamsidportalsnkmembersrelfkdelete) | **DELETE** /Teams/{id}/portals/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
 [**TeamsIdPortalsNkMembersRelFkHead**](TeamApi.md#teamsidportalsnkmembersrelfkhead) | **HEAD** /Teams/{id}/portals/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**TeamsIdPortalsNkMembersRelFkPut**](TeamApi.md#teamsidportalsnkmembersrelfkput) | **PUT** /Teams/{id}/portals/{nk}/members/rel/{fk} | Add a related item by id for members.
+[**TeamsIdPortalsNkPermissionDelete**](TeamApi.md#teamsidportalsnkpermissiondelete) | **DELETE** /Teams/{id}/portals/{nk}/permission | Deletes permission of this model.
+[**TeamsIdPortalsNkPermissionGet**](TeamApi.md#teamsidportalsnkpermissionget) | **GET** /Teams/{id}/portals/{nk}/permission | Fetches hasOne relation permission.
+[**TeamsIdPortalsNkPermissionPost**](TeamApi.md#teamsidportalsnkpermissionpost) | **POST** /Teams/{id}/portals/{nk}/permission | Creates a new instance in permission of this model.
+[**TeamsIdPortalsNkPermissionPut**](TeamApi.md#teamsidportalsnkpermissionput) | **PUT** /Teams/{id}/portals/{nk}/permission | Update permission of this model.
 [**TeamsIdPortalsNkPortalMembersCountGet**](TeamApi.md#teamsidportalsnkportalmemberscountget) | **GET** /Teams/{id}/portals/{nk}/portalMembers/count | Counts portalMembers of Portal.
 [**TeamsIdPortalsNkPortalMembersDelete**](TeamApi.md#teamsidportalsnkportalmembersdelete) | **DELETE** /Teams/{id}/portals/{nk}/portalMembers | Deletes all portalMembers of this model.
 [**TeamsIdPortalsNkPortalMembersFkDelete**](TeamApi.md#teamsidportalsnkportalmembersfkdelete) | **DELETE** /Teams/{id}/portals/{nk}/portalMembers/{fk} | Delete a related item by id for portalMembers.
@@ -9904,6 +9908,279 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PortalMember**](PortalMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidportalsnkpermissiondelete"></a>
+# **TeamsIdPortalsNkPermissionDelete**
+> void TeamsIdPortalsNkPermissionDelete (string id, string nk)
+
+Deletes permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkPermissionDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+
+            try
+            {
+                // Deletes permission of this model.
+                apiInstance.TeamsIdPortalsNkPermissionDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkPermissionDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidportalsnkpermissionget"></a>
+# **TeamsIdPortalsNkPermissionGet**
+> PortalPermissionSet TeamsIdPortalsNkPermissionGet (string id, string nk, bool? refresh = null)
+
+Fetches hasOne relation permission.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkPermissionGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation permission.
+                PortalPermissionSet result = apiInstance.TeamsIdPortalsNkPermissionGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkPermissionGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidportalsnkpermissionpost"></a>
+# **TeamsIdPortalsNkPermissionPost**
+> PortalPermissionSet TeamsIdPortalsNkPermissionPost (string id, string nk, PortalPermissionSet data = null)
+
+Creates a new instance in permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkPermissionPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+            var data = new PortalPermissionSet(); // PortalPermissionSet |  (optional) 
+
+            try
+            {
+                // Creates a new instance in permission of this model.
+                PortalPermissionSet result = apiInstance.TeamsIdPortalsNkPermissionPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkPermissionPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidportalsnkpermissionput"></a>
+# **TeamsIdPortalsNkPermissionPut**
+> PortalPermissionSet TeamsIdPortalsNkPermissionPut (string id, string nk, PortalPermissionSet data = null)
+
+Update permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkPermissionPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+            var data = new PortalPermissionSet(); // PortalPermissionSet |  (optional) 
+
+            try
+            {
+                // Update permission of this model.
+                PortalPermissionSet result = apiInstance.TeamsIdPortalsNkPermissionPut(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkPermissionPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
 
 ### Authorization
 
