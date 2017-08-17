@@ -1567,6 +1567,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamBillingUncachedGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingUncachedGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingUncachedGet(id);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamBrandDelete
         /// </summary>
         [Test]
