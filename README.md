@@ -236,6 +236,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**CustomersRegisterPost**](docs/CustomerApi.md#customersregisterpost) | **POST** /Customers/register | Create customer and assign it to a team
 *CustomerApi* | [**CustomersReplaceOrCreatePost**](docs/CustomerApi.md#customersreplaceorcreatepost) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 *CustomerApi* | [**CustomersResetPasswordPost**](docs/CustomerApi.md#customersresetpasswordpost) | **POST** /Customers/reset-password | Reset user's password via a password-reset token.
+*CustomerApi* | [**CustomersResetPasswordTokenGet**](docs/CustomerApi.md#customersresetpasswordtokenget) | **GET** /Customers/reset-password/token | Get token info for reset password token
 *CustomerApi* | [**CustomersResetPost**](docs/CustomerApi.md#customersresetpost) | **POST** /Customers/reset | Reset password for a user with email.
 *CustomerApi* | [**CustomersUpdatePost**](docs/CustomerApi.md#customersupdatepost) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
 *CustomerApi* | [**CustomersUpsertWithWherePost**](docs/CustomerApi.md#customersupsertwithwherepost) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
