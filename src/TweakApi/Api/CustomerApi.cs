@@ -3490,6 +3490,27 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> CustomersResetPasswordPostWithHttpInfo (string newPassword);
         /// <summary>
+        /// Get token info for reset password token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>TeamMemberAccessToken</returns>
+        TeamMemberAccessToken CustomersResetPasswordTokenGet (string token);
+
+        /// <summary>
+        /// Get token info for reset password token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        ApiResponse<TeamMemberAccessToken> CustomersResetPasswordTokenGetWithHttpInfo (string token);
+        /// <summary>
         /// Reset password for a user with email.
         /// </summary>
         /// <remarks>
@@ -7011,6 +7032,27 @@ namespace TweakApi.Api
         /// <param name="newPassword"></param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> CustomersResetPasswordPostAsyncWithHttpInfo (string newPassword);
+        /// <summary>
+        /// Get token info for reset password token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersResetPasswordTokenGetAsync (string token);
+
+        /// <summary>
+        /// Get token info for reset password token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersResetPasswordTokenGetAsyncWithHttpInfo (string token);
         /// <summary>
         /// Reset password for a user with email.
         /// </summary>
@@ -34082,6 +34124,174 @@ namespace TweakApi.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+
+        /// <summary>
+        /// Get token info for reset password token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>TeamMemberAccessToken</returns>
+        public TeamMemberAccessToken CustomersResetPasswordTokenGet (string token)
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = CustomersResetPasswordTokenGetWithHttpInfo(token);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get token info for reset password token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        public ApiResponse< TeamMemberAccessToken > CustomersResetPasswordTokenGetWithHttpInfo (string token)
+        {
+            // verify the required parameter 'token' is set
+            if (token == null)
+                throw new ApiException(400, "Missing required parameter 'token' when calling CustomerApi->CustomersResetPasswordTokenGet");
+
+            var localVarPath = "/Customers/reset-password/token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (token != null) localVarQueryParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersResetPasswordTokenGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
+        }
+
+        /// <summary>
+        /// Get token info for reset password token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        public async System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersResetPasswordTokenGetAsync (string token)
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = await CustomersResetPasswordTokenGetAsyncWithHttpInfo(token);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get token info for reset password token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token">Reset password access token</param>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersResetPasswordTokenGetAsyncWithHttpInfo (string token)
+        {
+            // verify the required parameter 'token' is set
+            if (token == null)
+                throw new ApiException(400, "Missing required parameter 'token' when calling CustomerApi->CustomersResetPasswordTokenGet");
+
+            var localVarPath = "/Customers/reset-password/token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (token != null) localVarQueryParams.Add("token", Configuration.ApiClient.ParameterToString(token)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersResetPasswordTokenGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
         }
 
         /// <summary>

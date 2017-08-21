@@ -149,6 +149,7 @@ Method | HTTP request | Description
 [**CustomersRegisterPost**](CustomerApi.md#customersregisterpost) | **POST** /Customers/register | Create customer and assign it to a team
 [**CustomersReplaceOrCreatePost**](CustomerApi.md#customersreplaceorcreatepost) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 [**CustomersResetPasswordPost**](CustomerApi.md#customersresetpasswordpost) | **POST** /Customers/reset-password | Reset user&#39;s password via a password-reset token.
+[**CustomersResetPasswordTokenGet**](CustomerApi.md#customersresetpasswordtokenget) | **GET** /Customers/reset-password/token | Get token info for reset password token
 [**CustomersResetPost**](CustomerApi.md#customersresetpost) | **POST** /Customers/reset | Reset password for a user with email.
 [**CustomersUpdatePost**](CustomerApi.md#customersupdatepost) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
 [**CustomersUpsertWithWherePost**](CustomerApi.md#customersupsertwithwherepost) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
@@ -9934,6 +9935,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersresetpasswordtokenget"></a>
+# **CustomersResetPasswordTokenGet**
+> TeamMemberAccessToken CustomersResetPasswordTokenGet (string token)
+
+Get token info for reset password token
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersResetPasswordTokenGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var token = token_example;  // string | Reset password access token
+
+            try
+            {
+                // Get token info for reset password token
+                TeamMemberAccessToken result = apiInstance.CustomersResetPasswordTokenGet(token);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersResetPasswordTokenGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string**| Reset password access token | 
+
+### Return type
+
+[**TeamMemberAccessToken**](TeamMemberAccessToken.md)
 
 ### Authorization
 

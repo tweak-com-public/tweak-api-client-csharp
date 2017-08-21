@@ -2021,6 +2021,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test CustomersResetPasswordTokenGet
+        /// </summary>
+        [Test]
+        public void CustomersResetPasswordTokenGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string token = null;
+            //var response = instance.CustomersResetPasswordTokenGet(token);
+            //Assert.IsInstanceOf<TeamMemberAccessToken> (response, "response is TeamMemberAccessToken");
+        }
+        
+        /// <summary>
         /// Test CustomersResetPost
         /// </summary>
         [Test]
