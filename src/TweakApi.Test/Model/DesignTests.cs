@@ -197,6 +197,22 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Path'
         }
         /// <summary>
+        /// Test the property 'SentForApproval'
+        /// </summary>
+        [Test]
+        public void SentForApprovalTest()
+        {
+            // TODO unit test for the property 'SentForApproval'
+        }
+        /// <summary>
+        /// Test the property 'Approved'
+        /// </summary>
+        [Test]
+        public void ApprovedTest()
+        {
+            // TODO unit test for the property 'Approved'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]

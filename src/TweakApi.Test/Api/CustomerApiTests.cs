@@ -601,6 +601,19 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test CustomersIdRegisterTeamPost
+        /// </summary>
+        [Test]
+        public void CustomersIdRegisterTeamPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //Team data = null;
+            //var response = instance.CustomersIdRegisterTeamPost(id, data);
+            //Assert.IsInstanceOf<TeamMember> (response, "response is TeamMember");
+        }
+        
+        /// <summary>
         /// Test CustomersIdReplacePost
         /// </summary>
         [Test]

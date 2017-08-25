@@ -18,6 +18,8 @@ Name | Type | Description | Notes
 **Edited** | **DateTime?** |  | [optional] 
 **Expired** | **DateTime?** |  | [optional] 
 **Path** | **string** |  | [optional] [default to "/"]
+**SentForApproval** | **DateTime?** |  | [optional] 
+**Approved** | **DateTime?** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

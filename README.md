@@ -132,6 +132,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**CustomersIdPermissionPut**](docs/CustomerApi.md#customersidpermissionput) | **PUT** /Customers/{id}/permission | Update permission of this model.
 *CustomerApi* | [**CustomersIdProfilePicturePut**](docs/CustomerApi.md#customersidprofilepictureput) | **PUT** /Customers/{id}/profilePicture | Change profile picture
 *CustomerApi* | [**CustomersIdPut**](docs/CustomerApi.md#customersidput) | **PUT** /Customers/{id} | Replace attributes for a model instance and persist it into the data source.
+*CustomerApi* | [**CustomersIdRegisterTeamPost**](docs/CustomerApi.md#customersidregisterteampost) | **POST** /Customers/{id}/register/team | Register team and assign it to the customer
 *CustomerApi* | [**CustomersIdReplacePost**](docs/CustomerApi.md#customersidreplacepost) | **POST** /Customers/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *CustomerApi* | [**CustomersIdTeamsCountGet**](docs/CustomerApi.md#customersidteamscountget) | **GET** /Customers/{id}/teams/count | Counts teams of Customer.
 *CustomerApi* | [**CustomersIdTeamsDelete**](docs/CustomerApi.md#customersidteamsdelete) | **DELETE** /Customers/{id}/teams | Deletes all teams of this model.
