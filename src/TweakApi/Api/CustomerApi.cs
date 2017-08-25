@@ -962,6 +962,29 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Customer</returns>
         ApiResponse<Customer> CustomersIdPutWithHttpInfo (string id, Customer data = null);
         /// <summary>
+        /// Register team and assign it to the customer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>TeamMember</returns>
+        TeamMember CustomersIdRegisterTeamPost (string id, Team data = null);
+
+        /// <summary>
+        /// Register team and assign it to the customer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>ApiResponse of TeamMember</returns>
+        ApiResponse<TeamMember> CustomersIdRegisterTeamPostWithHttpInfo (string id, Team data = null);
+        /// <summary>
         /// Replace attributes for a model instance and persist it into the data source.
         /// </summary>
         /// <remarks>
@@ -4504,6 +4527,29 @@ namespace TweakApi.Api
         /// <param name="data">Model instance data (optional)</param>
         /// <returns>Task of ApiResponse (Customer)</returns>
         System.Threading.Tasks.Task<ApiResponse<Customer>> CustomersIdPutAsyncWithHttpInfo (string id, Customer data = null);
+        /// <summary>
+        /// Register team and assign it to the customer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>Task of TeamMember</returns>
+        System.Threading.Tasks.Task<TeamMember> CustomersIdRegisterTeamPostAsync (string id, Team data = null);
+
+        /// <summary>
+        /// Register team and assign it to the customer
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>Task of ApiResponse (TeamMember)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamMember>> CustomersIdRegisterTeamPostAsyncWithHttpInfo (string id, Team data = null);
         /// <summary>
         /// Replace attributes for a model instance and persist it into the data source.
         /// </summary>
@@ -14493,6 +14539,194 @@ namespace TweakApi.Api
             return new ApiResponse<Customer>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (Customer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Customer)));
+            
+        }
+
+        /// <summary>
+        /// Register team and assign it to the customer 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>TeamMember</returns>
+        public TeamMember CustomersIdRegisterTeamPost (string id, Team data = null)
+        {
+             ApiResponse<TeamMember> localVarResponse = CustomersIdRegisterTeamPostWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Register team and assign it to the customer 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>ApiResponse of TeamMember</returns>
+        public ApiResponse< TeamMember > CustomersIdRegisterTeamPostWithHttpInfo (string id, Team data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdRegisterTeamPost");
+
+            var localVarPath = "/Customers/{id}/register/team";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdRegisterTeamPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMember>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMember) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMember)));
+            
+        }
+
+        /// <summary>
+        /// Register team and assign it to the customer 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>Task of TeamMember</returns>
+        public async System.Threading.Tasks.Task<TeamMember> CustomersIdRegisterTeamPostAsync (string id, Team data = null)
+        {
+             ApiResponse<TeamMember> localVarResponse = await CustomersIdRegisterTeamPostAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Register team and assign it to the customer 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="data">Model instance data (optional)</param>
+        /// <returns>Task of ApiResponse (TeamMember)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamMember>> CustomersIdRegisterTeamPostAsyncWithHttpInfo (string id, Team data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdRegisterTeamPost");
+
+            var localVarPath = "/Customers/{id}/register/team";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdRegisterTeamPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMember>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMember) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMember)));
             
         }
 

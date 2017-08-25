@@ -133,6 +133,22 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Status'
         }
         /// <summary>
+        /// Test the property 'Shared'
+        /// </summary>
+        [Test]
+        public void SharedTest()
+        {
+            // TODO unit test for the property 'Shared'
+        }
+        /// <summary>
+        /// Test the property 'PermissionSetUpdated'
+        /// </summary>
+        [Test]
+        public void PermissionSetUpdatedTest()
+        {
+            // TODO unit test for the property 'PermissionSetUpdated'
+        }
+        /// <summary>
         /// Test the property 'Created'
         /// </summary>
         [Test]

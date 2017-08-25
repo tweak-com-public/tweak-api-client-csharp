@@ -45,6 +45,7 @@ Method | HTTP request | Description
 [**CustomersIdPermissionPut**](CustomerApi.md#customersidpermissionput) | **PUT** /Customers/{id}/permission | Update permission of this model.
 [**CustomersIdProfilePicturePut**](CustomerApi.md#customersidprofilepictureput) | **PUT** /Customers/{id}/profilePicture | Change profile picture
 [**CustomersIdPut**](CustomerApi.md#customersidput) | **PUT** /Customers/{id} | Replace attributes for a model instance and persist it into the data source.
+[**CustomersIdRegisterTeamPost**](CustomerApi.md#customersidregisterteampost) | **POST** /Customers/{id}/register/team | Register team and assign it to the customer
 [**CustomersIdReplacePost**](CustomerApi.md#customersidreplacepost) | **POST** /Customers/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**CustomersIdTeamsCountGet**](CustomerApi.md#customersidteamscountget) | **GET** /Customers/{id}/teams/count | Counts teams of Customer.
 [**CustomersIdTeamsDelete**](CustomerApi.md#customersidteamsdelete) | **DELETE** /Customers/{id}/teams | Deletes all teams of this model.
@@ -2863,6 +2864,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Customer**](Customer.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidregisterteampost"></a>
+# **CustomersIdRegisterTeamPost**
+> TeamMember CustomersIdRegisterTeamPost (string id, Team data = null)
+
+Register team and assign it to the customer
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdRegisterTeamPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var data = new Team(); // Team | Model instance data (optional) 
+
+            try
+            {
+                // Register team and assign it to the customer
+                TeamMember result = apiInstance.CustomersIdRegisterTeamPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdRegisterTeamPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
 
 ### Authorization
 

@@ -124,6 +124,8 @@ namespace TweakApi.Model
         /// <param name="Edited">Edited.</param>
         /// <param name="Expired">Expired.</param>
         /// <param name="Path">Path (default to &quot;/&quot;).</param>
+        /// <param name="SentForApproval">SentForApproval.</param>
+        /// <param name="Approved">Approved.</param>
         /// <param name="Created">Created.</param>
         /// <param name="Modified">Modified.</param>
         /// <param name="Id">Id.</param>
@@ -148,7 +150,7 @@ namespace TweakApi.Model
         /// <param name="Commenters">Commenters.</param>
         /// <param name="Folder">Folder.</param>
         /// <param name="Permission">Permission.</param>
-        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string RejectionCommentId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, DesignComment RejectionComment = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null, DesignPermissionSet Permission = null)
+        public Design(List<string> Colors = null, string Image = null, string Name = null, Object _Object = null, string Thumbnail = null, string Description = null, PurposeEnum? Purpose = null, StatusEnum? Status = null, List<Object> FormData = null, string HighResPdfUrl = null, string ProofPdfUrl = null, string JpegsUrl = null, DateTime? Edited = null, DateTime? Expired = null, string Path = null, DateTime? SentForApproval = null, DateTime? Approved = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string CustomerId = null, string RequesterId = null, string AssigneeId = null, string ReviewerId = null, string TemplateId = null, string PortalId = null, string RejectionCommentId = null, string FolderId = null, List<Tag> Tags = null, Customer Customer = null, Template Template = null, Portal Portal = null, List<DesignComment> Comments = null, DesignComment RejectionComment = null, List<DesignExport> Exports = null, TeamMember Requester = null, TeamMember Assignee = null, TeamMember Reviewer = null, List<TeamMember> Commenters = null, DesignFolder Folder = null, DesignPermissionSet Permission = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -221,6 +223,8 @@ namespace TweakApi.Model
             {
                 this.Path = Path;
             }
+            this.SentForApproval = SentForApproval;
+            this.Approved = Approved;
             this.Created = Created;
             this.Modified = Modified;
             this.Id = Id;
@@ -312,6 +316,16 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="path", EmitDefaultValue=false)]
         public string Path { get; set; }
+        /// <summary>
+        /// Gets or Sets SentForApproval
+        /// </summary>
+        [DataMember(Name="sentForApproval", EmitDefaultValue=false)]
+        public DateTime? SentForApproval { get; set; }
+        /// <summary>
+        /// Gets or Sets Approved
+        /// </summary>
+        [DataMember(Name="approved", EmitDefaultValue=false)]
+        public DateTime? Approved { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -455,6 +469,8 @@ namespace TweakApi.Model
             sb.Append("  Edited: ").Append(Edited).Append("\n");
             sb.Append("  Expired: ").Append(Expired).Append("\n");
             sb.Append("  Path: ").Append(Path).Append("\n");
+            sb.Append("  SentForApproval: ").Append(SentForApproval).Append("\n");
+            sb.Append("  Approved: ").Append(Approved).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Modified: ").Append(Modified).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
@@ -589,6 +605,16 @@ namespace TweakApi.Model
                     this.Path == other.Path ||
                     this.Path != null &&
                     this.Path.Equals(other.Path)
+                ) && 
+                (
+                    this.SentForApproval == other.SentForApproval ||
+                    this.SentForApproval != null &&
+                    this.SentForApproval.Equals(other.SentForApproval)
+                ) && 
+                (
+                    this.Approved == other.Approved ||
+                    this.Approved != null &&
+                    this.Approved.Equals(other.Approved)
                 ) && 
                 (
                     this.Created == other.Created ||
@@ -753,6 +779,10 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Expired.GetHashCode();
                 if (this.Path != null)
                     hash = hash * 59 + this.Path.GetHashCode();
+                if (this.SentForApproval != null)
+                    hash = hash * 59 + this.SentForApproval.GetHashCode();
+                if (this.Approved != null)
+                    hash = hash * 59 + this.Approved.GetHashCode();
                 if (this.Created != null)
                     hash = hash * 59 + this.Created.GetHashCode();
                 if (this.Modified != null)
