@@ -85,6 +85,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'Roles'
         }
         /// <summary>
+        /// Test the property 'RefreshToken'
+        /// </summary>
+        [Test]
+        public void RefreshTokenTest()
+        {
+            // TODO unit test for the property 'RefreshToken'
+        }
+        /// <summary>
         /// Test the property 'Id'
         /// </summary>
         [Test]

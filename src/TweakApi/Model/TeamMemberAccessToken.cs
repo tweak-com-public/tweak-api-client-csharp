@@ -48,6 +48,7 @@ namespace TweakApi.Model
         /// Initializes a new instance of the <see cref="TeamMemberAccessToken" /> class.
         /// </summary>
         /// <param name="Roles">Roles.</param>
+        /// <param name="RefreshToken">RefreshToken.</param>
         /// <param name="Id">Id (required).</param>
         /// <param name="Ttl">time to live in seconds (2 weeks by default) (default to 1209600.0).</param>
         /// <param name="Scopes">Array of scopes granted to this access token..</param>
@@ -62,7 +63,7 @@ namespace TweakApi.Model
         /// <param name="TeamMember">TeamMember.</param>
         /// <param name="Portal">Portal.</param>
         /// <param name="PortalMember">PortalMember.</param>
-        public TeamMemberAccessToken(List<string> Roles = null, string Id = null, double? Ttl = null, List<string> Scopes = null, DateTime? Created = null, string UserId = null, string TeamId = null, string TeamMemberId = null, string PortalId = null, string PortalMemberId = null, Customer Customer = null, Team Team = null, TeamMember TeamMember = null, Portal Portal = null, PortalMember PortalMember = null)
+        public TeamMemberAccessToken(List<string> Roles = null, string RefreshToken = null, string Id = null, double? Ttl = null, List<string> Scopes = null, DateTime? Created = null, string UserId = null, string TeamId = null, string TeamMemberId = null, string PortalId = null, string PortalMemberId = null, Customer Customer = null, Team Team = null, TeamMember TeamMember = null, Portal Portal = null, PortalMember PortalMember = null)
         {
             // to ensure "Id" is required (not null)
             if (Id == null)
@@ -74,6 +75,7 @@ namespace TweakApi.Model
                 this.Id = Id;
             }
             this.Roles = Roles;
+            this.RefreshToken = RefreshToken;
             // use default value if no "Ttl" provided
             if (Ttl == null)
             {
@@ -102,6 +104,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="roles", EmitDefaultValue=false)]
         public List<string> Roles { get; set; }
+        /// <summary>
+        /// Gets or Sets RefreshToken
+        /// </summary>
+        [DataMember(Name="refreshToken", EmitDefaultValue=false)]
+        public string RefreshToken { get; set; }
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -183,6 +190,7 @@ namespace TweakApi.Model
             var sb = new StringBuilder();
             sb.Append("class TeamMemberAccessToken {\n");
             sb.Append("  Roles: ").Append(Roles).Append("\n");
+            sb.Append("  RefreshToken: ").Append(RefreshToken).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Ttl: ").Append(Ttl).Append("\n");
             sb.Append("  Scopes: ").Append(Scopes).Append("\n");
@@ -237,6 +245,11 @@ namespace TweakApi.Model
                     this.Roles == other.Roles ||
                     this.Roles != null &&
                     this.Roles.SequenceEqual(other.Roles)
+                ) && 
+                (
+                    this.RefreshToken == other.RefreshToken ||
+                    this.RefreshToken != null &&
+                    this.RefreshToken.Equals(other.RefreshToken)
                 ) && 
                 (
                     this.Id == other.Id ||
@@ -323,6 +336,8 @@ namespace TweakApi.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Roles != null)
                     hash = hash * 59 + this.Roles.GetHashCode();
+                if (this.RefreshToken != null)
+                    hash = hash * 59 + this.RefreshToken.GetHashCode();
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
                 if (this.Ttl != null)

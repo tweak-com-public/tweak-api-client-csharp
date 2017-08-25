@@ -3387,6 +3387,27 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of TeamMemberAccessToken</returns>
         ApiResponse<TeamMemberAccessToken> CustomersMeTokenGetWithHttpInfo ();
         /// <summary>
+        /// Refresh current access token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>TeamMemberAccessToken</returns>
+        TeamMemberAccessToken CustomersMeTokenRefreshGet (string refreshToken);
+
+        /// <summary>
+        /// Refresh current access token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        ApiResponse<TeamMemberAccessToken> CustomersMeTokenRefreshGetWithHttpInfo (string refreshToken);
+        /// <summary>
         /// Patch an existing model instance or insert a new one into the data source.
         /// </summary>
         /// <remarks>
@@ -6952,6 +6973,27 @@ namespace TweakApi.Api
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
         System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersMeTokenGetAsyncWithHttpInfo ();
+        /// <summary>
+        /// Refresh current access token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersMeTokenRefreshGetAsync (string refreshToken);
+
+        /// <summary>
+        /// Refresh current access token
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersMeTokenRefreshGetAsyncWithHttpInfo (string refreshToken);
         /// <summary>
         /// Patch an existing model instance or insert a new one into the data source.
         /// </summary>
@@ -33305,6 +33347,174 @@ namespace TweakApi.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("CustomersMeTokenGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
+        }
+
+        /// <summary>
+        /// Refresh current access token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>TeamMemberAccessToken</returns>
+        public TeamMemberAccessToken CustomersMeTokenRefreshGet (string refreshToken)
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = CustomersMeTokenRefreshGetWithHttpInfo(refreshToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Refresh current access token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>ApiResponse of TeamMemberAccessToken</returns>
+        public ApiResponse< TeamMemberAccessToken > CustomersMeTokenRefreshGetWithHttpInfo (string refreshToken)
+        {
+            // verify the required parameter 'refreshToken' is set
+            if (refreshToken == null)
+                throw new ApiException(400, "Missing required parameter 'refreshToken' when calling CustomerApi->CustomersMeTokenRefreshGet");
+
+            var localVarPath = "/Customers/me/token/refresh";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (refreshToken != null) localVarQueryParams.Add("refreshToken", Configuration.ApiClient.ParameterToString(refreshToken)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersMeTokenRefreshGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<TeamMemberAccessToken>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (TeamMemberAccessToken) Configuration.ApiClient.Deserialize(localVarResponse, typeof(TeamMemberAccessToken)));
+            
+        }
+
+        /// <summary>
+        /// Refresh current access token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>Task of TeamMemberAccessToken</returns>
+        public async System.Threading.Tasks.Task<TeamMemberAccessToken> CustomersMeTokenRefreshGetAsync (string refreshToken)
+        {
+             ApiResponse<TeamMemberAccessToken> localVarResponse = await CustomersMeTokenRefreshGetAsyncWithHttpInfo(refreshToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Refresh current access token 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="refreshToken">AccessToken refreshToken</param>
+        /// <returns>Task of ApiResponse (TeamMemberAccessToken)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<TeamMemberAccessToken>> CustomersMeTokenRefreshGetAsyncWithHttpInfo (string refreshToken)
+        {
+            // verify the required parameter 'refreshToken' is set
+            if (refreshToken == null)
+                throw new ApiException(400, "Missing required parameter 'refreshToken' when calling CustomerApi->CustomersMeTokenRefreshGet");
+
+            var localVarPath = "/Customers/me/token/refresh";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (refreshToken != null) localVarQueryParams.Add("refreshToken", Configuration.ApiClient.ParameterToString(refreshToken)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersMeTokenRefreshGet", localVarResponse);
                 if (exception != null) throw exception;
             }
 
