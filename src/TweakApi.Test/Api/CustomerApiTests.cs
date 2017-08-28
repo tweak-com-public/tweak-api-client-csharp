@@ -1962,6 +1962,18 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test CustomersMeTokenRefreshGet
+        /// </summary>
+        [Test]
+        public void CustomersMeTokenRefreshGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string refreshToken = null;
+            //var response = instance.CustomersMeTokenRefreshGet(refreshToken);
+            //Assert.IsInstanceOf<TeamMemberAccessToken> (response, "response is TeamMemberAccessToken");
+        }
+        
+        /// <summary>
         /// Test CustomersPatch
         /// </summary>
         [Test]

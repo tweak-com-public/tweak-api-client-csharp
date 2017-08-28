@@ -24,7 +24,7 @@ limitations under the License.
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{885DD675-A56F-46FA-903E-3979560FA756}</ProjectGuid>
+    <ProjectGuid>{704EE448-978C-44C4-A0C9-2FE404365826}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TweakApi</RootNamespace>
