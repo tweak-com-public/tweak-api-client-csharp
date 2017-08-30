@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **AllowHighResPDF** | **bool?** |  | [optional] [default to false]
 **AllowSaveForLater** | **bool?** |  | [optional] [default to false]
 **AllowSaveAsTemplate** | **bool?** |  | [optional] [default to false]
+**AllowDuplicateDesign** | **bool?** |  | [optional] [default to false]
 **BlockEditing** | **bool?** |  | [optional] [default to false]
 **MakeAllItemsEditable** | **bool?** |  | [optional] [default to false]
 **ShowConfirm** | **bool?** |  | [optional] [default to false]

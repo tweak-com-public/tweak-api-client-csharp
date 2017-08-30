@@ -157,6 +157,14 @@ namespace TweakApi.Test
             // TODO unit test for the property 'AllowSaveAsTemplate'
         }
         /// <summary>
+        /// Test the property 'AllowDuplicateDesign'
+        /// </summary>
+        [Test]
+        public void AllowDuplicateDesignTest()
+        {
+            // TODO unit test for the property 'AllowDuplicateDesign'
+        }
+        /// <summary>
         /// Test the property 'BlockEditing'
         /// </summary>
         [Test]
