@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **ShowConfirm** | **bool?** |  | [optional] [default to false]
 **AllowApprovePluginProduct** | **bool?** |  | [optional] [default to false]
 **AllowSendToApprovePluginProduct** | **bool?** |  | [optional] [default to false]
-**WorkflowForm** | **Object** |  | [optional] 
+**WorkflowForm** | **string** |  | [optional] 
 **DesignFormData** | **List&lt;Object&gt;** |  | [optional] 
 **ShowPluginImages** | **bool?** |  | [optional] [default to false]
 **PluginImageLibraries** | **List&lt;string&gt;** |  | [optional] 
