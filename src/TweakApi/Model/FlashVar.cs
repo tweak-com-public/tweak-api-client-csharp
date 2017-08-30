@@ -79,7 +79,7 @@ namespace TweakApi.Model
         /// <param name="Design">Design.</param>
         /// <param name="TemplateId">TemplateId.</param>
         /// <param name="Template">Template.</param>
-        public FlashVar(string ApiPartnerAuthUrl = null, string PluginProductId = null, string SavedProductId = null, bool? AllowAddImage = null, bool? AllowAddText = null, bool? AllowJPEG = null, bool? AllowLowResPDF = null, bool? AllowHighResPDF = null, bool? AllowSaveForLater = null, bool? AllowSaveAsTemplate = null, bool? AllowDuplicateDesign = null, bool? BlockEditing = null, bool? MakeAllItemsEditable = null, bool? ShowConfirm = null, bool? AllowApprovePluginProduct = null, bool? AllowSendToApprovePluginProduct = null, Object WorkflowForm = null, List<Object> DesignFormData = null, bool? ShowPluginImages = null, List<string> PluginImageLibraries = null, bool? IsTweakTemplate = null, bool? ShowItemNavigator = null, bool? ShowItemCounts = null, bool? ShowEditableItemToggle = null, string Id = null, string TeamId = null, Team Team = null, string TeamMemberId = null, TeamMember TeamMember = null, string PortalId = null, Portal Portal = null, string PortalMemberId = null, PortalMember PortalMember = null, string DesignId = null, Design Design = null, string TemplateId = null, Template Template = null)
+        public FlashVar(string ApiPartnerAuthUrl = null, string PluginProductId = null, string SavedProductId = null, bool? AllowAddImage = null, bool? AllowAddText = null, bool? AllowJPEG = null, bool? AllowLowResPDF = null, bool? AllowHighResPDF = null, bool? AllowSaveForLater = null, bool? AllowSaveAsTemplate = null, bool? AllowDuplicateDesign = null, bool? BlockEditing = null, bool? MakeAllItemsEditable = null, bool? ShowConfirm = null, bool? AllowApprovePluginProduct = null, bool? AllowSendToApprovePluginProduct = null, string WorkflowForm = null, List<Object> DesignFormData = null, bool? ShowPluginImages = null, List<string> PluginImageLibraries = null, bool? IsTweakTemplate = null, bool? ShowItemNavigator = null, bool? ShowItemCounts = null, bool? ShowEditableItemToggle = null, string Id = null, string TeamId = null, Team Team = null, string TeamMemberId = null, TeamMember TeamMember = null, string PortalId = null, Portal Portal = null, string PortalMemberId = null, PortalMember PortalMember = null, string DesignId = null, Design Design = null, string TemplateId = null, Template Template = null)
         {
             // use default value if no "ApiPartnerAuthUrl" provided
             if (ApiPartnerAuthUrl == null)
@@ -356,7 +356,7 @@ namespace TweakApi.Model
         /// Gets or Sets WorkflowForm
         /// </summary>
         [DataMember(Name="workflowForm", EmitDefaultValue=false)]
-        public Object WorkflowForm { get; set; }
+        public string WorkflowForm { get; set; }
         /// <summary>
         /// Gets or Sets DesignFormData
         /// </summary>
