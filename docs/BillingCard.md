@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Token** | **string** |  | [optional] 
 **Number** | **string** |  | [optional] 
 **Cvc** | **string** |  | [optional] 
+**CvcCheck** | **string** |  | [optional] 
 **Last4** | **string** |  | [optional] 
 **Brand** | **string** |  | [optional] 
 **Country** | **string** |  | [optional] 

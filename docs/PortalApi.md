@@ -50,7 +50,12 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkExportsGet**](PortalApi.md#portalsiddesignsnkexportsget) | **GET** /Portals/{id}/designs/{nk}/exports | Queries exports of Design.
 [**PortalsIdDesignsNkExportsPost**](PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**PortalsIdDesignsNkFolderGet**](PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
+[**PortalsIdDesignsNkPermissionDelete**](PortalApi.md#portalsiddesignsnkpermissiondelete) | **DELETE** /Portals/{id}/designs/{nk}/permission | Deletes permission of this model.
+[**PortalsIdDesignsNkPermissionGet**](PortalApi.md#portalsiddesignsnkpermissionget) | **GET** /Portals/{id}/designs/{nk}/permission | Fetches hasOne relation permission.
+[**PortalsIdDesignsNkPermissionPost**](PortalApi.md#portalsiddesignsnkpermissionpost) | **POST** /Portals/{id}/designs/{nk}/permission | Creates a new instance in permission of this model.
+[**PortalsIdDesignsNkPermissionPut**](PortalApi.md#portalsiddesignsnkpermissionput) | **PUT** /Portals/{id}/designs/{nk}/permission | Update permission of this model.
 [**PortalsIdDesignsNkPortalGet**](PortalApi.md#portalsiddesignsnkportalget) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+[**PortalsIdDesignsNkRejectionCommentGet**](PortalApi.md#portalsiddesignsnkrejectioncommentget) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**PortalsIdDesignsNkRequesterGet**](PortalApi.md#portalsiddesignsnkrequesterget) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 [**PortalsIdDesignsNkReviewerGet**](PortalApi.md#portalsiddesignsnkreviewerget) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 [**PortalsIdDesignsNkTagsCountGet**](PortalApi.md#portalsiddesignsnktagscountget) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -93,6 +98,10 @@ Method | HTTP request | Description
 [**PortalsIdMembersRelFkHead**](PortalApi.md#portalsidmembersrelfkhead) | **HEAD** /Portals/{id}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**PortalsIdMembersRelFkPut**](PortalApi.md#portalsidmembersrelfkput) | **PUT** /Portals/{id}/members/rel/{fk} | Add a related item by id for members.
 [**PortalsIdPatch**](PortalApi.md#portalsidpatch) | **PATCH** /Portals/{id} | Patch attributes for a model instance and persist it into the data source.
+[**PortalsIdPermissionDelete**](PortalApi.md#portalsidpermissiondelete) | **DELETE** /Portals/{id}/permission | Deletes permission of this model.
+[**PortalsIdPermissionGet**](PortalApi.md#portalsidpermissionget) | **GET** /Portals/{id}/permission | Fetches hasOne relation permission.
+[**PortalsIdPermissionPost**](PortalApi.md#portalsidpermissionpost) | **POST** /Portals/{id}/permission | Creates a new instance in permission of this model.
+[**PortalsIdPermissionPut**](PortalApi.md#portalsidpermissionput) | **PUT** /Portals/{id}/permission | Update permission of this model.
 [**PortalsIdPortalMembersCountGet**](PortalApi.md#portalsidportalmemberscountget) | **GET** /Portals/{id}/portalMembers/count | Counts portalMembers of Portal.
 [**PortalsIdPortalMembersDelete**](PortalApi.md#portalsidportalmembersdelete) | **DELETE** /Portals/{id}/portalMembers | Deletes all portalMembers of this model.
 [**PortalsIdPortalMembersFkDelete**](PortalApi.md#portalsidportalmembersfkdelete) | **DELETE** /Portals/{id}/portalMembers/{fk} | Delete a related item by id for portalMembers.
@@ -3255,6 +3264,279 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="portalsiddesignsnkpermissiondelete"></a>
+# **PortalsIdDesignsNkPermissionDelete**
+> void PortalsIdDesignsNkPermissionDelete (string id, string nk)
+
+Deletes permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkPermissionDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+
+            try
+            {
+                // Deletes permission of this model.
+                apiInstance.PortalsIdDesignsNkPermissionDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkPermissionDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkpermissionget"></a>
+# **PortalsIdDesignsNkPermissionGet**
+> DesignPermissionSet PortalsIdDesignsNkPermissionGet (string id, string nk, bool? refresh = null)
+
+Fetches hasOne relation permission.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkPermissionGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation permission.
+                DesignPermissionSet result = apiInstance.PortalsIdDesignsNkPermissionGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkPermissionGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkpermissionpost"></a>
+# **PortalsIdDesignsNkPermissionPost**
+> DesignPermissionSet PortalsIdDesignsNkPermissionPost (string id, string nk, DesignPermissionSet data = null)
+
+Creates a new instance in permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkPermissionPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var data = new DesignPermissionSet(); // DesignPermissionSet |  (optional) 
+
+            try
+            {
+                // Creates a new instance in permission of this model.
+                DesignPermissionSet result = apiInstance.PortalsIdDesignsNkPermissionPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkPermissionPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkpermissionput"></a>
+# **PortalsIdDesignsNkPermissionPut**
+> DesignPermissionSet PortalsIdDesignsNkPermissionPut (string id, string nk, DesignPermissionSet data = null)
+
+Update permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkPermissionPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var data = new DesignPermissionSet(); // DesignPermissionSet |  (optional) 
+
+            try
+            {
+                // Update permission of this model.
+                DesignPermissionSet result = apiInstance.PortalsIdDesignsNkPermissionPut(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkPermissionPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="portalsiddesignsnkportalget"></a>
 # **PortalsIdDesignsNkPortalGet**
 > Portal PortalsIdDesignsNkPortalGet (string id, string nk, bool? refresh = null)
@@ -3312,6 +3594,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkrejectioncommentget"></a>
+# **PortalsIdDesignsNkRejectionCommentGet**
+> DesignComment PortalsIdDesignsNkRejectionCommentGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkRejectionCommentGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation rejectionComment.
+                DesignComment result = apiInstance.PortalsIdDesignsNkRejectionCommentGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkRejectionCommentGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 
@@ -4289,7 +4640,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidexistsget"></a>
 # **PortalsIdExistsGet**
-> InlineResponse2002 PortalsIdExistsGet (string id)
+> InlineResponse2001 PortalsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4319,7 +4670,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.PortalsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4339,7 +4690,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4421,7 +4772,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidhead"></a>
 # **PortalsIdHead**
-> InlineResponse2002 PortalsIdHead (string id)
+> InlineResponse2001 PortalsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -4451,7 +4802,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalsIdHead(id);
+                InlineResponse2001 result = apiInstance.PortalsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4471,7 +4822,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6155,6 +6506,271 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsidpermissiondelete"></a>
+# **PortalsIdPermissionDelete**
+> void PortalsIdPermissionDelete (string id)
+
+Deletes permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdPermissionDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+
+            try
+            {
+                // Deletes permission of this model.
+                apiInstance.PortalsIdPermissionDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdPermissionDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsidpermissionget"></a>
+# **PortalsIdPermissionGet**
+> PortalPermissionSet PortalsIdPermissionGet (string id, bool? refresh = null)
+
+Fetches hasOne relation permission.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdPermissionGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation permission.
+                PortalPermissionSet result = apiInstance.PortalsIdPermissionGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdPermissionGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsidpermissionpost"></a>
+# **PortalsIdPermissionPost**
+> PortalPermissionSet PortalsIdPermissionPost (string id, PortalPermissionSet data = null)
+
+Creates a new instance in permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdPermissionPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var data = new PortalPermissionSet(); // PortalPermissionSet |  (optional) 
+
+            try
+            {
+                // Creates a new instance in permission of this model.
+                PortalPermissionSet result = apiInstance.PortalsIdPermissionPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdPermissionPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsidpermissionput"></a>
+# **PortalsIdPermissionPut**
+> PortalPermissionSet PortalsIdPermissionPut (string id, PortalPermissionSet data = null)
+
+Update permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdPermissionPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var data = new PortalPermissionSet(); // PortalPermissionSet |  (optional) 
+
+            try
+            {
+                // Update permission of this model.
+                PortalPermissionSet result = apiInstance.PortalsIdPermissionPut(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdPermissionPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
 
 ### Authorization
 
@@ -9053,7 +9669,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsupdatepost"></a>
 # **PortalsUpdatePost**
-> InlineResponse2001 PortalsUpdatePost (string where = null, Portal data = null)
+> InlineResponse2002 PortalsUpdatePost (string where = null, Portal data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -9084,7 +9700,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.PortalsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.PortalsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9105,7 +9721,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

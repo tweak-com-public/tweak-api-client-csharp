@@ -929,7 +929,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldersidexistsget"></a>
 # **ImageFoldersIdExistsGet**
-> InlineResponse2002 ImageFoldersIdExistsGet (string id)
+> InlineResponse2001 ImageFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -959,7 +959,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.ImageFoldersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.ImageFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -979,7 +979,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1528,7 +1528,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldersidhead"></a>
 # **ImageFoldersIdHead**
-> InlineResponse2002 ImageFoldersIdHead (string id)
+> InlineResponse2001 ImageFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1558,7 +1558,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.ImageFoldersIdHead(id);
+                InlineResponse2001 result = apiInstance.ImageFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1578,7 +1578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4202,7 +4202,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldersupdatepost"></a>
 # **ImageFoldersUpdatePost**
-> InlineResponse2001 ImageFoldersUpdatePost (string where = null, ImageFolder data = null)
+> InlineResponse2002 ImageFoldersUpdatePost (string where = null, ImageFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -4233,7 +4233,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.ImageFoldersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.ImageFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4254,7 +4254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

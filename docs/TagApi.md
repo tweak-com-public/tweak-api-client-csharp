@@ -1105,7 +1105,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidexistsget"></a>
 # **TagsIdExistsGet**
-> InlineResponse2002 TagsIdExistsGet (string id)
+> InlineResponse2001 TagsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1135,7 +1135,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TagsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TagsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1155,7 +1155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1237,7 +1237,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidhead"></a>
 # **TagsIdHead**
-> InlineResponse2002 TagsIdHead (string id)
+> InlineResponse2001 TagsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1267,7 +1267,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TagsIdHead(id);
+                InlineResponse2001 result = apiInstance.TagsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1287,7 +1287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2432,7 +2432,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsupdatepost"></a>
 # **TagsUpdatePost**
-> InlineResponse2001 TagsUpdatePost (string where = null, Tag data = null)
+> InlineResponse2002 TagsUpdatePost (string where = null, Tag data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2463,7 +2463,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TagsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TagsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2484,7 +2484,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

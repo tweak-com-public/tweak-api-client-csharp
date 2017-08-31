@@ -52,9 +52,14 @@ Method | HTTP request | Description
 [**DesignsIdGet**](DesignApi.md#designsidget) | **GET** /Designs/{id} | Find a model instance by {{id}} from the data source.
 [**DesignsIdHead**](DesignApi.md#designsidhead) | **HEAD** /Designs/{id} | Check whether a model instance exists in the data source.
 [**DesignsIdPatch**](DesignApi.md#designsidpatch) | **PATCH** /Designs/{id} | Patch attributes for a model instance and persist it into the data source.
+[**DesignsIdPermissionDelete**](DesignApi.md#designsidpermissiondelete) | **DELETE** /Designs/{id}/permission | Deletes permission of this model.
+[**DesignsIdPermissionGet**](DesignApi.md#designsidpermissionget) | **GET** /Designs/{id}/permission | Fetches hasOne relation permission.
+[**DesignsIdPermissionPost**](DesignApi.md#designsidpermissionpost) | **POST** /Designs/{id}/permission | Creates a new instance in permission of this model.
+[**DesignsIdPermissionPut**](DesignApi.md#designsidpermissionput) | **PUT** /Designs/{id}/permission | Update permission of this model.
 [**DesignsIdPortalGet**](DesignApi.md#designsidportalget) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 [**DesignsIdPut**](DesignApi.md#designsidput) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**DesignsIdRejectPost**](DesignApi.md#designsidrejectpost) | **POST** /Designs/{id}/reject | Reject design
+[**DesignsIdRejectionCommentGet**](DesignApi.md#designsidrejectioncommentget) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**DesignsIdReplacePost**](DesignApi.md#designsidreplacepost) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**DesignsIdRequesterGet**](DesignApi.md#designsidrequesterget) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 [**DesignsIdReviewerGet**](DesignApi.md#designsidreviewerget) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -2495,7 +2500,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidexistsget"></a>
 # **DesignsIdExistsGet**
-> InlineResponse2002 DesignsIdExistsGet (string id)
+> InlineResponse2001 DesignsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -2525,7 +2530,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignsIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.DesignsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2545,7 +2550,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3161,7 +3166,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidhead"></a>
 # **DesignsIdHead**
-> InlineResponse2002 DesignsIdHead (string id)
+> InlineResponse2001 DesignsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -3191,7 +3196,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.DesignsIdHead(id);
+                InlineResponse2001 result = apiInstance.DesignsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3211,7 +3216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3279,6 +3284,271 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidpermissiondelete"></a>
+# **DesignsIdPermissionDelete**
+> void DesignsIdPermissionDelete (string id)
+
+Deletes permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdPermissionDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+
+            try
+            {
+                // Deletes permission of this model.
+                apiInstance.DesignsIdPermissionDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdPermissionDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidpermissionget"></a>
+# **DesignsIdPermissionGet**
+> DesignPermissionSet DesignsIdPermissionGet (string id, bool? refresh = null)
+
+Fetches hasOne relation permission.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdPermissionGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches hasOne relation permission.
+                DesignPermissionSet result = apiInstance.DesignsIdPermissionGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdPermissionGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidpermissionpost"></a>
+# **DesignsIdPermissionPost**
+> DesignPermissionSet DesignsIdPermissionPost (string id, DesignPermissionSet data = null)
+
+Creates a new instance in permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdPermissionPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var data = new DesignPermissionSet(); // DesignPermissionSet |  (optional) 
+
+            try
+            {
+                // Creates a new instance in permission of this model.
+                DesignPermissionSet result = apiInstance.DesignsIdPermissionPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdPermissionPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidpermissionput"></a>
+# **DesignsIdPermissionPut**
+> DesignPermissionSet DesignsIdPermissionPut (string id, DesignPermissionSet data = null)
+
+Update permission of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdPermissionPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var data = new DesignPermissionSet(); // DesignPermissionSet |  (optional) 
+
+            try
+            {
+                // Update permission of this model.
+                DesignPermissionSet result = apiInstance.DesignsIdPermissionPut(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdPermissionPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
 
 ### Authorization
 
@@ -3427,7 +3697,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidrejectpost"></a>
 # **DesignsIdRejectPost**
-> Design DesignsIdRejectPost (string id, string id2)
+> Design DesignsIdRejectPost (string id, string id2, Design data = null)
 
 Reject design
 
@@ -3454,11 +3724,12 @@ namespace Example
             var apiInstance = new DesignApi();
             var id = id_example;  // string | Design id
             var id2 = id_example;  // string | Customer id
+            var data = new Design(); // Design |  (optional) 
 
             try
             {
                 // Reject design
-                Design result = apiInstance.DesignsIdRejectPost(id, id2);
+                Design result = apiInstance.DesignsIdRejectPost(id, id2, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3476,10 +3747,78 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| Design id | 
  **id2** | **string**| Customer id | 
+ **data** | [**Design**](Design.md)|  | [optional] 
 
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidrejectioncommentget"></a>
+# **DesignsIdRejectionCommentGet**
+> DesignComment DesignsIdRejectionCommentGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdRejectionCommentGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation rejectionComment.
+                DesignComment result = apiInstance.DesignsIdRejectionCommentGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdRejectionCommentGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 
@@ -4758,7 +5097,7 @@ Name | Type | Description  | Notes
 
 <a name="designsupdatepost"></a>
 # **DesignsUpdatePost**
-> InlineResponse2001 DesignsUpdatePost (string where = null, Design data = null)
+> InlineResponse2002 DesignsUpdatePost (string where = null, Design data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -4789,7 +5128,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.DesignsUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.DesignsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4810,7 +5149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

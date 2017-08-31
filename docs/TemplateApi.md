@@ -1019,7 +1019,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidexistsget"></a>
 # **TemplatesIdExistsGet**
-> InlineResponse2002 TemplatesIdExistsGet (string id)
+> InlineResponse2001 TemplatesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1049,7 +1049,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplatesIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.TemplatesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1069,7 +1069,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1151,7 +1151,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidhead"></a>
 # **TemplatesIdHead**
-> InlineResponse2002 TemplatesIdHead (string id)
+> InlineResponse2001 TemplatesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1181,7 +1181,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.TemplatesIdHead(id);
+                InlineResponse2001 result = apiInstance.TemplatesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1201,7 +1201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5627,7 +5627,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesupdatepost"></a>
 # **TemplatesUpdatePost**
-> InlineResponse2001 TemplatesUpdatePost (string where = null, Template data = null)
+> InlineResponse2002 TemplatesUpdatePost (string where = null, Template data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -5658,7 +5658,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.TemplatesUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.TemplatesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5679,7 +5679,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

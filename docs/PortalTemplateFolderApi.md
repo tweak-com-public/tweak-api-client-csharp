@@ -902,7 +902,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidexistsget"></a>
 # **PortalTemplateFoldersIdExistsGet**
-> InlineResponse2002 PortalTemplateFoldersIdExistsGet (string id)
+> InlineResponse2001 PortalTemplateFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -932,7 +932,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalTemplateFoldersIdExistsGet(id);
+                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -952,7 +952,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1034,7 +1034,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidhead"></a>
 # **PortalTemplateFoldersIdHead**
-> InlineResponse2002 PortalTemplateFoldersIdHead (string id)
+> InlineResponse2001 PortalTemplateFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1064,7 +1064,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2002 result = apiInstance.PortalTemplateFoldersIdHead(id);
+                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1084,7 +1084,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2363,7 +2363,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersupdatepost"></a>
 # **PortalTemplateFoldersUpdatePost**
-> InlineResponse2001 PortalTemplateFoldersUpdatePost (string where = null, PortalTemplateFolder data = null)
+> InlineResponse2002 PortalTemplateFoldersUpdatePost (string where = null, PortalTemplateFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2394,7 +2394,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2001 result = apiInstance.PortalTemplateFoldersUpdatePost(where, data);
+                InlineResponse2002 result = apiInstance.PortalTemplateFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2415,7 +2415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
