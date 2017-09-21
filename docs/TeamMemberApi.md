@@ -63,6 +63,13 @@ Method | HTTP request | Description
 [**TeamMembersIdInvitationTicketsGet**](TeamMemberApi.md#teammembersidinvitationticketsget) | **GET** /TeamMembers/{id}/invitationTickets | Queries invitationTickets of TeamMember.
 [**TeamMembersIdInvitationTicketsPost**](TeamMemberApi.md#teammembersidinvitationticketspost) | **POST** /TeamMembers/{id}/invitationTickets | Creates a new instance in invitationTickets of this model.
 [**TeamMembersIdInviteInviteePost**](TeamMemberApi.md#teammembersidinviteinviteepost) | **POST** /TeamMembers/{id}/invite/{invitee} | Invite somebody to join the team
+[**TeamMembersIdNotificationsCountGet**](TeamMemberApi.md#teammembersidnotificationscountget) | **GET** /TeamMembers/{id}/notifications/count | Counts notifications of TeamMember.
+[**TeamMembersIdNotificationsDelete**](TeamMemberApi.md#teammembersidnotificationsdelete) | **DELETE** /TeamMembers/{id}/notifications | Deletes all notifications of this model.
+[**TeamMembersIdNotificationsFkDelete**](TeamMemberApi.md#teammembersidnotificationsfkdelete) | **DELETE** /TeamMembers/{id}/notifications/{fk} | Delete a related item by id for notifications.
+[**TeamMembersIdNotificationsFkGet**](TeamMemberApi.md#teammembersidnotificationsfkget) | **GET** /TeamMembers/{id}/notifications/{fk} | Find a related item by id for notifications.
+[**TeamMembersIdNotificationsFkPut**](TeamMemberApi.md#teammembersidnotificationsfkput) | **PUT** /TeamMembers/{id}/notifications/{fk} | Update a related item by id for notifications.
+[**TeamMembersIdNotificationsGet**](TeamMemberApi.md#teammembersidnotificationsget) | **GET** /TeamMembers/{id}/notifications | Queries notifications of TeamMember.
+[**TeamMembersIdNotificationsPost**](TeamMemberApi.md#teammembersidnotificationspost) | **POST** /TeamMembers/{id}/notifications | Creates a new instance in notifications of this model.
 [**TeamMembersIdPatch**](TeamMemberApi.md#teammembersidpatch) | **PATCH** /TeamMembers/{id} | Patch attributes for a model instance and persist it into the data source.
 [**TeamMembersIdPortalsAvailableGet**](TeamMemberApi.md#teammembersidportalsavailableget) | **GET** /TeamMembers/{id}/portals/available | Find all available Portals
 [**TeamMembersIdPortalsCountGet**](TeamMemberApi.md#teammembersidportalscountget) | **GET** /TeamMembers/{id}/portals/count | Counts portals of TeamMember.
@@ -4156,6 +4163,473 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InvitationTicket**](InvitationTicket.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationscountget"></a>
+# **TeamMembersIdNotificationsCountGet**
+> InlineResponse200 TeamMembersIdNotificationsCountGet (string id, string where = null)
+
+Counts notifications of TeamMember.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts notifications of TeamMember.
+                InlineResponse200 result = apiInstance.TeamMembersIdNotificationsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationsdelete"></a>
+# **TeamMembersIdNotificationsDelete**
+> void TeamMembersIdNotificationsDelete (string id)
+
+Deletes all notifications of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Deletes all notifications of this model.
+                apiInstance.TeamMembersIdNotificationsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationsfkdelete"></a>
+# **TeamMembersIdNotificationsFkDelete**
+> void TeamMembersIdNotificationsFkDelete (string id, string fk)
+
+Delete a related item by id for notifications.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for notifications
+
+            try
+            {
+                // Delete a related item by id for notifications.
+                apiInstance.TeamMembersIdNotificationsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for notifications | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationsfkget"></a>
+# **TeamMembersIdNotificationsFkGet**
+> Notification TeamMembersIdNotificationsFkGet (string id, string fk)
+
+Find a related item by id for notifications.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for notifications
+
+            try
+            {
+                // Find a related item by id for notifications.
+                Notification result = apiInstance.TeamMembersIdNotificationsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for notifications | 
+
+### Return type
+
+[**Notification**](Notification.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationsfkput"></a>
+# **TeamMembersIdNotificationsFkPut**
+> Notification TeamMembersIdNotificationsFkPut (string id, string fk, Notification data = null)
+
+Update a related item by id for notifications.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for notifications
+            var data = new Notification(); // Notification |  (optional) 
+
+            try
+            {
+                // Update a related item by id for notifications.
+                Notification result = apiInstance.TeamMembersIdNotificationsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for notifications | 
+ **data** | [**Notification**](Notification.md)|  | [optional] 
+
+### Return type
+
+[**Notification**](Notification.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationsget"></a>
+# **TeamMembersIdNotificationsGet**
+> List<Notification> TeamMembersIdNotificationsGet (string id, string filter = null)
+
+Queries notifications of TeamMember.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries notifications of TeamMember.
+                List&lt;Notification&gt; result = apiInstance.TeamMembersIdNotificationsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Notification>**](Notification.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidnotificationspost"></a>
+# **TeamMembersIdNotificationsPost**
+> Notification TeamMembersIdNotificationsPost (string id, Notification data = null)
+
+Creates a new instance in notifications of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdNotificationsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new Notification(); // Notification |  (optional) 
+
+            try
+            {
+                // Creates a new instance in notifications of this model.
+                Notification result = apiInstance.TeamMembersIdNotificationsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdNotificationsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**Notification**](Notification.md)|  | [optional] 
+
+### Return type
+
+[**Notification**](Notification.md)
 
 ### Authorization
 
