@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **Timezone** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
+**Key** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **CustomerId** | **string** |  | [optional] 
 **TeamId** | **string** |  | [optional] 

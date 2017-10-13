@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**TeamsCountGet**](TeamApi.md#teamscountget) | **GET** /Teams/count | Count instances of the model matched by where from the data source.
 [**TeamsFindOneGet**](TeamApi.md#teamsfindoneget) | **GET** /Teams/findOne | Find first instance of the model matched by filter from the data source.
 [**TeamsGet**](TeamApi.md#teamsget) | **GET** /Teams | Find all instances of the model matched by filter from the data source.
+[**TeamsIdAuthResetKeysDelete**](TeamApi.md#teamsidauthresetkeysdelete) | **DELETE** /Teams/{id}/auth/reset-keys | Reset Team keys
 [**TeamsIdBillingDelete**](TeamApi.md#teamsidbillingdelete) | **DELETE** /Teams/{id}/billing | Deletes billing of this model.
 [**TeamsIdBillingGet**](TeamApi.md#teamsidbillingget) | **GET** /Teams/{id}/billing | Fetches hasOne relation billing.
 [**TeamsIdBillingPost**](TeamApi.md#teamsidbillingpost) | **POST** /Teams/{id}/billing | Creates a new instance in billing of this model.
@@ -191,6 +192,7 @@ Method | HTTP request | Description
 [**TeamsIdTeamMembersFkGet**](TeamApi.md#teamsidteammembersfkget) | **GET** /Teams/{id}/teamMembers/{fk} | Find a related item by id for teamMembers.
 [**TeamsIdTeamMembersFkPut**](TeamApi.md#teamsidteammembersfkput) | **PUT** /Teams/{id}/teamMembers/{fk} | Update a related item by id for teamMembers.
 [**TeamsIdTeamMembersGet**](TeamApi.md#teamsidteammembersget) | **GET** /Teams/{id}/teamMembers | Queries teamMembers of Team.
+[**TeamsIdTeamMembersMapKeysGet**](TeamApi.md#teamsidteammembersmapkeysget) | **GET** /Teams/{id}/teamMembers/map-keys | Map teamMembers emails to teamMembers keys
 [**TeamsIdTeamMembersPost**](TeamApi.md#teamsidteammemberspost) | **POST** /Teams/{id}/teamMembers | Creates a new instance in teamMembers of this model.
 [**TeamsIdTemplateFoldersCountGet**](TeamApi.md#teamsidtemplatefolderscountget) | **GET** /Teams/{id}/templateFolders/count | Counts templateFolders of Team.
 [**TeamsIdTemplateFoldersDelete**](TeamApi.md#teamsidtemplatefoldersdelete) | **DELETE** /Teams/{id}/templateFolders | Deletes all templateFolders of this model.
@@ -599,6 +601,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<Team>**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidauthresetkeysdelete"></a>
+# **TeamsIdAuthResetKeysDelete**
+> Team TeamsIdAuthResetKeysDelete (string id)
+
+Reset Team keys
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdAuthResetKeysDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+
+            try
+            {
+                // Reset Team keys
+                Team result = apiInstance.TeamsIdAuthResetKeysDelete(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdAuthResetKeysDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 
@@ -12983,6 +13050,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<TeamMember>**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteammembersmapkeysget"></a>
+# **TeamsIdTeamMembersMapKeysGet**
+> List<Object> TeamsIdTeamMembersMapKeysGet (string id, Team data)
+
+Map teamMembers emails to teamMembers keys
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamMembersMapKeysGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var data = new Team(); // Team | TeamMember(s) email
+
+            try
+            {
+                // Map teamMembers emails to teamMembers keys
+                List&lt;Object&gt; result = apiInstance.TeamsIdTeamMembersMapKeysGet(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamMembersMapKeysGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **data** | [**Team**](Team.md)| TeamMember(s) email | 
+
+### Return type
+
+**List<Object>**
 
 ### Authorization
 
