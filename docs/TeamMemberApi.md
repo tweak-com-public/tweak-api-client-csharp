@@ -137,6 +137,13 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamDataSourcesFkPut**](TeamMemberApi.md#teammembersidteamdatasourcesfkput) | **PUT** /TeamMembers/{id}/team/dataSources/{fk} | Update a related item by id for dataSources.
 [**TeamMembersIdTeamDataSourcesGet**](TeamMemberApi.md#teammembersidteamdatasourcesget) | **GET** /TeamMembers/{id}/team/dataSources | Queries dataSources of Team.
 [**TeamMembersIdTeamDataSourcesPost**](TeamMemberApi.md#teammembersidteamdatasourcespost) | **POST** /TeamMembers/{id}/team/dataSources | Creates a new instance in dataSources of this model.
+[**TeamMembersIdTeamDynamicDatasCountGet**](TeamMemberApi.md#teammembersidteamdynamicdatascountget) | **GET** /TeamMembers/{id}/team/dynamicDatas/count | Counts dynamicDatas of Team.
+[**TeamMembersIdTeamDynamicDatasDelete**](TeamMemberApi.md#teammembersidteamdynamicdatasdelete) | **DELETE** /TeamMembers/{id}/team/dynamicDatas | Deletes all dynamicDatas of this model.
+[**TeamMembersIdTeamDynamicDatasFkDelete**](TeamMemberApi.md#teammembersidteamdynamicdatasfkdelete) | **DELETE** /TeamMembers/{id}/team/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
+[**TeamMembersIdTeamDynamicDatasFkGet**](TeamMemberApi.md#teammembersidteamdynamicdatasfkget) | **GET** /TeamMembers/{id}/team/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
+[**TeamMembersIdTeamDynamicDatasFkPut**](TeamMemberApi.md#teammembersidteamdynamicdatasfkput) | **PUT** /TeamMembers/{id}/team/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
+[**TeamMembersIdTeamDynamicDatasGet**](TeamMemberApi.md#teammembersidteamdynamicdatasget) | **GET** /TeamMembers/{id}/team/dynamicDatas | Queries dynamicDatas of Team.
+[**TeamMembersIdTeamDynamicDatasPost**](TeamMemberApi.md#teammembersidteamdynamicdataspost) | **POST** /TeamMembers/{id}/team/dynamicDatas | Creates a new instance in dynamicDatas of this model.
 [**TeamMembersIdTeamGet**](TeamMemberApi.md#teammembersidteamget) | **GET** /TeamMembers/{id}/team | Fetches belongsTo relation team.
 [**TeamMembersIdTeamImageFoldersCountGet**](TeamMemberApi.md#teammembersidteamimagefolderscountget) | **GET** /TeamMembers/{id}/team/imageFolders/count | Counts imageFolders of Team.
 [**TeamMembersIdTeamImageFoldersDelete**](TeamMemberApi.md#teammembersidteamimagefoldersdelete) | **DELETE** /TeamMembers/{id}/team/imageFolders | Deletes all imageFolders of this model.
@@ -9126,6 +9133,473 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatascountget"></a>
+# **TeamMembersIdTeamDynamicDatasCountGet**
+> InlineResponse200 TeamMembersIdTeamDynamicDatasCountGet (string id, string where = null)
+
+Counts dynamicDatas of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts dynamicDatas of Team.
+                InlineResponse200 result = apiInstance.TeamMembersIdTeamDynamicDatasCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatasdelete"></a>
+# **TeamMembersIdTeamDynamicDatasDelete**
+> void TeamMembersIdTeamDynamicDatasDelete (string id)
+
+Deletes all dynamicDatas of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Deletes all dynamicDatas of this model.
+                apiInstance.TeamMembersIdTeamDynamicDatasDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatasfkdelete"></a>
+# **TeamMembersIdTeamDynamicDatasFkDelete**
+> void TeamMembersIdTeamDynamicDatasFkDelete (string id, string fk)
+
+Delete a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+
+            try
+            {
+                // Delete a related item by id for dynamicDatas.
+                apiInstance.TeamMembersIdTeamDynamicDatasFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatasfkget"></a>
+# **TeamMembersIdTeamDynamicDatasFkGet**
+> DynamicData TeamMembersIdTeamDynamicDatasFkGet (string id, string fk)
+
+Find a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+
+            try
+            {
+                // Find a related item by id for dynamicDatas.
+                DynamicData result = apiInstance.TeamMembersIdTeamDynamicDatasFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatasfkput"></a>
+# **TeamMembersIdTeamDynamicDatasFkPut**
+> DynamicData TeamMembersIdTeamDynamicDatasFkPut (string id, string fk, DynamicData data = null)
+
+Update a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+            var data = new DynamicData(); // DynamicData |  (optional) 
+
+            try
+            {
+                // Update a related item by id for dynamicDatas.
+                DynamicData result = apiInstance.TeamMembersIdTeamDynamicDatasFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdatasget"></a>
+# **TeamMembersIdTeamDynamicDatasGet**
+> List<DynamicData> TeamMembersIdTeamDynamicDatasGet (string id, string filter = null)
+
+Queries dynamicDatas of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries dynamicDatas of Team.
+                List&lt;DynamicData&gt; result = apiInstance.TeamMembersIdTeamDynamicDatasGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DynamicData>**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamdynamicdataspost"></a>
+# **TeamMembersIdTeamDynamicDatasPost**
+> DynamicData TeamMembersIdTeamDynamicDatasPost (string id, DynamicData data = null)
+
+Creates a new instance in dynamicDatas of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamDynamicDatasPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new DynamicData(); // DynamicData |  (optional) 
+
+            try
+            {
+                // Creates a new instance in dynamicDatas of this model.
+                DynamicData result = apiInstance.TeamMembersIdTeamDynamicDatasPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 

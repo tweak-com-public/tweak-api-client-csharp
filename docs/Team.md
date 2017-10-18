@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **Status** | **string** | Status of the application, production/sandbox/disabled | [optional] [default to "sandbox"]
 **Members** | [**List&lt;Customer&gt;**](Customer.md) |  | [optional] 
 **DataSources** | [**List&lt;DataSource&gt;**](DataSource.md) |  | [optional] 
+**DynamicDatas** | [**List&lt;DynamicData&gt;**](DynamicData.md) |  | [optional] 
 **TeamMembers** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
 **Portals** | [**List&lt;Portal&gt;**](Portal.md) |  | [optional] 
 **Templates** | [**List&lt;Template&gt;**](Template.md) |  | [optional] 
