@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **MasterKey** | **string** |  | [optional] 
 **Status** | **string** | Status of the application, production/sandbox/disabled | [optional] [default to "sandbox"]
 **Members** | [**List&lt;Customer&gt;**](Customer.md) |  | [optional] 
+**BuilderConfigs** | [**List&lt;TeamBuilderConfig&gt;**](TeamBuilderConfig.md) |  | [optional] 
 **DataSources** | [**List&lt;DataSource&gt;**](DataSource.md) |  | [optional] 
 **DynamicDatas** | [**List&lt;DynamicData&gt;**](DynamicData.md) |  | [optional] 
 **TeamMembers** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 

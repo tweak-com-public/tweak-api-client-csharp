@@ -18,6 +18,15 @@ Method | HTTP request | Description
 [**TeamsIdBrandGet**](TeamApi.md#teamsidbrandget) | **GET** /Teams/{id}/brand | Fetches hasOne relation brand.
 [**TeamsIdBrandPost**](TeamApi.md#teamsidbrandpost) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
 [**TeamsIdBrandPut**](TeamApi.md#teamsidbrandput) | **PUT** /Teams/{id}/brand | Update brand of this model.
+[**TeamsIdBuilderConfigsCountGet**](TeamApi.md#teamsidbuilderconfigscountget) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
+[**TeamsIdBuilderConfigsDefaultGet**](TeamApi.md#teamsidbuilderconfigsdefaultget) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig
+[**TeamsIdBuilderConfigsDelete**](TeamApi.md#teamsidbuilderconfigsdelete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
+[**TeamsIdBuilderConfigsFkDelete**](TeamApi.md#teamsidbuilderconfigsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
+[**TeamsIdBuilderConfigsFkGet**](TeamApi.md#teamsidbuilderconfigsfkget) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
+[**TeamsIdBuilderConfigsFkPut**](TeamApi.md#teamsidbuilderconfigsfkput) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**TeamsIdBuilderConfigsNkTeamGet**](TeamApi.md#teamsidbuilderconfigsnkteamget) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
+[**TeamsIdBuilderConfigsPost**](TeamApi.md#teamsidbuilderconfigspost) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
 [**TeamsIdDataSourcesCountGet**](TeamApi.md#teamsiddatasourcescountget) | **GET** /Teams/{id}/dataSources/count | Counts dataSources of Team.
 [**TeamsIdDataSourcesDelete**](TeamApi.md#teamsiddatasourcesdelete) | **DELETE** /Teams/{id}/dataSources | Deletes all dataSources of this model.
 [**TeamsIdDataSourcesFkDelete**](TeamApi.md#teamsiddatasourcesfkdelete) | **DELETE** /Teams/{id}/dataSources/{fk} | Delete a related item by id for dataSources.
@@ -1213,6 +1222,607 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBrand**](TeamBrand.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigscountget"></a>
+# **TeamsIdBuilderConfigsCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsCountGet (string id, string where = null)
+
+Counts builderConfigs of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts builderConfigs of Team.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsdefaultget"></a>
+# **TeamsIdBuilderConfigsDefaultGet**
+> TeamBuilderConfig TeamsIdBuilderConfigsDefaultGet (string id)
+
+Get default TeamBuilderConfig
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsDefaultGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+
+            try
+            {
+                // Get default TeamBuilderConfig
+                TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsDefaultGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsDefaultGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsdelete"></a>
+# **TeamsIdBuilderConfigsDelete**
+> void TeamsIdBuilderConfigsDelete (string id)
+
+Deletes all builderConfigs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+
+            try
+            {
+                // Deletes all builderConfigs of this model.
+                apiInstance.TeamsIdBuilderConfigsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsfkdelete"></a>
+# **TeamsIdBuilderConfigsFkDelete**
+> void TeamsIdBuilderConfigsFkDelete (string id, string fk)
+
+Delete a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+
+            try
+            {
+                // Delete a related item by id for builderConfigs.
+                apiInstance.TeamsIdBuilderConfigsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsfkget"></a>
+# **TeamsIdBuilderConfigsFkGet**
+> TeamBuilderConfig TeamsIdBuilderConfigsFkGet (string id, string fk)
+
+Find a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+
+            try
+            {
+                // Find a related item by id for builderConfigs.
+                TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsfkput"></a>
+# **TeamsIdBuilderConfigsFkPut**
+> TeamBuilderConfig TeamsIdBuilderConfigsFkPut (string id, string fk, TeamBuilderConfig data = null)
+
+Update a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+            var data = new TeamBuilderConfig(); // TeamBuilderConfig |  (optional) 
+
+            try
+            {
+                // Update a related item by id for builderConfigs.
+                TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsget"></a>
+# **TeamsIdBuilderConfigsGet**
+> List<TeamBuilderConfig> TeamsIdBuilderConfigsGet (string id, string filter = null)
+
+Queries builderConfigs of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries builderConfigs of Team.
+                List&lt;TeamBuilderConfig&gt; result = apiInstance.TeamsIdBuilderConfigsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<TeamBuilderConfig>**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkteamget"></a>
+# **TeamsIdBuilderConfigsNkTeamGet**
+> Team TeamsIdBuilderConfigsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.TeamsIdBuilderConfigsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigspost"></a>
+# **TeamsIdBuilderConfigsPost**
+> TeamBuilderConfig TeamsIdBuilderConfigsPost (string id, TeamBuilderConfig data = null)
+
+Creates a new instance in builderConfigs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var data = new TeamBuilderConfig(); // TeamBuilderConfig |  (optional) 
+
+            try
+            {
+                // Creates a new instance in builderConfigs of this model.
+                TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
 
 ### Authorization
 

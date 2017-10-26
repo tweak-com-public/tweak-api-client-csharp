@@ -61,6 +61,13 @@ Method | HTTP request | Description
 [**CustomersIdTeamsNkBrandGet**](CustomerApi.md#customersidteamsnkbrandget) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**CustomersIdTeamsNkBrandPost**](CustomerApi.md#customersidteamsnkbrandpost) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
 [**CustomersIdTeamsNkBrandPut**](CustomerApi.md#customersidteamsnkbrandput) | **PUT** /Customers/{id}/teams/{nk}/brand | Update brand of this model.
+[**CustomersIdTeamsNkBuilderConfigsCountGet**](CustomerApi.md#customersidteamsnkbuilderconfigscountget) | **GET** /Customers/{id}/teams/{nk}/builderConfigs/count | Counts builderConfigs of Team.
+[**CustomersIdTeamsNkBuilderConfigsDelete**](CustomerApi.md#customersidteamsnkbuilderconfigsdelete) | **DELETE** /Customers/{id}/teams/{nk}/builderConfigs | Deletes all builderConfigs of this model.
+[**CustomersIdTeamsNkBuilderConfigsFkDelete**](CustomerApi.md#customersidteamsnkbuilderconfigsfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
+[**CustomersIdTeamsNkBuilderConfigsFkGet**](CustomerApi.md#customersidteamsnkbuilderconfigsfkget) | **GET** /Customers/{id}/teams/{nk}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
+[**CustomersIdTeamsNkBuilderConfigsFkPut**](CustomerApi.md#customersidteamsnkbuilderconfigsfkput) | **PUT** /Customers/{id}/teams/{nk}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**CustomersIdTeamsNkBuilderConfigsGet**](CustomerApi.md#customersidteamsnkbuilderconfigsget) | **GET** /Customers/{id}/teams/{nk}/builderConfigs | Queries builderConfigs of Team.
+[**CustomersIdTeamsNkBuilderConfigsPost**](CustomerApi.md#customersidteamsnkbuilderconfigspost) | **POST** /Customers/{id}/teams/{nk}/builderConfigs | Creates a new instance in builderConfigs of this model.
 [**CustomersIdTeamsNkDataSourcesCountGet**](CustomerApi.md#customersidteamsnkdatasourcescountget) | **GET** /Customers/{id}/teams/{nk}/dataSources/count | Counts dataSources of Team.
 [**CustomersIdTeamsNkDataSourcesDelete**](CustomerApi.md#customersidteamsnkdatasourcesdelete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources | Deletes all dataSources of this model.
 [**CustomersIdTeamsNkDataSourcesFkDelete**](CustomerApi.md#customersidteamsnkdatasourcesfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources/{fk} | Delete a related item by id for dataSources.
@@ -3952,6 +3959,487 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBrand**](TeamBrand.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigscountget"></a>
+# **CustomersIdTeamsNkBuilderConfigsCountGet**
+> InlineResponse200 CustomersIdTeamsNkBuilderConfigsCountGet (string id, string nk, string where = null)
+
+Counts builderConfigs of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts builderConfigs of Team.
+                InlineResponse200 result = apiInstance.CustomersIdTeamsNkBuilderConfigsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigsdelete"></a>
+# **CustomersIdTeamsNkBuilderConfigsDelete**
+> void CustomersIdTeamsNkBuilderConfigsDelete (string id, string nk)
+
+Deletes all builderConfigs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+
+            try
+            {
+                // Deletes all builderConfigs of this model.
+                apiInstance.CustomersIdTeamsNkBuilderConfigsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigsfkdelete"></a>
+# **CustomersIdTeamsNkBuilderConfigsFkDelete**
+> void CustomersIdTeamsNkBuilderConfigsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+
+            try
+            {
+                // Delete a related item by id for builderConfigs.
+                apiInstance.CustomersIdTeamsNkBuilderConfigsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigsfkget"></a>
+# **CustomersIdTeamsNkBuilderConfigsFkGet**
+> TeamBuilderConfig CustomersIdTeamsNkBuilderConfigsFkGet (string id, string nk, string fk)
+
+Find a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+
+            try
+            {
+                // Find a related item by id for builderConfigs.
+                TeamBuilderConfig result = apiInstance.CustomersIdTeamsNkBuilderConfigsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigsfkput"></a>
+# **CustomersIdTeamsNkBuilderConfigsFkPut**
+> TeamBuilderConfig CustomersIdTeamsNkBuilderConfigsFkPut (string id, string nk, string fk, TeamBuilderConfig data = null)
+
+Update a related item by id for builderConfigs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for builderConfigs
+            var data = new TeamBuilderConfig(); // TeamBuilderConfig |  (optional) 
+
+            try
+            {
+                // Update a related item by id for builderConfigs.
+                TeamBuilderConfig result = apiInstance.CustomersIdTeamsNkBuilderConfigsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for builderConfigs | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigsget"></a>
+# **CustomersIdTeamsNkBuilderConfigsGet**
+> List<TeamBuilderConfig> CustomersIdTeamsNkBuilderConfigsGet (string id, string nk, string filter = null)
+
+Queries builderConfigs of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries builderConfigs of Team.
+                List&lt;TeamBuilderConfig&gt; result = apiInstance.CustomersIdTeamsNkBuilderConfigsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<TeamBuilderConfig>**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkbuilderconfigspost"></a>
+# **CustomersIdTeamsNkBuilderConfigsPost**
+> TeamBuilderConfig CustomersIdTeamsNkBuilderConfigsPost (string id, string nk, TeamBuilderConfig data = null)
+
+Creates a new instance in builderConfigs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkBuilderConfigsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new TeamBuilderConfig(); // TeamBuilderConfig |  (optional) 
+
+            try
+            {
+                // Creates a new instance in builderConfigs of this model.
+                TeamBuilderConfig result = apiInstance.CustomersIdTeamsNkBuilderConfigsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBuilderConfigsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
 
 ### Authorization
 
