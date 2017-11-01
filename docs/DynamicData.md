@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Validations** | **Object** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
+**RecordCount** | **double?** |  | [optional] [default to 0.0]
 **Id** | **string** |  | [optional] 
 **TeamId** | **string** |  | [optional] 
 **Team** | [**Team**](Team.md) |  | [optional] 
