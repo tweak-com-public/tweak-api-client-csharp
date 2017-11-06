@@ -116,13 +116,10 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBillingCardDelete**](TeamMemberApi.md#teammembersidteambillingcarddelete) | **DELETE** /TeamMembers/{id}/team/billing/card | Delete Team Billing Card
 [**TeamMembersIdTeamBillingCardPost**](TeamMemberApi.md#teammembersidteambillingcardpost) | **POST** /TeamMembers/{id}/team/billing/card | Create Team Billing Card
 [**TeamMembersIdTeamBillingCardPut**](TeamMemberApi.md#teammembersidteambillingcardput) | **PUT** /TeamMembers/{id}/team/billing/card | Update Team Billing Card
-[**TeamMembersIdTeamBillingDelete**](TeamMemberApi.md#teammembersidteambillingdelete) | **DELETE** /TeamMembers/{id}/team/billing | Deletes billing of this model.
-[**TeamMembersIdTeamBillingGet**](TeamMemberApi.md#teammembersidteambillingget) | **GET** /TeamMembers/{id}/team/billing | Fetches hasOne relation billing.
 [**TeamMembersIdTeamBillingInvoicesFkPost**](TeamMemberApi.md#teammembersidteambillinginvoicesfkpost) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
 [**TeamMembersIdTeamBillingInvoicesGet**](TeamMemberApi.md#teammembersidteambillinginvoicesget) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
 [**TeamMembersIdTeamBillingInvoicesUpcomingGet**](TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
-[**TeamMembersIdTeamBillingPost**](TeamMemberApi.md#teammembersidteambillingpost) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
-[**TeamMembersIdTeamBillingPut**](TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
+[**TeamMembersIdTeamBillingPut**](TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update Team Billing
 [**TeamMembersIdTeamBillingSubscriptionPlanPut**](TeamMemberApi.md#teammembersidteambillingsubscriptionplanput) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 [**TeamMembersIdTeamBillingTaxEvidenceGet**](TeamMemberApi.md#teammembersidteambillingtaxevidenceget) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 [**TeamMembersIdTeamBillingUncachedGet**](TeamMemberApi.md#teammembersidteambillinguncachedget) | **GET** /TeamMembers/{id}/team/billing/uncached | Get Team Billing
@@ -131,9 +128,11 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBrandPost**](TeamMemberApi.md#teammembersidteambrandpost) | **POST** /TeamMembers/{id}/team/brand | Creates a new instance in brand of this model.
 [**TeamMembersIdTeamBrandPut**](TeamMemberApi.md#teammembersidteambrandput) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
 [**TeamMembersIdTeamBuilderConfigsCountGet**](TeamMemberApi.md#teammembersidteambuilderconfigscountget) | **GET** /TeamMembers/{id}/team/builderConfigs/count | Counts builderConfigs of Team.
+[**TeamMembersIdTeamBuilderConfigsDefaultGet**](TeamMemberApi.md#teammembersidteambuilderconfigsdefaultget) | **GET** /TeamMembers/{id}/team/builderConfigs/default | Get default Team Builder Config
 [**TeamMembersIdTeamBuilderConfigsDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs | Deletes all builderConfigs of this model.
 [**TeamMembersIdTeamBuilderConfigsFkDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsfkdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**TeamMembersIdTeamBuilderConfigsFkGet**](TeamMemberApi.md#teammembersidteambuilderconfigsfkget) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
+[**TeamMembersIdTeamBuilderConfigsFkLogoPut**](TeamMemberApi.md#teammembersidteambuilderconfigsfklogoput) | **PUT** /TeamMembers/{id}/team/builderConfigs/{fk}/logo | Change Builder Config logo
 [**TeamMembersIdTeamBuilderConfigsFkPut**](TeamMemberApi.md#teammembersidteambuilderconfigsfkput) | **PUT** /TeamMembers/{id}/team/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**TeamMembersIdTeamBuilderConfigsGet**](TeamMemberApi.md#teammembersidteambuilderconfigsget) | **GET** /TeamMembers/{id}/team/builderConfigs | Queries builderConfigs of Team.
 [**TeamMembersIdTeamBuilderConfigsPost**](TeamMemberApi.md#teammembersidteambuilderconfigspost) | **POST** /TeamMembers/{id}/team/builderConfigs | Creates a new instance in builderConfigs of this model.
@@ -7759,137 +7758,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteambillingdelete"></a>
-# **TeamMembersIdTeamBillingDelete**
-> void TeamMembersIdTeamBillingDelete (string id)
-
-Deletes billing of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdTeamBillingDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-
-            try
-            {
-                // Deletes billing of this model.
-                apiInstance.TeamMembersIdTeamBillingDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersidteambillingget"></a>
-# **TeamMembersIdTeamBillingGet**
-> Billing TeamMembersIdTeamBillingGet (string id, bool? refresh = null)
-
-Fetches hasOne relation billing.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdTeamBillingGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-            var refresh = true;  // bool? |  (optional) 
-
-            try
-            {
-                // Fetches hasOne relation billing.
-                Billing result = apiInstance.TeamMembersIdTeamBillingGet(id, refresh);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
- **refresh** | **bool?**|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teammembersidteambillinginvoicesfkpost"></a>
 # **TeamMembersIdTeamBillingInvoicesFkPost**
 > BillingInvoice TeamMembersIdTeamBillingInvoicesFkPost (string id, string fk)
@@ -8089,78 +7957,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteambillingpost"></a>
-# **TeamMembersIdTeamBillingPost**
-> Billing TeamMembersIdTeamBillingPost (string id, Billing data = null)
-
-Creates a new instance in billing of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdTeamBillingPostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-            var data = new Billing(); // Billing |  (optional) 
-
-            try
-            {
-                // Creates a new instance in billing of this model.
-                Billing result = apiInstance.TeamMembersIdTeamBillingPost(id, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teammembersidteambillingput"></a>
 # **TeamMembersIdTeamBillingPut**
-> Billing TeamMembersIdTeamBillingPut (string id, Billing data = null)
+> Billing TeamMembersIdTeamBillingPut (string id, TeamMember data = null)
 
-Update billing of this model.
+Update Team Billing
 
 ### Example
 ```csharp
@@ -8184,11 +7985,11 @@ namespace Example
 
             var apiInstance = new TeamMemberApi();
             var id = id_example;  // string | TeamMember id
-            var data = new Billing(); // Billing |  (optional) 
+            var data = new TeamMember(); // TeamMember |  (optional) 
 
             try
             {
-                // Update billing of this model.
+                // Update Team Billing
                 Billing result = apiInstance.TeamMembersIdTeamBillingPut(id, data);
                 Debug.WriteLine(result);
             }
@@ -8206,7 +8007,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
 
 ### Return type
 
@@ -8752,6 +8553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teammembersidteambuilderconfigsdefaultget"></a>
+# **TeamMembersIdTeamBuilderConfigsDefaultGet**
+> TeamBuilderConfig TeamMembersIdTeamBuilderConfigsDefaultGet (string id)
+
+Get default Team Builder Config
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBuilderConfigsDefaultGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Get default Team Builder Config
+                TeamBuilderConfig result = apiInstance.TeamMembersIdTeamBuilderConfigsDefaultGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBuilderConfigsDefaultGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teammembersidteambuilderconfigsdelete"></a>
 # **TeamMembersIdTeamBuilderConfigsDelete**
 > void TeamMembersIdTeamBuilderConfigsDelete (string id)
@@ -8933,6 +8799,75 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
  **fk** | **string**| Foreign key for builderConfigs | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambuilderconfigsfklogoput"></a>
+# **TeamMembersIdTeamBuilderConfigsFkLogoPut**
+> TeamBuilderConfig TeamMembersIdTeamBuilderConfigsFkLogoPut (string id, string fk, TeamMember data)
+
+Change Builder Config logo
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBuilderConfigsFkLogoPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | BuilderConfig id
+            var data = new TeamMember(); // TeamMember | Logo
+
+            try
+            {
+                // Change Builder Config logo
+                TeamBuilderConfig result = apiInstance.TeamMembersIdTeamBuilderConfigsFkLogoPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBuilderConfigsFkLogoPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| BuilderConfig id | 
+ **data** | [**TeamMember**](TeamMember.md)| Logo | 
 
 ### Return type
 
