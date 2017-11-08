@@ -15,8 +15,11 @@ Name | Type | Description | Notes
 **AddressLine2** | **string** |  | [optional] 
 **AddressState** | **string** |  | [optional] 
 **AddressZip** | **string** |  | [optional] 
+**Language** | **string** |  | [optional] 
+**Timezone** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
+**Key** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **CustomerId** | **string** |  | [optional] 
 **TeamId** | **string** |  | [optional] 
@@ -35,6 +38,7 @@ Name | Type | Description | Notes
 **DesignFolders** | [**List&lt;DesignFolder&gt;**](DesignFolder.md) |  | [optional] 
 **Workflows** | [**List&lt;Workflow&gt;**](Workflow.md) |  | [optional] 
 **ImageFolders** | [**List&lt;ImageFolder&gt;**](ImageFolder.md) |  | [optional] 
+**Notifications** | [**List&lt;Notification&gt;**](Notification.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
