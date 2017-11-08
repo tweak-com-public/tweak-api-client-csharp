@@ -53,7 +53,8 @@ namespace TweakApi.Model
         /// <param name="Id">Id.</param>
         /// <param name="Templates">Templates.</param>
         /// <param name="Designs">Designs.</param>
-        public Tag(string Name = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, List<Template> Templates = null, List<Design> Designs = null)
+        /// <param name="Products">Products.</param>
+        public Tag(string Name = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, List<Template> Templates = null, List<Design> Designs = null, List<Product> Products = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -69,6 +70,7 @@ namespace TweakApi.Model
             this.Id = Id;
             this.Templates = Templates;
             this.Designs = Designs;
+            this.Products = Products;
         }
         
         /// <summary>
@@ -102,6 +104,11 @@ namespace TweakApi.Model
         [DataMember(Name="designs", EmitDefaultValue=false)]
         public List<Design> Designs { get; set; }
         /// <summary>
+        /// Gets or Sets Products
+        /// </summary>
+        [DataMember(Name="products", EmitDefaultValue=false)]
+        public List<Product> Products { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -115,6 +122,7 @@ namespace TweakApi.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Templates: ").Append(Templates).Append("\n");
             sb.Append("  Designs: ").Append(Designs).Append("\n");
+            sb.Append("  Products: ").Append(Products).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -180,6 +188,11 @@ namespace TweakApi.Model
                     this.Designs == other.Designs ||
                     this.Designs != null &&
                     this.Designs.SequenceEqual(other.Designs)
+                ) && 
+                (
+                    this.Products == other.Products ||
+                    this.Products != null &&
+                    this.Products.SequenceEqual(other.Products)
                 );
         }
 
@@ -206,6 +219,8 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Templates.GetHashCode();
                 if (this.Designs != null)
                     hash = hash * 59 + this.Designs.GetHashCode();
+                if (this.Products != null)
+                    hash = hash * 59 + this.Products.GetHashCode();
                 return hash;
             }
         }

@@ -124,6 +124,14 @@ namespace TweakApi.Test
         {
             // TODO unit test for the property 'Designs'
         }
+        /// <summary>
+        /// Test the property 'Products'
+        /// </summary>
+        [Test]
+        public void ProductsTest()
+        {
+            // TODO unit test for the property 'Products'
+        }
 
     }
 

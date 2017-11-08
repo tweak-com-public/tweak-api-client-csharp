@@ -2464,6 +2464,188 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsCountGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsCountGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string where = null;
+            //var response = instance.TeamMembersIdTeamProductMaterialsCountGet(id, where);
+            //Assert.IsInstanceOf<InlineResponse200> (response, "response is InlineResponse200");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamMembersIdTeamProductMaterialsDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsFkDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsFkDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //instance.TeamMembersIdTeamProductMaterialsFkDelete(id, fk);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsFkGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsFkGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //var response = instance.TeamMembersIdTeamProductMaterialsFkGet(id, fk);
+            //Assert.IsInstanceOf<ProductMaterial> (response, "response is ProductMaterial");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsFkPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsFkPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //ProductMaterial data = null;
+            //var response = instance.TeamMembersIdTeamProductMaterialsFkPut(id, fk, data);
+            //Assert.IsInstanceOf<ProductMaterial> (response, "response is ProductMaterial");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string filter = null;
+            //var response = instance.TeamMembersIdTeamProductMaterialsGet(id, filter);
+            //Assert.IsInstanceOf<List<ProductMaterial>> (response, "response is List<ProductMaterial>");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductMaterialsPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductMaterialsPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //ProductMaterial data = null;
+            //var response = instance.TeamMembersIdTeamProductMaterialsPost(id, data);
+            //Assert.IsInstanceOf<ProductMaterial> (response, "response is ProductMaterial");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsCountGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsCountGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string where = null;
+            //var response = instance.TeamMembersIdTeamProductSizeMaterialsCountGet(id, where);
+            //Assert.IsInstanceOf<InlineResponse200> (response, "response is InlineResponse200");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //instance.TeamMembersIdTeamProductSizeMaterialsDelete(id);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsFkDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsFkDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //instance.TeamMembersIdTeamProductSizeMaterialsFkDelete(id, fk);
+            
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsFkGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsFkGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //var response = instance.TeamMembersIdTeamProductSizeMaterialsFkGet(id, fk);
+            //Assert.IsInstanceOf<ProductSizeMaterial> (response, "response is ProductSizeMaterial");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsFkPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsFkPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string fk = null;
+            //ProductSizeMaterial data = null;
+            //var response = instance.TeamMembersIdTeamProductSizeMaterialsFkPut(id, fk, data);
+            //Assert.IsInstanceOf<ProductSizeMaterial> (response, "response is ProductSizeMaterial");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsGet
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsGetTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //string filter = null;
+            //var response = instance.TeamMembersIdTeamProductSizeMaterialsGet(id, filter);
+            //Assert.IsInstanceOf<List<ProductSizeMaterial>> (response, "response is List<ProductSizeMaterial>");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamProductSizeMaterialsPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamProductSizeMaterialsPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //ProductSizeMaterial data = null;
+            //var response = instance.TeamMembersIdTeamProductSizeMaterialsPost(id, data);
+            //Assert.IsInstanceOf<ProductSizeMaterial> (response, "response is ProductSizeMaterial");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamTeamMembersCountGet
         /// </summary>
         [Test]

@@ -148,6 +148,46 @@ namespace TweakApi.Test
         {
             // TODO unit test for the property 'Team'
         }
+        /// <summary>
+        /// Test the property 'ProductGroups'
+        /// </summary>
+        [Test]
+        public void ProductGroupsTest()
+        {
+            // TODO unit test for the property 'ProductGroups'
+        }
+        /// <summary>
+        /// Test the property 'ProductTypes'
+        /// </summary>
+        [Test]
+        public void ProductTypesTest()
+        {
+            // TODO unit test for the property 'ProductTypes'
+        }
+        /// <summary>
+        /// Test the property 'ProductSizes'
+        /// </summary>
+        [Test]
+        public void ProductSizesTest()
+        {
+            // TODO unit test for the property 'ProductSizes'
+        }
+        /// <summary>
+        /// Test the property 'ProductSizeMaterials'
+        /// </summary>
+        [Test]
+        public void ProductSizeMaterialsTest()
+        {
+            // TODO unit test for the property 'ProductSizeMaterials'
+        }
+        /// <summary>
+        /// Test the property 'ProductSizeMaterialsRel'
+        /// </summary>
+        [Test]
+        public void ProductSizeMaterialsRelTest()
+        {
+            // TODO unit test for the property 'ProductSizeMaterialsRel'
+        }
 
     }
 

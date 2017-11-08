@@ -2644,6 +2644,356 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of Portal</returns>
         ApiResponse<Portal> CustomersIdTeamsNkPortalsPostWithHttpInfo (string id, string nk, Portal data = null);
         /// <summary>
+        /// Counts productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 CustomersIdTeamsNkProductMaterialsCountGet (string id, string nk, string where = null);
+
+        /// <summary>
+        /// Counts productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> CustomersIdTeamsNkProductMaterialsCountGetWithHttpInfo (string id, string nk, string where = null);
+        /// <summary>
+        /// Deletes all productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkProductMaterialsDelete (string id, string nk);
+
+        /// <summary>
+        /// Deletes all productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkProductMaterialsDeleteWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Delete a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkProductMaterialsFkDelete (string id, string nk, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkProductMaterialsFkDeleteWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Find a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ProductMaterial</returns>
+        ProductMaterial CustomersIdTeamsNkProductMaterialsFkGet (string id, string nk, string fk);
+
+        /// <summary>
+        /// Find a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        ApiResponse<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkGetWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Update a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductMaterial</returns>
+        ProductMaterial CustomersIdTeamsNkProductMaterialsFkPut (string id, string nk, string fk, ProductMaterial data = null);
+
+        /// <summary>
+        /// Update a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        ApiResponse<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkPutWithHttpInfo (string id, string nk, string fk, ProductMaterial data = null);
+        /// <summary>
+        /// Queries productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;ProductMaterial&gt;</returns>
+        List<ProductMaterial> CustomersIdTeamsNkProductMaterialsGet (string id, string nk, string filter = null);
+
+        /// <summary>
+        /// Queries productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;ProductMaterial&gt;</returns>
+        ApiResponse<List<ProductMaterial>> CustomersIdTeamsNkProductMaterialsGetWithHttpInfo (string id, string nk, string filter = null);
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductMaterial</returns>
+        ProductMaterial CustomersIdTeamsNkProductMaterialsPost (string id, string nk, ProductMaterial data = null);
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        ApiResponse<ProductMaterial> CustomersIdTeamsNkProductMaterialsPostWithHttpInfo (string id, string nk, ProductMaterial data = null);
+        /// <summary>
+        /// Counts productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 CustomersIdTeamsNkProductSizeMaterialsCountGet (string id, string nk, string where = null);
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> CustomersIdTeamsNkProductSizeMaterialsCountGetWithHttpInfo (string id, string nk, string where = null);
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkProductSizeMaterialsDelete (string id, string nk);
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkProductSizeMaterialsDeleteWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns></returns>
+        void CustomersIdTeamsNkProductSizeMaterialsFkDelete (string id, string nk, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> CustomersIdTeamsNkProductSizeMaterialsFkDeleteWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ProductSizeMaterial</returns>
+        ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkGet (string id, string nk, string fk);
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        ApiResponse<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkGetWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductSizeMaterial</returns>
+        ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkPut (string id, string nk, string fk, ProductSizeMaterial data = null);
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        ApiResponse<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkPutWithHttpInfo (string id, string nk, string fk, ProductSizeMaterial data = null);
+        /// <summary>
+        /// Queries productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;ProductSizeMaterial&gt;</returns>
+        List<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsGet (string id, string nk, string filter = null);
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;ProductSizeMaterial&gt;</returns>
+        ApiResponse<List<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsGetWithHttpInfo (string id, string nk, string filter = null);
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductSizeMaterial</returns>
+        ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsPost (string id, string nk, ProductSizeMaterial data = null);
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        ApiResponse<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsPostWithHttpInfo (string id, string nk, ProductSizeMaterial data = null);
+        /// <summary>
         /// Counts teamMembers of Team.
         /// </summary>
         /// <remarks>
@@ -6482,6 +6832,356 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Portal)</returns>
         System.Threading.Tasks.Task<ApiResponse<Portal>> CustomersIdTeamsNkPortalsPostAsyncWithHttpInfo (string id, string nk, Portal data = null);
+        /// <summary>
+        /// Counts productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> CustomersIdTeamsNkProductMaterialsCountGetAsync (string id, string nk, string where = null);
+
+        /// <summary>
+        /// Counts productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> CustomersIdTeamsNkProductMaterialsCountGetAsyncWithHttpInfo (string id, string nk, string where = null);
+        /// <summary>
+        /// Deletes all productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkProductMaterialsDeleteAsync (string id, string nk);
+
+        /// <summary>
+        /// Deletes all productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductMaterialsDeleteAsyncWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Delete a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkProductMaterialsFkDeleteAsync (string id, string nk, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductMaterialsFkDeleteAsyncWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Find a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ProductMaterial</returns>
+        System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkGetAsync (string id, string nk, string fk);
+
+        /// <summary>
+        /// Find a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsFkGetAsyncWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Update a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductMaterial</returns>
+        System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkPutAsync (string id, string nk, string fk, ProductMaterial data = null);
+
+        /// <summary>
+        /// Update a related item by id for productMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsFkPutAsyncWithHttpInfo (string id, string nk, string fk, ProductMaterial data = null);
+        /// <summary>
+        /// Queries productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;ProductMaterial&gt;</returns>
+        System.Threading.Tasks.Task<List<ProductMaterial>> CustomersIdTeamsNkProductMaterialsGetAsync (string id, string nk, string filter = null);
+
+        /// <summary>
+        /// Queries productMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;ProductMaterial&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ProductMaterial>>> CustomersIdTeamsNkProductMaterialsGetAsyncWithHttpInfo (string id, string nk, string filter = null);
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductMaterial</returns>
+        System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsPostAsync (string id, string nk, ProductMaterial data = null);
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsPostAsyncWithHttpInfo (string id, string nk, ProductMaterial data = null);
+        /// <summary>
+        /// Counts productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> CustomersIdTeamsNkProductSizeMaterialsCountGetAsync (string id, string nk, string where = null);
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> CustomersIdTeamsNkProductSizeMaterialsCountGetAsyncWithHttpInfo (string id, string nk, string where = null);
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkProductSizeMaterialsDeleteAsync (string id, string nk);
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductSizeMaterialsDeleteAsyncWithHttpInfo (string id, string nk);
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task CustomersIdTeamsNkProductSizeMaterialsFkDeleteAsync (string id, string nk, string fk);
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductSizeMaterialsFkDeleteAsyncWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkGetAsync (string id, string nk, string fk);
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsFkGetAsyncWithHttpInfo (string id, string nk, string fk);
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkPutAsync (string id, string nk, string fk, ProductSizeMaterial data = null);
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsFkPutAsyncWithHttpInfo (string id, string nk, string fk, ProductSizeMaterial data = null);
+        /// <summary>
+        /// Queries productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;ProductSizeMaterial&gt;</returns>
+        System.Threading.Tasks.Task<List<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsGetAsync (string id, string nk, string filter = null);
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;ProductSizeMaterial&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ProductSizeMaterial>>> CustomersIdTeamsNkProductSizeMaterialsGetAsyncWithHttpInfo (string id, string nk, string filter = null);
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsPostAsync (string id, string nk, ProductSizeMaterial data = null);
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsPostAsyncWithHttpInfo (string id, string nk, ProductSizeMaterial data = null);
         /// <summary>
         /// Counts teamMembers of Team.
         /// </summary>
@@ -28063,6 +28763,2694 @@ namespace TweakApi.Api
             return new ApiResponse<Portal>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (Portal) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Portal)));
+            
+        }
+
+        /// <summary>
+        /// Counts productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 CustomersIdTeamsNkProductMaterialsCountGet (string id, string nk, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = CustomersIdTeamsNkProductMaterialsCountGetWithHttpInfo(id, nk, where);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Counts productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse< InlineResponse200 > CustomersIdTeamsNkProductMaterialsCountGetWithHttpInfo (string id, string nk, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsCountGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsCountGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Counts productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> CustomersIdTeamsNkProductMaterialsCountGetAsync (string id, string nk, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = await CustomersIdTeamsNkProductMaterialsCountGetAsyncWithHttpInfo(id, nk, where);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Counts productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> CustomersIdTeamsNkProductMaterialsCountGetAsyncWithHttpInfo (string id, string nk, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsCountGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsCountGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Deletes all productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkProductMaterialsDelete (string id, string nk)
+        {
+             CustomersIdTeamsNkProductMaterialsDeleteWithHttpInfo(id, nk);
+        }
+
+        /// <summary>
+        /// Deletes all productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkProductMaterialsDeleteWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes all productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkProductMaterialsDeleteAsync (string id, string nk)
+        {
+             await CustomersIdTeamsNkProductMaterialsDeleteAsyncWithHttpInfo(id, nk);
+
+        }
+
+        /// <summary>
+        /// Deletes all productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductMaterialsDeleteAsyncWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkProductMaterialsFkDelete (string id, string nk, string fk)
+        {
+             CustomersIdTeamsNkProductMaterialsFkDeleteWithHttpInfo(id, nk, fk);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkProductMaterialsFkDeleteWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkProductMaterialsFkDeleteAsync (string id, string nk, string fk)
+        {
+             await CustomersIdTeamsNkProductMaterialsFkDeleteAsyncWithHttpInfo(id, nk, fk);
+
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductMaterialsFkDeleteAsyncWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Find a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ProductMaterial</returns>
+        public ProductMaterial CustomersIdTeamsNkProductMaterialsFkGet (string id, string nk, string fk)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = CustomersIdTeamsNkProductMaterialsFkGetWithHttpInfo(id, nk, fk);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Find a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        public ApiResponse< ProductMaterial > CustomersIdTeamsNkProductMaterialsFkGetWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Find a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ProductMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkGetAsync (string id, string nk, string fk)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = await CustomersIdTeamsNkProductMaterialsFkGetAsyncWithHttpInfo(id, nk, fk);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Find a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsFkGetAsyncWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductMaterial</returns>
+        public ProductMaterial CustomersIdTeamsNkProductMaterialsFkPut (string id, string nk, string fk, ProductMaterial data = null)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = CustomersIdTeamsNkProductMaterialsFkPutWithHttpInfo(id, nk, fk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        public ApiResponse< ProductMaterial > CustomersIdTeamsNkProductMaterialsFkPutWithHttpInfo (string id, string nk, string fk, ProductMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsFkPutAsync (string id, string nk, string fk, ProductMaterial data = null)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = await CustomersIdTeamsNkProductMaterialsFkPutAsyncWithHttpInfo(id, nk, fk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update a related item by id for productMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsFkPutAsyncWithHttpInfo (string id, string nk, string fk, ProductMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsFkPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Queries productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;ProductMaterial&gt;</returns>
+        public List<ProductMaterial> CustomersIdTeamsNkProductMaterialsGet (string id, string nk, string filter = null)
+        {
+             ApiResponse<List<ProductMaterial>> localVarResponse = CustomersIdTeamsNkProductMaterialsGetWithHttpInfo(id, nk, filter);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Queries productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;ProductMaterial&gt;</returns>
+        public ApiResponse< List<ProductMaterial> > CustomersIdTeamsNkProductMaterialsGetWithHttpInfo (string id, string nk, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ProductMaterial>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProductMaterial>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProductMaterial>)));
+            
+        }
+
+        /// <summary>
+        /// Queries productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;ProductMaterial&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ProductMaterial>> CustomersIdTeamsNkProductMaterialsGetAsync (string id, string nk, string filter = null)
+        {
+             ApiResponse<List<ProductMaterial>> localVarResponse = await CustomersIdTeamsNkProductMaterialsGetAsyncWithHttpInfo(id, nk, filter);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Queries productMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;ProductMaterial&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ProductMaterial>>> CustomersIdTeamsNkProductMaterialsGetAsyncWithHttpInfo (string id, string nk, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ProductMaterial>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProductMaterial>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProductMaterial>)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductMaterial</returns>
+        public ProductMaterial CustomersIdTeamsNkProductMaterialsPost (string id, string nk, ProductMaterial data = null)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = CustomersIdTeamsNkProductMaterialsPostWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductMaterial</returns>
+        public ApiResponse< ProductMaterial > CustomersIdTeamsNkProductMaterialsPostWithHttpInfo (string id, string nk, ProductMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductMaterial> CustomersIdTeamsNkProductMaterialsPostAsync (string id, string nk, ProductMaterial data = null)
+        {
+             ApiResponse<ProductMaterial> localVarResponse = await CustomersIdTeamsNkProductMaterialsPostAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in productMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductMaterial>> CustomersIdTeamsNkProductMaterialsPostAsyncWithHttpInfo (string id, string nk, ProductMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductMaterialsPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductMaterialsPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 CustomersIdTeamsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = CustomersIdTeamsNkProductSizeMaterialsCountGetWithHttpInfo(id, nk, where);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse< InlineResponse200 > CustomersIdTeamsNkProductSizeMaterialsCountGetWithHttpInfo (string id, string nk, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsCountGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsCountGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> CustomersIdTeamsNkProductSizeMaterialsCountGetAsync (string id, string nk, string where = null)
+        {
+             ApiResponse<InlineResponse200> localVarResponse = await CustomersIdTeamsNkProductSizeMaterialsCountGetAsyncWithHttpInfo(id, nk, where);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Counts productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="where">Criteria to match model instances (optional)</param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> CustomersIdTeamsNkProductSizeMaterialsCountGetAsyncWithHttpInfo (string id, string nk, string where = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsCountGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsCountGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/count";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (where != null) localVarQueryParams.Add("where", Configuration.ApiClient.ParameterToString(where)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsCountGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (InlineResponse200) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+            
+        }
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkProductSizeMaterialsDelete (string id, string nk)
+        {
+             CustomersIdTeamsNkProductSizeMaterialsDeleteWithHttpInfo(id, nk);
+        }
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkProductSizeMaterialsDeleteWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkProductSizeMaterialsDeleteAsync (string id, string nk)
+        {
+             await CustomersIdTeamsNkProductSizeMaterialsDeleteAsyncWithHttpInfo(id, nk);
+
+        }
+
+        /// <summary>
+        /// Deletes all productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductSizeMaterialsDeleteAsyncWithHttpInfo (string id, string nk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns></returns>
+        public void CustomersIdTeamsNkProductSizeMaterialsFkDelete (string id, string nk, string fk)
+        {
+             CustomersIdTeamsNkProductSizeMaterialsFkDeleteWithHttpInfo(id, nk, fk);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> CustomersIdTeamsNkProductSizeMaterialsFkDeleteWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task CustomersIdTeamsNkProductSizeMaterialsFkDeleteAsync (string id, string nk, string fk)
+        {
+             await CustomersIdTeamsNkProductSizeMaterialsFkDeleteAsyncWithHttpInfo(id, nk, fk);
+
+        }
+
+        /// <summary>
+        /// Delete a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CustomersIdTeamsNkProductSizeMaterialsFkDeleteAsyncWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkDelete");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ProductSizeMaterial</returns>
+        public ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkGet (string id, string nk, string fk)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = CustomersIdTeamsNkProductSizeMaterialsFkGetWithHttpInfo(id, nk, fk);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        public ApiResponse< ProductSizeMaterial > CustomersIdTeamsNkProductSizeMaterialsFkGetWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkGetAsync (string id, string nk, string fk)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = await CustomersIdTeamsNkProductSizeMaterialsFkGetAsyncWithHttpInfo(id, nk, fk);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Find a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsFkGetAsyncWithHttpInfo (string id, string nk, string fk)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductSizeMaterial</returns>
+        public ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkPut (string id, string nk, string fk, ProductSizeMaterial data = null)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = CustomersIdTeamsNkProductSizeMaterialsFkPutWithHttpInfo(id, nk, fk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        public ApiResponse< ProductSizeMaterial > CustomersIdTeamsNkProductSizeMaterialsFkPutWithHttpInfo (string id, string nk, string fk, ProductSizeMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsFkPutAsync (string id, string nk, string fk, ProductSizeMaterial data = null)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = await CustomersIdTeamsNkProductSizeMaterialsFkPutAsyncWithHttpInfo(id, nk, fk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update a related item by id for productSizeMaterials. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="fk">Foreign key for productSizeMaterials</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsFkPutAsyncWithHttpInfo (string id, string nk, string fk, ProductSizeMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+            // verify the required parameter 'fk' is set
+            if (fk == null)
+                throw new ApiException(400, "Missing required parameter 'fk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsFkPut");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials/{fk}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (fk != null) localVarPathParams.Add("fk", Configuration.ApiClient.ParameterToString(fk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsFkPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>List&lt;ProductSizeMaterial&gt;</returns>
+        public List<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsGet (string id, string nk, string filter = null)
+        {
+             ApiResponse<List<ProductSizeMaterial>> localVarResponse = CustomersIdTeamsNkProductSizeMaterialsGetWithHttpInfo(id, nk, filter);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>ApiResponse of List&lt;ProductSizeMaterial&gt;</returns>
+        public ApiResponse< List<ProductSizeMaterial> > CustomersIdTeamsNkProductSizeMaterialsGetWithHttpInfo (string id, string nk, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ProductSizeMaterial>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProductSizeMaterial>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProductSizeMaterial>)));
+            
+        }
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of List&lt;ProductSizeMaterial&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsGetAsync (string id, string nk, string filter = null)
+        {
+             ApiResponse<List<ProductSizeMaterial>> localVarResponse = await CustomersIdTeamsNkProductSizeMaterialsGetAsyncWithHttpInfo(id, nk, filter);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Queries productSizeMaterials of Team. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="filter"> (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;ProductSizeMaterial&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ProductSizeMaterial>>> CustomersIdTeamsNkProductSizeMaterialsGetAsyncWithHttpInfo (string id, string nk, string filter = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsGet");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsGet");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (filter != null) localVarQueryParams.Add("filter", Configuration.ApiClient.ParameterToString(filter)); // query parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsGet", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<ProductSizeMaterial>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProductSizeMaterial>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProductSizeMaterial>)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ProductSizeMaterial</returns>
+        public ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsPost (string id, string nk, ProductSizeMaterial data = null)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = CustomersIdTeamsNkProductSizeMaterialsPostWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of ProductSizeMaterial</returns>
+        public ApiResponse< ProductSizeMaterial > CustomersIdTeamsNkProductSizeMaterialsPostWithHttpInfo (string id, string nk, ProductSizeMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
+            
+        }
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ProductSizeMaterial</returns>
+        public async System.Threading.Tasks.Task<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsPostAsync (string id, string nk, ProductSizeMaterial data = null)
+        {
+             ApiResponse<ProductSizeMaterial> localVarResponse = await CustomersIdTeamsNkProductSizeMaterialsPostAsyncWithHttpInfo(id, nk, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Creates a new instance in productSizeMaterials of this model. 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Customer id</param>
+        /// <param name="nk">Foreign key for teams.</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (ProductSizeMaterial)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ProductSizeMaterial>> CustomersIdTeamsNkProductSizeMaterialsPostAsyncWithHttpInfo (string id, string nk, ProductSizeMaterial data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsPost");
+            // verify the required parameter 'nk' is set
+            if (nk == null)
+                throw new ApiException(400, "Missing required parameter 'nk' when calling CustomerApi->CustomersIdTeamsNkProductSizeMaterialsPost");
+
+            var localVarPath = "/Customers/{id}/teams/{nk}/productSizeMaterials";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (nk != null) localVarPathParams.Add("nk", Configuration.ApiClient.ParameterToString(nk)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CustomersIdTeamsNkProductSizeMaterialsPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ProductSizeMaterial>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ProductSizeMaterial) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ProductSizeMaterial)));
             
         }
 

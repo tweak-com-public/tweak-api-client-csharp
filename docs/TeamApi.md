@@ -22,6 +22,53 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsFkLogoPut**](TeamApi.md#teamsidbuilderconfigsfklogoput) | **PUT** /Teams/{id}/builderConfigs/{fk}/logo | Change Builder Config logo
 [**TeamsIdBuilderConfigsFkPut**](TeamApi.md#teamsidbuilderconfigsfkput) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**TeamsIdBuilderConfigsNkProductGroupsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductGroupsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
+[**TeamsIdBuilderConfigsNkProductGroupsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Delete a related item by id for productGroups.
+[**TeamsIdBuilderConfigsNkProductGroupsFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Find a related item by id for productGroups.
+[**TeamsIdBuilderConfigsNkProductGroupsFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Update a related item by id for productGroups.
+[**TeamsIdBuilderConfigsNkProductGroupsGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups | Queries productGroups of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductGroupsPost**](TeamApi.md#teamsidbuilderconfigsnkproductgroupspost) | **POST** /Teams/{id}/builderConfigs/{nk}/productGroups | Creates a new instance in productGroups of this model.
+[**TeamsIdBuilderConfigsNkProductGroupsRelFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsrelfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/rel/{fk} | Remove the productGroups relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductGroupsRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productGroups/rel/{fk} | Check the existence of productGroups relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductGroupsRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productGroups/rel/{fk} | Add a related item by id for productGroups.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/count | Counts productSizeMaterials of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Deletes all productSizeMaterials of this model.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Queries productSizeMaterials of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsPost**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialspost) | **POST** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelcountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/count | Counts productSizeMaterialsRel of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsreldelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Deletes all productSizeMaterialsRel of this model.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/rel/{fk} | Remove the productSizeMaterials relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkdelete_0) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/{fk} | Delete a related item by id for productSizeMaterialsRel.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/{fk} | Find a related item by id for productSizeMaterialsRel.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/rel/{fk} | Check the existence of productSizeMaterials relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/rel/{fk} | Add a related item by id for productSizeMaterials.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkput_0) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/{fk} | Update a related item by id for productSizeMaterialsRel.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Queries productSizeMaterialsRel of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelpost) | **POST** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
+[**TeamsIdBuilderConfigsNkProductSizesCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizescountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizes/count | Counts productSizes of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizesDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizesdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizes | Deletes all productSizes of this model.
+[**TeamsIdBuilderConfigsNkProductSizesFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Delete a related item by id for productSizes.
+[**TeamsIdBuilderConfigsNkProductSizesFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Find a related item by id for productSizes.
+[**TeamsIdBuilderConfigsNkProductSizesFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Update a related item by id for productSizes.
+[**TeamsIdBuilderConfigsNkProductSizesGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizesget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizes | Queries productSizes of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductSizesPost**](TeamApi.md#teamsidbuilderconfigsnkproductsizespost) | **POST** /Teams/{id}/builderConfigs/{nk}/productSizes | Creates a new instance in productSizes of this model.
+[**TeamsIdBuilderConfigsNkProductSizesRelFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizesrelfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizes/rel/{fk} | Remove the productSizes relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductSizesRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproductsizesrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productSizes/rel/{fk} | Check the existence of productSizes relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductSizesRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizesrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizes/rel/{fk} | Add a related item by id for productSizes.
+[**TeamsIdBuilderConfigsNkProductTypesCountGet**](TeamApi.md#teamsidbuilderconfigsnkproducttypescountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productTypes/count | Counts productTypes of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductTypesDelete**](TeamApi.md#teamsidbuilderconfigsnkproducttypesdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productTypes | Deletes all productTypes of this model.
+[**TeamsIdBuilderConfigsNkProductTypesFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Delete a related item by id for productTypes.
+[**TeamsIdBuilderConfigsNkProductTypesFkGet**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Find a related item by id for productTypes.
+[**TeamsIdBuilderConfigsNkProductTypesFkPut**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Update a related item by id for productTypes.
+[**TeamsIdBuilderConfigsNkProductTypesGet**](TeamApi.md#teamsidbuilderconfigsnkproducttypesget) | **GET** /Teams/{id}/builderConfigs/{nk}/productTypes | Queries productTypes of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkProductTypesPost**](TeamApi.md#teamsidbuilderconfigsnkproducttypespost) | **POST** /Teams/{id}/builderConfigs/{nk}/productTypes | Creates a new instance in productTypes of this model.
+[**TeamsIdBuilderConfigsNkProductTypesRelFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproducttypesrelfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Remove the productTypes relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductTypesRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproducttypesrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Check the existence of productTypes relation to an item by id.
+[**TeamsIdBuilderConfigsNkProductTypesRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproducttypesrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Add a related item by id for productTypes.
 [**TeamsIdBuilderConfigsNkTeamGet**](TeamApi.md#teamsidbuilderconfigsnkteamget) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
 [**TeamsIdBuilderConfigsPost**](TeamApi.md#teamsidbuilderconfigspost) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
 [**TeamsIdDataSourcesCountGet**](TeamApi.md#teamsiddatasourcescountget) | **GET** /Teams/{id}/dataSources/count | Counts dataSources of Team.
@@ -207,6 +254,24 @@ Method | HTTP request | Description
 [**TeamsIdPortalsNkTemplatesRelFkHead**](TeamApi.md#teamsidportalsnktemplatesrelfkhead) | **HEAD** /Teams/{id}/portals/{nk}/templates/rel/{fk} | Check the existence of templates relation to an item by id.
 [**TeamsIdPortalsNkTemplatesRelFkPut**](TeamApi.md#teamsidportalsnktemplatesrelfkput) | **PUT** /Teams/{id}/portals/{nk}/templates/rel/{fk} | Add a related item by id for templates.
 [**TeamsIdPortalsPost**](TeamApi.md#teamsidportalspost) | **POST** /Teams/{id}/portals | Creates a new instance in portals of this model.
+[**TeamsIdProductMaterialsCountGet**](TeamApi.md#teamsidproductmaterialscountget) | **GET** /Teams/{id}/productMaterials/count | Counts productMaterials of Team.
+[**TeamsIdProductMaterialsDelete**](TeamApi.md#teamsidproductmaterialsdelete) | **DELETE** /Teams/{id}/productMaterials | Deletes all productMaterials of this model.
+[**TeamsIdProductMaterialsFkDelete**](TeamApi.md#teamsidproductmaterialsfkdelete) | **DELETE** /Teams/{id}/productMaterials/{fk} | Delete a related item by id for productMaterials.
+[**TeamsIdProductMaterialsFkGet**](TeamApi.md#teamsidproductmaterialsfkget) | **GET** /Teams/{id}/productMaterials/{fk} | Find a related item by id for productMaterials.
+[**TeamsIdProductMaterialsFkPut**](TeamApi.md#teamsidproductmaterialsfkput) | **PUT** /Teams/{id}/productMaterials/{fk} | Update a related item by id for productMaterials.
+[**TeamsIdProductMaterialsGet**](TeamApi.md#teamsidproductmaterialsget) | **GET** /Teams/{id}/productMaterials | Queries productMaterials of Team.
+[**TeamsIdProductMaterialsNkTeamGet**](TeamApi.md#teamsidproductmaterialsnkteamget) | **GET** /Teams/{id}/productMaterials/{nk}/team | Fetches belongsTo relation team.
+[**TeamsIdProductMaterialsPost**](TeamApi.md#teamsidproductmaterialspost) | **POST** /Teams/{id}/productMaterials | Creates a new instance in productMaterials of this model.
+[**TeamsIdProductSizeMaterialsCountGet**](TeamApi.md#teamsidproductsizematerialscountget) | **GET** /Teams/{id}/productSizeMaterials/count | Counts productSizeMaterials of Team.
+[**TeamsIdProductSizeMaterialsDelete**](TeamApi.md#teamsidproductsizematerialsdelete) | **DELETE** /Teams/{id}/productSizeMaterials | Deletes all productSizeMaterials of this model.
+[**TeamsIdProductSizeMaterialsFkDelete**](TeamApi.md#teamsidproductsizematerialsfkdelete) | **DELETE** /Teams/{id}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
+[**TeamsIdProductSizeMaterialsFkGet**](TeamApi.md#teamsidproductsizematerialsfkget) | **GET** /Teams/{id}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
+[**TeamsIdProductSizeMaterialsFkPut**](TeamApi.md#teamsidproductsizematerialsfkput) | **PUT** /Teams/{id}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
+[**TeamsIdProductSizeMaterialsGet**](TeamApi.md#teamsidproductsizematerialsget) | **GET** /Teams/{id}/productSizeMaterials | Queries productSizeMaterials of Team.
+[**TeamsIdProductSizeMaterialsNkMaterialGet**](TeamApi.md#teamsidproductsizematerialsnkmaterialget) | **GET** /Teams/{id}/productSizeMaterials/{nk}/material | Fetches belongsTo relation material.
+[**TeamsIdProductSizeMaterialsNkSizeGet**](TeamApi.md#teamsidproductsizematerialsnksizeget) | **GET** /Teams/{id}/productSizeMaterials/{nk}/size | Fetches belongsTo relation size.
+[**TeamsIdProductSizeMaterialsNkTeamGet**](TeamApi.md#teamsidproductsizematerialsnkteamget) | **GET** /Teams/{id}/productSizeMaterials/{nk}/team | Fetches belongsTo relation team.
+[**TeamsIdProductSizeMaterialsPost**](TeamApi.md#teamsidproductsizematerialspost) | **POST** /Teams/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
 [**TeamsIdPut**](TeamApi.md#teamsidput) | **PUT** /Teams/{id} | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdReplacePost**](TeamApi.md#teamsidreplacepost) | **POST** /Teams/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdTeamMembersCountGet**](TeamApi.md#teamsidteammemberscountget) | **GET** /Teams/{id}/teamMembers/count | Counts teamMembers of Team.
@@ -1488,6 +1553,3243 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<TeamBuilderConfig>**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupscountget"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsNkProductGroupsCountGet (string id, string nk, string where = null)
+
+Counts productGroups of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productGroups of TeamBuilderConfig.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsdelete"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsDelete**
+> void TeamsIdBuilderConfigsNkProductGroupsDelete (string id, string nk)
+
+Deletes all productGroups of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all productGroups of this model.
+                apiInstance.TeamsIdBuilderConfigsNkProductGroupsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsFkDelete**
+> void TeamsIdBuilderConfigsNkProductGroupsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productGroups.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+
+            try
+            {
+                // Delete a related item by id for productGroups.
+                apiInstance.TeamsIdBuilderConfigsNkProductGroupsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsfkget"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsFkGet**
+> ProductGroup TeamsIdBuilderConfigsNkProductGroupsFkGet (string id, string nk, string fk)
+
+Find a related item by id for productGroups.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+
+            try
+            {
+                // Find a related item by id for productGroups.
+                ProductGroup result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsfkput"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsFkPut**
+> ProductGroup TeamsIdBuilderConfigsNkProductGroupsFkPut (string id, string nk, string fk, ProductGroup data = null)
+
+Update a related item by id for productGroups.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+            var data = new ProductGroup(); // ProductGroup |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productGroups.
+                ProductGroup result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+ **data** | [**ProductGroup**](ProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsget"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsGet**
+> List<ProductGroup> TeamsIdBuilderConfigsNkProductGroupsGet (string id, string nk, string filter = null)
+
+Queries productGroups of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productGroups of TeamBuilderConfig.
+                List&lt;ProductGroup&gt; result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductGroup>**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupspost"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsPost**
+> ProductGroup TeamsIdBuilderConfigsNkProductGroupsPost (string id, string nk, ProductGroup data = null)
+
+Creates a new instance in productGroups of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new ProductGroup(); // ProductGroup |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productGroups of this model.
+                ProductGroup result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**ProductGroup**](ProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsrelfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsRelFkDelete**
+> void TeamsIdBuilderConfigsNkProductGroupsRelFkDelete (string id, string nk, string fk)
+
+Remove the productGroups relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+
+            try
+            {
+                // Remove the productGroups relation to an item by id.
+                apiInstance.TeamsIdBuilderConfigsNkProductGroupsRelFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsrelfkhead"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsRelFkHead**
+> bool? TeamsIdBuilderConfigsNkProductGroupsRelFkHead (string id, string nk, string fk)
+
+Check the existence of productGroups relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+
+            try
+            {
+                // Check the existence of productGroups relation to an item by id.
+                bool? result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsRelFkHead(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductgroupsrelfkput"></a>
+# **TeamsIdBuilderConfigsNkProductGroupsRelFkPut**
+> TeamBuilderConfigProductGroup TeamsIdBuilderConfigsNkProductGroupsRelFkPut (string id, string nk, string fk, TeamBuilderConfigProductGroup data = null)
+
+Add a related item by id for productGroups.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductGroupsRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productGroups
+            var data = new TeamBuilderConfigProductGroup(); // TeamBuilderConfigProductGroup |  (optional) 
+
+            try
+            {
+                // Add a related item by id for productGroups.
+                TeamBuilderConfigProductGroup result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsRelFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productGroups | 
+ **data** | [**TeamBuilderConfigProductGroup**](TeamBuilderConfigProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductGroup**](TeamBuilderConfigProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialscountget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
+
+Counts productSizeMaterials of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productSizeMaterials of TeamBuilderConfig.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsDelete**
+> void TeamsIdBuilderConfigsNkProductSizeMaterialsDelete (string id, string nk)
+
+Deletes all productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all productSizeMaterials of this model.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete**
+> void TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Delete a related item by id for productSizeMaterials.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsfkget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet**
+> ProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet (string id, string nk, string fk)
+
+Find a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Find a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsfkput"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut**
+> ProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut (string id, string nk, string fk, ProductSizeMaterial data = null)
+
+Update a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsGet**
+> List<ProductSizeMaterial> TeamsIdBuilderConfigsNkProductSizeMaterialsGet (string id, string nk, string filter = null)
+
+Queries productSizeMaterials of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productSizeMaterials of TeamBuilderConfig.
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialspost"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsPost**
+> ProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsPost (string id, string nk, ProductSizeMaterial data = null)
+
+Creates a new instance in productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productSizeMaterials of this model.
+                ProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelcountget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet (string id, string nk, string where = null)
+
+Counts productSizeMaterialsRel of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productSizeMaterialsRel of TeamBuilderConfig.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsreldelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete**
+> void TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete (string id, string nk)
+
+Deletes all productSizeMaterialsRel of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all productSizeMaterialsRel of this model.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete**
+> void TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete (string id, string nk, string fk)
+
+Remove the productSizeMaterials relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Remove the productSizeMaterials relation to an item by id.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkdelete_0"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0**
+> void TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0 (string id, string nk, string fk)
+
+Delete a related item by id for productSizeMaterialsRel.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0Example
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterialsRel
+
+            try
+            {
+                // Delete a related item by id for productSizeMaterialsRel.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterialsRel | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet**
+> TeamBuilderConfigProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet (string id, string nk, string fk)
+
+Find a related item by id for productSizeMaterialsRel.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterialsRel
+
+            try
+            {
+                // Find a related item by id for productSizeMaterialsRel.
+                TeamBuilderConfigProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterialsRel | 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkhead"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHead**
+> bool? TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHead (string id, string nk, string fk)
+
+Check the existence of productSizeMaterials relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Check the existence of productSizeMaterials relation to an item by id.
+                bool? result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHead(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkput"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut**
+> TeamBuilderConfigProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut (string id, string nk, string fk, TeamBuilderConfigProductSizeMaterial data = null)
+
+Add a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+            var data = new TeamBuilderConfigProductSizeMaterial(); // TeamBuilderConfigProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Add a related item by id for productSizeMaterials.
+                TeamBuilderConfigProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelfkput_0"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0**
+> TeamBuilderConfigProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0 (string id, string nk, string fk, TeamBuilderConfigProductSizeMaterial data = null)
+
+Update a related item by id for productSizeMaterialsRel.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0Example
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterialsRel
+            var data = new TeamBuilderConfigProductSizeMaterial(); // TeamBuilderConfigProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productSizeMaterialsRel.
+                TeamBuilderConfigProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkPut_0: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizeMaterialsRel | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelget"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet**
+> List<TeamBuilderConfigProductSizeMaterial> TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet (string id, string nk, string filter = null)
+
+Queries productSizeMaterialsRel of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productSizeMaterialsRel of TeamBuilderConfig.
+                List&lt;TeamBuilderConfigProductSizeMaterial&gt; result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<TeamBuilderConfigProductSizeMaterial>**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizematerialsrelpost"></a>
+# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost**
+> TeamBuilderConfigProductSizeMaterial TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost (string id, string nk, TeamBuilderConfigProductSizeMaterial data = null)
+
+Creates a new instance in productSizeMaterialsRel of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new TeamBuilderConfigProductSizeMaterial(); // TeamBuilderConfigProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productSizeMaterialsRel of this model.
+                TeamBuilderConfigProductSizeMaterial result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizescountget"></a>
+# **TeamsIdBuilderConfigsNkProductSizesCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsNkProductSizesCountGet (string id, string nk, string where = null)
+
+Counts productSizes of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productSizes of TeamBuilderConfig.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizesCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizesDelete**
+> void TeamsIdBuilderConfigsNkProductSizesDelete (string id, string nk)
+
+Deletes all productSizes of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all productSizes of this model.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizesDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizesFkDelete**
+> void TeamsIdBuilderConfigsNkProductSizesFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productSizes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+
+            try
+            {
+                // Delete a related item by id for productSizes.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizesFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesfkget"></a>
+# **TeamsIdBuilderConfigsNkProductSizesFkGet**
+> ProductSize TeamsIdBuilderConfigsNkProductSizesFkGet (string id, string nk, string fk)
+
+Find a related item by id for productSizes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+
+            try
+            {
+                // Find a related item by id for productSizes.
+                ProductSize result = apiInstance.TeamsIdBuilderConfigsNkProductSizesFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesfkput"></a>
+# **TeamsIdBuilderConfigsNkProductSizesFkPut**
+> ProductSize TeamsIdBuilderConfigsNkProductSizesFkPut (string id, string nk, string fk, ProductSize data = null)
+
+Update a related item by id for productSizes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+            var data = new ProductSize(); // ProductSize |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productSizes.
+                ProductSize result = apiInstance.TeamsIdBuilderConfigsNkProductSizesFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesget"></a>
+# **TeamsIdBuilderConfigsNkProductSizesGet**
+> List<ProductSize> TeamsIdBuilderConfigsNkProductSizesGet (string id, string nk, string filter = null)
+
+Queries productSizes of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productSizes of TeamBuilderConfig.
+                List&lt;ProductSize&gt; result = apiInstance.TeamsIdBuilderConfigsNkProductSizesGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductSize>**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizespost"></a>
+# **TeamsIdBuilderConfigsNkProductSizesPost**
+> ProductSize TeamsIdBuilderConfigsNkProductSizesPost (string id, string nk, ProductSize data = null)
+
+Creates a new instance in productSizes of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new ProductSize(); // ProductSize |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productSizes of this model.
+                ProductSize result = apiInstance.TeamsIdBuilderConfigsNkProductSizesPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesrelfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductSizesRelFkDelete**
+> void TeamsIdBuilderConfigsNkProductSizesRelFkDelete (string id, string nk, string fk)
+
+Remove the productSizes relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+
+            try
+            {
+                // Remove the productSizes relation to an item by id.
+                apiInstance.TeamsIdBuilderConfigsNkProductSizesRelFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesrelfkhead"></a>
+# **TeamsIdBuilderConfigsNkProductSizesRelFkHead**
+> bool? TeamsIdBuilderConfigsNkProductSizesRelFkHead (string id, string nk, string fk)
+
+Check the existence of productSizes relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+
+            try
+            {
+                // Check the existence of productSizes relation to an item by id.
+                bool? result = apiInstance.TeamsIdBuilderConfigsNkProductSizesRelFkHead(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproductsizesrelfkput"></a>
+# **TeamsIdBuilderConfigsNkProductSizesRelFkPut**
+> TeamBuilderConfigProductSize TeamsIdBuilderConfigsNkProductSizesRelFkPut (string id, string nk, string fk, TeamBuilderConfigProductSize data = null)
+
+Add a related item by id for productSizes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductSizesRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productSizes
+            var data = new TeamBuilderConfigProductSize(); // TeamBuilderConfigProductSize |  (optional) 
+
+            try
+            {
+                // Add a related item by id for productSizes.
+                TeamBuilderConfigProductSize result = apiInstance.TeamsIdBuilderConfigsNkProductSizesRelFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productSizes | 
+ **data** | [**TeamBuilderConfigProductSize**](TeamBuilderConfigProductSize.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSize**](TeamBuilderConfigProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypescountget"></a>
+# **TeamsIdBuilderConfigsNkProductTypesCountGet**
+> InlineResponse200 TeamsIdBuilderConfigsNkProductTypesCountGet (string id, string nk, string where = null)
+
+Counts productTypes of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productTypes of TeamBuilderConfig.
+                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductTypesCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesdelete"></a>
+# **TeamsIdBuilderConfigsNkProductTypesDelete**
+> void TeamsIdBuilderConfigsNkProductTypesDelete (string id, string nk)
+
+Deletes all productTypes of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all productTypes of this model.
+                apiInstance.TeamsIdBuilderConfigsNkProductTypesDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductTypesFkDelete**
+> void TeamsIdBuilderConfigsNkProductTypesFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productTypes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+
+            try
+            {
+                // Delete a related item by id for productTypes.
+                apiInstance.TeamsIdBuilderConfigsNkProductTypesFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesfkget"></a>
+# **TeamsIdBuilderConfigsNkProductTypesFkGet**
+> ProductType TeamsIdBuilderConfigsNkProductTypesFkGet (string id, string nk, string fk)
+
+Find a related item by id for productTypes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+
+            try
+            {
+                // Find a related item by id for productTypes.
+                ProductType result = apiInstance.TeamsIdBuilderConfigsNkProductTypesFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesfkput"></a>
+# **TeamsIdBuilderConfigsNkProductTypesFkPut**
+> ProductType TeamsIdBuilderConfigsNkProductTypesFkPut (string id, string nk, string fk, ProductType data = null)
+
+Update a related item by id for productTypes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+            var data = new ProductType(); // ProductType |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productTypes.
+                ProductType result = apiInstance.TeamsIdBuilderConfigsNkProductTypesFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesget"></a>
+# **TeamsIdBuilderConfigsNkProductTypesGet**
+> List<ProductType> TeamsIdBuilderConfigsNkProductTypesGet (string id, string nk, string filter = null)
+
+Queries productTypes of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productTypes of TeamBuilderConfig.
+                List&lt;ProductType&gt; result = apiInstance.TeamsIdBuilderConfigsNkProductTypesGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductType>**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypespost"></a>
+# **TeamsIdBuilderConfigsNkProductTypesPost**
+> ProductType TeamsIdBuilderConfigsNkProductTypesPost (string id, string nk, ProductType data = null)
+
+Creates a new instance in productTypes of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new ProductType(); // ProductType |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productTypes of this model.
+                ProductType result = apiInstance.TeamsIdBuilderConfigsNkProductTypesPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesrelfkdelete"></a>
+# **TeamsIdBuilderConfigsNkProductTypesRelFkDelete**
+> void TeamsIdBuilderConfigsNkProductTypesRelFkDelete (string id, string nk, string fk)
+
+Remove the productTypes relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+
+            try
+            {
+                // Remove the productTypes relation to an item by id.
+                apiInstance.TeamsIdBuilderConfigsNkProductTypesRelFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesrelfkhead"></a>
+# **TeamsIdBuilderConfigsNkProductTypesRelFkHead**
+> bool? TeamsIdBuilderConfigsNkProductTypesRelFkHead (string id, string nk, string fk)
+
+Check the existence of productTypes relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+
+            try
+            {
+                // Check the existence of productTypes relation to an item by id.
+                bool? result = apiInstance.TeamsIdBuilderConfigsNkProductTypesRelFkHead(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkproducttypesrelfkput"></a>
+# **TeamsIdBuilderConfigsNkProductTypesRelFkPut**
+> TeamBuilderConfigProductType TeamsIdBuilderConfigsNkProductTypesRelFkPut (string id, string nk, string fk, TeamBuilderConfigProductType data = null)
+
+Add a related item by id for productTypes.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkProductTypesRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for productTypes
+            var data = new TeamBuilderConfigProductType(); // TeamBuilderConfigProductType |  (optional) 
+
+            try
+            {
+                // Add a related item by id for productTypes.
+                TeamBuilderConfigProductType result = apiInstance.TeamsIdBuilderConfigsNkProductTypesRelFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for productTypes | 
+ **data** | [**TeamBuilderConfigProductType**](TeamBuilderConfigProductType.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductType**](TeamBuilderConfigProductType.md)
 
 ### Authorization
 
@@ -14103,6 +17405,1216 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialscountget"></a>
+# **TeamsIdProductMaterialsCountGet**
+> InlineResponse200 TeamsIdProductMaterialsCountGet (string id, string where = null)
+
+Counts productMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productMaterials of Team.
+                InlineResponse200 result = apiInstance.TeamsIdProductMaterialsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsdelete"></a>
+# **TeamsIdProductMaterialsDelete**
+> void TeamsIdProductMaterialsDelete (string id)
+
+Deletes all productMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+
+            try
+            {
+                // Deletes all productMaterials of this model.
+                apiInstance.TeamsIdProductMaterialsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsfkdelete"></a>
+# **TeamsIdProductMaterialsFkDelete**
+> void TeamsIdProductMaterialsFkDelete (string id, string fk)
+
+Delete a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productMaterials
+
+            try
+            {
+                // Delete a related item by id for productMaterials.
+                apiInstance.TeamsIdProductMaterialsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsfkget"></a>
+# **TeamsIdProductMaterialsFkGet**
+> ProductMaterial TeamsIdProductMaterialsFkGet (string id, string fk)
+
+Find a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productMaterials
+
+            try
+            {
+                // Find a related item by id for productMaterials.
+                ProductMaterial result = apiInstance.TeamsIdProductMaterialsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productMaterials | 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsfkput"></a>
+# **TeamsIdProductMaterialsFkPut**
+> ProductMaterial TeamsIdProductMaterialsFkPut (string id, string fk, ProductMaterial data = null)
+
+Update a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productMaterials
+            var data = new ProductMaterial(); // ProductMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productMaterials.
+                ProductMaterial result = apiInstance.TeamsIdProductMaterialsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productMaterials | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsget"></a>
+# **TeamsIdProductMaterialsGet**
+> List<ProductMaterial> TeamsIdProductMaterialsGet (string id, string filter = null)
+
+Queries productMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productMaterials of Team.
+                List&lt;ProductMaterial&gt; result = apiInstance.TeamsIdProductMaterialsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductMaterial>**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialsnkteamget"></a>
+# **TeamsIdProductMaterialsNkTeamGet**
+> Team TeamsIdProductMaterialsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for productMaterials.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.TeamsIdProductMaterialsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for productMaterials. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductmaterialspost"></a>
+# **TeamsIdProductMaterialsPost**
+> ProductMaterial TeamsIdProductMaterialsPost (string id, ProductMaterial data = null)
+
+Creates a new instance in productMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductMaterialsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var data = new ProductMaterial(); // ProductMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productMaterials of this model.
+                ProductMaterial result = apiInstance.TeamsIdProductMaterialsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductMaterialsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialscountget"></a>
+# **TeamsIdProductSizeMaterialsCountGet**
+> InlineResponse200 TeamsIdProductSizeMaterialsCountGet (string id, string where = null)
+
+Counts productSizeMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productSizeMaterials of Team.
+                InlineResponse200 result = apiInstance.TeamsIdProductSizeMaterialsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsdelete"></a>
+# **TeamsIdProductSizeMaterialsDelete**
+> void TeamsIdProductSizeMaterialsDelete (string id)
+
+Deletes all productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+
+            try
+            {
+                // Deletes all productSizeMaterials of this model.
+                apiInstance.TeamsIdProductSizeMaterialsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsfkdelete"></a>
+# **TeamsIdProductSizeMaterialsFkDelete**
+> void TeamsIdProductSizeMaterialsFkDelete (string id, string fk)
+
+Delete a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Delete a related item by id for productSizeMaterials.
+                apiInstance.TeamsIdProductSizeMaterialsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsfkget"></a>
+# **TeamsIdProductSizeMaterialsFkGet**
+> ProductSizeMaterial TeamsIdProductSizeMaterialsFkGet (string id, string fk)
+
+Find a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Find a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.TeamsIdProductSizeMaterialsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsfkput"></a>
+# **TeamsIdProductSizeMaterialsFkPut**
+> ProductSizeMaterial TeamsIdProductSizeMaterialsFkPut (string id, string fk, ProductSizeMaterial data = null)
+
+Update a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.TeamsIdProductSizeMaterialsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsget"></a>
+# **TeamsIdProductSizeMaterialsGet**
+> List<ProductSizeMaterial> TeamsIdProductSizeMaterialsGet (string id, string filter = null)
+
+Queries productSizeMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productSizeMaterials of Team.
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.TeamsIdProductSizeMaterialsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsnkmaterialget"></a>
+# **TeamsIdProductSizeMaterialsNkMaterialGet**
+> ProductMaterial TeamsIdProductSizeMaterialsNkMaterialGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation material.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsNkMaterialGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for productSizeMaterials.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation material.
+                ProductMaterial result = apiInstance.TeamsIdProductSizeMaterialsNkMaterialGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsNkMaterialGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsnksizeget"></a>
+# **TeamsIdProductSizeMaterialsNkSizeGet**
+> ProductSize TeamsIdProductSizeMaterialsNkSizeGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation size.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsNkSizeGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for productSizeMaterials.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation size.
+                ProductSize result = apiInstance.TeamsIdProductSizeMaterialsNkSizeGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsNkSizeGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialsnkteamget"></a>
+# **TeamsIdProductSizeMaterialsNkTeamGet**
+> Team TeamsIdProductSizeMaterialsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for productSizeMaterials.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.TeamsIdProductSizeMaterialsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidproductsizematerialspost"></a>
+# **TeamsIdProductSizeMaterialsPost**
+> ProductSizeMaterial TeamsIdProductSizeMaterialsPost (string id, ProductSizeMaterial data = null)
+
+Creates a new instance in productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdProductSizeMaterialsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productSizeMaterials of this model.
+                ProductSizeMaterial result = apiInstance.TeamsIdProductSizeMaterialsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdProductSizeMaterialsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
 
 ### Authorization
 

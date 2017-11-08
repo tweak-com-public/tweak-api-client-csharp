@@ -75,7 +75,9 @@ namespace TweakApi.Model
         /// <param name="ImageFolders">ImageFolders.</param>
         /// <param name="Billing">Billing.</param>
         /// <param name="Permission">Permission.</param>
-        public Team(string Name = null, Object Logo = null, string Subdomain = null, string Country = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string Icon = null, string ClientKey = null, string JavaScriptKey = null, string RestApiKey = null, string WindowsKey = null, string MasterKey = null, string Status = null, List<Customer> Members = null, List<TeamBuilderConfig> BuilderConfigs = null, List<DataSource> DataSources = null, List<DynamicData> DynamicDatas = null, List<TeamMember> TeamMembers = null, List<Portal> Portals = null, List<Template> Templates = null, TeamBrand Brand = null, List<TeamTemplateFolder> TemplateFolders = null, List<Workflow> Workflows = null, List<Image> Images = null, List<ImageFolder> ImageFolders = null, Billing Billing = null, TeamPermissionSet Permission = null)
+        /// <param name="ProductMaterials">ProductMaterials.</param>
+        /// <param name="ProductSizeMaterials">ProductSizeMaterials.</param>
+        public Team(string Name = null, Object Logo = null, string Subdomain = null, string Country = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string Icon = null, string ClientKey = null, string JavaScriptKey = null, string RestApiKey = null, string WindowsKey = null, string MasterKey = null, string Status = null, List<Customer> Members = null, List<TeamBuilderConfig> BuilderConfigs = null, List<DataSource> DataSources = null, List<DynamicData> DynamicDatas = null, List<TeamMember> TeamMembers = null, List<Portal> Portals = null, List<Template> Templates = null, TeamBrand Brand = null, List<TeamTemplateFolder> TemplateFolders = null, List<Workflow> Workflows = null, List<Image> Images = null, List<ImageFolder> ImageFolders = null, Billing Billing = null, TeamPermissionSet Permission = null, List<ProductMaterial> ProductMaterials = null, List<ProductSizeMaterial> ProductSizeMaterials = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -137,6 +139,8 @@ namespace TweakApi.Model
             this.ImageFolders = ImageFolders;
             this.Billing = Billing;
             this.Permission = Permission;
+            this.ProductMaterials = ProductMaterials;
+            this.ProductSizeMaterials = ProductSizeMaterials;
         }
         
         /// <summary>
@@ -282,6 +286,16 @@ namespace TweakApi.Model
         [DataMember(Name="permission", EmitDefaultValue=false)]
         public TeamPermissionSet Permission { get; set; }
         /// <summary>
+        /// Gets or Sets ProductMaterials
+        /// </summary>
+        [DataMember(Name="productMaterials", EmitDefaultValue=false)]
+        public List<ProductMaterial> ProductMaterials { get; set; }
+        /// <summary>
+        /// Gets or Sets ProductSizeMaterials
+        /// </summary>
+        [DataMember(Name="productSizeMaterials", EmitDefaultValue=false)]
+        public List<ProductSizeMaterial> ProductSizeMaterials { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -317,6 +331,8 @@ namespace TweakApi.Model
             sb.Append("  ImageFolders: ").Append(ImageFolders).Append("\n");
             sb.Append("  Billing: ").Append(Billing).Append("\n");
             sb.Append("  Permission: ").Append(Permission).Append("\n");
+            sb.Append("  ProductMaterials: ").Append(ProductMaterials).Append("\n");
+            sb.Append("  ProductSizeMaterials: ").Append(ProductSizeMaterials).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -492,6 +508,16 @@ namespace TweakApi.Model
                     this.Permission == other.Permission ||
                     this.Permission != null &&
                     this.Permission.Equals(other.Permission)
+                ) && 
+                (
+                    this.ProductMaterials == other.ProductMaterials ||
+                    this.ProductMaterials != null &&
+                    this.ProductMaterials.SequenceEqual(other.ProductMaterials)
+                ) && 
+                (
+                    this.ProductSizeMaterials == other.ProductSizeMaterials ||
+                    this.ProductSizeMaterials != null &&
+                    this.ProductSizeMaterials.SequenceEqual(other.ProductSizeMaterials)
                 );
         }
 
@@ -562,6 +588,10 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.Billing.GetHashCode();
                 if (this.Permission != null)
                     hash = hash * 59 + this.Permission.GetHashCode();
+                if (this.ProductMaterials != null)
+                    hash = hash * 59 + this.ProductMaterials.GetHashCode();
+                if (this.ProductSizeMaterials != null)
+                    hash = hash * 59 + this.ProductSizeMaterials.GetHashCode();
                 return hash;
             }
         }

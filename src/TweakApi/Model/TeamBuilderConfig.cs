@@ -51,7 +51,12 @@ namespace TweakApi.Model
         /// <param name="Id">Id.</param>
         /// <param name="TeamId">TeamId.</param>
         /// <param name="Team">Team.</param>
-        public TeamBuilderConfig(string Name = null, bool? DebugMode = null, Object Features = null, Object Ui = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string TeamId = null, Team Team = null)
+        /// <param name="ProductGroups">ProductGroups.</param>
+        /// <param name="ProductTypes">ProductTypes.</param>
+        /// <param name="ProductSizes">ProductSizes.</param>
+        /// <param name="ProductSizeMaterials">ProductSizeMaterials.</param>
+        /// <param name="ProductSizeMaterialsRel">ProductSizeMaterialsRel.</param>
+        public TeamBuilderConfig(string Name = null, bool? DebugMode = null, Object Features = null, Object Ui = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string TeamId = null, Team Team = null, List<ProductGroup> ProductGroups = null, List<ProductType> ProductTypes = null, List<ProductSize> ProductSizes = null, List<ProductSizeMaterial> ProductSizeMaterials = null, List<TeamBuilderConfigProductSizeMaterial> ProductSizeMaterialsRel = null)
         {
             this.Name = Name;
             // use default value if no "DebugMode" provided
@@ -70,6 +75,11 @@ namespace TweakApi.Model
             this.Id = Id;
             this.TeamId = TeamId;
             this.Team = Team;
+            this.ProductGroups = ProductGroups;
+            this.ProductTypes = ProductTypes;
+            this.ProductSizes = ProductSizes;
+            this.ProductSizeMaterials = ProductSizeMaterials;
+            this.ProductSizeMaterialsRel = ProductSizeMaterialsRel;
         }
         
         /// <summary>
@@ -118,6 +128,31 @@ namespace TweakApi.Model
         [DataMember(Name="team", EmitDefaultValue=false)]
         public Team Team { get; set; }
         /// <summary>
+        /// Gets or Sets ProductGroups
+        /// </summary>
+        [DataMember(Name="productGroups", EmitDefaultValue=false)]
+        public List<ProductGroup> ProductGroups { get; set; }
+        /// <summary>
+        /// Gets or Sets ProductTypes
+        /// </summary>
+        [DataMember(Name="productTypes", EmitDefaultValue=false)]
+        public List<ProductType> ProductTypes { get; set; }
+        /// <summary>
+        /// Gets or Sets ProductSizes
+        /// </summary>
+        [DataMember(Name="productSizes", EmitDefaultValue=false)]
+        public List<ProductSize> ProductSizes { get; set; }
+        /// <summary>
+        /// Gets or Sets ProductSizeMaterials
+        /// </summary>
+        [DataMember(Name="productSizeMaterials", EmitDefaultValue=false)]
+        public List<ProductSizeMaterial> ProductSizeMaterials { get; set; }
+        /// <summary>
+        /// Gets or Sets ProductSizeMaterialsRel
+        /// </summary>
+        [DataMember(Name="productSizeMaterialsRel", EmitDefaultValue=false)]
+        public List<TeamBuilderConfigProductSizeMaterial> ProductSizeMaterialsRel { get; set; }
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -134,6 +169,11 @@ namespace TweakApi.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  TeamId: ").Append(TeamId).Append("\n");
             sb.Append("  Team: ").Append(Team).Append("\n");
+            sb.Append("  ProductGroups: ").Append(ProductGroups).Append("\n");
+            sb.Append("  ProductTypes: ").Append(ProductTypes).Append("\n");
+            sb.Append("  ProductSizes: ").Append(ProductSizes).Append("\n");
+            sb.Append("  ProductSizeMaterials: ").Append(ProductSizeMaterials).Append("\n");
+            sb.Append("  ProductSizeMaterialsRel: ").Append(ProductSizeMaterialsRel).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -214,6 +254,31 @@ namespace TweakApi.Model
                     this.Team == other.Team ||
                     this.Team != null &&
                     this.Team.Equals(other.Team)
+                ) && 
+                (
+                    this.ProductGroups == other.ProductGroups ||
+                    this.ProductGroups != null &&
+                    this.ProductGroups.SequenceEqual(other.ProductGroups)
+                ) && 
+                (
+                    this.ProductTypes == other.ProductTypes ||
+                    this.ProductTypes != null &&
+                    this.ProductTypes.SequenceEqual(other.ProductTypes)
+                ) && 
+                (
+                    this.ProductSizes == other.ProductSizes ||
+                    this.ProductSizes != null &&
+                    this.ProductSizes.SequenceEqual(other.ProductSizes)
+                ) && 
+                (
+                    this.ProductSizeMaterials == other.ProductSizeMaterials ||
+                    this.ProductSizeMaterials != null &&
+                    this.ProductSizeMaterials.SequenceEqual(other.ProductSizeMaterials)
+                ) && 
+                (
+                    this.ProductSizeMaterialsRel == other.ProductSizeMaterialsRel ||
+                    this.ProductSizeMaterialsRel != null &&
+                    this.ProductSizeMaterialsRel.SequenceEqual(other.ProductSizeMaterialsRel)
                 );
         }
 
@@ -246,6 +311,16 @@ namespace TweakApi.Model
                     hash = hash * 59 + this.TeamId.GetHashCode();
                 if (this.Team != null)
                     hash = hash * 59 + this.Team.GetHashCode();
+                if (this.ProductGroups != null)
+                    hash = hash * 59 + this.ProductGroups.GetHashCode();
+                if (this.ProductTypes != null)
+                    hash = hash * 59 + this.ProductTypes.GetHashCode();
+                if (this.ProductSizes != null)
+                    hash = hash * 59 + this.ProductSizes.GetHashCode();
+                if (this.ProductSizeMaterials != null)
+                    hash = hash * 59 + this.ProductSizeMaterials.GetHashCode();
+                if (this.ProductSizeMaterialsRel != null)
+                    hash = hash * 59 + this.ProductSizeMaterialsRel.GetHashCode();
                 return hash;
             }
         }

@@ -300,6 +300,22 @@ namespace TweakApi.Test
         {
             // TODO unit test for the property 'Permission'
         }
+        /// <summary>
+        /// Test the property 'ProductMaterials'
+        /// </summary>
+        [Test]
+        public void ProductMaterialsTest()
+        {
+            // TODO unit test for the property 'ProductMaterials'
+        }
+        /// <summary>
+        /// Test the property 'ProductSizeMaterials'
+        /// </summary>
+        [Test]
+        public void ProductSizeMaterialsTest()
+        {
+            // TODO unit test for the property 'ProductSizeMaterials'
+        }
 
     }
 
