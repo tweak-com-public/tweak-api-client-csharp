@@ -42,6 +42,7 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkCommentsGet**](PortalApi.md#portalsiddesignsnkcommentsget) | **GET** /Portals/{id}/designs/{nk}/comments | Queries comments of Design.
 [**PortalsIdDesignsNkCommentsPost**](PortalApi.md#portalsiddesignsnkcommentspost) | **POST** /Portals/{id}/designs/{nk}/comments | Creates a new instance in comments of this model.
 [**PortalsIdDesignsNkCustomerGet**](PortalApi.md#portalsiddesignsnkcustomerget) | **GET** /Portals/{id}/designs/{nk}/customer | Fetches belongsTo relation customer.
+[**PortalsIdDesignsNkDynamicDataGet**](PortalApi.md#portalsiddesignsnkdynamicdataget) | **GET** /Portals/{id}/designs/{nk}/dynamicData | Fetches belongsTo relation dynamicData.
 [**PortalsIdDesignsNkExportsCountGet**](PortalApi.md#portalsiddesignsnkexportscountget) | **GET** /Portals/{id}/designs/{nk}/exports/count | Counts exports of Design.
 [**PortalsIdDesignsNkExportsDelete**](PortalApi.md#portalsiddesignsnkexportsdelete) | **DELETE** /Portals/{id}/designs/{nk}/exports | Deletes all exports of this model.
 [**PortalsIdDesignsNkExportsFkDelete**](PortalApi.md#portalsiddesignsnkexportsfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/exports/{fk} | Delete a related item by id for exports.
@@ -2702,6 +2703,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Customer**](Customer.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdynamicdataget"></a>
+# **PortalsIdDesignsNkDynamicDataGet**
+> DynamicData PortalsIdDesignsNkDynamicDataGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDynamicDataGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dynamicData.
+                DynamicData result = apiInstance.PortalsIdDesignsNkDynamicDataGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDynamicDataGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 

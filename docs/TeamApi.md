@@ -85,6 +85,13 @@ Method | HTTP request | Description
 [**TeamsIdDynamicDatasFkGet**](TeamApi.md#teamsiddynamicdatasfkget) | **GET** /Teams/{id}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasFkPut**](TeamApi.md#teamsiddynamicdatasfkput) | **PUT** /Teams/{id}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasGet**](TeamApi.md#teamsiddynamicdatasget) | **GET** /Teams/{id}/dynamicDatas | Queries dynamicDatas of Team.
+[**TeamsIdDynamicDatasNkDesignsCountGet**](TeamApi.md#teamsiddynamicdatasnkdesignscountget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/count | Counts designs of DynamicData.
+[**TeamsIdDynamicDatasNkDesignsDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs | Deletes all designs of this model.
+[**TeamsIdDynamicDatasNkDesignsFkDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Delete a related item by id for designs.
+[**TeamsIdDynamicDatasNkDesignsFkGet**](TeamApi.md#teamsiddynamicdatasnkdesignsfkget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Find a related item by id for designs.
+[**TeamsIdDynamicDatasNkDesignsFkPut**](TeamApi.md#teamsiddynamicdatasnkdesignsfkput) | **PUT** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Update a related item by id for designs.
+[**TeamsIdDynamicDatasNkDesignsGet**](TeamApi.md#teamsiddynamicdatasnkdesignsget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs | Queries designs of DynamicData.
+[**TeamsIdDynamicDatasNkDesignsPost**](TeamApi.md#teamsiddynamicdatasnkdesignspost) | **POST** /Teams/{id}/dynamicDatas/{nk}/designs | Creates a new instance in designs of this model.
 [**TeamsIdDynamicDatasNkRecordsCountGet**](TeamApi.md#teamsiddynamicdatasnkrecordscountget) | **GET** /Teams/{id}/dynamicDatas/{nk}/records/count | Count Dynamic Data records
 [**TeamsIdDynamicDatasNkRecordsDelete**](TeamApi.md#teamsiddynamicdatasnkrecordsdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records | Delete all matching records.
 [**TeamsIdDynamicDatasNkRecordsFkDelete**](TeamApi.md#teamsiddynamicdatasnkrecordsfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Delete a model instance by {{fk}} from the data source.
@@ -5858,6 +5865,487 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<DynamicData>**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignscountget"></a>
+# **TeamsIdDynamicDatasNkDesignsCountGet**
+> InlineResponse200 TeamsIdDynamicDatasNkDesignsCountGet (string id, string nk, string where = null)
+
+Counts designs of DynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts designs of DynamicData.
+                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasNkDesignsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignsdelete"></a>
+# **TeamsIdDynamicDatasNkDesignsDelete**
+> void TeamsIdDynamicDatasNkDesignsDelete (string id, string nk)
+
+Deletes all designs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+
+            try
+            {
+                // Deletes all designs of this model.
+                apiInstance.TeamsIdDynamicDatasNkDesignsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignsfkdelete"></a>
+# **TeamsIdDynamicDatasNkDesignsFkDelete**
+> void TeamsIdDynamicDatasNkDesignsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var fk = fk_example;  // string | Foreign key for designs
+
+            try
+            {
+                // Delete a related item by id for designs.
+                apiInstance.TeamsIdDynamicDatasNkDesignsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **fk** | **string**| Foreign key for designs | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignsfkget"></a>
+# **TeamsIdDynamicDatasNkDesignsFkGet**
+> Design TeamsIdDynamicDatasNkDesignsFkGet (string id, string nk, string fk)
+
+Find a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var fk = fk_example;  // string | Foreign key for designs
+
+            try
+            {
+                // Find a related item by id for designs.
+                Design result = apiInstance.TeamsIdDynamicDatasNkDesignsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **fk** | **string**| Foreign key for designs | 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignsfkput"></a>
+# **TeamsIdDynamicDatasNkDesignsFkPut**
+> Design TeamsIdDynamicDatasNkDesignsFkPut (string id, string nk, string fk, Design data = null)
+
+Update a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var fk = fk_example;  // string | Foreign key for designs
+            var data = new Design(); // Design |  (optional) 
+
+            try
+            {
+                // Update a related item by id for designs.
+                Design result = apiInstance.TeamsIdDynamicDatasNkDesignsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **fk** | **string**| Foreign key for designs | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignsget"></a>
+# **TeamsIdDynamicDatasNkDesignsGet**
+> List<Design> TeamsIdDynamicDatasNkDesignsGet (string id, string nk, string filter = null)
+
+Queries designs of DynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries designs of DynamicData.
+                List&lt;Design&gt; result = apiInstance.TeamsIdDynamicDatasNkDesignsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Design>**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdesignspost"></a>
+# **TeamsIdDynamicDatasNkDesignsPost**
+> Design TeamsIdDynamicDatasNkDesignsPost (string id, string nk, Design data = null)
+
+Creates a new instance in designs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDesignsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var data = new Design(); // Design |  (optional) 
+
+            try
+            {
+                // Creates a new instance in designs of this model.
+                Design result = apiInstance.TeamsIdDynamicDatasNkDesignsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
 
 ### Authorization
 

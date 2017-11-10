@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **CustomerId** | **string** |  | [optional] 
+**DynamicDataId** | **string** |  | [optional] 
 **RequesterId** | **string** |  | [optional] 
 **AssigneeId** | **string** |  | [optional] 
 **ReviewerId** | **string** |  | [optional] 
@@ -44,6 +45,7 @@ Name | Type | Description | Notes
 **Commenters** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
 **Folder** | [**DesignFolder**](DesignFolder.md) |  | [optional] 
 **Permission** | [**DesignPermissionSet**](DesignPermissionSet.md) |  | [optional] 
+**DynamicData** | [**DynamicData**](DynamicData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

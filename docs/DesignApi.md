@@ -40,6 +40,7 @@ Method | HTTP request | Description
 [**DesignsIdCommentsPost**](DesignApi.md#designsidcommentspost) | **POST** /Designs/{id}/comments | Creates a new instance in comments of this model.
 [**DesignsIdCustomerGet**](DesignApi.md#designsidcustomerget) | **GET** /Designs/{id}/customer | Fetches belongsTo relation customer.
 [**DesignsIdDelete**](DesignApi.md#designsiddelete) | **DELETE** /Designs/{id} | Delete a model instance by {{id}} from the data source.
+[**DesignsIdDynamicDataGet**](DesignApi.md#designsiddynamicdataget) | **GET** /Designs/{id}/dynamicData | Fetches belongsTo relation dynamicData.
 [**DesignsIdExistsGet**](DesignApi.md#designsidexistsget) | **GET** /Designs/{id}/exists | Check whether a model instance exists in the data source.
 [**DesignsIdExportsCountGet**](DesignApi.md#designsidexportscountget) | **GET** /Designs/{id}/exports/count | Counts exports of Design.
 [**DesignsIdExportsDelete**](DesignApi.md#designsidexportsdelete) | **DELETE** /Designs/{id}/exports | Deletes all exports of this model.
@@ -2486,6 +2487,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddynamicdataget"></a>
+# **DesignsIdDynamicDataGet**
+> DynamicData DesignsIdDynamicDataGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDynamicDataGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dynamicData.
+                DynamicData result = apiInstance.DesignsIdDynamicDataGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDynamicDataGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
