@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **Modified** | **DateTime?** |  | [optional] 
 **Email** | **string** |  | [optional] 
 **Key** | **string** |  | [optional] 
+**TeamDataRecordId** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **CustomerId** | **string** |  | [optional] 
 **TeamId** | **string** |  | [optional] 
