@@ -18,6 +18,8 @@ Method | HTTP request | Description
 [**InvitationTicketsIdPatch**](InvitationTicketApi.md#invitationticketsidpatch) | **PATCH** /InvitationTickets/{id} | Patch attributes for a model instance and persist it into the data source.
 [**InvitationTicketsIdPut**](InvitationTicketApi.md#invitationticketsidput) | **PUT** /InvitationTickets/{id} | Replace attributes for a model instance and persist it into the data source.
 [**InvitationTicketsIdReplacePost**](InvitationTicketApi.md#invitationticketsidreplacepost) | **POST** /InvitationTickets/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+[**InvitationTicketsIdTargetDesignGet**](InvitationTicketApi.md#invitationticketsidtargetdesignget) | **GET** /InvitationTickets/{id}/targetDesign | Fetches belongsTo relation targetDesign.
+[**InvitationTicketsIdTargetDesignMemberGet**](InvitationTicketApi.md#invitationticketsidtargetdesignmemberget) | **GET** /InvitationTickets/{id}/targetDesignMember | Fetches belongsTo relation targetDesignMember.
 [**InvitationTicketsIdTargetImageFolderGet**](InvitationTicketApi.md#invitationticketsidtargetimagefolderget) | **GET** /InvitationTickets/{id}/targetImageFolder | Fetches belongsTo relation targetImageFolder.
 [**InvitationTicketsIdTargetImageFolderMemberGet**](InvitationTicketApi.md#invitationticketsidtargetimagefoldermemberget) | **GET** /InvitationTickets/{id}/targetImageFolderMember | Fetches belongsTo relation targetImageFolderMember.
 [**InvitationTicketsIdTargetPortalGet**](InvitationTicketApi.md#invitationticketsidtargetportalget) | **GET** /InvitationTickets/{id}/targetPortal | Fetches belongsTo relation targetPortal.
@@ -944,6 +946,140 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InvitationTicket**](InvitationTicket.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="invitationticketsidtargetdesignget"></a>
+# **InvitationTicketsIdTargetDesignGet**
+> Design InvitationTicketsIdTargetDesignGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation targetDesign.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class InvitationTicketsIdTargetDesignGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new InvitationTicketApi();
+            var id = id_example;  // string | InvitationTicket id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation targetDesign.
+                Design result = apiInstance.InvitationTicketsIdTargetDesignGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InvitationTicketApi.InvitationTicketsIdTargetDesignGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| InvitationTicket id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="invitationticketsidtargetdesignmemberget"></a>
+# **InvitationTicketsIdTargetDesignMemberGet**
+> DesignMember InvitationTicketsIdTargetDesignMemberGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation targetDesignMember.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class InvitationTicketsIdTargetDesignMemberGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new InvitationTicketApi();
+            var id = id_example;  // string | InvitationTicket id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation targetDesignMember.
+                DesignMember result = apiInstance.InvitationTicketsIdTargetDesignMemberGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InvitationTicketApi.InvitationTicketsIdTargetDesignMemberGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| InvitationTicket id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
