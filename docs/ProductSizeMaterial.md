@@ -3,12 +3,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | 
+**Code** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **Thumbnail** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
 **BindingType** | **string** |  | [optional] 
 **DefaultBleed** | [**Bounds**](Bounds.md) |  | [optional] 
+**PdfColorProfile** | **string** |  | [optional] [default to ""]
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
