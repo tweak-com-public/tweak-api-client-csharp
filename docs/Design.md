@@ -20,10 +20,11 @@ Name | Type | Description | Notes
 **Path** | **string** |  | [optional] [default to "/"]
 **SentForApproval** | **DateTime?** |  | [optional] 
 **Approved** | **DateTime?** |  | [optional] 
+**Shared** | **DateTime?** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
-**CustomerId** | **string** |  | [optional] 
+**DynamicDataId** | **string** |  | [optional] 
 **RequesterId** | **string** |  | [optional] 
 **AssigneeId** | **string** |  | [optional] 
 **ReviewerId** | **string** |  | [optional] 
@@ -32,7 +33,6 @@ Name | Type | Description | Notes
 **RejectionCommentId** | **string** |  | [optional] 
 **FolderId** | **string** |  | [optional] 
 **Tags** | [**List&lt;Tag&gt;**](Tag.md) |  | [optional] 
-**Customer** | [**Customer**](Customer.md) |  | [optional] 
 **Template** | [**Template**](Template.md) |  | [optional] 
 **Portal** | [**Portal**](Portal.md) |  | [optional] 
 **Comments** | [**List&lt;DesignComment&gt;**](DesignComment.md) |  | [optional] 
@@ -44,6 +44,9 @@ Name | Type | Description | Notes
 **Commenters** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
 **Folder** | [**DesignFolder**](DesignFolder.md) |  | [optional] 
 **Permission** | [**DesignPermissionSet**](DesignPermissionSet.md) |  | [optional] 
+**Members** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
+**DesignMembers** | [**List&lt;DesignMember&gt;**](DesignMember.md) |  | [optional] 
+**DynamicData** | [**DynamicData**](DynamicData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

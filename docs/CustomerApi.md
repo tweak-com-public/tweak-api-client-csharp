@@ -21,13 +21,6 @@ Method | HTTP request | Description
 [**CustomersIdAccessTokensPost**](CustomerApi.md#customersidaccesstokenspost) | **POST** /Customers/{id}/accessTokens | Creates a new instance in accessTokens of this model.
 [**CustomersIdActiveGet**](CustomerApi.md#customersidactiveget) | **GET** /Customers/{id}/active | Define whether customer is active or not
 [**CustomersIdDelete**](CustomerApi.md#customersiddelete) | **DELETE** /Customers/{id} | Delete a model instance by {{id}} from the data source.
-[**CustomersIdDesignsCountGet**](CustomerApi.md#customersiddesignscountget) | **GET** /Customers/{id}/designs/count | Counts designs of Customer.
-[**CustomersIdDesignsDelete**](CustomerApi.md#customersiddesignsdelete) | **DELETE** /Customers/{id}/designs | Deletes all designs of this model.
-[**CustomersIdDesignsFkDelete**](CustomerApi.md#customersiddesignsfkdelete) | **DELETE** /Customers/{id}/designs/{fk} | Delete a related item by id for designs.
-[**CustomersIdDesignsFkGet**](CustomerApi.md#customersiddesignsfkget) | **GET** /Customers/{id}/designs/{fk} | Find a related item by id for designs.
-[**CustomersIdDesignsFkPut**](CustomerApi.md#customersiddesignsfkput) | **PUT** /Customers/{id}/designs/{fk} | Update a related item by id for designs.
-[**CustomersIdDesignsGet**](CustomerApi.md#customersiddesignsget) | **GET** /Customers/{id}/designs | Queries designs of Customer.
-[**CustomersIdDesignsPost**](CustomerApi.md#customersiddesignspost) | **POST** /Customers/{id}/designs | Creates a new instance in designs of this model.
 [**CustomersIdExistsGet**](CustomerApi.md#customersidexistsget) | **GET** /Customers/{id}/exists | Check whether a model instance exists in the data source.
 [**CustomersIdGet**](CustomerApi.md#customersidget) | **GET** /Customers/{id} | Find a model instance by {{id}} from the data source.
 [**CustomersIdHead**](CustomerApi.md#customersidhead) | **HEAD** /Customers/{id} | Check whether a model instance exists in the data source.
@@ -53,10 +46,6 @@ Method | HTTP request | Description
 [**CustomersIdTeamsFkGet**](CustomerApi.md#customersidteamsfkget) | **GET** /Customers/{id}/teams/{fk} | Find a related item by id for teams.
 [**CustomersIdTeamsFkPut**](CustomerApi.md#customersidteamsfkput) | **PUT** /Customers/{id}/teams/{fk} | Update a related item by id for teams.
 [**CustomersIdTeamsGet**](CustomerApi.md#customersidteamsget) | **GET** /Customers/{id}/teams | Queries teams of Customer.
-[**CustomersIdTeamsNkBillingDelete**](CustomerApi.md#customersidteamsnkbillingdelete) | **DELETE** /Customers/{id}/teams/{nk}/billing | Deletes billing of this model.
-[**CustomersIdTeamsNkBillingGet**](CustomerApi.md#customersidteamsnkbillingget) | **GET** /Customers/{id}/teams/{nk}/billing | Fetches hasOne relation billing.
-[**CustomersIdTeamsNkBillingPost**](CustomerApi.md#customersidteamsnkbillingpost) | **POST** /Customers/{id}/teams/{nk}/billing | Creates a new instance in billing of this model.
-[**CustomersIdTeamsNkBillingPut**](CustomerApi.md#customersidteamsnkbillingput) | **PUT** /Customers/{id}/teams/{nk}/billing | Update billing of this model.
 [**CustomersIdTeamsNkBrandDelete**](CustomerApi.md#customersidteamsnkbranddelete) | **DELETE** /Customers/{id}/teams/{nk}/brand | Deletes brand of this model.
 [**CustomersIdTeamsNkBrandGet**](CustomerApi.md#customersidteamsnkbrandget) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**CustomersIdTeamsNkBrandPost**](CustomerApi.md#customersidteamsnkbrandpost) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
@@ -117,6 +106,21 @@ Method | HTTP request | Description
 [**CustomersIdTeamsNkPortalsFkPut**](CustomerApi.md#customersidteamsnkportalsfkput) | **PUT** /Customers/{id}/teams/{nk}/portals/{fk} | Update a related item by id for portals.
 [**CustomersIdTeamsNkPortalsGet**](CustomerApi.md#customersidteamsnkportalsget) | **GET** /Customers/{id}/teams/{nk}/portals | Queries portals of Team.
 [**CustomersIdTeamsNkPortalsPost**](CustomerApi.md#customersidteamsnkportalspost) | **POST** /Customers/{id}/teams/{nk}/portals | Creates a new instance in portals of this model.
+[**CustomersIdTeamsNkProductMaterialsCountGet**](CustomerApi.md#customersidteamsnkproductmaterialscountget) | **GET** /Customers/{id}/teams/{nk}/productMaterials/count | Counts productMaterials of Team.
+[**CustomersIdTeamsNkProductMaterialsDelete**](CustomerApi.md#customersidteamsnkproductmaterialsdelete) | **DELETE** /Customers/{id}/teams/{nk}/productMaterials | Deletes all productMaterials of this model.
+[**CustomersIdTeamsNkProductMaterialsFkDelete**](CustomerApi.md#customersidteamsnkproductmaterialsfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Delete a related item by id for productMaterials.
+[**CustomersIdTeamsNkProductMaterialsFkGet**](CustomerApi.md#customersidteamsnkproductmaterialsfkget) | **GET** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Find a related item by id for productMaterials.
+[**CustomersIdTeamsNkProductMaterialsFkPut**](CustomerApi.md#customersidteamsnkproductmaterialsfkput) | **PUT** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Update a related item by id for productMaterials.
+[**CustomersIdTeamsNkProductMaterialsGet**](CustomerApi.md#customersidteamsnkproductmaterialsget) | **GET** /Customers/{id}/teams/{nk}/productMaterials | Queries productMaterials of Team.
+[**CustomersIdTeamsNkProductMaterialsPost**](CustomerApi.md#customersidteamsnkproductmaterialspost) | **POST** /Customers/{id}/teams/{nk}/productMaterials | Creates a new instance in productMaterials of this model.
+[**CustomersIdTeamsNkProductSizeMaterialsCountGet**](CustomerApi.md#customersidteamsnkproductsizematerialscountget) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials/count | Counts productSizeMaterials of Team.
+[**CustomersIdTeamsNkProductSizeMaterialsDelete**](CustomerApi.md#customersidteamsnkproductsizematerialsdelete) | **DELETE** /Customers/{id}/teams/{nk}/productSizeMaterials | Deletes all productSizeMaterials of this model.
+[**CustomersIdTeamsNkProductSizeMaterialsFkDelete**](CustomerApi.md#customersidteamsnkproductsizematerialsfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
+[**CustomersIdTeamsNkProductSizeMaterialsFkGet**](CustomerApi.md#customersidteamsnkproductsizematerialsfkget) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
+[**CustomersIdTeamsNkProductSizeMaterialsFkPut**](CustomerApi.md#customersidteamsnkproductsizematerialsfkput) | **PUT** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
+[**CustomersIdTeamsNkProductSizeMaterialsGet**](CustomerApi.md#customersidteamsnkproductsizematerialsget) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials | Queries productSizeMaterials of Team.
+[**CustomersIdTeamsNkProductSizeMaterialsPost**](CustomerApi.md#customersidteamsnkproductsizematerialspost) | **POST** /Customers/{id}/teams/{nk}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
+[**CustomersIdTeamsNkTeamDataGet**](CustomerApi.md#customersidteamsnkteamdataget) | **GET** /Customers/{id}/teams/{nk}/teamData | Fetches belongsTo relation teamData.
 [**CustomersIdTeamsNkTeamMembersCountGet**](CustomerApi.md#customersidteamsnkteammemberscountget) | **GET** /Customers/{id}/teams/{nk}/teamMembers/count | Counts teamMembers of Team.
 [**CustomersIdTeamsNkTeamMembersDelete**](CustomerApi.md#customersidteamsnkteammembersdelete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers | Deletes all teamMembers of this model.
 [**CustomersIdTeamsNkTeamMembersFkDelete**](CustomerApi.md#customersidteamsnkteammembersfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers/{fk} | Delete a related item by id for teamMembers.
@@ -1280,473 +1284,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Object**
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignscountget"></a>
-# **CustomersIdDesignsCountGet**
-> InlineResponse200 CustomersIdDesignsCountGet (string id, string where = null)
-
-Counts designs of Customer.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsCountGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-
-            try
-            {
-                // Counts designs of Customer.
-                InlineResponse200 result = apiInstance.CustomersIdDesignsCountGet(id, where);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsCountGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **where** | **string**| Criteria to match model instances | [optional] 
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignsdelete"></a>
-# **CustomersIdDesignsDelete**
-> void CustomersIdDesignsDelete (string id)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.CustomersIdDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignsfkdelete"></a>
-# **CustomersIdDesignsFkDelete**
-> void CustomersIdDesignsFkDelete (string id, string fk)
-
-Delete a related item by id for designs.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsFkDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var fk = fk_example;  // string | Foreign key for designs
-
-            try
-            {
-                // Delete a related item by id for designs.
-                apiInstance.CustomersIdDesignsFkDelete(id, fk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsFkDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **fk** | **string**| Foreign key for designs | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignsfkget"></a>
-# **CustomersIdDesignsFkGet**
-> Design CustomersIdDesignsFkGet (string id, string fk)
-
-Find a related item by id for designs.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsFkGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var fk = fk_example;  // string | Foreign key for designs
-
-            try
-            {
-                // Find a related item by id for designs.
-                Design result = apiInstance.CustomersIdDesignsFkGet(id, fk);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsFkGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **fk** | **string**| Foreign key for designs | 
-
-### Return type
-
-[**Design**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignsfkput"></a>
-# **CustomersIdDesignsFkPut**
-> Design CustomersIdDesignsFkPut (string id, string fk, Design data = null)
-
-Update a related item by id for designs.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsFkPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var fk = fk_example;  // string | Foreign key for designs
-            var data = new Design(); // Design |  (optional) 
-
-            try
-            {
-                // Update a related item by id for designs.
-                Design result = apiInstance.CustomersIdDesignsFkPut(id, fk, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsFkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **fk** | **string**| Foreign key for designs | 
- **data** | [**Design**](Design.md)|  | [optional] 
-
-### Return type
-
-[**Design**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignsget"></a>
-# **CustomersIdDesignsGet**
-> List<Design> CustomersIdDesignsGet (string id, string filter = null)
-
-Queries designs of Customer.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var filter = filter_example;  // string |  (optional) 
-
-            try
-            {
-                // Queries designs of Customer.
-                List&lt;Design&gt; result = apiInstance.CustomersIdDesignsGet(id, filter);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **filter** | **string**|  | [optional] 
-
-### Return type
-
-[**List<Design>**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersiddesignspost"></a>
-# **CustomersIdDesignsPost**
-> Design CustomersIdDesignsPost (string id, Design data = null)
-
-Creates a new instance in designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdDesignsPostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var data = new Design(); // Design |  (optional) 
-
-            try
-            {
-                // Creates a new instance in designs of this model.
-                Design result = apiInstance.CustomersIdDesignsPost(id, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdDesignsPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **data** | [**Design**](Design.md)|  | [optional] 
-
-### Return type
-
-[**Design**](Design.md)
 
 ### Authorization
 
@@ -3413,279 +2950,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<Team>**](Team.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersidteamsnkbillingdelete"></a>
-# **CustomersIdTeamsNkBillingDelete**
-> void CustomersIdTeamsNkBillingDelete (string id, string nk)
-
-Deletes billing of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdTeamsNkBillingDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var nk = nk_example;  // string | Foreign key for teams.
-
-            try
-            {
-                // Deletes billing of this model.
-                apiInstance.CustomersIdTeamsNkBillingDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **nk** | **string**| Foreign key for teams. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersidteamsnkbillingget"></a>
-# **CustomersIdTeamsNkBillingGet**
-> Billing CustomersIdTeamsNkBillingGet (string id, string nk, bool? refresh = null)
-
-Fetches hasOne relation billing.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdTeamsNkBillingGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var nk = nk_example;  // string | Foreign key for teams.
-            var refresh = true;  // bool? |  (optional) 
-
-            try
-            {
-                // Fetches hasOne relation billing.
-                Billing result = apiInstance.CustomersIdTeamsNkBillingGet(id, nk, refresh);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **nk** | **string**| Foreign key for teams. | 
- **refresh** | **bool?**|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersidteamsnkbillingpost"></a>
-# **CustomersIdTeamsNkBillingPost**
-> Billing CustomersIdTeamsNkBillingPost (string id, string nk, Billing data = null)
-
-Creates a new instance in billing of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdTeamsNkBillingPostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var nk = nk_example;  // string | Foreign key for teams.
-            var data = new Billing(); // Billing |  (optional) 
-
-            try
-            {
-                // Creates a new instance in billing of this model.
-                Billing result = apiInstance.CustomersIdTeamsNkBillingPost(id, nk, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **nk** | **string**| Foreign key for teams. | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersidteamsnkbillingput"></a>
-# **CustomersIdTeamsNkBillingPut**
-> Billing CustomersIdTeamsNkBillingPut (string id, string nk, Billing data = null)
-
-Update billing of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdTeamsNkBillingPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var nk = nk_example;  // string | Foreign key for teams.
-            var data = new Billing(); // Billing |  (optional) 
-
-            try
-            {
-                // Update billing of this model.
-                Billing result = apiInstance.CustomersIdTeamsNkBillingPut(id, nk, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkBillingPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **nk** | **string**| Foreign key for teams. | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
 
 ### Authorization
 
@@ -7807,6 +7071,1037 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialscountget"></a>
+# **CustomersIdTeamsNkProductMaterialsCountGet**
+> InlineResponse200 CustomersIdTeamsNkProductMaterialsCountGet (string id, string nk, string where = null)
+
+Counts productMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productMaterials of Team.
+                InlineResponse200 result = apiInstance.CustomersIdTeamsNkProductMaterialsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialsdelete"></a>
+# **CustomersIdTeamsNkProductMaterialsDelete**
+> void CustomersIdTeamsNkProductMaterialsDelete (string id, string nk)
+
+Deletes all productMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+
+            try
+            {
+                // Deletes all productMaterials of this model.
+                apiInstance.CustomersIdTeamsNkProductMaterialsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialsfkdelete"></a>
+# **CustomersIdTeamsNkProductMaterialsFkDelete**
+> void CustomersIdTeamsNkProductMaterialsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productMaterials
+
+            try
+            {
+                // Delete a related item by id for productMaterials.
+                apiInstance.CustomersIdTeamsNkProductMaterialsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialsfkget"></a>
+# **CustomersIdTeamsNkProductMaterialsFkGet**
+> ProductMaterial CustomersIdTeamsNkProductMaterialsFkGet (string id, string nk, string fk)
+
+Find a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productMaterials
+
+            try
+            {
+                // Find a related item by id for productMaterials.
+                ProductMaterial result = apiInstance.CustomersIdTeamsNkProductMaterialsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productMaterials | 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialsfkput"></a>
+# **CustomersIdTeamsNkProductMaterialsFkPut**
+> ProductMaterial CustomersIdTeamsNkProductMaterialsFkPut (string id, string nk, string fk, ProductMaterial data = null)
+
+Update a related item by id for productMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productMaterials
+            var data = new ProductMaterial(); // ProductMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productMaterials.
+                ProductMaterial result = apiInstance.CustomersIdTeamsNkProductMaterialsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productMaterials | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialsget"></a>
+# **CustomersIdTeamsNkProductMaterialsGet**
+> List<ProductMaterial> CustomersIdTeamsNkProductMaterialsGet (string id, string nk, string filter = null)
+
+Queries productMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productMaterials of Team.
+                List&lt;ProductMaterial&gt; result = apiInstance.CustomersIdTeamsNkProductMaterialsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductMaterial>**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductmaterialspost"></a>
+# **CustomersIdTeamsNkProductMaterialsPost**
+> ProductMaterial CustomersIdTeamsNkProductMaterialsPost (string id, string nk, ProductMaterial data = null)
+
+Creates a new instance in productMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductMaterialsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new ProductMaterial(); // ProductMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productMaterials of this model.
+                ProductMaterial result = apiInstance.CustomersIdTeamsNkProductMaterialsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductMaterialsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialscountget"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsCountGet**
+> InlineResponse200 CustomersIdTeamsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
+
+Counts productSizeMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productSizeMaterials of Team.
+                InlineResponse200 result = apiInstance.CustomersIdTeamsNkProductSizeMaterialsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialsdelete"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsDelete**
+> void CustomersIdTeamsNkProductSizeMaterialsDelete (string id, string nk)
+
+Deletes all productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+
+            try
+            {
+                // Deletes all productSizeMaterials of this model.
+                apiInstance.CustomersIdTeamsNkProductSizeMaterialsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialsfkdelete"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsFkDelete**
+> void CustomersIdTeamsNkProductSizeMaterialsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Delete a related item by id for productSizeMaterials.
+                apiInstance.CustomersIdTeamsNkProductSizeMaterialsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialsfkget"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsFkGet**
+> ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkGet (string id, string nk, string fk)
+
+Find a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+
+            try
+            {
+                // Find a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.CustomersIdTeamsNkProductSizeMaterialsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialsfkput"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsFkPut**
+> ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsFkPut (string id, string nk, string fk, ProductSizeMaterial data = null)
+
+Update a related item by id for productSizeMaterials.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for productSizeMaterials
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productSizeMaterials.
+                ProductSizeMaterial result = apiInstance.CustomersIdTeamsNkProductSizeMaterialsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for productSizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialsget"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsGet**
+> List<ProductSizeMaterial> CustomersIdTeamsNkProductSizeMaterialsGet (string id, string nk, string filter = null)
+
+Queries productSizeMaterials of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productSizeMaterials of Team.
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.CustomersIdTeamsNkProductSizeMaterialsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkproductsizematerialspost"></a>
+# **CustomersIdTeamsNkProductSizeMaterialsPost**
+> ProductSizeMaterial CustomersIdTeamsNkProductSizeMaterialsPost (string id, string nk, ProductSizeMaterial data = null)
+
+Creates a new instance in productSizeMaterials of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkProductSizeMaterialsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new ProductSizeMaterial(); // ProductSizeMaterial |  (optional) 
+
+            try
+            {
+                // Creates a new instance in productSizeMaterials of this model.
+                ProductSizeMaterial result = apiInstance.CustomersIdTeamsNkProductSizeMaterialsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkProductSizeMaterialsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkteamdataget"></a>
+# **CustomersIdTeamsNkTeamDataGet**
+> DynamicData CustomersIdTeamsNkTeamDataGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation teamData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkTeamDataGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation teamData.
+                DynamicData result = apiInstance.CustomersIdTeamsNkTeamDataGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkTeamDataGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
