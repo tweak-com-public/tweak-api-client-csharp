@@ -21,6 +21,7 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsFkGet**](TeamApi.md#teamsidbuilderconfigsfkget) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsFkLogoPut**](TeamApi.md#teamsidbuilderconfigsfklogoput) | **PUT** /Teams/{id}/builderConfigs/{fk}/logo | Change Builder Config logo
 [**TeamsIdBuilderConfigsFkPut**](TeamApi.md#teamsidbuilderconfigsfkput) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**TeamsIdBuilderConfigsFkWatermarkPut**](TeamApi.md#teamsidbuilderconfigsfkwatermarkput) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
 [**TeamsIdBuilderConfigsNkProductGroupsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkProductGroupsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
@@ -1507,6 +1508,75 @@ Name | Type | Description  | Notes
  **id** | **string**| Team id | 
  **fk** | **string**| Foreign key for builderConfigs | 
  **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsfkwatermarkput"></a>
+# **TeamsIdBuilderConfigsFkWatermarkPut**
+> TeamBuilderConfig TeamsIdBuilderConfigsFkWatermarkPut (string id, string fk, Team data)
+
+Change Builder Config watermark
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsFkWatermarkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | BuilderConfig id
+            var data = new Team(); // Team | Watermark
+
+            try
+            {
+                // Change Builder Config watermark
+                TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsFkWatermarkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsFkWatermarkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| BuilderConfig id | 
+ **data** | [**Team**](Team.md)| Watermark | 
 
 ### Return type
 
