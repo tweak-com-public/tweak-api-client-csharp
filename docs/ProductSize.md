@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **PdfSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **PdfPageCount** | **double?** |  | [optional] [default to 1.0]
 **PdfDpi** | **double?** |  | [optional] [default to 300.0]
-**PdfColorProfile** | **string** |  | [optional] [default to ""]
+**PrintProfile** | [**Stirng**](Stirng.md) |  | [optional] 
 **CustomerSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **CustomerPageCount** | **double?** |  | [optional] [default to 1.0]
 **MaxBleed** | [**Bounds**](Bounds.md) |  | [optional] 
@@ -32,11 +32,13 @@ Name | Type | Description | Notes
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
+**PdfColorProfileId** | **string** |  | [optional] 
 **TypeId** | **string** |  | [optional] 
 **Type** | [**ProductType**](ProductType.md) |  | [optional] 
 **Materials** | [**List&lt;ProductMaterial&gt;**](ProductMaterial.md) |  | [optional] 
 **SizeMaterials** | [**List&lt;ProductSizeMaterial&gt;**](ProductSizeMaterial.md) |  | [optional] 
 **Products** | [**List&lt;Product&gt;**](Product.md) |  | [optional] 
+**PdfColorProfile** | [**ProductPdfColorProfile**](ProductPdfColorProfile.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

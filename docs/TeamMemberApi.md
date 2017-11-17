@@ -215,6 +215,14 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamProductMaterialsFkPut**](TeamMemberApi.md#teammembersidteamproductmaterialsfkput) | **PUT** /TeamMembers/{id}/team/productMaterials/{fk} | Update a related item by id for productMaterials.
 [**TeamMembersIdTeamProductMaterialsGet**](TeamMemberApi.md#teammembersidteamproductmaterialsget) | **GET** /TeamMembers/{id}/team/productMaterials | Queries productMaterials of Team.
 [**TeamMembersIdTeamProductMaterialsPost**](TeamMemberApi.md#teammembersidteamproductmaterialspost) | **POST** /TeamMembers/{id}/team/productMaterials | Creates a new instance in productMaterials of this model.
+[**TeamMembersIdTeamProductPdfColorProfilesAvailableGet**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesavailableget) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/available | Find all available PdfColorProfile
+[**TeamMembersIdTeamProductPdfColorProfilesCountGet**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilescountget) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/count | Counts productPdfColorProfiles of Team.
+[**TeamMembersIdTeamProductPdfColorProfilesDelete**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesdelete) | **DELETE** /TeamMembers/{id}/team/productPdfColorProfiles | Deletes all productPdfColorProfiles of this model.
+[**TeamMembersIdTeamProductPdfColorProfilesFkDelete**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesfkdelete) | **DELETE** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Delete a related item by id for productPdfColorProfiles.
+[**TeamMembersIdTeamProductPdfColorProfilesFkGet**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesfkget) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Find a related item by id for productPdfColorProfiles.
+[**TeamMembersIdTeamProductPdfColorProfilesFkPut**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesfkput) | **PUT** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Update a related item by id for productPdfColorProfiles.
+[**TeamMembersIdTeamProductPdfColorProfilesGet**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesget) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles | Queries productPdfColorProfiles of Team.
+[**TeamMembersIdTeamProductPdfColorProfilesUploadPost**](TeamMemberApi.md#teammembersidteamproductpdfcolorprofilesuploadpost) | **POST** /TeamMembers/{id}/team/productPdfColorProfiles/upload | Upload ICC PDF Color Profile for this Team
 [**TeamMembersIdTeamProductSizeMaterialsCountGet**](TeamMemberApi.md#teammembersidteamproductsizematerialscountget) | **GET** /TeamMembers/{id}/team/productSizeMaterials/count | Counts productSizeMaterials of Team.
 [**TeamMembersIdTeamProductSizeMaterialsDelete**](TeamMemberApi.md#teammembersidteamproductsizematerialsdelete) | **DELETE** /TeamMembers/{id}/team/productSizeMaterials | Deletes all productSizeMaterials of this model.
 [**TeamMembersIdTeamProductSizeMaterialsFkDelete**](TeamMemberApi.md#teammembersidteamproductsizematerialsfkdelete) | **DELETE** /TeamMembers/{id}/team/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
@@ -14387,6 +14395,538 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesavailableget"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesAvailableGet**
+> List<ProductPdfColorProfile> TeamMembersIdTeamProductPdfColorProfilesAvailableGet (string id, string filter = null)
+
+Find all available PdfColorProfile
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesAvailableGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional) 
+
+            try
+            {
+                // Find all available PdfColorProfile
+                List&lt;ProductPdfColorProfile&gt; result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesAvailableGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesAvailableGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+[**List<ProductPdfColorProfile>**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilescountget"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesCountGet**
+> InlineResponse200 TeamMembersIdTeamProductPdfColorProfilesCountGet (string id, string where = null)
+
+Counts productPdfColorProfiles of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts productPdfColorProfiles of Team.
+                InlineResponse200 result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesdelete"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesDelete**
+> void TeamMembersIdTeamProductPdfColorProfilesDelete (string id)
+
+Deletes all productPdfColorProfiles of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Deletes all productPdfColorProfiles of this model.
+                apiInstance.TeamMembersIdTeamProductPdfColorProfilesDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesfkdelete"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesFkDelete**
+> void TeamMembersIdTeamProductPdfColorProfilesFkDelete (string id, string fk)
+
+Delete a related item by id for productPdfColorProfiles.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for productPdfColorProfiles
+
+            try
+            {
+                // Delete a related item by id for productPdfColorProfiles.
+                apiInstance.TeamMembersIdTeamProductPdfColorProfilesFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for productPdfColorProfiles | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesfkget"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesFkGet**
+> ProductPdfColorProfile TeamMembersIdTeamProductPdfColorProfilesFkGet (string id, string fk)
+
+Find a related item by id for productPdfColorProfiles.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for productPdfColorProfiles
+
+            try
+            {
+                // Find a related item by id for productPdfColorProfiles.
+                ProductPdfColorProfile result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for productPdfColorProfiles | 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesfkput"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesFkPut**
+> ProductPdfColorProfile TeamMembersIdTeamProductPdfColorProfilesFkPut (string id, string fk, ProductPdfColorProfile data = null)
+
+Update a related item by id for productPdfColorProfiles.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for productPdfColorProfiles
+            var data = new ProductPdfColorProfile(); // ProductPdfColorProfile |  (optional) 
+
+            try
+            {
+                // Update a related item by id for productPdfColorProfiles.
+                ProductPdfColorProfile result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for productPdfColorProfiles | 
+ **data** | [**ProductPdfColorProfile**](ProductPdfColorProfile.md)|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesget"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesGet**
+> List<ProductPdfColorProfile> TeamMembersIdTeamProductPdfColorProfilesGet (string id, string filter = null)
+
+Queries productPdfColorProfiles of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries productPdfColorProfiles of Team.
+                List&lt;ProductPdfColorProfile&gt; result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<ProductPdfColorProfile>**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteamproductpdfcolorprofilesuploadpost"></a>
+# **TeamMembersIdTeamProductPdfColorProfilesUploadPost**
+> ProductPdfColorProfile TeamMembersIdTeamProductPdfColorProfilesUploadPost (string id)
+
+Upload ICC PDF Color Profile for this Team
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamProductPdfColorProfilesUploadPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Upload ICC PDF Color Profile for this Team
+                ProductPdfColorProfile result = apiInstance.TeamMembersIdTeamProductPdfColorProfilesUploadPost(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamProductPdfColorProfilesUploadPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

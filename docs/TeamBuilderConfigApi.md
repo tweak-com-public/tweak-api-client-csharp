@@ -38,6 +38,7 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizeMaterialsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
 [**TeamBuilderConfigsIdProductSizeMaterialsGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials | Queries productSizeMaterials of TeamBuilderConfig.
 [**TeamBuilderConfigsIdProductSizeMaterialsNkMaterialGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsnkmaterialget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/material | Fetches belongsTo relation material.
+[**TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsnkpdfcolorprofileget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**TeamBuilderConfigsIdProductSizeMaterialsNkSizeGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsnksizeget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/size | Fetches belongsTo relation size.
 [**TeamBuilderConfigsIdProductSizeMaterialsNkTeamGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsnkteamget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/team | Fetches belongsTo relation team.
 [**TeamBuilderConfigsIdProductSizeMaterialsPost**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialspost) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
@@ -51,6 +52,7 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizeMaterialsRelFkPut_0**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelfkput_0) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Update a related item by id for productSizeMaterialsRel.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Queries productSizeMaterialsRel of TeamBuilderConfig.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelNkBuilderConfigGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelnkbuilderconfigget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/builderConfig | Fetches belongsTo relation builderConfig.
+[**TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelnkpdfcolorprofileget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelNkProductSizeMaterialGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelnkproductsizematerialget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelPost**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelpost) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
 [**TeamBuilderConfigsIdProductSizesCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizescountget) | **GET** /TeamBuilderConfigs/{id}/productSizes/count | Counts productSizes of TeamBuilderConfig.
@@ -69,6 +71,7 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizesNkMaterialsRelFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsrelfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Remove the materials relation to an item by id.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsRelFkHead**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsrelfkhead) | **HEAD** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Check the existence of materials relation to an item by id.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsRelFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsrelfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Add a related item by id for materials.
+[**TeamBuilderConfigsIdProductSizesNkPdfColorProfileGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkpdfcolorprofileget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**TeamBuilderConfigsIdProductSizesNkProductsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkproductscountget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/count | Counts products of ProductSize.
 [**TeamBuilderConfigsIdProductSizesNkProductsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkproductsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Deletes all products of this model.
 [**TeamBuilderConfigsIdProductSizesNkProductsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkproductsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk} | Delete a related item by id for products.
@@ -2390,6 +2393,75 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teambuilderconfigsidproductsizematerialsnkpdfcolorprofileget"></a>
+# **TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGet**
+> ProductPdfColorProfile TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var nk = nk_example;  // string | Foreign key for productSizeMaterials.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizeMaterialsNkPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **nk** | **string**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teambuilderconfigsidproductsizematerialsnksizeget"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsNkSizeGet**
 > ProductSize TeamBuilderConfigsIdProductSizeMaterialsNkSizeGet (string id, string nk, bool? refresh = null)
@@ -3254,6 +3326,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidproductsizematerialsrelnkpdfcolorprofileget"></a>
+# **TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGet**
+> ProductPdfColorProfile TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var nk = nk_example;  // string | Foreign key for productSizeMaterialsRel.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizeMaterialsRelNkPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **nk** | **string**| Foreign key for productSizeMaterialsRel. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 
@@ -4479,6 +4620,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidproductsizesnkpdfcolorprofileget"></a>
+# **TeamBuilderConfigsIdProductSizesNkPdfColorProfileGet**
+> ProductPdfColorProfile TeamBuilderConfigsIdProductSizesNkPdfColorProfileGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdProductSizesNkPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var nk = nk_example;  // string | Foreign key for productSizes.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.TeamBuilderConfigsIdProductSizesNkPdfColorProfileGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizesNkPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **nk** | **string**| Foreign key for productSizes. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

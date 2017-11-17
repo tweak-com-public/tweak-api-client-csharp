@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **Permission** | [**TeamPermissionSet**](TeamPermissionSet.md) |  | [optional] 
 **ProductMaterials** | [**List&lt;ProductMaterial&gt;**](ProductMaterial.md) |  | [optional] 
 **ProductSizeMaterials** | [**List&lt;ProductSizeMaterial&gt;**](ProductSizeMaterial.md) |  | [optional] 
+**ProductPdfColorProfiles** | [**List&lt;ProductPdfColorProfile&gt;**](ProductPdfColorProfile.md) |  | [optional] 
 **TeamData** | [**DynamicData**](DynamicData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

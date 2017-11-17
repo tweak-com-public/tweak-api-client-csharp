@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**TeamBuilderConfigProductSizeMaterialsIdGet**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidget) | **GET** /TeamBuilderConfigProductSizeMaterials/{id} | Find a model instance by {{id}} from the data source.
 [**TeamBuilderConfigProductSizeMaterialsIdHead**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidhead) | **HEAD** /TeamBuilderConfigProductSizeMaterials/{id} | Check whether a model instance exists in the data source.
 [**TeamBuilderConfigProductSizeMaterialsIdPatch**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidpatch) | **PATCH** /TeamBuilderConfigProductSizeMaterials/{id} | Patch attributes for a model instance and persist it into the data source.
+[**TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGet**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidpdfcolorprofileget) | **GET** /TeamBuilderConfigProductSizeMaterials/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**TeamBuilderConfigProductSizeMaterialsIdProductSizeMaterialGet**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidproductsizematerialget) | **GET** /TeamBuilderConfigProductSizeMaterials/{id}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
 [**TeamBuilderConfigProductSizeMaterialsIdPut**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidput) | **PUT** /TeamBuilderConfigProductSizeMaterials/{id} | Replace attributes for a model instance and persist it into the data source.
 [**TeamBuilderConfigProductSizeMaterialsIdReplacePost**](TeamBuilderConfigProductSizeMaterialApi.md#teambuilderconfigproductsizematerialsidreplacepost) | **POST** /TeamBuilderConfigProductSizeMaterials/{id}/replace | Replace attributes for a model instance and persist it into the data source.
@@ -735,6 +736,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigproductsizematerialsidpdfcolorprofileget"></a>
+# **TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGet**
+> ProductPdfColorProfile TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigProductSizeMaterialApi();
+            var id = id_example;  // string | TeamBuilderConfigProductSizeMaterial id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigProductSizeMaterialApi.TeamBuilderConfigProductSizeMaterialsIdPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfigProductSizeMaterial id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 
