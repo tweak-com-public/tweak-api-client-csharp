@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Status** | **string** |  | [optional] 
 **BindingType** | **string** |  | [optional] 
 **DefaultBleed** | [**Bounds**](Bounds.md) |  | [optional] 
-**PrintProfile** | [**Stirng**](Stirng.md) |  | [optional] 
+**PrintProfile** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

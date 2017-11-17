@@ -190,6 +190,26 @@ namespace TweakApi.Model
         }
 
         /// <summary>
+        /// Gets or Sets PrintProfile
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum PrintProfileEnum
+        {
+            
+            /// <summary>
+            /// Enum PDFX1A for "PDFX1A"
+            /// </summary>
+            [EnumMember(Value = "PDFX1A")]
+            PDFX1A,
+            
+            /// <summary>
+            /// Enum PDFX3A for "PDFX3A"
+            /// </summary>
+            [EnumMember(Value = "PDFX3A")]
+            PDFX3A
+        }
+
+        /// <summary>
         /// Gets or Sets Unit
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
@@ -341,6 +361,11 @@ namespace TweakApi.Model
         [DataMember(Name="bindingType", EmitDefaultValue=false)]
         public BindingTypeEnum? BindingType { get; set; }
         /// <summary>
+        /// Gets or Sets PrintProfile
+        /// </summary>
+        [DataMember(Name="printProfile", EmitDefaultValue=false)]
+        public PrintProfileEnum? PrintProfile { get; set; }
+        /// <summary>
         /// Gets or Sets Unit
         /// </summary>
         [DataMember(Name="unit", EmitDefaultValue=false)]
@@ -409,7 +434,7 @@ namespace TweakApi.Model
         /// <param name="SizeMaterials">SizeMaterials.</param>
         /// <param name="Products">Products.</param>
         /// <param name="PdfColorProfile">PdfColorProfile.</param>
-        public ProductSize(string Name = null, string Code = null, string Thumbnail = null, FoldingTypeEnum? FoldingType = null, FoldingMethodEnum? FoldingMethod = null, BindingTypeEnum? BindingType = null, bool? DoubleSided = null, bool? DieCut = null, Dimensions UnfoldedSize = null, Dimensions FoldedSize = null, Dimensions PdfSize = null, double? PdfPageCount = null, double? PdfDpi = null, Stirng PrintProfile = null, Dimensions CustomerSize = null, double? CustomerPageCount = null, Bounds MaxBleed = null, Bounds DefaultBleed = null, Bounds SafeArea = null, UnitEnum? Unit = null, double? Frame = null, ShapeEnum? Shape = null, OrientationEnum? Orientation = null, FormatEnum? Format = null, EnvelopeWindowEnum? EnvelopeWindow = null, double? CanvasImageCount = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string PdfColorProfileId = null, string TypeId = null, ProductType Type = null, List<ProductMaterial> Materials = null, List<ProductSizeMaterial> SizeMaterials = null, List<Product> Products = null, ProductPdfColorProfile PdfColorProfile = null)
+        public ProductSize(string Name = null, string Code = null, string Thumbnail = null, FoldingTypeEnum? FoldingType = null, FoldingMethodEnum? FoldingMethod = null, BindingTypeEnum? BindingType = null, bool? DoubleSided = null, bool? DieCut = null, Dimensions UnfoldedSize = null, Dimensions FoldedSize = null, Dimensions PdfSize = null, double? PdfPageCount = null, double? PdfDpi = null, PrintProfileEnum? PrintProfile = null, Dimensions CustomerSize = null, double? CustomerPageCount = null, Bounds MaxBleed = null, Bounds DefaultBleed = null, Bounds SafeArea = null, UnitEnum? Unit = null, double? Frame = null, ShapeEnum? Shape = null, OrientationEnum? Orientation = null, FormatEnum? Format = null, EnvelopeWindowEnum? EnvelopeWindow = null, double? CanvasImageCount = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string PdfColorProfileId = null, string TypeId = null, ProductType Type = null, List<ProductMaterial> Materials = null, List<ProductSizeMaterial> SizeMaterials = null, List<Product> Products = null, ProductPdfColorProfile PdfColorProfile = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -579,11 +604,6 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="pdfDpi", EmitDefaultValue=false)]
         public double? PdfDpi { get; set; }
-        /// <summary>
-        /// Gets or Sets PrintProfile
-        /// </summary>
-        [DataMember(Name="printProfile", EmitDefaultValue=false)]
-        public Stirng PrintProfile { get; set; }
         /// <summary>
         /// Gets or Sets CustomerSize
         /// </summary>

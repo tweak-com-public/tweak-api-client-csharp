@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **PdfSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **PdfPageCount** | **double?** |  | [optional] [default to 1.0]
 **PdfDpi** | **double?** |  | [optional] [default to 300.0]
-**PrintProfile** | [**Stirng**](Stirng.md) |  | [optional] 
+**PrintProfile** | **string** |  | [optional] 
 **CustomerSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **CustomerPageCount** | **double?** |  | [optional] [default to 1.0]
 **MaxBleed** | [**Bounds**](Bounds.md) |  | [optional] 

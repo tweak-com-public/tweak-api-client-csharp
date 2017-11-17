@@ -128,6 +128,26 @@ namespace TweakApi.Model
         }
 
         /// <summary>
+        /// Gets or Sets PrintProfile
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum PrintProfileEnum
+        {
+            
+            /// <summary>
+            /// Enum PDFX1A for "PDFX1A"
+            /// </summary>
+            [EnumMember(Value = "PDFX1A")]
+            PDFX1A,
+            
+            /// <summary>
+            /// Enum PDFX3A for "PDFX3A"
+            /// </summary>
+            [EnumMember(Value = "PDFX3A")]
+            PDFX3A
+        }
+
+        /// <summary>
         /// Gets or Sets Status
         /// </summary>
         [DataMember(Name="status", EmitDefaultValue=false)]
@@ -137,6 +157,11 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="bindingType", EmitDefaultValue=false)]
         public BindingTypeEnum? BindingType { get; set; }
+        /// <summary>
+        /// Gets or Sets PrintProfile
+        /// </summary>
+        [DataMember(Name="printProfile", EmitDefaultValue=false)]
+        public PrintProfileEnum? PrintProfile { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductSizeMaterial" /> class.
         /// </summary>
@@ -163,7 +188,7 @@ namespace TweakApi.Model
         /// <param name="Material">Material.</param>
         /// <param name="Team">Team.</param>
         /// <param name="PdfColorProfile">PdfColorProfile.</param>
-        public ProductSizeMaterial(string Code = null, string Description = null, string Thumbnail = null, StatusEnum? Status = null, BindingTypeEnum? BindingType = null, Bounds DefaultBleed = null, Stirng PrintProfile = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string MaterialId = null, string TeamId = null, string PdfColorProfileId = null, string SizeId = null, ProductSize Size = null, ProductMaterial Material = null, Team Team = null, ProductPdfColorProfile PdfColorProfile = null)
+        public ProductSizeMaterial(string Code = null, string Description = null, string Thumbnail = null, StatusEnum? Status = null, BindingTypeEnum? BindingType = null, Bounds DefaultBleed = null, PrintProfileEnum? PrintProfile = null, DateTime? Created = null, DateTime? Modified = null, string Id = null, string MaterialId = null, string TeamId = null, string PdfColorProfileId = null, string SizeId = null, ProductSize Size = null, ProductMaterial Material = null, Team Team = null, ProductPdfColorProfile PdfColorProfile = null)
         {
             // to ensure "Code" is required (not null)
             if (Code == null)
@@ -213,11 +238,6 @@ namespace TweakApi.Model
         /// </summary>
         [DataMember(Name="defaultBleed", EmitDefaultValue=false)]
         public Bounds DefaultBleed { get; set; }
-        /// <summary>
-        /// Gets or Sets PrintProfile
-        /// </summary>
-        [DataMember(Name="printProfile", EmitDefaultValue=false)]
-        public Stirng PrintProfile { get; set; }
         /// <summary>
         /// Gets or Sets Created
         /// </summary>

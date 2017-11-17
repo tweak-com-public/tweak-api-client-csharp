@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BindingType** | **string** |  | [optional] 
 **DefaultBleed** | [**Bounds**](Bounds.md) |  | [optional] 
-**PrintProfile** | [**Stirng**](Stirng.md) |  | [optional] 
+**PrintProfile** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

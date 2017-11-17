@@ -58,7 +58,7 @@ namespace TweakApi.Client
                              string tempFolderPath = null,
                              string dateTimeFormat = null,
                              int timeout = 100000,
-                             string userAgent = "Swagger-Codegen/1.0.3-alpha.5/csharp"
+                             string userAgent = "Swagger-Codegen/1.0.3-alpha.6/csharp"
                             )
         {
             setApiClientUsingDefault(apiClient);
@@ -93,7 +93,7 @@ namespace TweakApi.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "1.0.3-alpha.5";
+        public const string Version = "1.0.3-alpha.6";
 
         /// <summary>
         /// Gets or sets the default Configuration.
@@ -330,7 +330,7 @@ namespace TweakApi.Client
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
             report += "    Version of the API: 1.0.3-alpha.4\n";
-            report += "    SDK Package Version: 1.0.3-alpha.5\n";
+            report += "    SDK Package Version: 1.0.3-alpha.6\n";
 
             return report;
         }
