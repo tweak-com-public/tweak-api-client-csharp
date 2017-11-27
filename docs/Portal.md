@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
-**Logo** | **Object** |  | [optional] 
+**Logo** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **Status** | **string** |  | [optional] 
 **Language** | **string** |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 

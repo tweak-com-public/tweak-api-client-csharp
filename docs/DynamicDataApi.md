@@ -26,6 +26,7 @@ Method | HTTP request | Description
 [**DynamicDataIdRecordsDelete**](DynamicDataApi.md#dynamicdataidrecordsdelete) | **DELETE** /DynamicData/{id}/records | Delete all matching records.
 [**DynamicDataIdRecordsFkDelete**](DynamicDataApi.md#dynamicdataidrecordsfkdelete) | **DELETE** /DynamicData/{id}/records/{fk} | Delete a model instance by {{fk}} from the data source.
 [**DynamicDataIdRecordsFkGet**](DynamicDataApi.md#dynamicdataidrecordsfkget) | **GET** /DynamicData/{id}/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**DynamicDataIdRecordsFkPropertyNameUploadPut**](DynamicDataApi.md#dynamicdataidrecordsfkpropertynameuploadput) | **PUT** /DynamicData/{id}/records/{fk}/{propertyName}/upload | Replace attributes for a model instance and persist it into the data source.
 [**DynamicDataIdRecordsFkPut**](DynamicDataApi.md#dynamicdataidrecordsfkput) | **PUT** /DynamicData/{id}/records/{fk} | Replace attributes for a model instance and persist it into the data source.
 [**DynamicDataIdRecordsGet**](DynamicDataApi.md#dynamicdataidrecordsget) | **GET** /DynamicData/{id}/records | Find all instances of the model matched by filter from the data source.
 [**DynamicDataIdRecordsMigratePost**](DynamicDataApi.md#dynamicdataidrecordsmigratepost) | **POST** /DynamicData/{id}/records/migrate | Request migration for Dynamic Data records
@@ -1483,6 +1484,77 @@ Name | Type | Description  | Notes
  **id** | **string**| DynamicData id | 
  **fk** | **string**| Model id | 
  **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataidrecordsfkpropertynameuploadput"></a>
+# **DynamicDataIdRecordsFkPropertyNameUploadPut**
+> Object DynamicDataIdRecordsFkPropertyNameUploadPut (string id, string fk, string propertyName, DynamicData data = null)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdRecordsFkPropertyNameUploadPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var fk = fk_example;  // string | Model id
+            var propertyName = propertyName_example;  // string | Model property name
+            var data = new DynamicData(); // DynamicData | Model instance data (optional) 
+
+            try
+            {
+                // Replace attributes for a model instance and persist it into the data source.
+                Object result = apiInstance.DynamicDataIdRecordsFkPropertyNameUploadPut(id, fk, propertyName, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdRecordsFkPropertyNameUploadPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **fk** | **string**| Model id | 
+ **propertyName** | **string**| Model property name | 
+ **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
 
 ### Return type
 

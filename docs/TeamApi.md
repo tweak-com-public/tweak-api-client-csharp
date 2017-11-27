@@ -97,6 +97,7 @@ Method | HTTP request | Description
 [**TeamsIdDynamicDatasNkRecordsDelete**](TeamApi.md#teamsiddynamicdatasnkrecordsdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records | Delete all matching records.
 [**TeamsIdDynamicDatasNkRecordsFkDelete**](TeamApi.md#teamsiddynamicdatasnkrecordsfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Delete a model instance by {{fk}} from the data source.
 [**TeamsIdDynamicDatasNkRecordsFkGet**](TeamApi.md#teamsiddynamicdatasnkrecordsfkget) | **GET** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPut**](TeamApi.md#teamsiddynamicdatasnkrecordsfkpropertynameuploadput) | **PUT** /Teams/{id}/dynamicDatas/{nk}/records/{fk}/{propertyName}/upload | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdDynamicDatasNkRecordsFkPut**](TeamApi.md#teamsiddynamicdatasnkrecordsfkput) | **PUT** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdDynamicDatasNkRecordsGet**](TeamApi.md#teamsiddynamicdatasnkrecordsget) | **GET** /Teams/{id}/dynamicDatas/{nk}/records | Find all instances of the model matched by filter from the data source.
 [**TeamsIdDynamicDatasNkRecordsMigratePost**](TeamApi.md#teamsiddynamicdatasnkrecordsmigratepost) | **POST** /Teams/{id}/dynamicDatas/{nk}/records/migrate | Request migration for Dynamic Data records
@@ -303,6 +304,7 @@ Method | HTTP request | Description
 [**TeamsIdTeamDataRecordsDelete**](TeamApi.md#teamsidteamdatarecordsdelete) | **DELETE** /Teams/{id}/teamData/records | Delete all matching records.
 [**TeamsIdTeamDataRecordsFkDelete**](TeamApi.md#teamsidteamdatarecordsfkdelete) | **DELETE** /Teams/{id}/teamData/records/{fk} | Delete a model instance by {{fk}} from the data source.
 [**TeamsIdTeamDataRecordsFkGet**](TeamApi.md#teamsidteamdatarecordsfkget) | **GET** /Teams/{id}/teamData/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**TeamsIdTeamDataRecordsFkPropertyNameUploadPut**](TeamApi.md#teamsidteamdatarecordsfkpropertynameuploadput) | **PUT** /Teams/{id}/teamData/records/{fk}/{propertyName}/upload | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdTeamDataRecordsFkPut**](TeamApi.md#teamsidteamdatarecordsfkput) | **PUT** /Teams/{id}/teamData/records/{fk} | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdTeamDataRecordsGet**](TeamApi.md#teamsidteamdatarecordsget) | **GET** /Teams/{id}/teamData/records | Find all instances of the model matched by filter from the data source.
 [**TeamsIdTeamDataRecordsMigratePost**](TeamApi.md#teamsidteamdatarecordsmigratepost) | **POST** /Teams/{id}/teamData/records/migrate | Request migration for Dynamic Data records
@@ -6717,6 +6719,79 @@ Name | Type | Description  | Notes
  **nk** | **string**| Foreign key for dynamicDatas. | 
  **fk** | **string**| Model id | 
  **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkrecordsfkpropertynameuploadput"></a>
+# **TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPut**
+> Object TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPut (string id, string nk, string fk, string propertyName, Team data = null)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var fk = fk_example;  // string | Model id
+            var propertyName = propertyName_example;  // string | Model property name
+            var data = new Team(); // Team | Model instance data (optional) 
+
+            try
+            {
+                // Replace attributes for a model instance and persist it into the data source.
+                Object result = apiInstance.TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPut(id, nk, fk, propertyName, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkRecordsFkPropertyNameUploadPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **fk** | **string**| Model id | 
+ **propertyName** | **string**| Model property name | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
 
 ### Return type
 
@@ -20735,6 +20810,77 @@ Name | Type | Description  | Notes
  **id** | **string**| Team id | 
  **fk** | **string**| Model id | 
  **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatarecordsfkpropertynameuploadput"></a>
+# **TeamsIdTeamDataRecordsFkPropertyNameUploadPut**
+> Object TeamsIdTeamDataRecordsFkPropertyNameUploadPut (string id, string fk, string propertyName, Team data = null)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataRecordsFkPropertyNameUploadPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Model id
+            var propertyName = propertyName_example;  // string | Model property name
+            var data = new Team(); // Team | Model instance data (optional) 
+
+            try
+            {
+                // Replace attributes for a model instance and persist it into the data source.
+                Object result = apiInstance.TeamsIdTeamDataRecordsFkPropertyNameUploadPut(id, fk, propertyName, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataRecordsFkPropertyNameUploadPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Model id | 
+ **propertyName** | **string**| Model property name | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
 
 ### Return type
 
