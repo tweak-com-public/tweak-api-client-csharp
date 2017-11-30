@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**ProductSizeMaterialsIdHead**](ProductSizeMaterialApi.md#productsizematerialsidhead) | **HEAD** /ProductSizeMaterials/{id} | Check whether a model instance exists in the data source.
 [**ProductSizeMaterialsIdMaterialGet**](ProductSizeMaterialApi.md#productsizematerialsidmaterialget) | **GET** /ProductSizeMaterials/{id}/material | Fetches belongsTo relation material.
 [**ProductSizeMaterialsIdPatch**](ProductSizeMaterialApi.md#productsizematerialsidpatch) | **PATCH** /ProductSizeMaterials/{id} | Patch attributes for a model instance and persist it into the data source.
+[**ProductSizeMaterialsIdPdfColorProfileGet**](ProductSizeMaterialApi.md#productsizematerialsidpdfcolorprofileget) | **GET** /ProductSizeMaterials/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**ProductSizeMaterialsIdPut**](ProductSizeMaterialApi.md#productsizematerialsidput) | **PUT** /ProductSizeMaterials/{id} | Replace attributes for a model instance and persist it into the data source.
 [**ProductSizeMaterialsIdReplacePost**](ProductSizeMaterialApi.md#productsizematerialsidreplacepost) | **POST** /ProductSizeMaterials/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**ProductSizeMaterialsIdSizeGet**](ProductSizeMaterialApi.md#productsizematerialsidsizeget) | **GET** /ProductSizeMaterials/{id}/size | Fetches belongsTo relation size.
@@ -736,6 +737,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="productsizematerialsidpdfcolorprofileget"></a>
+# **ProductSizeMaterialsIdPdfColorProfileGet**
+> ProductPdfColorProfile ProductSizeMaterialsIdPdfColorProfileGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class ProductSizeMaterialsIdPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new ProductSizeMaterialApi();
+            var id = id_example;  // string | ProductSizeMaterial id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.ProductSizeMaterialsIdPdfColorProfileGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ProductSizeMaterialApi.ProductSizeMaterialsIdPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| ProductSizeMaterial id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

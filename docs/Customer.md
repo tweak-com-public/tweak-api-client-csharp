@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ProfilePicture** | **Object** |  | [optional] 
+**ProfilePicture** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **FirstName** | **string** |  | 
 **LastName** | **string** |  | 
 **Initials** | **string** |  | 

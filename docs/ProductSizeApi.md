@@ -24,6 +24,7 @@ Method | HTTP request | Description
 [**ProductSizesIdMaterialsRelFkHead**](ProductSizeApi.md#productsizesidmaterialsrelfkhead) | **HEAD** /ProductSizes/{id}/materials/rel/{fk} | Check the existence of materials relation to an item by id.
 [**ProductSizesIdMaterialsRelFkPut**](ProductSizeApi.md#productsizesidmaterialsrelfkput) | **PUT** /ProductSizes/{id}/materials/rel/{fk} | Add a related item by id for materials.
 [**ProductSizesIdPatch**](ProductSizeApi.md#productsizesidpatch) | **PATCH** /ProductSizes/{id} | Patch attributes for a model instance and persist it into the data source.
+[**ProductSizesIdPdfColorProfileGet**](ProductSizeApi.md#productsizesidpdfcolorprofileget) | **GET** /ProductSizes/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**ProductSizesIdProductsCountGet**](ProductSizeApi.md#productsizesidproductscountget) | **GET** /ProductSizes/{id}/products/count | Counts products of ProductSize.
 [**ProductSizesIdProductsDelete**](ProductSizeApi.md#productsizesidproductsdelete) | **DELETE** /ProductSizes/{id}/products | Deletes all products of this model.
 [**ProductSizesIdProductsFkDelete**](ProductSizeApi.md#productsizesidproductsfkdelete) | **DELETE** /ProductSizes/{id}/products/{fk} | Delete a related item by id for products.
@@ -1360,6 +1361,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="productsizesidpdfcolorprofileget"></a>
+# **ProductSizesIdPdfColorProfileGet**
+> ProductPdfColorProfile ProductSizesIdPdfColorProfileGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class ProductSizesIdPdfColorProfileGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new ProductSizeApi();
+            var id = id_example;  // string | ProductSize id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation pdfColorProfile.
+                ProductPdfColorProfile result = apiInstance.ProductSizesIdPdfColorProfileGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ProductSizeApi.ProductSizesIdPdfColorProfileGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| ProductSize id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 
