@@ -91,6 +91,7 @@ Method | HTTP request | Description
 [**DesignsIdTagsRelFkDelete**](DesignApi.md#designsidtagsrelfkdelete) | **DELETE** /Designs/{id}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**DesignsIdTagsRelFkHead**](DesignApi.md#designsidtagsrelfkhead) | **HEAD** /Designs/{id}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**DesignsIdTagsRelFkPut**](DesignApi.md#designsidtagsrelfkput) | **PUT** /Designs/{id}/tags/rel/{fk} | Add a related item by id for tags.
+[**DesignsIdTeamGet**](DesignApi.md#designsidteamget) | **GET** /Designs/{id}/team | Fetches belongsTo relation team.
 [**DesignsIdTemplateGet**](DesignApi.md#designsidtemplateget) | **GET** /Designs/{id}/template | Fetches belongsTo relation template.
 [**DesignsPatch**](DesignApi.md#designspatch) | **PATCH** /Designs | Patch an existing model instance or insert a new one into the data source.
 [**DesignsPost**](DesignApi.md#designspost) | **POST** /Designs | Create a new instance of the model and persist it into the data source.
@@ -5909,6 +5910,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidteamget"></a>
+# **DesignsIdTeamGet**
+> Team DesignsIdTeamGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.DesignsIdTeamGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 

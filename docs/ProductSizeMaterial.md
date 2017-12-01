@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Code** | **string** |  | 
+**LegacyCode** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
 **Thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **Status** | **string** |  | [optional] 

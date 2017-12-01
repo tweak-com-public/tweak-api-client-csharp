@@ -85,6 +85,7 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkTagsRelFkDelete**](PortalApi.md#portalsiddesignsnktagsrelfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**PortalsIdDesignsNkTagsRelFkHead**](PortalApi.md#portalsiddesignsnktagsrelfkhead) | **HEAD** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**PortalsIdDesignsNkTagsRelFkPut**](PortalApi.md#portalsiddesignsnktagsrelfkput) | **PUT** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Add a related item by id for tags.
+[**PortalsIdDesignsNkTeamGet**](PortalApi.md#portalsiddesignsnkteamget) | **GET** /Portals/{id}/designs/{nk}/team | Fetches belongsTo relation team.
 [**PortalsIdDesignsNkTemplateGet**](PortalApi.md#portalsiddesignsnktemplateget) | **GET** /Portals/{id}/designs/{nk}/template | Fetches belongsTo relation template.
 [**PortalsIdDesignsPost**](PortalApi.md#portalsiddesignspost) | **POST** /Portals/{id}/designs | Creates a new instance in designs of this model.
 [**PortalsIdExistsGet**](PortalApi.md#portalsidexistsget) | **GET** /Portals/{id}/exists | Check whether a model instance exists in the data source.
@@ -5677,6 +5678,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkteamget"></a>
+# **PortalsIdDesignsNkTeamGet**
+> Team PortalsIdDesignsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.PortalsIdDesignsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 
