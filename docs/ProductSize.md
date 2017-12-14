@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
 **Code** | **string** |  | 
+**LegacyCode** | **string** |  | [optional] 
 **Thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **FoldingType** | **string** |  | [optional] 
 **FoldingMethod** | **string** |  | [optional] 
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **PdfSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **PdfPageCount** | **double?** |  | [optional] [default to 1.0]
 **PdfDpi** | **double?** |  | [optional] [default to 300.0]
+**PdfOutputScale** | **double?** |  | [optional] [default to 100.0]
 **PrintProfile** | **string** |  | [optional] 
 **CustomerSize** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **CustomerPageCount** | **double?** |  | [optional] [default to 1.0]
@@ -29,6 +31,8 @@ Name | Type | Description | Notes
 **Format** | **string** |  | 
 **EnvelopeWindow** | **string** |  | [optional] 
 **CanvasImageCount** | **double?** |  | [optional] [default to 0.0]
+**Options** | **string** |  | [optional] [default to "none"]
+**DisplayType** | **string** |  | [optional] [default to "none"]
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 

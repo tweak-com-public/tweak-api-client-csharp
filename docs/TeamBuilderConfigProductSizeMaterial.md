@@ -6,6 +6,8 @@ Name | Type | Description | Notes
 **BindingType** | **string** |  | [optional] 
 **DefaultBleed** | [**Bounds**](Bounds.md) |  | [optional] 
 **PrintProfile** | **string** |  | [optional] 
+**CustomerTitle** | **string** |  | [optional] [default to ""]
+**CustomerDescription** | **string** |  | [optional] [default to ""]
 **Created** | **DateTime?** |  | [optional] 
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
