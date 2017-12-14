@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
 **Code** | **string** |  | 
+**LegacyCode** | **string** |  | [optional] 
 **Thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **FoldingType** | **string** |  | [optional] 
 **FoldingMethod** | **string** |  | [optional] 
