@@ -10,6 +10,13 @@ Method | HTTP request | Description
 [**DynamicDataFindOneGet**](DynamicDataApi.md#dynamicdatafindoneget) | **GET** /DynamicData/findOne | Find first instance of the model matched by filter from the data source.
 [**DynamicDataGet**](DynamicDataApi.md#dynamicdataget) | **GET** /DynamicData | Find all instances of the model matched by filter from the data source.
 [**DynamicDataIdDelete**](DynamicDataApi.md#dynamicdataiddelete) | **DELETE** /DynamicData/{id} | Delete a model instance by {{id}} from the data source.
+[**DynamicDataIdDesignsCountGet**](DynamicDataApi.md#dynamicdataiddesignscountget) | **GET** /DynamicData/{id}/designs/count | Counts designs of DynamicData.
+[**DynamicDataIdDesignsDelete**](DynamicDataApi.md#dynamicdataiddesignsdelete) | **DELETE** /DynamicData/{id}/designs | Deletes all designs of this model.
+[**DynamicDataIdDesignsFkDelete**](DynamicDataApi.md#dynamicdataiddesignsfkdelete) | **DELETE** /DynamicData/{id}/designs/{fk} | Delete a related item by id for designs.
+[**DynamicDataIdDesignsFkGet**](DynamicDataApi.md#dynamicdataiddesignsfkget) | **GET** /DynamicData/{id}/designs/{fk} | Find a related item by id for designs.
+[**DynamicDataIdDesignsFkPut**](DynamicDataApi.md#dynamicdataiddesignsfkput) | **PUT** /DynamicData/{id}/designs/{fk} | Update a related item by id for designs.
+[**DynamicDataIdDesignsGet**](DynamicDataApi.md#dynamicdataiddesignsget) | **GET** /DynamicData/{id}/designs | Queries designs of DynamicData.
+[**DynamicDataIdDesignsPost**](DynamicDataApi.md#dynamicdataiddesignspost) | **POST** /DynamicData/{id}/designs | Creates a new instance in designs of this model.
 [**DynamicDataIdExistsGet**](DynamicDataApi.md#dynamicdataidexistsget) | **GET** /DynamicData/{id}/exists | Check whether a model instance exists in the data source.
 [**DynamicDataIdGet**](DynamicDataApi.md#dynamicdataidget) | **GET** /DynamicData/{id} | Find a model instance by {{id}} from the data source.
 [**DynamicDataIdHead**](DynamicDataApi.md#dynamicdataidhead) | **HEAD** /DynamicData/{id} | Check whether a model instance exists in the data source.
@@ -19,6 +26,7 @@ Method | HTTP request | Description
 [**DynamicDataIdRecordsDelete**](DynamicDataApi.md#dynamicdataidrecordsdelete) | **DELETE** /DynamicData/{id}/records | Delete all matching records.
 [**DynamicDataIdRecordsFkDelete**](DynamicDataApi.md#dynamicdataidrecordsfkdelete) | **DELETE** /DynamicData/{id}/records/{fk} | Delete a model instance by {{fk}} from the data source.
 [**DynamicDataIdRecordsFkGet**](DynamicDataApi.md#dynamicdataidrecordsfkget) | **GET** /DynamicData/{id}/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**DynamicDataIdRecordsFkPropertyNameUploadPut**](DynamicDataApi.md#dynamicdataidrecordsfkpropertynameuploadput) | **PUT** /DynamicData/{id}/records/{fk}/{propertyName}/upload | Replace attributes for a model instance and persist it into the data source.
 [**DynamicDataIdRecordsFkPut**](DynamicDataApi.md#dynamicdataidrecordsfkput) | **PUT** /DynamicData/{id}/records/{fk} | Replace attributes for a model instance and persist it into the data source.
 [**DynamicDataIdRecordsGet**](DynamicDataApi.md#dynamicdataidrecordsget) | **GET** /DynamicData/{id}/records | Find all instances of the model matched by filter from the data source.
 [**DynamicDataIdRecordsMigratePost**](DynamicDataApi.md#dynamicdataidrecordsmigratepost) | **POST** /DynamicData/{id}/records/migrate | Request migration for Dynamic Data records
@@ -412,6 +420,473 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignscountget"></a>
+# **DynamicDataIdDesignsCountGet**
+> InlineResponse200 DynamicDataIdDesignsCountGet (string id, string where = null)
+
+Counts designs of DynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts designs of DynamicData.
+                InlineResponse200 result = apiInstance.DynamicDataIdDesignsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignsdelete"></a>
+# **DynamicDataIdDesignsDelete**
+> void DynamicDataIdDesignsDelete (string id)
+
+Deletes all designs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+
+            try
+            {
+                // Deletes all designs of this model.
+                apiInstance.DynamicDataIdDesignsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignsfkdelete"></a>
+# **DynamicDataIdDesignsFkDelete**
+> void DynamicDataIdDesignsFkDelete (string id, string fk)
+
+Delete a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var fk = fk_example;  // string | Foreign key for designs
+
+            try
+            {
+                // Delete a related item by id for designs.
+                apiInstance.DynamicDataIdDesignsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **fk** | **string**| Foreign key for designs | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignsfkget"></a>
+# **DynamicDataIdDesignsFkGet**
+> Design DynamicDataIdDesignsFkGet (string id, string fk)
+
+Find a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var fk = fk_example;  // string | Foreign key for designs
+
+            try
+            {
+                // Find a related item by id for designs.
+                Design result = apiInstance.DynamicDataIdDesignsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **fk** | **string**| Foreign key for designs | 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignsfkput"></a>
+# **DynamicDataIdDesignsFkPut**
+> Design DynamicDataIdDesignsFkPut (string id, string fk, Design data = null)
+
+Update a related item by id for designs.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var fk = fk_example;  // string | Foreign key for designs
+            var data = new Design(); // Design |  (optional) 
+
+            try
+            {
+                // Update a related item by id for designs.
+                Design result = apiInstance.DynamicDataIdDesignsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **fk** | **string**| Foreign key for designs | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignsget"></a>
+# **DynamicDataIdDesignsGet**
+> List<Design> DynamicDataIdDesignsGet (string id, string filter = null)
+
+Queries designs of DynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries designs of DynamicData.
+                List&lt;Design&gt; result = apiInstance.DynamicDataIdDesignsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Design>**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddesignspost"></a>
+# **DynamicDataIdDesignsPost**
+> Design DynamicDataIdDesignsPost (string id, Design data = null)
+
+Creates a new instance in designs of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDesignsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var data = new Design(); // Design |  (optional) 
+
+            try
+            {
+                // Creates a new instance in designs of this model.
+                Design result = apiInstance.DynamicDataIdDesignsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
 
 ### Authorization
 
@@ -1009,6 +1484,77 @@ Name | Type | Description  | Notes
  **id** | **string**| DynamicData id | 
  **fk** | **string**| Model id | 
  **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataidrecordsfkpropertynameuploadput"></a>
+# **DynamicDataIdRecordsFkPropertyNameUploadPut**
+> Object DynamicDataIdRecordsFkPropertyNameUploadPut (string id, string fk, string propertyName, DynamicData data = null)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdRecordsFkPropertyNameUploadPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var fk = fk_example;  // string | Model id
+            var propertyName = propertyName_example;  // string | Model property name
+            var data = new DynamicData(); // DynamicData | Model instance data (optional) 
+
+            try
+            {
+                // Replace attributes for a model instance and persist it into the data source.
+                Object result = apiInstance.DynamicDataIdRecordsFkPropertyNameUploadPut(id, fk, propertyName, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdRecordsFkPropertyNameUploadPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **fk** | **string**| Model id | 
+ **propertyName** | **string**| Model property name | 
+ **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
 
 ### Return type
 

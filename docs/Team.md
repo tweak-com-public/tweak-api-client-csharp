@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
-**Logo** | **Object** |  | [optional] 
+**Logo** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **Subdomain** | **string** |  | [optional] 
 **Country** | **string** |  | [optional] [default to "Ireland"]
 **Created** | **DateTime?** |  | [optional] 
@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **WindowsKey** | **string** |  | [optional] 
 **MasterKey** | **string** |  | [optional] 
 **Status** | **string** | Status of the application, production/sandbox/disabled | [optional] [default to "sandbox"]
+**TeamDataId** | **string** |  | [optional] 
 **Members** | [**List&lt;Customer&gt;**](Customer.md) |  | [optional] 
 **BuilderConfigs** | [**List&lt;TeamBuilderConfig&gt;**](TeamBuilderConfig.md) |  | [optional] 
 **DataSources** | [**List&lt;DataSource&gt;**](DataSource.md) |  | [optional] 
@@ -31,6 +32,10 @@ Name | Type | Description | Notes
 **ImageFolders** | [**List&lt;ImageFolder&gt;**](ImageFolder.md) |  | [optional] 
 **Billing** | [**Billing**](Billing.md) |  | [optional] 
 **Permission** | [**TeamPermissionSet**](TeamPermissionSet.md) |  | [optional] 
+**ProductMaterials** | [**List&lt;ProductMaterial&gt;**](ProductMaterial.md) |  | [optional] 
+**ProductSizeMaterials** | [**List&lt;ProductSizeMaterial&gt;**](ProductSizeMaterial.md) |  | [optional] 
+**ProductPdfColorProfiles** | [**List&lt;ProductPdfColorProfile&gt;**](ProductPdfColorProfile.md) |  | [optional] 
+**TeamData** | [**DynamicData**](DynamicData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

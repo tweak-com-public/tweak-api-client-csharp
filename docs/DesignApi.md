@@ -38,8 +38,15 @@ Method | HTTP request | Description
 [**DesignsIdCommentsNkRepliesPost**](DesignApi.md#designsidcommentsnkrepliespost) | **POST** /Designs/{id}/comments/{nk}/replies | Creates a new instance in replies of this model.
 [**DesignsIdCommentsNkReplyOfGet**](DesignApi.md#designsidcommentsnkreplyofget) | **GET** /Designs/{id}/comments/{nk}/replyOf | Fetches belongsTo relation replyOf.
 [**DesignsIdCommentsPost**](DesignApi.md#designsidcommentspost) | **POST** /Designs/{id}/comments | Creates a new instance in comments of this model.
-[**DesignsIdCustomerGet**](DesignApi.md#designsidcustomerget) | **GET** /Designs/{id}/customer | Fetches belongsTo relation customer.
 [**DesignsIdDelete**](DesignApi.md#designsiddelete) | **DELETE** /Designs/{id} | Delete a model instance by {{id}} from the data source.
+[**DesignsIdDesignMembersCountGet**](DesignApi.md#designsiddesignmemberscountget) | **GET** /Designs/{id}/designMembers/count | Counts designMembers of Design.
+[**DesignsIdDesignMembersDelete**](DesignApi.md#designsiddesignmembersdelete) | **DELETE** /Designs/{id}/designMembers | Deletes all designMembers of this model.
+[**DesignsIdDesignMembersFkDelete**](DesignApi.md#designsiddesignmembersfkdelete) | **DELETE** /Designs/{id}/designMembers/{fk} | Delete a related item by id for designMembers.
+[**DesignsIdDesignMembersFkGet**](DesignApi.md#designsiddesignmembersfkget) | **GET** /Designs/{id}/designMembers/{fk} | Find a related item by id for designMembers.
+[**DesignsIdDesignMembersFkPut**](DesignApi.md#designsiddesignmembersfkput) | **PUT** /Designs/{id}/designMembers/{fk} | Update a related item by id for designMembers.
+[**DesignsIdDesignMembersGet**](DesignApi.md#designsiddesignmembersget) | **GET** /Designs/{id}/designMembers | Queries designMembers of Design.
+[**DesignsIdDesignMembersPost**](DesignApi.md#designsiddesignmemberspost) | **POST** /Designs/{id}/designMembers | Creates a new instance in designMembers of this model.
+[**DesignsIdDynamicDataGet**](DesignApi.md#designsiddynamicdataget) | **GET** /Designs/{id}/dynamicData | Fetches belongsTo relation dynamicData.
 [**DesignsIdExistsGet**](DesignApi.md#designsidexistsget) | **GET** /Designs/{id}/exists | Check whether a model instance exists in the data source.
 [**DesignsIdExportsCountGet**](DesignApi.md#designsidexportscountget) | **GET** /Designs/{id}/exports/count | Counts exports of Design.
 [**DesignsIdExportsDelete**](DesignApi.md#designsidexportsdelete) | **DELETE** /Designs/{id}/exports | Deletes all exports of this model.
@@ -51,6 +58,16 @@ Method | HTTP request | Description
 [**DesignsIdFolderGet**](DesignApi.md#designsidfolderget) | **GET** /Designs/{id}/folder | Fetches belongsTo relation folder.
 [**DesignsIdGet**](DesignApi.md#designsidget) | **GET** /Designs/{id} | Find a model instance by {{id}} from the data source.
 [**DesignsIdHead**](DesignApi.md#designsidhead) | **HEAD** /Designs/{id} | Check whether a model instance exists in the data source.
+[**DesignsIdMembersCountGet**](DesignApi.md#designsidmemberscountget) | **GET** /Designs/{id}/members/count | Counts members of Design.
+[**DesignsIdMembersDelete**](DesignApi.md#designsidmembersdelete) | **DELETE** /Designs/{id}/members | Deletes all members of this model.
+[**DesignsIdMembersFkDelete**](DesignApi.md#designsidmembersfkdelete) | **DELETE** /Designs/{id}/members/{fk} | Delete a related item by id for members.
+[**DesignsIdMembersFkGet**](DesignApi.md#designsidmembersfkget) | **GET** /Designs/{id}/members/{fk} | Find a related item by id for members.
+[**DesignsIdMembersFkPut**](DesignApi.md#designsidmembersfkput) | **PUT** /Designs/{id}/members/{fk} | Update a related item by id for members.
+[**DesignsIdMembersGet**](DesignApi.md#designsidmembersget) | **GET** /Designs/{id}/members | Queries members of Design.
+[**DesignsIdMembersPost**](DesignApi.md#designsidmemberspost) | **POST** /Designs/{id}/members | Creates a new instance in members of this model.
+[**DesignsIdMembersRelFkDelete**](DesignApi.md#designsidmembersrelfkdelete) | **DELETE** /Designs/{id}/members/rel/{fk} | Remove the members relation to an item by id.
+[**DesignsIdMembersRelFkHead**](DesignApi.md#designsidmembersrelfkhead) | **HEAD** /Designs/{id}/members/rel/{fk} | Check the existence of members relation to an item by id.
+[**DesignsIdMembersRelFkPut**](DesignApi.md#designsidmembersrelfkput) | **PUT** /Designs/{id}/members/rel/{fk} | Add a related item by id for members.
 [**DesignsIdPatch**](DesignApi.md#designsidpatch) | **PATCH** /Designs/{id} | Patch attributes for a model instance and persist it into the data source.
 [**DesignsIdPermissionDelete**](DesignApi.md#designsidpermissiondelete) | **DELETE** /Designs/{id}/permission | Deletes permission of this model.
 [**DesignsIdPermissionGet**](DesignApi.md#designsidpermissionget) | **GET** /Designs/{id}/permission | Fetches hasOne relation permission.
@@ -74,6 +91,7 @@ Method | HTTP request | Description
 [**DesignsIdTagsRelFkDelete**](DesignApi.md#designsidtagsrelfkdelete) | **DELETE** /Designs/{id}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**DesignsIdTagsRelFkHead**](DesignApi.md#designsidtagsrelfkhead) | **HEAD** /Designs/{id}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**DesignsIdTagsRelFkPut**](DesignApi.md#designsidtagsrelfkput) | **PUT** /Designs/{id}/tags/rel/{fk} | Add a related item by id for tags.
+[**DesignsIdTeamGet**](DesignApi.md#designsidteamget) | **GET** /Designs/{id}/team | Fetches belongsTo relation team.
 [**DesignsIdTemplateGet**](DesignApi.md#designsidtemplateget) | **GET** /Designs/{id}/template | Fetches belongsTo relation template.
 [**DesignsPatch**](DesignApi.md#designspatch) | **PATCH** /Designs | Patch an existing model instance or insert a new one into the data source.
 [**DesignsPost**](DesignApi.md#designspost) | **POST** /Designs | Create a new instance of the model and persist it into the data source.
@@ -2366,73 +2384,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="designsidcustomerget"></a>
-# **DesignsIdCustomerGet**
-> Customer DesignsIdCustomerGet (string id, bool? refresh = null)
-
-Fetches belongsTo relation customer.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DesignsIdCustomerGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DesignApi();
-            var id = id_example;  // string | Design id
-            var refresh = true;  // bool? |  (optional) 
-
-            try
-            {
-                // Fetches belongsTo relation customer.
-                Customer result = apiInstance.DesignsIdCustomerGet(id, refresh);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DesignApi.DesignsIdCustomerGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Design id | 
- **refresh** | **bool?**|  | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="designsiddelete"></a>
 # **DesignsIdDelete**
 > Object DesignsIdDelete (string id)
@@ -2486,6 +2437,540 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmemberscountget"></a>
+# **DesignsIdDesignMembersCountGet**
+> InlineResponse200 DesignsIdDesignMembersCountGet (string id, string where = null)
+
+Counts designMembers of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts designMembers of Design.
+                InlineResponse200 result = apiInstance.DesignsIdDesignMembersCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmembersdelete"></a>
+# **DesignsIdDesignMembersDelete**
+> void DesignsIdDesignMembersDelete (string id)
+
+Deletes all designMembers of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+
+            try
+            {
+                // Deletes all designMembers of this model.
+                apiInstance.DesignsIdDesignMembersDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmembersfkdelete"></a>
+# **DesignsIdDesignMembersFkDelete**
+> void DesignsIdDesignMembersFkDelete (string id, string fk)
+
+Delete a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for designMembers
+
+            try
+            {
+                // Delete a related item by id for designMembers.
+                apiInstance.DesignsIdDesignMembersFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for designMembers | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmembersfkget"></a>
+# **DesignsIdDesignMembersFkGet**
+> DesignMember DesignsIdDesignMembersFkGet (string id, string fk)
+
+Find a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for designMembers
+
+            try
+            {
+                // Find a related item by id for designMembers.
+                DesignMember result = apiInstance.DesignsIdDesignMembersFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for designMembers | 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmembersfkput"></a>
+# **DesignsIdDesignMembersFkPut**
+> DesignMember DesignsIdDesignMembersFkPut (string id, string fk, DesignMember data = null)
+
+Update a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for designMembers
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Update a related item by id for designMembers.
+                DesignMember result = apiInstance.DesignsIdDesignMembersFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for designMembers | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmembersget"></a>
+# **DesignsIdDesignMembersGet**
+> List<DesignMember> DesignsIdDesignMembersGet (string id, string filter = null)
+
+Queries designMembers of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries designMembers of Design.
+                List&lt;DesignMember&gt; result = apiInstance.DesignsIdDesignMembersGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DesignMember>**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddesignmemberspost"></a>
+# **DesignsIdDesignMembersPost**
+> DesignMember DesignsIdDesignMembersPost (string id, DesignMember data = null)
+
+Creates a new instance in designMembers of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDesignMembersPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Creates a new instance in designMembers of this model.
+                DesignMember result = apiInstance.DesignsIdDesignMembersPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDesignMembersPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsiddynamicdataget"></a>
+# **DesignsIdDynamicDataGet**
+> DynamicData DesignsIdDynamicDataGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdDynamicDataGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dynamicData.
+                DynamicData result = apiInstance.DesignsIdDynamicDataGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdDynamicDataGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
@@ -3217,6 +3702,675 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmemberscountget"></a>
+# **DesignsIdMembersCountGet**
+> InlineResponse200 DesignsIdMembersCountGet (string id, string where = null)
+
+Counts members of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts members of Design.
+                InlineResponse200 result = apiInstance.DesignsIdMembersCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersdelete"></a>
+# **DesignsIdMembersDelete**
+> void DesignsIdMembersDelete (string id)
+
+Deletes all members of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+
+            try
+            {
+                // Deletes all members of this model.
+                apiInstance.DesignsIdMembersDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersfkdelete"></a>
+# **DesignsIdMembersFkDelete**
+> void DesignsIdMembersFkDelete (string id, string fk)
+
+Delete a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Delete a related item by id for members.
+                apiInstance.DesignsIdMembersFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersfkget"></a>
+# **DesignsIdMembersFkGet**
+> TeamMember DesignsIdMembersFkGet (string id, string fk)
+
+Find a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Find a related item by id for members.
+                TeamMember result = apiInstance.DesignsIdMembersFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersfkput"></a>
+# **DesignsIdMembersFkPut**
+> TeamMember DesignsIdMembersFkPut (string id, string fk, TeamMember data = null)
+
+Update a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Update a related item by id for members.
+                TeamMember result = apiInstance.DesignsIdMembersFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersget"></a>
+# **DesignsIdMembersGet**
+> List<TeamMember> DesignsIdMembersGet (string id, string filter = null)
+
+Queries members of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries members of Design.
+                List&lt;TeamMember&gt; result = apiInstance.DesignsIdMembersGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<TeamMember>**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmemberspost"></a>
+# **DesignsIdMembersPost**
+> TeamMember DesignsIdMembersPost (string id, TeamMember data = null)
+
+Creates a new instance in members of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Creates a new instance in members of this model.
+                TeamMember result = apiInstance.DesignsIdMembersPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersrelfkdelete"></a>
+# **DesignsIdMembersRelFkDelete**
+> void DesignsIdMembersRelFkDelete (string id, string fk)
+
+Remove the members relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Remove the members relation to an item by id.
+                apiInstance.DesignsIdMembersRelFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersrelfkhead"></a>
+# **DesignsIdMembersRelFkHead**
+> bool? DesignsIdMembersRelFkHead (string id, string fk)
+
+Check the existence of members relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Check the existence of members relation to an item by id.
+                bool? result = apiInstance.DesignsIdMembersRelFkHead(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidmembersrelfkput"></a>
+# **DesignsIdMembersRelFkPut**
+> DesignMember DesignsIdMembersRelFkPut (string id, string fk, DesignMember data = null)
+
+Add a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdMembersRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var fk = fk_example;  // string | Foreign key for members
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Add a related item by id for members.
+                DesignMember result = apiInstance.DesignsIdMembersRelFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdMembersRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **fk** | **string**| Foreign key for members | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
@@ -4756,6 +5910,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="designsidteamget"></a>
+# **DesignsIdTeamGet**
+> Team DesignsIdTeamGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DesignsIdTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DesignApi();
+            var id = id_example;  // string | Design id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.DesignsIdTeamGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DesignApi.DesignsIdTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Design id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 

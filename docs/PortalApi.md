@@ -41,7 +41,14 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkCommentsFkPut**](PortalApi.md#portalsiddesignsnkcommentsfkput) | **PUT** /Portals/{id}/designs/{nk}/comments/{fk} | Update a related item by id for comments.
 [**PortalsIdDesignsNkCommentsGet**](PortalApi.md#portalsiddesignsnkcommentsget) | **GET** /Portals/{id}/designs/{nk}/comments | Queries comments of Design.
 [**PortalsIdDesignsNkCommentsPost**](PortalApi.md#portalsiddesignsnkcommentspost) | **POST** /Portals/{id}/designs/{nk}/comments | Creates a new instance in comments of this model.
-[**PortalsIdDesignsNkCustomerGet**](PortalApi.md#portalsiddesignsnkcustomerget) | **GET** /Portals/{id}/designs/{nk}/customer | Fetches belongsTo relation customer.
+[**PortalsIdDesignsNkDesignMembersCountGet**](PortalApi.md#portalsiddesignsnkdesignmemberscountget) | **GET** /Portals/{id}/designs/{nk}/designMembers/count | Counts designMembers of Design.
+[**PortalsIdDesignsNkDesignMembersDelete**](PortalApi.md#portalsiddesignsnkdesignmembersdelete) | **DELETE** /Portals/{id}/designs/{nk}/designMembers | Deletes all designMembers of this model.
+[**PortalsIdDesignsNkDesignMembersFkDelete**](PortalApi.md#portalsiddesignsnkdesignmembersfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/designMembers/{fk} | Delete a related item by id for designMembers.
+[**PortalsIdDesignsNkDesignMembersFkGet**](PortalApi.md#portalsiddesignsnkdesignmembersfkget) | **GET** /Portals/{id}/designs/{nk}/designMembers/{fk} | Find a related item by id for designMembers.
+[**PortalsIdDesignsNkDesignMembersFkPut**](PortalApi.md#portalsiddesignsnkdesignmembersfkput) | **PUT** /Portals/{id}/designs/{nk}/designMembers/{fk} | Update a related item by id for designMembers.
+[**PortalsIdDesignsNkDesignMembersGet**](PortalApi.md#portalsiddesignsnkdesignmembersget) | **GET** /Portals/{id}/designs/{nk}/designMembers | Queries designMembers of Design.
+[**PortalsIdDesignsNkDesignMembersPost**](PortalApi.md#portalsiddesignsnkdesignmemberspost) | **POST** /Portals/{id}/designs/{nk}/designMembers | Creates a new instance in designMembers of this model.
+[**PortalsIdDesignsNkDynamicDataGet**](PortalApi.md#portalsiddesignsnkdynamicdataget) | **GET** /Portals/{id}/designs/{nk}/dynamicData | Fetches belongsTo relation dynamicData.
 [**PortalsIdDesignsNkExportsCountGet**](PortalApi.md#portalsiddesignsnkexportscountget) | **GET** /Portals/{id}/designs/{nk}/exports/count | Counts exports of Design.
 [**PortalsIdDesignsNkExportsDelete**](PortalApi.md#portalsiddesignsnkexportsdelete) | **DELETE** /Portals/{id}/designs/{nk}/exports | Deletes all exports of this model.
 [**PortalsIdDesignsNkExportsFkDelete**](PortalApi.md#portalsiddesignsnkexportsfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/exports/{fk} | Delete a related item by id for exports.
@@ -50,6 +57,16 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkExportsGet**](PortalApi.md#portalsiddesignsnkexportsget) | **GET** /Portals/{id}/designs/{nk}/exports | Queries exports of Design.
 [**PortalsIdDesignsNkExportsPost**](PortalApi.md#portalsiddesignsnkexportspost) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**PortalsIdDesignsNkFolderGet**](PortalApi.md#portalsiddesignsnkfolderget) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
+[**PortalsIdDesignsNkMembersCountGet**](PortalApi.md#portalsiddesignsnkmemberscountget) | **GET** /Portals/{id}/designs/{nk}/members/count | Counts members of Design.
+[**PortalsIdDesignsNkMembersDelete**](PortalApi.md#portalsiddesignsnkmembersdelete) | **DELETE** /Portals/{id}/designs/{nk}/members | Deletes all members of this model.
+[**PortalsIdDesignsNkMembersFkDelete**](PortalApi.md#portalsiddesignsnkmembersfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/members/{fk} | Delete a related item by id for members.
+[**PortalsIdDesignsNkMembersFkGet**](PortalApi.md#portalsiddesignsnkmembersfkget) | **GET** /Portals/{id}/designs/{nk}/members/{fk} | Find a related item by id for members.
+[**PortalsIdDesignsNkMembersFkPut**](PortalApi.md#portalsiddesignsnkmembersfkput) | **PUT** /Portals/{id}/designs/{nk}/members/{fk} | Update a related item by id for members.
+[**PortalsIdDesignsNkMembersGet**](PortalApi.md#portalsiddesignsnkmembersget) | **GET** /Portals/{id}/designs/{nk}/members | Queries members of Design.
+[**PortalsIdDesignsNkMembersPost**](PortalApi.md#portalsiddesignsnkmemberspost) | **POST** /Portals/{id}/designs/{nk}/members | Creates a new instance in members of this model.
+[**PortalsIdDesignsNkMembersRelFkDelete**](PortalApi.md#portalsiddesignsnkmembersrelfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
+[**PortalsIdDesignsNkMembersRelFkHead**](PortalApi.md#portalsiddesignsnkmembersrelfkhead) | **HEAD** /Portals/{id}/designs/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
+[**PortalsIdDesignsNkMembersRelFkPut**](PortalApi.md#portalsiddesignsnkmembersrelfkput) | **PUT** /Portals/{id}/designs/{nk}/members/rel/{fk} | Add a related item by id for members.
 [**PortalsIdDesignsNkPermissionDelete**](PortalApi.md#portalsiddesignsnkpermissiondelete) | **DELETE** /Portals/{id}/designs/{nk}/permission | Deletes permission of this model.
 [**PortalsIdDesignsNkPermissionGet**](PortalApi.md#portalsiddesignsnkpermissionget) | **GET** /Portals/{id}/designs/{nk}/permission | Fetches hasOne relation permission.
 [**PortalsIdDesignsNkPermissionPost**](PortalApi.md#portalsiddesignsnkpermissionpost) | **POST** /Portals/{id}/designs/{nk}/permission | Creates a new instance in permission of this model.
@@ -68,6 +85,7 @@ Method | HTTP request | Description
 [**PortalsIdDesignsNkTagsRelFkDelete**](PortalApi.md#portalsiddesignsnktagsrelfkdelete) | **DELETE** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**PortalsIdDesignsNkTagsRelFkHead**](PortalApi.md#portalsiddesignsnktagsrelfkhead) | **HEAD** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**PortalsIdDesignsNkTagsRelFkPut**](PortalApi.md#portalsiddesignsnktagsrelfkput) | **PUT** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Add a related item by id for tags.
+[**PortalsIdDesignsNkTeamGet**](PortalApi.md#portalsiddesignsnkteamget) | **GET** /Portals/{id}/designs/{nk}/team | Fetches belongsTo relation team.
 [**PortalsIdDesignsNkTemplateGet**](PortalApi.md#portalsiddesignsnktemplateget) | **GET** /Portals/{id}/designs/{nk}/template | Fetches belongsTo relation template.
 [**PortalsIdDesignsPost**](PortalApi.md#portalsiddesignspost) | **POST** /Portals/{id}/designs | Creates a new instance in designs of this model.
 [**PortalsIdExistsGet**](PortalApi.md#portalsidexistsget) | **GET** /Portals/{id}/exists | Check whether a model instance exists in the data source.
@@ -2645,11 +2663,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="portalsiddesignsnkcustomerget"></a>
-# **PortalsIdDesignsNkCustomerGet**
-> Customer PortalsIdDesignsNkCustomerGet (string id, string nk, bool? refresh = null)
+<a name="portalsiddesignsnkdesignmemberscountget"></a>
+# **PortalsIdDesignsNkDesignMembersCountGet**
+> InlineResponse200 PortalsIdDesignsNkDesignMembersCountGet (string id, string nk, string where = null)
 
-Fetches belongsTo relation customer.
+Counts designMembers of Design.
 
 ### Example
 ```csharp
@@ -2661,7 +2679,488 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class PortalsIdDesignsNkCustomerGetExample
+    public class PortalsIdDesignsNkDesignMembersCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts designMembers of Design.
+                InlineResponse200 result = apiInstance.PortalsIdDesignsNkDesignMembersCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmembersdelete"></a>
+# **PortalsIdDesignsNkDesignMembersDelete**
+> void PortalsIdDesignsNkDesignMembersDelete (string id, string nk)
+
+Deletes all designMembers of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+
+            try
+            {
+                // Deletes all designMembers of this model.
+                apiInstance.PortalsIdDesignsNkDesignMembersDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmembersfkdelete"></a>
+# **PortalsIdDesignsNkDesignMembersFkDelete**
+> void PortalsIdDesignsNkDesignMembersFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for designMembers
+
+            try
+            {
+                // Delete a related item by id for designMembers.
+                apiInstance.PortalsIdDesignsNkDesignMembersFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for designMembers | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmembersfkget"></a>
+# **PortalsIdDesignsNkDesignMembersFkGet**
+> DesignMember PortalsIdDesignsNkDesignMembersFkGet (string id, string nk, string fk)
+
+Find a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for designMembers
+
+            try
+            {
+                // Find a related item by id for designMembers.
+                DesignMember result = apiInstance.PortalsIdDesignsNkDesignMembersFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for designMembers | 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmembersfkput"></a>
+# **PortalsIdDesignsNkDesignMembersFkPut**
+> DesignMember PortalsIdDesignsNkDesignMembersFkPut (string id, string nk, string fk, DesignMember data = null)
+
+Update a related item by id for designMembers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for designMembers
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Update a related item by id for designMembers.
+                DesignMember result = apiInstance.PortalsIdDesignsNkDesignMembersFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for designMembers | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmembersget"></a>
+# **PortalsIdDesignsNkDesignMembersGet**
+> List<DesignMember> PortalsIdDesignsNkDesignMembersGet (string id, string nk, string filter = null)
+
+Queries designMembers of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries designMembers of Design.
+                List&lt;DesignMember&gt; result = apiInstance.PortalsIdDesignsNkDesignMembersGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DesignMember>**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdesignmemberspost"></a>
+# **PortalsIdDesignsNkDesignMembersPost**
+> DesignMember PortalsIdDesignsNkDesignMembersPost (string id, string nk, DesignMember data = null)
+
+Creates a new instance in designMembers of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDesignMembersPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Creates a new instance in designMembers of this model.
+                DesignMember result = apiInstance.PortalsIdDesignsNkDesignMembersPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDesignMembersPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkdynamicdataget"></a>
+# **PortalsIdDesignsNkDynamicDataGet**
+> DynamicData PortalsIdDesignsNkDynamicDataGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dynamicData.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkDynamicDataGetExample
     {
         public void main()
         {
@@ -2678,13 +3177,13 @@ namespace Example
 
             try
             {
-                // Fetches belongsTo relation customer.
-                Customer result = apiInstance.PortalsIdDesignsNkCustomerGet(id, nk, refresh);
+                // Fetches belongsTo relation dynamicData.
+                DynamicData result = apiInstance.PortalsIdDesignsNkDynamicDataGet(id, nk, refresh);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkCustomerGet: " + e.Message );
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkDynamicDataGet: " + e.Message );
             }
         }
     }
@@ -2701,7 +3200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Customer**](Customer.md)
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
@@ -3252,6 +3751,695 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignFolder**](DesignFolder.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmemberscountget"></a>
+# **PortalsIdDesignsNkMembersCountGet**
+> InlineResponse200 PortalsIdDesignsNkMembersCountGet (string id, string nk, string where = null)
+
+Counts members of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts members of Design.
+                InlineResponse200 result = apiInstance.PortalsIdDesignsNkMembersCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersdelete"></a>
+# **PortalsIdDesignsNkMembersDelete**
+> void PortalsIdDesignsNkMembersDelete (string id, string nk)
+
+Deletes all members of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+
+            try
+            {
+                // Deletes all members of this model.
+                apiInstance.PortalsIdDesignsNkMembersDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersfkdelete"></a>
+# **PortalsIdDesignsNkMembersFkDelete**
+> void PortalsIdDesignsNkMembersFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Delete a related item by id for members.
+                apiInstance.PortalsIdDesignsNkMembersFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersfkget"></a>
+# **PortalsIdDesignsNkMembersFkGet**
+> TeamMember PortalsIdDesignsNkMembersFkGet (string id, string nk, string fk)
+
+Find a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Find a related item by id for members.
+                TeamMember result = apiInstance.PortalsIdDesignsNkMembersFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersfkput"></a>
+# **PortalsIdDesignsNkMembersFkPut**
+> TeamMember PortalsIdDesignsNkMembersFkPut (string id, string nk, string fk, TeamMember data = null)
+
+Update a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Update a related item by id for members.
+                TeamMember result = apiInstance.PortalsIdDesignsNkMembersFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersget"></a>
+# **PortalsIdDesignsNkMembersGet**
+> List<TeamMember> PortalsIdDesignsNkMembersGet (string id, string nk, string filter = null)
+
+Queries members of Design.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries members of Design.
+                List&lt;TeamMember&gt; result = apiInstance.PortalsIdDesignsNkMembersGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<TeamMember>**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmemberspost"></a>
+# **PortalsIdDesignsNkMembersPost**
+> TeamMember PortalsIdDesignsNkMembersPost (string id, string nk, TeamMember data = null)
+
+Creates a new instance in members of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Creates a new instance in members of this model.
+                TeamMember result = apiInstance.PortalsIdDesignsNkMembersPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersrelfkdelete"></a>
+# **PortalsIdDesignsNkMembersRelFkDelete**
+> void PortalsIdDesignsNkMembersRelFkDelete (string id, string nk, string fk)
+
+Remove the members relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Remove the members relation to an item by id.
+                apiInstance.PortalsIdDesignsNkMembersRelFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersrelfkhead"></a>
+# **PortalsIdDesignsNkMembersRelFkHead**
+> bool? PortalsIdDesignsNkMembersRelFkHead (string id, string nk, string fk)
+
+Check the existence of members relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+
+            try
+            {
+                // Check the existence of members relation to an item by id.
+                bool? result = apiInstance.PortalsIdDesignsNkMembersRelFkHead(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkmembersrelfkput"></a>
+# **PortalsIdDesignsNkMembersRelFkPut**
+> DesignMember PortalsIdDesignsNkMembersRelFkPut (string id, string nk, string fk, DesignMember data = null)
+
+Add a related item by id for members.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkMembersRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var fk = fk_example;  // string | Foreign key for members
+            var data = new DesignMember(); // DesignMember |  (optional) 
+
+            try
+            {
+                // Add a related item by id for members.
+                DesignMember result = apiInstance.PortalsIdDesignsNkMembersRelFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkMembersRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **fk** | **string**| Foreign key for members | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
@@ -4490,6 +5678,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="portalsiddesignsnkteamget"></a>
+# **PortalsIdDesignsNkTeamGet**
+> Team PortalsIdDesignsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class PortalsIdDesignsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new PortalApi();
+            var id = id_example;  // string | Portal id
+            var nk = nk_example;  // string | Foreign key for designs.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.PortalsIdDesignsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PortalApi.PortalsIdDesignsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Portal id | 
+ **nk** | **string**| Foreign key for designs. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 

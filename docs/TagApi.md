@@ -24,6 +24,16 @@ Method | HTTP request | Description
 [**TagsIdGet**](TagApi.md#tagsidget) | **GET** /Tags/{id} | Find a model instance by {{id}} from the data source.
 [**TagsIdHead**](TagApi.md#tagsidhead) | **HEAD** /Tags/{id} | Check whether a model instance exists in the data source.
 [**TagsIdPatch**](TagApi.md#tagsidpatch) | **PATCH** /Tags/{id} | Patch attributes for a model instance and persist it into the data source.
+[**TagsIdProductsCountGet**](TagApi.md#tagsidproductscountget) | **GET** /Tags/{id}/products/count | Counts products of Tag.
+[**TagsIdProductsDelete**](TagApi.md#tagsidproductsdelete) | **DELETE** /Tags/{id}/products | Deletes all products of this model.
+[**TagsIdProductsFkDelete**](TagApi.md#tagsidproductsfkdelete) | **DELETE** /Tags/{id}/products/{fk} | Delete a related item by id for products.
+[**TagsIdProductsFkGet**](TagApi.md#tagsidproductsfkget) | **GET** /Tags/{id}/products/{fk} | Find a related item by id for products.
+[**TagsIdProductsFkPut**](TagApi.md#tagsidproductsfkput) | **PUT** /Tags/{id}/products/{fk} | Update a related item by id for products.
+[**TagsIdProductsGet**](TagApi.md#tagsidproductsget) | **GET** /Tags/{id}/products | Queries products of Tag.
+[**TagsIdProductsPost**](TagApi.md#tagsidproductspost) | **POST** /Tags/{id}/products | Creates a new instance in products of this model.
+[**TagsIdProductsRelFkDelete**](TagApi.md#tagsidproductsrelfkdelete) | **DELETE** /Tags/{id}/products/rel/{fk} | Remove the products relation to an item by id.
+[**TagsIdProductsRelFkHead**](TagApi.md#tagsidproductsrelfkhead) | **HEAD** /Tags/{id}/products/rel/{fk} | Check the existence of products relation to an item by id.
+[**TagsIdProductsRelFkPut**](TagApi.md#tagsidproductsrelfkput) | **PUT** /Tags/{id}/products/rel/{fk} | Add a related item by id for products.
 [**TagsIdPut**](TagApi.md#tagsidput) | **PUT** /Tags/{id} | Replace attributes for a model instance and persist it into the data source.
 [**TagsIdReplacePost**](TagApi.md#tagsidreplacepost) | **POST** /Tags/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**TagsIdTemplatesCountGet**](TagApi.md#tagsidtemplatescountget) | **GET** /Tags/{id}/templates/count | Counts templates of Tag.
@@ -1355,6 +1365,675 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Tag**](Tag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductscountget"></a>
+# **TagsIdProductsCountGet**
+> InlineResponse200 TagsIdProductsCountGet (string id, string where = null)
+
+Counts products of Tag.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts products of Tag.
+                InlineResponse200 result = apiInstance.TagsIdProductsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsdelete"></a>
+# **TagsIdProductsDelete**
+> void TagsIdProductsDelete (string id)
+
+Deletes all products of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+
+            try
+            {
+                // Deletes all products of this model.
+                apiInstance.TagsIdProductsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsfkdelete"></a>
+# **TagsIdProductsFkDelete**
+> void TagsIdProductsFkDelete (string id, string fk)
+
+Delete a related item by id for products.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+
+            try
+            {
+                // Delete a related item by id for products.
+                apiInstance.TagsIdProductsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsfkget"></a>
+# **TagsIdProductsFkGet**
+> Product TagsIdProductsFkGet (string id, string fk)
+
+Find a related item by id for products.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+
+            try
+            {
+                // Find a related item by id for products.
+                Product result = apiInstance.TagsIdProductsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsfkput"></a>
+# **TagsIdProductsFkPut**
+> Product TagsIdProductsFkPut (string id, string fk, Product data = null)
+
+Update a related item by id for products.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+            var data = new Product(); // Product |  (optional) 
+
+            try
+            {
+                // Update a related item by id for products.
+                Product result = apiInstance.TagsIdProductsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsget"></a>
+# **TagsIdProductsGet**
+> List<Product> TagsIdProductsGet (string id, string filter = null)
+
+Queries products of Tag.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries products of Tag.
+                List&lt;Product&gt; result = apiInstance.TagsIdProductsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Product>**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductspost"></a>
+# **TagsIdProductsPost**
+> Product TagsIdProductsPost (string id, Product data = null)
+
+Creates a new instance in products of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var data = new Product(); // Product |  (optional) 
+
+            try
+            {
+                // Creates a new instance in products of this model.
+                Product result = apiInstance.TagsIdProductsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsrelfkdelete"></a>
+# **TagsIdProductsRelFkDelete**
+> void TagsIdProductsRelFkDelete (string id, string fk)
+
+Remove the products relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsRelFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+
+            try
+            {
+                // Remove the products relation to an item by id.
+                apiInstance.TagsIdProductsRelFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsRelFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsrelfkhead"></a>
+# **TagsIdProductsRelFkHead**
+> bool? TagsIdProductsRelFkHead (string id, string fk)
+
+Check the existence of products relation to an item by id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsRelFkHeadExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+
+            try
+            {
+                // Check the existence of products relation to an item by id.
+                bool? result = apiInstance.TagsIdProductsRelFkHead(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsRelFkHead: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+
+### Return type
+
+**bool?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="tagsidproductsrelfkput"></a>
+# **TagsIdProductsRelFkPut**
+> ProductTag TagsIdProductsRelFkPut (string id, string fk, ProductTag data = null)
+
+Add a related item by id for products.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TagsIdProductsRelFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TagApi();
+            var id = id_example;  // string | Tag id
+            var fk = fk_example;  // string | Foreign key for products
+            var data = new ProductTag(); // ProductTag |  (optional) 
+
+            try
+            {
+                // Add a related item by id for products.
+                ProductTag result = apiInstance.TagsIdProductsRelFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TagApi.TagsIdProductsRelFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Tag id | 
+ **fk** | **string**| Foreign key for products | 
+ **data** | [**ProductTag**](ProductTag.md)|  | [optional] 
+
+### Return type
+
+[**ProductTag**](ProductTag.md)
 
 ### Authorization
 

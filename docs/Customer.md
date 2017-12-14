@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ProfilePicture** | **Object** |  | [optional] 
+**ProfilePicture** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **FirstName** | **string** |  | 
 **LastName** | **string** |  | 
 **Initials** | **string** |  | 
@@ -15,7 +15,6 @@ Name | Type | Description | Notes
 **Email** | **string** |  | 
 **EmailVerified** | **bool?** |  | [optional] 
 **Id** | **string** |  | [optional] 
-**Designs** | [**List&lt;Design&gt;**](Design.md) |  | [optional] 
 **Teams** | [**List&lt;Team&gt;**](Team.md) |  | [optional] 
 **InvitationTickets** | [**List&lt;InvitationTicket&gt;**](InvitationTicket.md) |  | [optional] 
 **AccessTokens** | [**List&lt;TeamMemberAccessToken&gt;**](TeamMemberAccessToken.md) |  | [optional] 
