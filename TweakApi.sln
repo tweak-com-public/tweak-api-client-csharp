@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakApi", "src\TweakApi\TweakApi.csproj", "{D34FE2BD-62EC-4A5A-AF2A-BE9B75045BEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakApi", "src\TweakApi\TweakApi.csproj", "{E47420B6-1B08-4820-AA25-F74639BAA490}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweakApi.Test", "src\TweakApi.Test\TweakApi.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Debug|Any CPU = Debug|Any CPU
 Release|Any CPU = Release|Any CPU
 EndGlobalSection
 GlobalSection(ProjectConfigurationPlatforms) = postSolution
-{D34FE2BD-62EC-4A5A-AF2A-BE9B75045BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{D34FE2BD-62EC-4A5A-AF2A-BE9B75045BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{D34FE2BD-62EC-4A5A-AF2A-BE9B75045BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{D34FE2BD-62EC-4A5A-AF2A-BE9B75045BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+{E47420B6-1B08-4820-AA25-F74639BAA490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{E47420B6-1B08-4820-AA25-F74639BAA490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{E47420B6-1B08-4820-AA25-F74639BAA490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{E47420B6-1B08-4820-AA25-F74639BAA490}.Release|Any CPU.Build.0 = Release|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

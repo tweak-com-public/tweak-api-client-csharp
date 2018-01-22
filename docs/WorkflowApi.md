@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 <a name="workflowscountget"></a>
 # **WorkflowsCountGet**
-> InlineResponse200 WorkflowsCountGet (string where = null)
+> InlineResponse2001 WorkflowsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -195,7 +195,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.WorkflowsCountGet(where);
+                InlineResponse2001 result = apiInstance.WorkflowsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 
 <a name="workflowsidexistsget"></a>
 # **WorkflowsIdExistsGet**
-> InlineResponse2001 WorkflowsIdExistsGet (string id)
+> InlineResponse2002 WorkflowsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -522,7 +522,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.WorkflowsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.WorkflowsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -542,7 +542,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -624,7 +624,7 @@ Name | Type | Description  | Notes
 
 <a name="workflowsidhead"></a>
 # **WorkflowsIdHead**
-> InlineResponse2001 WorkflowsIdHead (string id)
+> InlineResponse2002 WorkflowsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -654,7 +654,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.WorkflowsIdHead(id);
+                InlineResponse2002 result = apiInstance.WorkflowsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -674,7 +674,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -957,7 +957,7 @@ Name | Type | Description  | Notes
 
 <a name="workflowsidtemplatescountget"></a>
 # **WorkflowsIdTemplatesCountGet**
-> InlineResponse200 WorkflowsIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 WorkflowsIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of Workflow.
 
@@ -988,7 +988,7 @@ namespace Example
             try
             {
                 // Counts templates of Workflow.
-                InlineResponse200 result = apiInstance.WorkflowsIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.WorkflowsIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1009,7 +1009,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1684,7 +1684,7 @@ Name | Type | Description  | Notes
 
 <a name="workflowsupdatepost"></a>
 # **WorkflowsUpdatePost**
-> InlineResponse2002 WorkflowsUpdatePost (string where = null, Workflow data = null)
+> InlineResponse2003 WorkflowsUpdatePost (string where = null, Workflow data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1715,7 +1715,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.WorkflowsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.WorkflowsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1736,7 +1736,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

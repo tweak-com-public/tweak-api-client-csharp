@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 
 <a name="portalscountget"></a>
 # **PortalsCountGet**
-> InlineResponse200 PortalsCountGet (string where = null)
+> InlineResponse2001 PortalsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -329,7 +329,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.PortalsCountGet(where);
+                InlineResponse2001 result = apiInstance.PortalsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -559,7 +559,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignfolderscountget"></a>
 # **PortalsIdDesignFoldersCountGet**
-> InlineResponse200 PortalsIdDesignFoldersCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdDesignFoldersCountGet (string id, string where = null)
 
 Counts designFolders of Portal.
 
@@ -590,7 +590,7 @@ namespace Example
             try
             {
                 // Counts designFolders of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdDesignFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -611,7 +611,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1026,7 +1026,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignscountget"></a>
 # **PortalsIdDesignsCountGet**
-> InlineResponse200 PortalsIdDesignsCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdDesignsCountGet (string id, string where = null)
 
 Counts designs of Portal.
 
@@ -1057,7 +1057,7 @@ namespace Example
             try
             {
                 // Counts designs of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1078,7 +1078,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1495,7 +1495,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnkcommenterscountget"></a>
 # **PortalsIdDesignsNkCommentersCountGet**
-> InlineResponse200 PortalsIdDesignsNkCommentersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkCommentersCountGet (string id, string nk, string where = null)
 
 Counts commenters of Design.
 
@@ -1527,7 +1527,7 @@ namespace Example
             try
             {
                 // Counts commenters of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkCommentersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkCommentersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1549,7 +1549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2184,7 +2184,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnkcommentscountget"></a>
 # **PortalsIdDesignsNkCommentsCountGet**
-> InlineResponse200 PortalsIdDesignsNkCommentsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkCommentsCountGet (string id, string nk, string where = null)
 
 Counts comments of Design.
 
@@ -2216,7 +2216,7 @@ namespace Example
             try
             {
                 // Counts comments of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkCommentsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkCommentsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2238,7 +2238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2665,7 +2665,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnkdesignmemberscountget"></a>
 # **PortalsIdDesignsNkDesignMembersCountGet**
-> InlineResponse200 PortalsIdDesignsNkDesignMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkDesignMembersCountGet (string id, string nk, string where = null)
 
 Counts designMembers of Design.
 
@@ -2697,7 +2697,7 @@ namespace Example
             try
             {
                 // Counts designMembers of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkDesignMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkDesignMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2719,7 +2719,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3215,7 +3215,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnkexportscountget"></a>
 # **PortalsIdDesignsNkExportsCountGet**
-> InlineResponse200 PortalsIdDesignsNkExportsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkExportsCountGet (string id, string nk, string where = null)
 
 Counts exports of Design.
 
@@ -3247,7 +3247,7 @@ namespace Example
             try
             {
                 // Counts exports of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkExportsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkExportsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3269,7 +3269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3765,7 +3765,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnkmemberscountget"></a>
 # **PortalsIdDesignsNkMembersCountGet**
-> InlineResponse200 PortalsIdDesignsNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of Design.
 
@@ -3797,7 +3797,7 @@ namespace Example
             try
             {
                 // Counts members of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3819,7 +3819,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5003,7 +5003,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsiddesignsnktagscountget"></a>
 # **PortalsIdDesignsNkTagsCountGet**
-> InlineResponse200 PortalsIdDesignsNkTagsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 PortalsIdDesignsNkTagsCountGet (string id, string nk, string where = null)
 
 Counts tags of Design.
 
@@ -5035,7 +5035,7 @@ namespace Example
             try
             {
                 // Counts tags of Design.
-                InlineResponse200 result = apiInstance.PortalsIdDesignsNkTagsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.PortalsIdDesignsNkTagsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5057,7 +5057,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5897,7 +5897,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidexistsget"></a>
 # **PortalsIdExistsGet**
-> InlineResponse2001 PortalsIdExistsGet (string id)
+> InlineResponse2002 PortalsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -5927,7 +5927,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.PortalsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5947,7 +5947,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -6029,7 +6029,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidhead"></a>
 # **PortalsIdHead**
-> InlineResponse2001 PortalsIdHead (string id)
+> InlineResponse2002 PortalsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -6059,7 +6059,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalsIdHead(id);
+                InlineResponse2002 result = apiInstance.PortalsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6079,7 +6079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -6094,7 +6094,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidimagefolderscountget"></a>
 # **PortalsIdImageFoldersCountGet**
-> InlineResponse200 PortalsIdImageFoldersCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdImageFoldersCountGet (string id, string where = null)
 
 Counts imageFolders of Portal.
 
@@ -6125,7 +6125,7 @@ namespace Example
             try
             {
                 // Counts imageFolders of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdImageFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdImageFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6146,7 +6146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7041,7 +7041,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidmemberscountget"></a>
 # **PortalsIdMembersCountGet**
-> InlineResponse200 PortalsIdMembersCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdMembersCountGet (string id, string where = null)
 
 Counts members of Portal.
 
@@ -7072,7 +7072,7 @@ namespace Example
             try
             {
                 // Counts members of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7093,7 +7093,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8042,7 +8042,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidportalmemberscountget"></a>
 # **PortalsIdPortalMembersCountGet**
-> InlineResponse200 PortalsIdPortalMembersCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdPortalMembersCountGet (string id, string where = null)
 
 Counts portalMembers of Portal.
 
@@ -8073,7 +8073,7 @@ namespace Example
             try
             {
                 // Counts portalMembers of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdPortalMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdPortalMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8094,7 +8094,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8710,7 +8710,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidtemplatefolderscountget"></a>
 # **PortalsIdTemplateFoldersCountGet**
-> InlineResponse200 PortalsIdTemplateFoldersCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdTemplateFoldersCountGet (string id, string where = null)
 
 Counts templateFolders of Portal.
 
@@ -8741,7 +8741,7 @@ namespace Example
             try
             {
                 // Counts templateFolders of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdTemplateFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdTemplateFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8762,7 +8762,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9388,7 +9388,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidtemplaterelscountget"></a>
 # **PortalsIdTemplateRelsCountGet**
-> InlineResponse200 PortalsIdTemplateRelsCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdTemplateRelsCountGet (string id, string where = null)
 
 Counts templateRels of Portal.
 
@@ -9419,7 +9419,7 @@ namespace Example
             try
             {
                 // Counts templateRels of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdTemplateRelsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdTemplateRelsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9440,7 +9440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9855,7 +9855,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsidtemplatescountget"></a>
 # **PortalsIdTemplatesCountGet**
-> InlineResponse200 PortalsIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 PortalsIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of Portal.
 
@@ -9886,7 +9886,7 @@ namespace Example
             try
             {
                 // Counts templates of Portal.
-                InlineResponse200 result = apiInstance.PortalsIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalsIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9907,7 +9907,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10926,7 +10926,7 @@ Name | Type | Description  | Notes
 
 <a name="portalsupdatepost"></a>
 # **PortalsUpdatePost**
-> InlineResponse2002 PortalsUpdatePost (string where = null, Portal data = null)
+> InlineResponse2003 PortalsUpdatePost (string where = null, Portal data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -10957,7 +10957,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.PortalsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.PortalsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10978,7 +10978,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

@@ -545,7 +545,7 @@ Name | Type | Description  | Notes
 
 <a name="teamscountget"></a>
 # **TeamsCountGet**
-> InlineResponse200 TeamsCountGet (string where = null)
+> InlineResponse2001 TeamsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -575,7 +575,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamsCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1070,7 +1070,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigscountget"></a>
 # **TeamsIdBuilderConfigsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsCountGet (string id, string where = null)
 
 Counts builderConfigs of Team.
 
@@ -1101,7 +1101,7 @@ namespace Example
             try
             {
                 // Counts builderConfigs of Team.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1122,7 +1122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1673,7 +1673,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductgroupscountget"></a>
 # **TeamsIdBuilderConfigsNkProductGroupsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductGroupsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductGroupsCountGet (string id, string nk, string where = null)
 
 Counts productGroups of TeamBuilderConfig.
 
@@ -1705,7 +1705,7 @@ namespace Example
             try
             {
                 // Counts productGroups of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1727,7 +1727,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2362,7 +2362,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizematerialscountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
 
 Counts productSizeMaterials of TeamBuilderConfig.
 
@@ -2394,7 +2394,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2416,7 +2416,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2843,7 +2843,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizematerialsrelcountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet (string id, string nk, string where = null)
 
 Counts productSizeMaterialsRel of TeamBuilderConfig.
 
@@ -2875,7 +2875,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterialsRel of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2897,7 +2897,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3532,7 +3532,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizescountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizesCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizesCountGet (string id, string nk, string where = null)
 
 Counts productSizes of TeamBuilderConfig.
 
@@ -3564,7 +3564,7 @@ namespace Example
             try
             {
                 // Counts productSizes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3586,7 +3586,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4221,7 +4221,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproducttypescountget"></a>
 # **TeamsIdBuilderConfigsNkProductTypesCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductTypesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductTypesCountGet (string id, string nk, string where = null)
 
 Counts productTypes of TeamBuilderConfig.
 
@@ -4253,7 +4253,7 @@ namespace Example
             try
             {
                 // Counts productTypes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductTypesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductTypesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4275,7 +4275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5046,7 +5046,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddatasourcescountget"></a>
 # **TeamsIdDataSourcesCountGet**
-> InlineResponse200 TeamsIdDataSourcesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdDataSourcesCountGet (string id, string where = null)
 
 Counts dataSources of Team.
 
@@ -5077,7 +5077,7 @@ namespace Example
             try
             {
                 // Counts dataSources of Team.
-                InlineResponse200 result = apiInstance.TeamsIdDataSourcesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDataSourcesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5098,7 +5098,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5578,7 +5578,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatascountget"></a>
 # **TeamsIdDynamicDatasCountGet**
-> InlineResponse200 TeamsIdDynamicDatasCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasCountGet (string id, string where = null)
 
 Counts dynamicDatas of Team.
 
@@ -5609,7 +5609,7 @@ namespace Example
             try
             {
                 // Counts dynamicDatas of Team.
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5630,7 +5630,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5978,7 +5978,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatasnkdesignscountget"></a>
 # **TeamsIdDynamicDatasNkDesignsCountGet**
-> InlineResponse200 TeamsIdDynamicDatasNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of DynamicData.
 
@@ -6010,7 +6010,7 @@ namespace Example
             try
             {
                 // Counts designs of DynamicData.
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6032,7 +6032,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6459,7 +6459,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatasnkrecordscountget"></a>
 # **TeamsIdDynamicDatasNkRecordsCountGet**
-> InlineResponse200 TeamsIdDynamicDatasNkRecordsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasNkRecordsCountGet (string id, string nk, string where = null)
 
 Count Dynamic Data records
 
@@ -6491,7 +6491,7 @@ namespace Example
             try
             {
                 // Count Dynamic Data records
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasNkRecordsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasNkRecordsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6513,7 +6513,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7291,7 +7291,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidexistsget"></a>
 # **TeamsIdExistsGet**
-> InlineResponse2001 TeamsIdExistsGet (string id)
+> InlineResponse2002 TeamsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -7321,7 +7321,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7341,7 +7341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -7423,7 +7423,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidhead"></a>
 # **TeamsIdHead**
-> InlineResponse2001 TeamsIdHead (string id)
+> InlineResponse2002 TeamsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -7453,7 +7453,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamsIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7473,7 +7473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -7488,7 +7488,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefolderscountget"></a>
 # **TeamsIdImageFoldersCountGet**
-> InlineResponse200 TeamsIdImageFoldersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersCountGet (string id, string where = null)
 
 Counts imageFolders of Team.
 
@@ -7519,7 +7519,7 @@ namespace Example
             try
             {
                 // Counts imageFolders of Team.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7540,7 +7540,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7888,7 +7888,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkchildrencountget"></a>
 # **TeamsIdImageFoldersNkChildrenCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkChildrenCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkChildrenCountGet (string id, string nk, string where = null)
 
 Counts children of ImageFolder.
 
@@ -7920,7 +7920,7 @@ namespace Example
             try
             {
                 // Counts children of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkChildrenCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkChildrenCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7942,7 +7942,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8369,7 +8369,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkfoldermemberscountget"></a>
 # **TeamsIdImageFoldersNkFolderMembersCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkFolderMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkFolderMembersCountGet (string id, string nk, string where = null)
 
 Counts folderMembers of ImageFolder.
 
@@ -8401,7 +8401,7 @@ namespace Example
             try
             {
                 // Counts folderMembers of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkFolderMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkFolderMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8423,7 +8423,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8850,7 +8850,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkimagescountget"></a>
 # **TeamsIdImageFoldersNkImagesCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkImagesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkImagesCountGet (string id, string nk, string where = null)
 
 Counts images of ImageFolder.
 
@@ -8882,7 +8882,7 @@ namespace Example
             try
             {
                 // Counts images of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkImagesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkImagesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8904,7 +8904,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9331,7 +9331,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkmemberscountget"></a>
 # **TeamsIdImageFoldersNkMembersCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of ImageFolder.
 
@@ -9363,7 +9363,7 @@ namespace Example
             try
             {
                 // Counts members of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9385,7 +9385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10089,7 +10089,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkportalscountget"></a>
 # **TeamsIdImageFoldersNkPortalsCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkPortalsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkPortalsCountGet (string id, string nk, string where = null)
 
 Counts portals of ImageFolder.
 
@@ -10121,7 +10121,7 @@ namespace Example
             try
             {
                 // Counts portals of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkPortalsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkPortalsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10143,7 +10143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10914,7 +10914,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagescountget"></a>
 # **TeamsIdImagesCountGet**
-> InlineResponse200 TeamsIdImagesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdImagesCountGet (string id, string where = null)
 
 Counts images of Team.
 
@@ -10945,7 +10945,7 @@ namespace Example
             try
             {
                 // Counts images of Team.
-                InlineResponse200 result = apiInstance.TeamsIdImagesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImagesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10966,7 +10966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -11797,7 +11797,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidmemberscountget"></a>
 # **TeamsIdMembersCountGet**
-> InlineResponse200 TeamsIdMembersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdMembersCountGet (string id, string where = null)
 
 Counts members of Team.
 
@@ -11828,7 +11828,7 @@ namespace Example
             try
             {
                 // Counts members of Team.
-                InlineResponse200 result = apiInstance.TeamsIdMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -11849,7 +11849,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -12798,7 +12798,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalscountget"></a>
 # **TeamsIdPortalsCountGet**
-> InlineResponse200 TeamsIdPortalsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdPortalsCountGet (string id, string where = null)
 
 Counts portals of Team.
 
@@ -12829,7 +12829,7 @@ namespace Example
             try
             {
                 // Counts portals of Team.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -12850,7 +12850,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13198,7 +13198,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkdesignfolderscountget"></a>
 # **TeamsIdPortalsNkDesignFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkDesignFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkDesignFoldersCountGet (string id, string nk, string where = null)
 
 Counts designFolders of Portal.
 
@@ -13230,7 +13230,7 @@ namespace Example
             try
             {
                 // Counts designFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkDesignFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkDesignFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13252,7 +13252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13679,7 +13679,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkdesignscountget"></a>
 # **TeamsIdPortalsNkDesignsCountGet**
-> InlineResponse200 TeamsIdPortalsNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of Portal.
 
@@ -13711,7 +13711,7 @@ namespace Example
             try
             {
                 // Counts designs of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13733,7 +13733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14160,7 +14160,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkimagefolderscountget"></a>
 # **TeamsIdPortalsNkImageFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkImageFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkImageFoldersCountGet (string id, string nk, string where = null)
 
 Counts imageFolders of Portal.
 
@@ -14192,7 +14192,7 @@ namespace Example
             try
             {
                 // Counts imageFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkImageFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkImageFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -14214,7 +14214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14849,7 +14849,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkmemberscountget"></a>
 # **TeamsIdPortalsNkMembersCountGet**
-> InlineResponse200 TeamsIdPortalsNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of Portal.
 
@@ -14881,7 +14881,7 @@ namespace Example
             try
             {
                 // Counts members of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -14903,7 +14903,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -15811,7 +15811,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkportalmemberscountget"></a>
 # **TeamsIdPortalsNkPortalMembersCountGet**
-> InlineResponse200 TeamsIdPortalsNkPortalMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkPortalMembersCountGet (string id, string nk, string where = null)
 
 Counts portalMembers of Portal.
 
@@ -15843,7 +15843,7 @@ namespace Example
             try
             {
                 // Counts portalMembers of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkPortalMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkPortalMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -15865,7 +15865,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -16361,7 +16361,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplatefolderscountget"></a>
 # **TeamsIdPortalsNkTemplateFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplateFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplateFoldersCountGet (string id, string nk, string where = null)
 
 Counts templateFolders of Portal.
 
@@ -16393,7 +16393,7 @@ namespace Example
             try
             {
                 // Counts templateFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplateFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplateFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -16415,7 +16415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -16842,7 +16842,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplaterelscountget"></a>
 # **TeamsIdPortalsNkTemplateRelsCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplateRelsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplateRelsCountGet (string id, string nk, string where = null)
 
 Counts templateRels of Portal.
 
@@ -16874,7 +16874,7 @@ namespace Example
             try
             {
                 // Counts templateRels of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplateRelsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplateRelsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -16896,7 +16896,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -17323,7 +17323,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplatescountget"></a>
 # **TeamsIdPortalsNkTemplatesCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplatesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplatesCountGet (string id, string nk, string where = null)
 
 Counts templates of Portal.
 
@@ -17355,7 +17355,7 @@ namespace Example
             try
             {
                 // Counts templates of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplatesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplatesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -17377,7 +17377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18079,7 +18079,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductmaterialscountget"></a>
 # **TeamsIdProductMaterialsCountGet**
-> InlineResponse200 TeamsIdProductMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductMaterialsCountGet (string id, string where = null)
 
 Counts productMaterials of Team.
 
@@ -18110,7 +18110,7 @@ namespace Example
             try
             {
                 // Counts productMaterials of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -18131,7 +18131,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18682,7 +18682,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductpdfcolorprofilescountget"></a>
 # **TeamsIdProductPdfColorProfilesCountGet**
-> InlineResponse200 TeamsIdProductPdfColorProfilesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductPdfColorProfilesCountGet (string id, string where = null)
 
 Counts productPdfColorProfiles of Team.
 
@@ -18713,7 +18713,7 @@ namespace Example
             try
             {
                 // Counts productPdfColorProfiles of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductPdfColorProfilesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductPdfColorProfilesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -18734,7 +18734,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -19147,7 +19147,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductsizematerialscountget"></a>
 # **TeamsIdProductSizeMaterialsCountGet**
-> InlineResponse200 TeamsIdProductSizeMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductSizeMaterialsCountGet (string id, string where = null)
 
 Counts productSizeMaterials of Team.
 
@@ -19178,7 +19178,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductSizeMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductSizeMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -19199,7 +19199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -20024,7 +20024,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteamdatadesignscountget"></a>
 # **TeamsIdTeamDataDesignsCountGet**
-> InlineResponse200 TeamsIdTeamDataDesignsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamDataDesignsCountGet (string id, string where = null)
 
 Counts designs of DynamicData.
 
@@ -20055,7 +20055,7 @@ namespace Example
             try
             {
                 // Counts designs of DynamicData.
-                InlineResponse200 result = apiInstance.TeamsIdTeamDataDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamDataDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -20076,7 +20076,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -20558,7 +20558,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteamdatarecordscountget"></a>
 # **TeamsIdTeamDataRecordsCountGet**
-> InlineResponse200 TeamsIdTeamDataRecordsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamDataRecordsCountGet (string id, string where = null)
 
 Count Dynamic Data records
 
@@ -20589,7 +20589,7 @@ namespace Example
             try
             {
                 // Count Dynamic Data records
-                InlineResponse200 result = apiInstance.TeamsIdTeamDataRecordsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamDataRecordsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -20610,7 +20610,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21301,7 +21301,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteammemberscountget"></a>
 # **TeamsIdTeamMembersCountGet**
-> InlineResponse200 TeamsIdTeamMembersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamMembersCountGet (string id, string where = null)
 
 Counts teamMembers of Team.
 
@@ -21332,7 +21332,7 @@ namespace Example
             try
             {
                 // Counts teamMembers of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTeamMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -21353,7 +21353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21835,7 +21835,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatefolderscountget"></a>
 # **TeamsIdTemplateFoldersCountGet**
-> InlineResponse200 TeamsIdTemplateFoldersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTemplateFoldersCountGet (string id, string where = null)
 
 Counts templateFolders of Team.
 
@@ -21866,7 +21866,7 @@ namespace Example
             try
             {
                 // Counts templateFolders of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTemplateFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplateFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -21887,7 +21887,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -22302,7 +22302,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatescountget"></a>
 # **TeamsIdTemplatesCountGet**
-> InlineResponse200 TeamsIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of Team.
 
@@ -22333,7 +22333,7 @@ namespace Example
             try
             {
                 // Counts templates of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -22354,7 +22354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -22702,7 +22702,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkdesignscountget"></a>
 # **TeamsIdTemplatesNkDesignsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of Template.
 
@@ -22734,7 +22734,7 @@ namespace Example
             try
             {
                 // Counts designs of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -22756,7 +22756,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -23183,7 +23183,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkmemberscountget"></a>
 # **TeamsIdTemplatesNkMembersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of Template.
 
@@ -23215,7 +23215,7 @@ namespace Example
             try
             {
                 // Counts members of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -23237,7 +23237,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -24145,7 +24145,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkportalfolderscountget"></a>
 # **TeamsIdTemplatesNkPortalFoldersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkPortalFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkPortalFoldersCountGet (string id, string nk, string where = null)
 
 Counts portalFolders of Template.
 
@@ -24177,7 +24177,7 @@ namespace Example
             try
             {
                 // Counts portalFolders of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkPortalFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkPortalFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -24199,7 +24199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -24834,7 +24834,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkportalscountget"></a>
 # **TeamsIdTemplatesNkPortalsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkPortalsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkPortalsCountGet (string id, string nk, string where = null)
 
 Counts portals of Template.
 
@@ -24866,7 +24866,7 @@ namespace Example
             try
             {
                 // Counts portals of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkPortalsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkPortalsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -24888,7 +24888,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -25523,7 +25523,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnktagscountget"></a>
 # **TeamsIdTemplatesNkTagsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkTagsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkTagsCountGet (string id, string nk, string where = null)
 
 Counts tags of Template.
 
@@ -25555,7 +25555,7 @@ namespace Example
             try
             {
                 // Counts tags of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkTagsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkTagsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -25577,7 +25577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -26350,7 +26350,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnktemplatememberscountget"></a>
 # **TeamsIdTemplatesNkTemplateMembersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkTemplateMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkTemplateMembersCountGet (string id, string nk, string where = null)
 
 Counts templateMembers of Template.
 
@@ -26382,7 +26382,7 @@ namespace Example
             try
             {
                 // Counts templateMembers of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkTemplateMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkTemplateMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -26404,7 +26404,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -27105,7 +27105,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidworkflowscountget"></a>
 # **TeamsIdWorkflowsCountGet**
-> InlineResponse200 TeamsIdWorkflowsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdWorkflowsCountGet (string id, string where = null)
 
 Counts workflows of Team.
 
@@ -27136,7 +27136,7 @@ namespace Example
             try
             {
                 // Counts workflows of Team.
-                InlineResponse200 result = apiInstance.TeamsIdWorkflowsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdWorkflowsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27157,7 +27157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -27572,7 +27572,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsnamenameexistsget"></a>
 # **TeamsNameNameExistsGet**
-> InlineResponse2001 TeamsNameNameExistsGet (string name)
+> InlineResponse2002 TeamsNameNameExistsGet (string name)
 
 Define whether team exists or not
 
@@ -27602,7 +27602,7 @@ namespace Example
             try
             {
                 // Define whether team exists or not
-                InlineResponse2001 result = apiInstance.TeamsNameNameExistsGet(name);
+                InlineResponse2002 result = apiInstance.TeamsNameNameExistsGet(name);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27622,7 +27622,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -27897,7 +27897,7 @@ Name | Type | Description  | Notes
 
 <a name="teamssubdomainsubdomainexistsget"></a>
 # **TeamsSubdomainSubdomainExistsGet**
-> InlineResponse2001 TeamsSubdomainSubdomainExistsGet (string subdomain)
+> InlineResponse2002 TeamsSubdomainSubdomainExistsGet (string subdomain)
 
 Define whether team exists or not
 
@@ -27927,7 +27927,7 @@ namespace Example
             try
             {
                 // Define whether team exists or not
-                InlineResponse2001 result = apiInstance.TeamsSubdomainSubdomainExistsGet(subdomain);
+                InlineResponse2002 result = apiInstance.TeamsSubdomainSubdomainExistsGet(subdomain);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27947,7 +27947,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -27962,7 +27962,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsupdatepost"></a>
 # **TeamsUpdatePost**
-> InlineResponse2002 TeamsUpdatePost (string where = null, Team data = null)
+> InlineResponse2003 TeamsUpdatePost (string where = null, Team data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -27993,7 +27993,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -28014,7 +28014,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

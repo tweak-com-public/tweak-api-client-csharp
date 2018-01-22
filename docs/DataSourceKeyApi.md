@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 <a name="datasourcescountget"></a>
 # **DataSourcesCountGet**
-> InlineResponse200 DataSourcesCountGet (string where = null)
+> InlineResponse2001 DataSourcesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -195,7 +195,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DataSourcesCountGet(where);
+                InlineResponse2001 result = apiInstance.DataSourcesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 
 <a name="datasourcesidexistsget"></a>
 # **DataSourcesIdExistsGet**
-> InlineResponse2001 DataSourcesIdExistsGet (string id)
+> InlineResponse2002 DataSourcesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -522,7 +522,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DataSourcesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DataSourcesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -542,7 +542,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -624,7 +624,7 @@ Name | Type | Description  | Notes
 
 <a name="datasourcesidhead"></a>
 # **DataSourcesIdHead**
-> InlineResponse2001 DataSourcesIdHead (string id)
+> InlineResponse2002 DataSourcesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -654,7 +654,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DataSourcesIdHead(id);
+                InlineResponse2002 result = apiInstance.DataSourcesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -674,7 +674,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 <a name="datasourcesidrecordvaluescountget"></a>
 # **DataSourcesIdRecordValuesCountGet**
-> InlineResponse200 DataSourcesIdRecordValuesCountGet (string id, string where = null)
+> InlineResponse2001 DataSourcesIdRecordValuesCountGet (string id, string where = null)
 
 Counts recordValues of DataSourceKey.
 
@@ -854,7 +854,7 @@ namespace Example
             try
             {
                 // Counts recordValues of DataSourceKey.
-                InlineResponse200 result = apiInstance.DataSourcesIdRecordValuesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DataSourcesIdRecordValuesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -875,7 +875,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1684,7 +1684,7 @@ Name | Type | Description  | Notes
 
 <a name="datasourcesupdatepost"></a>
 # **DataSourcesUpdatePost**
-> InlineResponse2002 DataSourcesUpdatePost (string where = null, DataSourceKey data = null)
+> InlineResponse2003 DataSourcesUpdatePost (string where = null, DataSourceKey data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1715,7 +1715,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DataSourcesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DataSourcesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1736,7 +1736,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

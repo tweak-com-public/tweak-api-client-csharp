@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefolderscountget"></a>
 # **PortalTemplateFoldersCountGet**
-> InlineResponse200 PortalTemplateFoldersCountGet (string where = null)
+> InlineResponse2001 PortalTemplateFoldersCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -205,7 +205,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.PortalTemplateFoldersCountGet(where);
+                InlineResponse2001 result = apiInstance.PortalTemplateFoldersCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -370,7 +370,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidchildrencountget"></a>
 # **PortalTemplateFoldersIdChildrenCountGet**
-> InlineResponse200 PortalTemplateFoldersIdChildrenCountGet (string id, string where = null)
+> InlineResponse2001 PortalTemplateFoldersIdChildrenCountGet (string id, string where = null)
 
 Counts children of PortalTemplateFolder.
 
@@ -401,7 +401,7 @@ namespace Example
             try
             {
                 // Counts children of PortalTemplateFolder.
-                InlineResponse200 result = apiInstance.PortalTemplateFoldersIdChildrenCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdChildrenCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -902,7 +902,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidexistsget"></a>
 # **PortalTemplateFoldersIdExistsGet**
-> InlineResponse2001 PortalTemplateFoldersIdExistsGet (string id)
+> InlineResponse2002 PortalTemplateFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -932,7 +932,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.PortalTemplateFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -952,7 +952,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1034,7 +1034,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidhead"></a>
 # **PortalTemplateFoldersIdHead**
-> InlineResponse2001 PortalTemplateFoldersIdHead (string id)
+> InlineResponse2002 PortalTemplateFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1064,7 +1064,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdHead(id);
+                InlineResponse2002 result = apiInstance.PortalTemplateFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1084,7 +1084,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1434,7 +1434,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersidtemplatescountget"></a>
 # **PortalTemplateFoldersIdTemplatesCountGet**
-> InlineResponse200 PortalTemplateFoldersIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 PortalTemplateFoldersIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of PortalTemplateFolder.
 
@@ -1465,7 +1465,7 @@ namespace Example
             try
             {
                 // Counts templates of PortalTemplateFolder.
-                InlineResponse200 result = apiInstance.PortalTemplateFoldersIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.PortalTemplateFoldersIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1486,7 +1486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2363,7 +2363,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatefoldersupdatepost"></a>
 # **PortalTemplateFoldersUpdatePost**
-> InlineResponse2002 PortalTemplateFoldersUpdatePost (string where = null, PortalTemplateFolder data = null)
+> InlineResponse2003 PortalTemplateFoldersUpdatePost (string where = null, PortalTemplateFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2394,7 +2394,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.PortalTemplateFoldersUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.PortalTemplateFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2415,7 +2415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

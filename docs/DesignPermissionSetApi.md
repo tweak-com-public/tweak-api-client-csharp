@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 <a name="designpermissionsetscountget"></a>
 # **DesignPermissionSetsCountGet**
-> InlineResponse200 DesignPermissionSetsCountGet (string where = null)
+> InlineResponse2001 DesignPermissionSetsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -187,7 +187,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DesignPermissionSetsCountGet(where);
+                InlineResponse2001 result = apiInstance.DesignPermissionSetsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 
 <a name="designpermissionsetsidexistsget"></a>
 # **DesignPermissionSetsIdExistsGet**
-> InlineResponse2001 DesignPermissionSetsIdExistsGet (string id)
+> InlineResponse2002 DesignPermissionSetsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -514,7 +514,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignPermissionSetsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DesignPermissionSetsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -534,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -616,7 +616,7 @@ Name | Type | Description  | Notes
 
 <a name="designpermissionsetsidhead"></a>
 # **DesignPermissionSetsIdHead**
-> InlineResponse2001 DesignPermissionSetsIdHead (string id)
+> InlineResponse2002 DesignPermissionSetsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -646,7 +646,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignPermissionSetsIdHead(id);
+                InlineResponse2002 result = apiInstance.DesignPermissionSetsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -666,7 +666,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="designpermissionsetsupdatepost"></a>
 # **DesignPermissionSetsUpdatePost**
-> InlineResponse2002 DesignPermissionSetsUpdatePost (string where = null, DesignPermissionSet data = null)
+> InlineResponse2003 DesignPermissionSetsUpdatePost (string where = null, DesignPermissionSet data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DesignPermissionSetsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DesignPermissionSetsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

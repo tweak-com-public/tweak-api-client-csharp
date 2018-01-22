@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 <a name="designexportscountget"></a>
 # **DesignExportsCountGet**
-> InlineResponse200 DesignExportsCountGet (string where = null)
+> InlineResponse2001 DesignExportsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -188,7 +188,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DesignExportsCountGet(where);
+                InlineResponse2001 result = apiInstance.DesignExportsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 <a name="designexportsidexistsget"></a>
 # **DesignExportsIdExistsGet**
-> InlineResponse2001 DesignExportsIdExistsGet (string id)
+> InlineResponse2002 DesignExportsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -515,7 +515,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignExportsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DesignExportsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 <a name="designexportsidhead"></a>
 # **DesignExportsIdHead**
-> InlineResponse2001 DesignExportsIdHead (string id)
+> InlineResponse2002 DesignExportsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -647,7 +647,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignExportsIdHead(id);
+                InlineResponse2002 result = apiInstance.DesignExportsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="designexportsupdatepost"></a>
 # **DesignExportsUpdatePost**
-> InlineResponse2002 DesignExportsUpdatePost (string where = null, DesignExport data = null)
+> InlineResponse2003 DesignExportsUpdatePost (string where = null, DesignExport data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DesignExportsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DesignExportsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

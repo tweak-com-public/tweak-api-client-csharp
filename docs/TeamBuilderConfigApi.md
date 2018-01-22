@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigscountget"></a>
 # **TeamBuilderConfigsCountGet**
-> InlineResponse200 TeamBuilderConfigsCountGet (string where = null)
+> InlineResponse2001 TeamBuilderConfigsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -282,7 +282,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -512,7 +512,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidexistsget"></a>
 # **TeamBuilderConfigsIdExistsGet**
-> InlineResponse2001 TeamBuilderConfigsIdExistsGet (string id)
+> InlineResponse2002 TeamBuilderConfigsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -542,7 +542,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -562,7 +562,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -644,7 +644,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidhead"></a>
 # **TeamBuilderConfigsIdHead**
-> InlineResponse2001 TeamBuilderConfigsIdHead (string id)
+> InlineResponse2002 TeamBuilderConfigsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -674,7 +674,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -694,7 +694,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -776,7 +776,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductgroupscountget"></a>
 # **TeamBuilderConfigsIdProductGroupsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductGroupsCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductGroupsCountGet (string id, string where = null)
 
 Counts productGroups of TeamBuilderConfig.
 
@@ -807,7 +807,7 @@ namespace Example
             try
             {
                 // Counts productGroups of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductGroupsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductGroupsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -828,7 +828,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1176,7 +1176,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductgroupsnktypescountget"></a>
 # **TeamBuilderConfigsIdProductGroupsNkTypesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductGroupsNkTypesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductGroupsNkTypesCountGet (string id, string nk, string where = null)
 
 Counts types of ProductGroup.
 
@@ -1208,7 +1208,7 @@ namespace Example
             try
             {
                 // Counts types of ProductGroup.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductGroupsNkTypesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductGroupsNkTypesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1230,7 +1230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1926,7 +1926,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizematerialscountget"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizeMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizeMaterialsCountGet (string id, string where = null)
 
 Counts productSizeMaterials of TeamBuilderConfig.
 
@@ -1957,7 +1957,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1978,7 +1978,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2669,7 +2669,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizematerialsrelcountget"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsRelCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizeMaterialsRelCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizeMaterialsRelCountGet (string id, string where = null)
 
 Counts productSizeMaterialsRel of TeamBuilderConfig.
 
@@ -2700,7 +2700,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterialsRel of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2721,7 +2721,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3545,7 +3545,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizescountget"></a>
 # **TeamBuilderConfigsIdProductSizesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesCountGet (string id, string where = null)
 
 Counts productSizes of TeamBuilderConfig.
 
@@ -3576,7 +3576,7 @@ namespace Example
             try
             {
                 // Counts productSizes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3597,7 +3597,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3945,7 +3945,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnkmaterialscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkMaterialsCountGet (string id, string nk, string where = null)
 
 Counts materials of ProductSize.
 
@@ -3977,7 +3977,7 @@ namespace Example
             try
             {
                 // Counts materials of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3999,7 +3999,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4703,7 +4703,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnkproductscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkProductsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkProductsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkProductsCountGet (string id, string nk, string where = null)
 
 Counts products of ProductSize.
 
@@ -4735,7 +4735,7 @@ namespace Example
             try
             {
                 // Counts products of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkProductsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkProductsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4757,7 +4757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5184,7 +5184,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnksizematerialscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet (string id, string nk, string where = null)
 
 Counts sizeMaterials of ProductSize.
 
@@ -5216,7 +5216,7 @@ namespace Example
             try
             {
                 // Counts sizeMaterials of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5238,7 +5238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6003,7 +6003,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproducttypescountget"></a>
 # **TeamBuilderConfigsIdProductTypesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductTypesCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductTypesCountGet (string id, string where = null)
 
 Counts productTypes of TeamBuilderConfig.
 
@@ -6034,7 +6034,7 @@ namespace Example
             try
             {
                 // Counts productTypes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductTypesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductTypesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6055,7 +6055,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6472,7 +6472,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproducttypesnksizescountget"></a>
 # **TeamBuilderConfigsIdProductTypesNkSizesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductTypesNkSizesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductTypesNkSizesCountGet (string id, string nk, string where = null)
 
 Counts sizes of ProductType.
 
@@ -6504,7 +6504,7 @@ namespace Example
             try
             {
                 // Counts sizes of ProductType.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductTypesNkSizesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductTypesNkSizesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6526,7 +6526,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7683,7 +7683,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsupdatepost"></a>
 # **TeamBuilderConfigsUpdatePost**
-> InlineResponse2002 TeamBuilderConfigsUpdatePost (string where = null, TeamBuilderConfig data = null)
+> InlineResponse2003 TeamBuilderConfigsUpdatePost (string where = null, TeamBuilderConfig data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -7714,7 +7714,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamBuilderConfigsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamBuilderConfigsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7735,7 +7735,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

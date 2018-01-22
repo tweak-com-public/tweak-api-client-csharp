@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefolderscountget"></a>
 # **TeamTemplateFoldersCountGet**
-> InlineResponse200 TeamTemplateFoldersCountGet (string where = null)
+> InlineResponse2001 TeamTemplateFoldersCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -202,7 +202,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamTemplateFoldersCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamTemplateFoldersCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -367,7 +367,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefoldersidchildrencountget"></a>
 # **TeamTemplateFoldersIdChildrenCountGet**
-> InlineResponse200 TeamTemplateFoldersIdChildrenCountGet (string id, string where = null)
+> InlineResponse2001 TeamTemplateFoldersIdChildrenCountGet (string id, string where = null)
 
 Counts children of TeamTemplateFolder.
 
@@ -398,7 +398,7 @@ namespace Example
             try
             {
                 // Counts children of TeamTemplateFolder.
-                InlineResponse200 result = apiInstance.TeamTemplateFoldersIdChildrenCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamTemplateFoldersIdChildrenCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -899,7 +899,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefoldersidexistsget"></a>
 # **TeamTemplateFoldersIdExistsGet**
-> InlineResponse2001 TeamTemplateFoldersIdExistsGet (string id)
+> InlineResponse2002 TeamTemplateFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -929,7 +929,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamTemplateFoldersIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamTemplateFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -949,7 +949,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1031,7 +1031,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefoldersidhead"></a>
 # **TeamTemplateFoldersIdHead**
-> InlineResponse2001 TeamTemplateFoldersIdHead (string id)
+> InlineResponse2002 TeamTemplateFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1061,7 +1061,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamTemplateFoldersIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamTemplateFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1081,7 +1081,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1431,7 +1431,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefoldersidtemplatescountget"></a>
 # **TeamTemplateFoldersIdTemplatesCountGet**
-> InlineResponse200 TeamTemplateFoldersIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 TeamTemplateFoldersIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of TeamTemplateFolder.
 
@@ -1462,7 +1462,7 @@ namespace Example
             try
             {
                 // Counts templates of TeamTemplateFolder.
-                InlineResponse200 result = apiInstance.TeamTemplateFoldersIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamTemplateFoldersIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1483,7 +1483,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2158,7 +2158,7 @@ Name | Type | Description  | Notes
 
 <a name="teamtemplatefoldersupdatepost"></a>
 # **TeamTemplateFoldersUpdatePost**
-> InlineResponse2002 TeamTemplateFoldersUpdatePost (string where = null, TeamTemplateFolder data = null)
+> InlineResponse2003 TeamTemplateFoldersUpdatePost (string where = null, TeamTemplateFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2189,7 +2189,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamTemplateFoldersUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamTemplateFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2210,7 +2210,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
