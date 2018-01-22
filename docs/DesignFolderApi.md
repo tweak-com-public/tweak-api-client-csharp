@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 <a name="designfolderscountget"></a>
 # **DesignFoldersCountGet**
-> InlineResponse200 DesignFoldersCountGet (string where = null)
+> InlineResponse2001 DesignFoldersCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -203,7 +203,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DesignFoldersCountGet(where);
+                InlineResponse2001 result = apiInstance.DesignFoldersCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersidchildrencountget"></a>
 # **DesignFoldersIdChildrenCountGet**
-> InlineResponse200 DesignFoldersIdChildrenCountGet (string id, string where = null)
+> InlineResponse2001 DesignFoldersIdChildrenCountGet (string id, string where = null)
 
 Counts children of DesignFolder.
 
@@ -399,7 +399,7 @@ namespace Example
             try
             {
                 // Counts children of DesignFolder.
-                InlineResponse200 result = apiInstance.DesignFoldersIdChildrenCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignFoldersIdChildrenCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -900,7 +900,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersiddesignscountget"></a>
 # **DesignFoldersIdDesignsCountGet**
-> InlineResponse200 DesignFoldersIdDesignsCountGet (string id, string where = null)
+> InlineResponse2001 DesignFoldersIdDesignsCountGet (string id, string where = null)
 
 Counts designs of DesignFolder.
 
@@ -931,7 +931,7 @@ namespace Example
             try
             {
                 // Counts designs of DesignFolder.
-                InlineResponse200 result = apiInstance.DesignFoldersIdDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignFoldersIdDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -952,7 +952,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1367,7 +1367,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersidexistsget"></a>
 # **DesignFoldersIdExistsGet**
-> InlineResponse2001 DesignFoldersIdExistsGet (string id)
+> InlineResponse2002 DesignFoldersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1397,7 +1397,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignFoldersIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DesignFoldersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1417,7 +1417,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1499,7 +1499,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersidhead"></a>
 # **DesignFoldersIdHead**
-> InlineResponse2001 DesignFoldersIdHead (string id)
+> InlineResponse2002 DesignFoldersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1529,7 +1529,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignFoldersIdHead(id);
+                InlineResponse2002 result = apiInstance.DesignFoldersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1549,7 +1549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -2226,7 +2226,7 @@ Name | Type | Description  | Notes
 
 <a name="designfoldersupdatepost"></a>
 # **DesignFoldersUpdatePost**
-> InlineResponse2002 DesignFoldersUpdatePost (string where = null, DesignFolder data = null)
+> InlineResponse2003 DesignFoldersUpdatePost (string where = null, DesignFolder data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2257,7 +2257,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DesignFoldersUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DesignFoldersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2278,7 +2278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

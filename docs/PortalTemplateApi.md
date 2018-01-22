@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatescountget"></a>
 # **PortalTemplatesCountGet**
-> InlineResponse200 PortalTemplatesCountGet (string where = null)
+> InlineResponse2001 PortalTemplatesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -189,7 +189,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.PortalTemplatesCountGet(where);
+                InlineResponse2001 result = apiInstance.PortalTemplatesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatesidexistsget"></a>
 # **PortalTemplatesIdExistsGet**
-> InlineResponse2001 PortalTemplatesIdExistsGet (string id)
+> InlineResponse2002 PortalTemplatesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -449,7 +449,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalTemplatesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.PortalTemplatesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatesidhead"></a>
 # **PortalTemplatesIdHead**
-> InlineResponse2001 PortalTemplatesIdHead (string id)
+> InlineResponse2002 PortalTemplatesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -648,7 +648,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalTemplatesIdHead(id);
+                InlineResponse2002 result = apiInstance.PortalTemplatesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -668,7 +668,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1278,7 +1278,7 @@ Name | Type | Description  | Notes
 
 <a name="portaltemplatesupdatepost"></a>
 # **PortalTemplatesUpdatePost**
-> InlineResponse2002 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null)
+> InlineResponse2003 PortalTemplatesUpdatePost (string where = null, PortalTemplate data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1309,7 +1309,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.PortalTemplatesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.PortalTemplatesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1330,7 +1330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

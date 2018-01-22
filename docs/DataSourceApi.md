@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 <a name="datasourcesidkeyscountget"></a>
 # **DataSourcesIdKeysCountGet**
-> InlineResponse200 DataSourcesIdKeysCountGet (string id, string where = null)
+> InlineResponse2001 DataSourcesIdKeysCountGet (string id, string where = null)
 
 Counts keys of DataSource.
 
@@ -46,7 +46,7 @@ namespace Example
             try
             {
                 // Counts keys of DataSource.
-                InlineResponse200 result = apiInstance.DataSourcesIdKeysCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DataSourcesIdKeysCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 

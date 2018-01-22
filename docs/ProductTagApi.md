@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 <a name="producttagscountget"></a>
 # **ProductTagsCountGet**
-> InlineResponse200 ProductTagsCountGet (string where = null)
+> InlineResponse2001 ProductTagsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -188,7 +188,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.ProductTagsCountGet(where);
+                InlineResponse2001 result = apiInstance.ProductTagsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 <a name="producttagsidexistsget"></a>
 # **ProductTagsIdExistsGet**
-> InlineResponse2001 ProductTagsIdExistsGet (string id)
+> InlineResponse2002 ProductTagsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -448,7 +448,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductTagsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.ProductTagsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -550,7 +550,7 @@ Name | Type | Description  | Notes
 
 <a name="producttagsidhead"></a>
 # **ProductTagsIdHead**
-> InlineResponse2001 ProductTagsIdHead (string id)
+> InlineResponse2002 ProductTagsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -580,7 +580,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductTagsIdHead(id);
+                InlineResponse2002 result = apiInstance.ProductTagsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="producttagsupdatepost"></a>
 # **ProductTagsUpdatePost**
-> InlineResponse2002 ProductTagsUpdatePost (string where = null, ProductTag data = null)
+> InlineResponse2003 ProductTagsUpdatePost (string where = null, ProductTag data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.ProductTagsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.ProductTagsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

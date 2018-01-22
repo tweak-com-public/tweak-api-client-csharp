@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 <a name="productpdfcolorprofilescountget"></a>
 # **ProductPdfColorProfilesCountGet**
-> InlineResponse200 ProductPdfColorProfilesCountGet (string where = null)
+> InlineResponse2001 ProductPdfColorProfilesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -187,7 +187,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.ProductPdfColorProfilesCountGet(where);
+                InlineResponse2001 result = apiInstance.ProductPdfColorProfilesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="productpdfcolorprofilesidexistsget"></a>
 # **ProductPdfColorProfilesIdExistsGet**
-> InlineResponse2001 ProductPdfColorProfilesIdExistsGet (string id)
+> InlineResponse2002 ProductPdfColorProfilesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -447,7 +447,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductPdfColorProfilesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.ProductPdfColorProfilesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 <a name="productpdfcolorprofilesidhead"></a>
 # **ProductPdfColorProfilesIdHead**
-> InlineResponse2001 ProductPdfColorProfilesIdHead (string id)
+> InlineResponse2002 ProductPdfColorProfilesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -579,7 +579,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductPdfColorProfilesIdHead(id);
+                InlineResponse2002 result = apiInstance.ProductPdfColorProfilesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="productpdfcolorprofilesupdatepost"></a>
 # **ProductPdfColorProfilesUpdatePost**
-> InlineResponse2002 ProductPdfColorProfilesUpdatePost (string where = null, ProductPdfColorProfile data = null)
+> InlineResponse2003 ProductPdfColorProfilesUpdatePost (string where = null, ProductPdfColorProfile data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.ProductPdfColorProfilesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.ProductPdfColorProfilesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

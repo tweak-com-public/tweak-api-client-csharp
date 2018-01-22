@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 <a name="testcachescountget"></a>
 # **TestCachesCountGet**
-> InlineResponse200 TestCachesCountGet (string where = null)
+> InlineResponse2001 TestCachesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -186,7 +186,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TestCachesCountGet(where);
+                InlineResponse2001 result = apiInstance.TestCachesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -416,7 +416,7 @@ Name | Type | Description  | Notes
 
 <a name="testcachesidexistsget"></a>
 # **TestCachesIdExistsGet**
-> InlineResponse2001 TestCachesIdExistsGet (string id)
+> InlineResponse2002 TestCachesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -446,7 +446,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TestCachesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TestCachesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -466,7 +466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -548,7 +548,7 @@ Name | Type | Description  | Notes
 
 <a name="testcachesidhead"></a>
 # **TestCachesIdHead**
-> InlineResponse2001 TestCachesIdHead (string id)
+> InlineResponse2002 TestCachesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -578,7 +578,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TestCachesIdHead(id);
+                InlineResponse2002 result = apiInstance.TestCachesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -598,7 +598,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1074,7 +1074,7 @@ Name | Type | Description  | Notes
 
 <a name="testcachesupdatepost"></a>
 # **TestCachesUpdatePost**
-> InlineResponse2002 TestCachesUpdatePost (string where = null, TestCache data = null)
+> InlineResponse2003 TestCachesUpdatePost (string where = null, TestCache data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1105,7 +1105,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TestCachesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TestCachesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1126,7 +1126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

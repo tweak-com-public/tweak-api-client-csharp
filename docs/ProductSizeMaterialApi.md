@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 <a name="productsizematerialscountget"></a>
 # **ProductSizeMaterialsCountGet**
-> InlineResponse200 ProductSizeMaterialsCountGet (string where = null)
+> InlineResponse2001 ProductSizeMaterialsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -190,7 +190,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.ProductSizeMaterialsCountGet(where);
+                InlineResponse2001 result = apiInstance.ProductSizeMaterialsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 <a name="productsizematerialsidexistsget"></a>
 # **ProductSizeMaterialsIdExistsGet**
-> InlineResponse2001 ProductSizeMaterialsIdExistsGet (string id)
+> InlineResponse2002 ProductSizeMaterialsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -450,7 +450,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductSizeMaterialsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.ProductSizeMaterialsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -470,7 +470,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -552,7 +552,7 @@ Name | Type | Description  | Notes
 
 <a name="productsizematerialsidhead"></a>
 # **ProductSizeMaterialsIdHead**
-> InlineResponse2001 ProductSizeMaterialsIdHead (string id)
+> InlineResponse2002 ProductSizeMaterialsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -582,7 +582,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ProductSizeMaterialsIdHead(id);
+                InlineResponse2002 result = apiInstance.ProductSizeMaterialsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -602,7 +602,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1346,7 +1346,7 @@ Name | Type | Description  | Notes
 
 <a name="productsizematerialsupdatepost"></a>
 # **ProductSizeMaterialsUpdatePost**
-> InlineResponse2002 ProductSizeMaterialsUpdatePost (string where = null, ProductSizeMaterial data = null)
+> InlineResponse2003 ProductSizeMaterialsUpdatePost (string where = null, ProductSizeMaterial data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1377,7 +1377,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.ProductSizeMaterialsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.ProductSizeMaterialsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1398,7 +1398,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
