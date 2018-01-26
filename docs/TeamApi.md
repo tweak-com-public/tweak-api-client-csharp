@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**TeamsIdBrandPost**](TeamApi.md#teamsidbrandpost) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
 [**TeamsIdBrandPut**](TeamApi.md#teamsidbrandput) | **PUT** /Teams/{id}/brand | Update brand of this model.
 [**TeamsIdBuilderConfigsCountGet**](TeamApi.md#teamsidbuilderconfigscountget) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
-[**TeamsIdBuilderConfigsDefaultGet**](TeamApi.md#teamsidbuilderconfigsdefaultget) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig
+[**TeamsIdBuilderConfigsDefaultGet**](TeamApi.md#teamsidbuilderconfigsdefaultget) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig for this Team
 [**TeamsIdBuilderConfigsDelete**](TeamApi.md#teamsidbuilderconfigsdelete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
 [**TeamsIdBuilderConfigsFkDelete**](TeamApi.md#teamsidbuilderconfigsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsFkGet**](TeamApi.md#teamsidbuilderconfigsfkget) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -23,6 +23,13 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsFkPut**](TeamApi.md#teamsidbuilderconfigsfkput) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsFkWatermarkPut**](TeamApi.md#teamsidbuilderconfigsfkwatermarkput) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**TeamsIdBuilderConfigsNkPortalsCountGet**](TeamApi.md#teamsidbuilderconfigsnkportalscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/count | Counts portals of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkPortalsDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals | Deletes all portals of this model.
+[**TeamsIdBuilderConfigsNkPortalsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Delete a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsFkGet**](TeamApi.md#teamsidbuilderconfigsnkportalsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Find a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsFkPut**](TeamApi.md#teamsidbuilderconfigsnkportalsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Update a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsGet**](TeamApi.md#teamsidbuilderconfigsnkportalsget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals | Queries portals of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkPortalsPost**](TeamApi.md#teamsidbuilderconfigsnkportalspost) | **POST** /Teams/{id}/builderConfigs/{nk}/portals | Creates a new instance in portals of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkProductGroupsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Delete a related item by id for productGroups.
@@ -192,6 +199,7 @@ Method | HTTP request | Description
 [**TeamsIdPortalsFkGet**](TeamApi.md#teamsidportalsfkget) | **GET** /Teams/{id}/portals/{fk} | Find a related item by id for portals.
 [**TeamsIdPortalsFkPut**](TeamApi.md#teamsidportalsfkput) | **PUT** /Teams/{id}/portals/{fk} | Update a related item by id for portals.
 [**TeamsIdPortalsGet**](TeamApi.md#teamsidportalsget) | **GET** /Teams/{id}/portals | Queries portals of Team.
+[**TeamsIdPortalsNkDefaultBuilderConfigGet**](TeamApi.md#teamsidportalsnkdefaultbuilderconfigget) | **GET** /Teams/{id}/portals/{nk}/defaultBuilderConfig | Fetches belongsTo relation defaultBuilderConfig.
 [**TeamsIdPortalsNkDesignFoldersCountGet**](TeamApi.md#teamsidportalsnkdesignfolderscountget) | **GET** /Teams/{id}/portals/{nk}/designFolders/count | Counts designFolders of Portal.
 [**TeamsIdPortalsNkDesignFoldersDelete**](TeamApi.md#teamsidportalsnkdesignfoldersdelete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders | Deletes all designFolders of this model.
 [**TeamsIdPortalsNkDesignFoldersFkDelete**](TeamApi.md#teamsidportalsnkdesignfoldersfkdelete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders/{fk} | Delete a related item by id for designFolders.
@@ -1139,7 +1147,7 @@ Name | Type | Description  | Notes
 # **TeamsIdBuilderConfigsDefaultGet**
 > TeamBuilderConfig TeamsIdBuilderConfigsDefaultGet (string id)
 
-Get default TeamBuilderConfig
+Get default TeamBuilderConfig for this Team
 
 ### Example
 ```csharp
@@ -1166,7 +1174,7 @@ namespace Example
 
             try
             {
-                // Get default TeamBuilderConfig
+                // Get default TeamBuilderConfig for this Team
                 TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsDefaultGet(id);
                 Debug.WriteLine(result);
             }
@@ -1659,6 +1667,487 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<TeamBuilderConfig>**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalscountget"></a>
+# **TeamsIdBuilderConfigsNkPortalsCountGet**
+> InlineResponse2001 TeamsIdBuilderConfigsNkPortalsCountGet (string id, string nk, string where = null)
+
+Counts portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts portals of TeamBuilderConfig.
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkPortalsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsdelete"></a>
+# **TeamsIdBuilderConfigsNkPortalsDelete**
+> void TeamsIdBuilderConfigsNkPortalsDelete (string id, string nk)
+
+Deletes all portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all portals of this model.
+                apiInstance.TeamsIdBuilderConfigsNkPortalsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkdelete"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkDelete**
+> void TeamsIdBuilderConfigsNkPortalsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Delete a related item by id for portals.
+                apiInstance.TeamsIdBuilderConfigsNkPortalsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkget"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkGet**
+> Portal TeamsIdBuilderConfigsNkPortalsFkGet (string id, string nk, string fk)
+
+Find a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Find a related item by id for portals.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkput"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkPut**
+> Portal TeamsIdBuilderConfigsNkPortalsFkPut (string id, string nk, string fk, Portal data = null)
+
+Update a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Update a related item by id for portals.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsget"></a>
+# **TeamsIdBuilderConfigsNkPortalsGet**
+> List<Portal> TeamsIdBuilderConfigsNkPortalsGet (string id, string nk, string filter = null)
+
+Queries portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries portals of TeamBuilderConfig.
+                List&lt;Portal&gt; result = apiInstance.TeamsIdBuilderConfigsNkPortalsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Portal>**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalspost"></a>
+# **TeamsIdBuilderConfigsNkPortalsPost**
+> Portal TeamsIdBuilderConfigsNkPortalsPost (string id, string nk, Portal data = null)
+
+Creates a new instance in portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Creates a new instance in portals of this model.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
 
 ### Authorization
 
@@ -13184,6 +13673,75 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<Portal>**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidportalsnkdefaultbuilderconfigget"></a>
+# **TeamsIdPortalsNkDefaultBuilderConfigGet**
+> TeamBuilderConfig TeamsIdPortalsNkDefaultBuilderConfigGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation defaultBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkDefaultBuilderConfigGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation defaultBuilderConfig.
+                TeamBuilderConfig result = apiInstance.TeamsIdPortalsNkDefaultBuilderConfigGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkDefaultBuilderConfigGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
 
 ### Authorization
 
