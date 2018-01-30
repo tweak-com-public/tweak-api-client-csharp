@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldermemberscountget"></a>
 # **ImageFolderMembersCountGet**
-> InlineResponse200 ImageFolderMembersCountGet (string where = null)
+> InlineResponse2001 ImageFolderMembersCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -188,7 +188,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.ImageFolderMembersCountGet(where);
+                InlineResponse2001 result = apiInstance.ImageFolderMembersCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldermembersidexistsget"></a>
 # **ImageFolderMembersIdExistsGet**
-> InlineResponse2001 ImageFolderMembersIdExistsGet (string id)
+> InlineResponse2002 ImageFolderMembersIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -448,7 +448,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ImageFolderMembersIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.ImageFolderMembersIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldermembersidhead"></a>
 # **ImageFolderMembersIdHead**
-> InlineResponse2001 ImageFolderMembersIdHead (string id)
+> InlineResponse2002 ImageFolderMembersIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -647,7 +647,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ImageFolderMembersIdHead(id);
+                InlineResponse2002 result = apiInstance.ImageFolderMembersIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="imagefoldermembersupdatepost"></a>
 # **ImageFolderMembersUpdatePost**
-> InlineResponse2002 ImageFolderMembersUpdatePost (string where = null, ImageFolderMember data = null)
+> InlineResponse2003 ImageFolderMembersUpdatePost (string where = null, ImageFolderMember data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.ImageFolderMembersUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.ImageFolderMembersUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

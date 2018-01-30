@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 <a name="designscountget"></a>
 # **DesignsCountGet**
-> InlineResponse200 DesignsCountGet (string where = null)
+> InlineResponse2001 DesignsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -263,7 +263,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DesignsCountGet(where);
+                InlineResponse2001 result = apiInstance.DesignsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -562,7 +562,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidcommenterscountget"></a>
 # **DesignsIdCommentersCountGet**
-> InlineResponse200 DesignsIdCommentersCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdCommentersCountGet (string id, string where = null)
 
 Counts commenters of Design.
 
@@ -593,7 +593,7 @@ namespace Example
             try
             {
                 // Counts commenters of Design.
-                InlineResponse200 result = apiInstance.DesignsIdCommentersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdCommentersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -614,7 +614,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1231,7 +1231,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidcommentscountget"></a>
 # **DesignsIdCommentsCountGet**
-> InlineResponse200 DesignsIdCommentsCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdCommentsCountGet (string id, string where = null)
 
 Counts comments of Design.
 
@@ -1262,7 +1262,7 @@ namespace Example
             try
             {
                 // Counts comments of Design.
-                InlineResponse200 result = apiInstance.DesignsIdCommentsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdCommentsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1283,7 +1283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1769,7 +1769,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidcommentsnkrepliescountget"></a>
 # **DesignsIdCommentsNkRepliesCountGet**
-> InlineResponse200 DesignsIdCommentsNkRepliesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 DesignsIdCommentsNkRepliesCountGet (string id, string nk, string where = null)
 
 Counts replies of DesignComment.
 
@@ -1801,7 +1801,7 @@ namespace Example
             try
             {
                 // Counts replies of DesignComment.
-                InlineResponse200 result = apiInstance.DesignsIdCommentsNkRepliesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.DesignsIdCommentsNkRepliesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1823,7 +1823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2451,7 +2451,7 @@ Name | Type | Description  | Notes
 
 <a name="designsiddesignmemberscountget"></a>
 # **DesignsIdDesignMembersCountGet**
-> InlineResponse200 DesignsIdDesignMembersCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdDesignMembersCountGet (string id, string where = null)
 
 Counts designMembers of Design.
 
@@ -2482,7 +2482,7 @@ namespace Example
             try
             {
                 // Counts designMembers of Design.
-                InlineResponse200 result = apiInstance.DesignsIdDesignMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdDesignMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2503,7 +2503,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2985,7 +2985,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidexistsget"></a>
 # **DesignsIdExistsGet**
-> InlineResponse2001 DesignsIdExistsGet (string id)
+> InlineResponse2002 DesignsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -3015,7 +3015,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DesignsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3035,7 +3035,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -3050,7 +3050,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidexportscountget"></a>
 # **DesignsIdExportsCountGet**
-> InlineResponse200 DesignsIdExportsCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdExportsCountGet (string id, string where = null)
 
 Counts exports of Design.
 
@@ -3081,7 +3081,7 @@ namespace Example
             try
             {
                 // Counts exports of Design.
-                InlineResponse200 result = apiInstance.DesignsIdExportsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdExportsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3102,7 +3102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3651,7 +3651,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidhead"></a>
 # **DesignsIdHead**
-> InlineResponse2001 DesignsIdHead (string id)
+> InlineResponse2002 DesignsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -3681,7 +3681,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DesignsIdHead(id);
+                InlineResponse2002 result = apiInstance.DesignsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3701,7 +3701,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -3716,7 +3716,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidmemberscountget"></a>
 # **DesignsIdMembersCountGet**
-> InlineResponse200 DesignsIdMembersCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdMembersCountGet (string id, string where = null)
 
 Counts members of Design.
 
@@ -3747,7 +3747,7 @@ namespace Example
             try
             {
                 // Counts members of Design.
-                InlineResponse200 result = apiInstance.DesignsIdMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3768,7 +3768,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5255,7 +5255,7 @@ Name | Type | Description  | Notes
 
 <a name="designsidtagscountget"></a>
 # **DesignsIdTagsCountGet**
-> InlineResponse200 DesignsIdTagsCountGet (string id, string where = null)
+> InlineResponse2001 DesignsIdTagsCountGet (string id, string where = null)
 
 Counts tags of Design.
 
@@ -5286,7 +5286,7 @@ namespace Example
             try
             {
                 // Counts tags of Design.
-                InlineResponse200 result = apiInstance.DesignsIdTagsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DesignsIdTagsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5307,7 +5307,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6318,7 +6318,7 @@ Name | Type | Description  | Notes
 
 <a name="designsupdatepost"></a>
 # **DesignsUpdatePost**
-> InlineResponse2002 DesignsUpdatePost (string where = null, Design data = null)
+> InlineResponse2003 DesignsUpdatePost (string where = null, Design data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -6349,7 +6349,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DesignsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DesignsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6370,7 +6370,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

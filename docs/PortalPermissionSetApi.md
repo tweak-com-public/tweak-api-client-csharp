@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 <a name="portalpermissionsetscountget"></a>
 # **PortalPermissionSetsCountGet**
-> InlineResponse200 PortalPermissionSetsCountGet (string where = null)
+> InlineResponse2001 PortalPermissionSetsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -187,7 +187,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.PortalPermissionSetsCountGet(where);
+                InlineResponse2001 result = apiInstance.PortalPermissionSetsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="portalpermissionsetsidexistsget"></a>
 # **PortalPermissionSetsIdExistsGet**
-> InlineResponse2001 PortalPermissionSetsIdExistsGet (string id)
+> InlineResponse2002 PortalPermissionSetsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -447,7 +447,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalPermissionSetsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.PortalPermissionSetsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 
 <a name="portalpermissionsetsidhead"></a>
 # **PortalPermissionSetsIdHead**
-> InlineResponse2001 PortalPermissionSetsIdHead (string id)
+> InlineResponse2002 PortalPermissionSetsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -579,7 +579,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.PortalPermissionSetsIdHead(id);
+                InlineResponse2002 result = apiInstance.PortalPermissionSetsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ Name | Type | Description  | Notes
 
 <a name="portalpermissionsetsupdatepost"></a>
 # **PortalPermissionSetsUpdatePost**
-> InlineResponse2002 PortalPermissionSetsUpdatePost (string where = null, PortalPermissionSet data = null)
+> InlineResponse2003 PortalPermissionSetsUpdatePost (string where = null, PortalPermissionSet data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1173,7 +1173,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.PortalPermissionSetsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.PortalPermissionSetsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1194,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

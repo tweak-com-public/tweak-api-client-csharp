@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 <a name="imagescountget"></a>
 # **ImagesCountGet**
-> InlineResponse200 ImagesCountGet (string where = null)
+> InlineResponse2001 ImagesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -188,7 +188,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.ImagesCountGet(where);
+                InlineResponse2001 result = apiInstance.ImagesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 <a name="imagesidexistsget"></a>
 # **ImagesIdExistsGet**
-> InlineResponse2001 ImagesIdExistsGet (string id)
+> InlineResponse2002 ImagesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -448,7 +448,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ImagesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.ImagesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 <a name="imagesidhead"></a>
 # **ImagesIdHead**
-> InlineResponse2001 ImagesIdHead (string id)
+> InlineResponse2002 ImagesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -647,7 +647,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.ImagesIdHead(id);
+                InlineResponse2002 result = apiInstance.ImagesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="imagesupdatepost"></a>
 # **ImagesUpdatePost**
-> InlineResponse2002 ImagesUpdatePost (string where = null, Image data = null)
+> InlineResponse2003 ImagesUpdatePost (string where = null, Image data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.ImagesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.ImagesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

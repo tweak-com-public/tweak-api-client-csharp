@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproducttypescountget"></a>
 # **TeamBuilderConfigProductTypesCountGet**
-> InlineResponse200 TeamBuilderConfigProductTypesCountGet (string where = null)
+> InlineResponse2001 TeamBuilderConfigProductTypesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -188,7 +188,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigProductTypesCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductTypesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproducttypesidexistsget"></a>
 # **TeamBuilderConfigProductTypesIdExistsGet**
-> InlineResponse2001 TeamBuilderConfigProductTypesIdExistsGet (string id)
+> InlineResponse2002 TeamBuilderConfigProductTypesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -515,7 +515,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductTypesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductTypesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproducttypesidhead"></a>
 # **TeamBuilderConfigProductTypesIdHead**
-> InlineResponse2001 TeamBuilderConfigProductTypesIdHead (string id)
+> InlineResponse2002 TeamBuilderConfigProductTypesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -647,7 +647,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductTypesIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductTypesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -667,7 +667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1210,7 +1210,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproducttypesupdatepost"></a>
 # **TeamBuilderConfigProductTypesUpdatePost**
-> InlineResponse2002 TeamBuilderConfigProductTypesUpdatePost (string where = null, TeamBuilderConfigProductType data = null)
+> InlineResponse2003 TeamBuilderConfigProductTypesUpdatePost (string where = null, TeamBuilderConfigProductType data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1241,7 +1241,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductTypesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamBuilderConfigProductTypesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1262,7 +1262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

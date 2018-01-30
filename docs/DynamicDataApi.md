@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdatacountget"></a>
 # **DynamicDataCountGet**
-> InlineResponse200 DynamicDataCountGet (string where = null)
+> InlineResponse2001 DynamicDataCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -204,7 +204,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.DynamicDataCountGet(where);
+                InlineResponse2001 result = apiInstance.DynamicDataCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdataiddesignscountget"></a>
 # **DynamicDataIdDesignsCountGet**
-> InlineResponse200 DynamicDataIdDesignsCountGet (string id, string where = null)
+> InlineResponse2001 DynamicDataIdDesignsCountGet (string id, string where = null)
 
 Counts designs of DynamicData.
 
@@ -465,7 +465,7 @@ namespace Example
             try
             {
                 // Counts designs of DynamicData.
-                InlineResponse200 result = apiInstance.DynamicDataIdDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DynamicDataIdDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -901,7 +901,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdataidexistsget"></a>
 # **DynamicDataIdExistsGet**
-> InlineResponse2001 DynamicDataIdExistsGet (string id)
+> InlineResponse2002 DynamicDataIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -931,7 +931,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DynamicDataIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.DynamicDataIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -951,7 +951,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1033,7 +1033,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdataidhead"></a>
 # **DynamicDataIdHead**
-> InlineResponse2001 DynamicDataIdHead (string id)
+> InlineResponse2002 DynamicDataIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1063,7 +1063,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.DynamicDataIdHead(id);
+                InlineResponse2002 result = apiInstance.DynamicDataIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1083,7 +1083,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1232,7 +1232,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdataidrecordscountget"></a>
 # **DynamicDataIdRecordsCountGet**
-> InlineResponse200 DynamicDataIdRecordsCountGet (string id, string where = null)
+> InlineResponse2001 DynamicDataIdRecordsCountGet (string id, string where = null)
 
 Count Dynamic Data records
 
@@ -1263,7 +1263,7 @@ namespace Example
             try
             {
                 // Count Dynamic Data records
-                InlineResponse200 result = apiInstance.DynamicDataIdRecordsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.DynamicDataIdRecordsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1284,7 +1284,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2302,7 +2302,7 @@ Name | Type | Description  | Notes
 
 <a name="dynamicdataupdatepost"></a>
 # **DynamicDataUpdatePost**
-> InlineResponse2002 DynamicDataUpdatePost (string where = null, DynamicData data = null)
+> InlineResponse2003 DynamicDataUpdatePost (string where = null, DynamicData data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -2333,7 +2333,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.DynamicDataUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.DynamicDataUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2354,7 +2354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

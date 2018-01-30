@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproductsizematerialscountget"></a>
 # **TeamBuilderConfigProductSizeMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigProductSizeMaterialsCountGet (string where = null)
+> InlineResponse2001 TeamBuilderConfigProductSizeMaterialsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -189,7 +189,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigProductSizeMaterialsCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductSizeMaterialsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproductsizematerialsidexistsget"></a>
 # **TeamBuilderConfigProductSizeMaterialsIdExistsGet**
-> InlineResponse2001 TeamBuilderConfigProductSizeMaterialsIdExistsGet (string id)
+> InlineResponse2002 TeamBuilderConfigProductSizeMaterialsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -516,7 +516,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductSizeMaterialsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductSizeMaterialsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproductsizematerialsidhead"></a>
 # **TeamBuilderConfigProductSizeMaterialsIdHead**
-> InlineResponse2001 TeamBuilderConfigProductSizeMaterialsIdHead (string id)
+> InlineResponse2002 TeamBuilderConfigProductSizeMaterialsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -648,7 +648,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigProductSizeMaterialsIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductSizeMaterialsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -668,7 +668,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1278,7 +1278,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigproductsizematerialsupdatepost"></a>
 # **TeamBuilderConfigProductSizeMaterialsUpdatePost**
-> InlineResponse2002 TeamBuilderConfigProductSizeMaterialsUpdatePost (string where = null, TeamBuilderConfigProductSizeMaterial data = null)
+> InlineResponse2003 TeamBuilderConfigProductSizeMaterialsUpdatePost (string where = null, TeamBuilderConfigProductSizeMaterial data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1309,7 +1309,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamBuilderConfigProductSizeMaterialsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamBuilderConfigProductSizeMaterialsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1330,7 +1330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

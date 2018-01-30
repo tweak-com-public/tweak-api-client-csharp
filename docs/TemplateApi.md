@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 <a name="templatescountget"></a>
 # **TemplatesCountGet**
-> InlineResponse200 TemplatesCountGet (string where = null)
+> InlineResponse2001 TemplatesCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -253,7 +253,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TemplatesCountGet(where);
+                InlineResponse2001 result = apiInstance.TemplatesCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesiddesignscountget"></a>
 # **TemplatesIdDesignsCountGet**
-> InlineResponse200 TemplatesIdDesignsCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdDesignsCountGet (string id, string where = null)
 
 Counts designs of Template.
 
@@ -514,7 +514,7 @@ namespace Example
             try
             {
                 // Counts designs of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1019,7 +1019,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidexistsget"></a>
 # **TemplatesIdExistsGet**
-> InlineResponse2001 TemplatesIdExistsGet (string id)
+> InlineResponse2002 TemplatesIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1049,7 +1049,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TemplatesIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TemplatesIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1069,7 +1069,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1151,7 +1151,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidhead"></a>
 # **TemplatesIdHead**
-> InlineResponse2001 TemplatesIdHead (string id)
+> InlineResponse2002 TemplatesIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1181,7 +1181,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TemplatesIdHead(id);
+                InlineResponse2002 result = apiInstance.TemplatesIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1201,7 +1201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1425,7 +1425,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidmemberscountget"></a>
 # **TemplatesIdMembersCountGet**
-> InlineResponse200 TemplatesIdMembersCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdMembersCountGet (string id, string where = null)
 
 Counts members of Template.
 
@@ -1456,7 +1456,7 @@ namespace Example
             try
             {
                 // Counts members of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1477,7 +1477,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2426,7 +2426,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidportalfolderscountget"></a>
 # **TemplatesIdPortalFoldersCountGet**
-> InlineResponse200 TemplatesIdPortalFoldersCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdPortalFoldersCountGet (string id, string where = null)
 
 Counts portalFolders of Template.
 
@@ -2457,7 +2457,7 @@ namespace Example
             try
             {
                 // Counts portalFolders of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdPortalFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdPortalFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2478,7 +2478,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3095,7 +3095,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidportalscountget"></a>
 # **TemplatesIdPortalsCountGet**
-> InlineResponse200 TemplatesIdPortalsCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdPortalsCountGet (string id, string where = null)
 
 Counts portals of Template.
 
@@ -3126,7 +3126,7 @@ namespace Example
             try
             {
                 // Counts portals of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdPortalsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdPortalsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3147,7 +3147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3898,7 +3898,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidtagscountget"></a>
 # **TemplatesIdTagsCountGet**
-> InlineResponse200 TemplatesIdTagsCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdTagsCountGet (string id, string where = null)
 
 Counts tags of Template.
 
@@ -3929,7 +3929,7 @@ namespace Example
             try
             {
                 // Counts tags of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdTagsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdTagsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3950,7 +3950,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4701,7 +4701,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesidtemplatememberscountget"></a>
 # **TemplatesIdTemplateMembersCountGet**
-> InlineResponse200 TemplatesIdTemplateMembersCountGet (string id, string where = null)
+> InlineResponse2001 TemplatesIdTemplateMembersCountGet (string id, string where = null)
 
 Counts templateMembers of Template.
 
@@ -4732,7 +4732,7 @@ namespace Example
             try
             {
                 // Counts templateMembers of Template.
-                InlineResponse200 result = apiInstance.TemplatesIdTemplateMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TemplatesIdTemplateMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4753,7 +4753,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5627,7 +5627,7 @@ Name | Type | Description  | Notes
 
 <a name="templatesupdatepost"></a>
 # **TemplatesUpdatePost**
-> InlineResponse2002 TemplatesUpdatePost (string where = null, Template data = null)
+> InlineResponse2003 TemplatesUpdatePost (string where = null, Template data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -5658,7 +5658,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TemplatesUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TemplatesUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5679,7 +5679,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

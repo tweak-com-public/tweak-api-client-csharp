@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 <a name="tagscountget"></a>
 # **TagsCountGet**
-> InlineResponse200 TagsCountGet (string where = null)
+> InlineResponse2001 TagsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -216,7 +216,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TagsCountGet(where);
+                InlineResponse2001 result = apiInstance.TagsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -446,7 +446,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsiddesignscountget"></a>
 # **TagsIdDesignsCountGet**
-> InlineResponse200 TagsIdDesignsCountGet (string id, string where = null)
+> InlineResponse2001 TagsIdDesignsCountGet (string id, string where = null)
 
 Counts designs of Tag.
 
@@ -477,7 +477,7 @@ namespace Example
             try
             {
                 // Counts designs of Tag.
-                InlineResponse200 result = apiInstance.TagsIdDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TagsIdDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1115,7 +1115,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidexistsget"></a>
 # **TagsIdExistsGet**
-> InlineResponse2001 TagsIdExistsGet (string id)
+> InlineResponse2002 TagsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1145,7 +1145,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TagsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TagsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1165,7 +1165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1247,7 +1247,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidhead"></a>
 # **TagsIdHead**
-> InlineResponse2001 TagsIdHead (string id)
+> InlineResponse2002 TagsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -1277,7 +1277,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TagsIdHead(id);
+                InlineResponse2002 result = apiInstance.TagsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1297,7 +1297,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1379,7 +1379,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidproductscountget"></a>
 # **TagsIdProductsCountGet**
-> InlineResponse200 TagsIdProductsCountGet (string id, string where = null)
+> InlineResponse2001 TagsIdProductsCountGet (string id, string where = null)
 
 Counts products of Tag.
 
@@ -1410,7 +1410,7 @@ namespace Example
             try
             {
                 // Counts products of Tag.
-                InlineResponse200 result = apiInstance.TagsIdProductsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TagsIdProductsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1431,7 +1431,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2182,7 +2182,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsidtemplatescountget"></a>
 # **TagsIdTemplatesCountGet**
-> InlineResponse200 TagsIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 TagsIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of Tag.
 
@@ -2213,7 +2213,7 @@ namespace Example
             try
             {
                 // Counts templates of Tag.
-                InlineResponse200 result = apiInstance.TagsIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TagsIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2234,7 +2234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3111,7 +3111,7 @@ Name | Type | Description  | Notes
 
 <a name="tagsupdatepost"></a>
 # **TagsUpdatePost**
-> InlineResponse2002 TagsUpdatePost (string where = null, Tag data = null)
+> InlineResponse2003 TagsUpdatePost (string where = null, Tag data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -3142,7 +3142,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TagsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TagsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3163,7 +3163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

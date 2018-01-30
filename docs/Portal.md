@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **Modified** | **DateTime?** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **TeamId** | **string** |  | [optional] 
+**DefaultBuilderConfigId** | **string** |  | [optional] 
+**DefaultBuilderConfig** | [**TeamBuilderConfig**](TeamBuilderConfig.md) |  | [optional] 
 **Templates** | [**List&lt;Template&gt;**](Template.md) |  | [optional] 
 **TemplateRels** | [**List&lt;PortalTemplate&gt;**](PortalTemplate.md) |  | [optional] 
 **Members** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 

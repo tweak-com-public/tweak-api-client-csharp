@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**TeamsIdBrandPost**](TeamApi.md#teamsidbrandpost) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
 [**TeamsIdBrandPut**](TeamApi.md#teamsidbrandput) | **PUT** /Teams/{id}/brand | Update brand of this model.
 [**TeamsIdBuilderConfigsCountGet**](TeamApi.md#teamsidbuilderconfigscountget) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
-[**TeamsIdBuilderConfigsDefaultGet**](TeamApi.md#teamsidbuilderconfigsdefaultget) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig
+[**TeamsIdBuilderConfigsDefaultGet**](TeamApi.md#teamsidbuilderconfigsdefaultget) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig for this Team
 [**TeamsIdBuilderConfigsDelete**](TeamApi.md#teamsidbuilderconfigsdelete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
 [**TeamsIdBuilderConfigsFkDelete**](TeamApi.md#teamsidbuilderconfigsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsFkGet**](TeamApi.md#teamsidbuilderconfigsfkget) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -23,6 +23,13 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsFkPut**](TeamApi.md#teamsidbuilderconfigsfkput) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**TeamsIdBuilderConfigsFkWatermarkPut**](TeamApi.md#teamsidbuilderconfigsfkwatermarkput) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**TeamsIdBuilderConfigsNkPortalsCountGet**](TeamApi.md#teamsidbuilderconfigsnkportalscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/count | Counts portals of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkPortalsDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals | Deletes all portals of this model.
+[**TeamsIdBuilderConfigsNkPortalsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Delete a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsFkGet**](TeamApi.md#teamsidbuilderconfigsnkportalsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Find a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsFkPut**](TeamApi.md#teamsidbuilderconfigsnkportalsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Update a related item by id for portals.
+[**TeamsIdBuilderConfigsNkPortalsGet**](TeamApi.md#teamsidbuilderconfigsnkportalsget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals | Queries portals of TeamBuilderConfig.
+[**TeamsIdBuilderConfigsNkPortalsPost**](TeamApi.md#teamsidbuilderconfigsnkportalspost) | **POST** /Teams/{id}/builderConfigs/{nk}/portals | Creates a new instance in portals of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkProductGroupsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Delete a related item by id for productGroups.
@@ -192,6 +199,7 @@ Method | HTTP request | Description
 [**TeamsIdPortalsFkGet**](TeamApi.md#teamsidportalsfkget) | **GET** /Teams/{id}/portals/{fk} | Find a related item by id for portals.
 [**TeamsIdPortalsFkPut**](TeamApi.md#teamsidportalsfkput) | **PUT** /Teams/{id}/portals/{fk} | Update a related item by id for portals.
 [**TeamsIdPortalsGet**](TeamApi.md#teamsidportalsget) | **GET** /Teams/{id}/portals | Queries portals of Team.
+[**TeamsIdPortalsNkDefaultBuilderConfigGet**](TeamApi.md#teamsidportalsnkdefaultbuilderconfigget) | **GET** /Teams/{id}/portals/{nk}/defaultBuilderConfig | Fetches belongsTo relation defaultBuilderConfig.
 [**TeamsIdPortalsNkDesignFoldersCountGet**](TeamApi.md#teamsidportalsnkdesignfolderscountget) | **GET** /Teams/{id}/portals/{nk}/designFolders/count | Counts designFolders of Portal.
 [**TeamsIdPortalsNkDesignFoldersDelete**](TeamApi.md#teamsidportalsnkdesignfoldersdelete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders | Deletes all designFolders of this model.
 [**TeamsIdPortalsNkDesignFoldersFkDelete**](TeamApi.md#teamsidportalsnkdesignfoldersfkdelete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders/{fk} | Delete a related item by id for designFolders.
@@ -545,7 +553,7 @@ Name | Type | Description  | Notes
 
 <a name="teamscountget"></a>
 # **TeamsCountGet**
-> InlineResponse200 TeamsCountGet (string where = null)
+> InlineResponse2001 TeamsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -575,7 +583,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamsCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -595,7 +603,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1070,7 +1078,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigscountget"></a>
 # **TeamsIdBuilderConfigsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsCountGet (string id, string where = null)
 
 Counts builderConfigs of Team.
 
@@ -1101,7 +1109,7 @@ namespace Example
             try
             {
                 // Counts builderConfigs of Team.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1122,7 +1130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1139,7 +1147,7 @@ Name | Type | Description  | Notes
 # **TeamsIdBuilderConfigsDefaultGet**
 > TeamBuilderConfig TeamsIdBuilderConfigsDefaultGet (string id)
 
-Get default TeamBuilderConfig
+Get default TeamBuilderConfig for this Team
 
 ### Example
 ```csharp
@@ -1166,7 +1174,7 @@ namespace Example
 
             try
             {
-                // Get default TeamBuilderConfig
+                // Get default TeamBuilderConfig for this Team
                 TeamBuilderConfig result = apiInstance.TeamsIdBuilderConfigsDefaultGet(id);
                 Debug.WriteLine(result);
             }
@@ -1671,9 +1679,490 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teamsidbuilderconfigsnkportalscountget"></a>
+# **TeamsIdBuilderConfigsNkPortalsCountGet**
+> InlineResponse2001 TeamsIdBuilderConfigsNkPortalsCountGet (string id, string nk, string where = null)
+
+Counts portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts portals of TeamBuilderConfig.
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkPortalsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsdelete"></a>
+# **TeamsIdBuilderConfigsNkPortalsDelete**
+> void TeamsIdBuilderConfigsNkPortalsDelete (string id, string nk)
+
+Deletes all portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+
+            try
+            {
+                // Deletes all portals of this model.
+                apiInstance.TeamsIdBuilderConfigsNkPortalsDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkdelete"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkDelete**
+> void TeamsIdBuilderConfigsNkPortalsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Delete a related item by id for portals.
+                apiInstance.TeamsIdBuilderConfigsNkPortalsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkget"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkGet**
+> Portal TeamsIdBuilderConfigsNkPortalsFkGet (string id, string nk, string fk)
+
+Find a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Find a related item by id for portals.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsfkput"></a>
+# **TeamsIdBuilderConfigsNkPortalsFkPut**
+> Portal TeamsIdBuilderConfigsNkPortalsFkPut (string id, string nk, string fk, Portal data = null)
+
+Update a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var fk = fk_example;  // string | Foreign key for portals
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Update a related item by id for portals.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **fk** | **string**| Foreign key for portals | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalsget"></a>
+# **TeamsIdBuilderConfigsNkPortalsGet**
+> List<Portal> TeamsIdBuilderConfigsNkPortalsGet (string id, string nk, string filter = null)
+
+Queries portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries portals of TeamBuilderConfig.
+                List&lt;Portal&gt; result = apiInstance.TeamsIdBuilderConfigsNkPortalsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Portal>**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidbuilderconfigsnkportalspost"></a>
+# **TeamsIdBuilderConfigsNkPortalsPost**
+> Portal TeamsIdBuilderConfigsNkPortalsPost (string id, string nk, Portal data = null)
+
+Creates a new instance in portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdBuilderConfigsNkPortalsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for builderConfigs.
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Creates a new instance in portals of this model.
+                Portal result = apiInstance.TeamsIdBuilderConfigsNkPortalsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for builderConfigs. | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teamsidbuilderconfigsnkproductgroupscountget"></a>
 # **TeamsIdBuilderConfigsNkProductGroupsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductGroupsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductGroupsCountGet (string id, string nk, string where = null)
 
 Counts productGroups of TeamBuilderConfig.
 
@@ -1705,7 +2194,7 @@ namespace Example
             try
             {
                 // Counts productGroups of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductGroupsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1727,7 +2216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2362,7 +2851,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizematerialscountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet (string id, string nk, string where = null)
 
 Counts productSizeMaterials of TeamBuilderConfig.
 
@@ -2394,7 +2883,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2416,7 +2905,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2843,7 +3332,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizematerialsrelcountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet (string id, string nk, string where = null)
 
 Counts productSizeMaterialsRel of TeamBuilderConfig.
 
@@ -2875,7 +3364,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterialsRel of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2897,7 +3386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3532,7 +4021,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproductsizescountget"></a>
 # **TeamsIdBuilderConfigsNkProductSizesCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductSizesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductSizesCountGet (string id, string nk, string where = null)
 
 Counts productSizes of TeamBuilderConfig.
 
@@ -3564,7 +4053,7 @@ namespace Example
             try
             {
                 // Counts productSizes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductSizesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductSizesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3586,7 +4075,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4221,7 +4710,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidbuilderconfigsnkproducttypescountget"></a>
 # **TeamsIdBuilderConfigsNkProductTypesCountGet**
-> InlineResponse200 TeamsIdBuilderConfigsNkProductTypesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdBuilderConfigsNkProductTypesCountGet (string id, string nk, string where = null)
 
 Counts productTypes of TeamBuilderConfig.
 
@@ -4253,7 +4742,7 @@ namespace Example
             try
             {
                 // Counts productTypes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamsIdBuilderConfigsNkProductTypesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdBuilderConfigsNkProductTypesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4275,7 +4764,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5046,7 +5535,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddatasourcescountget"></a>
 # **TeamsIdDataSourcesCountGet**
-> InlineResponse200 TeamsIdDataSourcesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdDataSourcesCountGet (string id, string where = null)
 
 Counts dataSources of Team.
 
@@ -5077,7 +5566,7 @@ namespace Example
             try
             {
                 // Counts dataSources of Team.
-                InlineResponse200 result = apiInstance.TeamsIdDataSourcesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDataSourcesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5098,7 +5587,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5578,7 +6067,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatascountget"></a>
 # **TeamsIdDynamicDatasCountGet**
-> InlineResponse200 TeamsIdDynamicDatasCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasCountGet (string id, string where = null)
 
 Counts dynamicDatas of Team.
 
@@ -5609,7 +6098,7 @@ namespace Example
             try
             {
                 // Counts dynamicDatas of Team.
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5630,7 +6119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5978,7 +6467,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatasnkdesignscountget"></a>
 # **TeamsIdDynamicDatasNkDesignsCountGet**
-> InlineResponse200 TeamsIdDynamicDatasNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of DynamicData.
 
@@ -6010,7 +6499,7 @@ namespace Example
             try
             {
                 // Counts designs of DynamicData.
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6032,7 +6521,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6459,7 +6948,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsiddynamicdatasnkrecordscountget"></a>
 # **TeamsIdDynamicDatasNkRecordsCountGet**
-> InlineResponse200 TeamsIdDynamicDatasNkRecordsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdDynamicDatasNkRecordsCountGet (string id, string nk, string where = null)
 
 Count Dynamic Data records
 
@@ -6491,7 +6980,7 @@ namespace Example
             try
             {
                 // Count Dynamic Data records
-                InlineResponse200 result = apiInstance.TeamsIdDynamicDatasNkRecordsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdDynamicDatasNkRecordsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6513,7 +7002,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7291,7 +7780,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidexistsget"></a>
 # **TeamsIdExistsGet**
-> InlineResponse2001 TeamsIdExistsGet (string id)
+> InlineResponse2002 TeamsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -7321,7 +7810,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7341,7 +7830,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -7423,7 +7912,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidhead"></a>
 # **TeamsIdHead**
-> InlineResponse2001 TeamsIdHead (string id)
+> InlineResponse2002 TeamsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -7453,7 +7942,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamsIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7473,7 +7962,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -7488,7 +7977,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefolderscountget"></a>
 # **TeamsIdImageFoldersCountGet**
-> InlineResponse200 TeamsIdImageFoldersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersCountGet (string id, string where = null)
 
 Counts imageFolders of Team.
 
@@ -7519,7 +8008,7 @@ namespace Example
             try
             {
                 // Counts imageFolders of Team.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7540,7 +8029,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7888,7 +8377,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkchildrencountget"></a>
 # **TeamsIdImageFoldersNkChildrenCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkChildrenCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkChildrenCountGet (string id, string nk, string where = null)
 
 Counts children of ImageFolder.
 
@@ -7920,7 +8409,7 @@ namespace Example
             try
             {
                 // Counts children of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkChildrenCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkChildrenCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7942,7 +8431,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8369,7 +8858,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkfoldermemberscountget"></a>
 # **TeamsIdImageFoldersNkFolderMembersCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkFolderMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkFolderMembersCountGet (string id, string nk, string where = null)
 
 Counts folderMembers of ImageFolder.
 
@@ -8401,7 +8890,7 @@ namespace Example
             try
             {
                 // Counts folderMembers of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkFolderMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkFolderMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8423,7 +8912,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8850,7 +9339,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkimagescountget"></a>
 # **TeamsIdImageFoldersNkImagesCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkImagesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkImagesCountGet (string id, string nk, string where = null)
 
 Counts images of ImageFolder.
 
@@ -8882,7 +9371,7 @@ namespace Example
             try
             {
                 // Counts images of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkImagesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkImagesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -8904,7 +9393,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9331,7 +9820,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkmemberscountget"></a>
 # **TeamsIdImageFoldersNkMembersCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of ImageFolder.
 
@@ -9363,7 +9852,7 @@ namespace Example
             try
             {
                 // Counts members of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9385,7 +9874,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10089,7 +10578,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagefoldersnkportalscountget"></a>
 # **TeamsIdImageFoldersNkPortalsCountGet**
-> InlineResponse200 TeamsIdImageFoldersNkPortalsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdImageFoldersNkPortalsCountGet (string id, string nk, string where = null)
 
 Counts portals of ImageFolder.
 
@@ -10121,7 +10610,7 @@ namespace Example
             try
             {
                 // Counts portals of ImageFolder.
-                InlineResponse200 result = apiInstance.TeamsIdImageFoldersNkPortalsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImageFoldersNkPortalsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10143,7 +10632,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10914,7 +11403,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidimagescountget"></a>
 # **TeamsIdImagesCountGet**
-> InlineResponse200 TeamsIdImagesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdImagesCountGet (string id, string where = null)
 
 Counts images of Team.
 
@@ -10945,7 +11434,7 @@ namespace Example
             try
             {
                 // Counts images of Team.
-                InlineResponse200 result = apiInstance.TeamsIdImagesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdImagesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10966,7 +11455,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -11797,7 +12286,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidmemberscountget"></a>
 # **TeamsIdMembersCountGet**
-> InlineResponse200 TeamsIdMembersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdMembersCountGet (string id, string where = null)
 
 Counts members of Team.
 
@@ -11828,7 +12317,7 @@ namespace Example
             try
             {
                 // Counts members of Team.
-                InlineResponse200 result = apiInstance.TeamsIdMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -11849,7 +12338,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -12798,7 +13287,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalscountget"></a>
 # **TeamsIdPortalsCountGet**
-> InlineResponse200 TeamsIdPortalsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdPortalsCountGet (string id, string where = null)
 
 Counts portals of Team.
 
@@ -12829,7 +13318,7 @@ namespace Example
             try
             {
                 // Counts portals of Team.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -12850,7 +13339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13196,9 +13685,78 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teamsidportalsnkdefaultbuilderconfigget"></a>
+# **TeamsIdPortalsNkDefaultBuilderConfigGet**
+> TeamBuilderConfig TeamsIdPortalsNkDefaultBuilderConfigGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation defaultBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdPortalsNkDefaultBuilderConfigGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for portals.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation defaultBuilderConfig.
+                TeamBuilderConfig result = apiInstance.TeamsIdPortalsNkDefaultBuilderConfigGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkDefaultBuilderConfigGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for portals. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teamsidportalsnkdesignfolderscountget"></a>
 # **TeamsIdPortalsNkDesignFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkDesignFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkDesignFoldersCountGet (string id, string nk, string where = null)
 
 Counts designFolders of Portal.
 
@@ -13230,7 +13788,7 @@ namespace Example
             try
             {
                 // Counts designFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkDesignFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkDesignFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13252,7 +13810,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13679,7 +14237,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkdesignscountget"></a>
 # **TeamsIdPortalsNkDesignsCountGet**
-> InlineResponse200 TeamsIdPortalsNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of Portal.
 
@@ -13711,7 +14269,7 @@ namespace Example
             try
             {
                 // Counts designs of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13733,7 +14291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14160,7 +14718,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkimagefolderscountget"></a>
 # **TeamsIdPortalsNkImageFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkImageFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkImageFoldersCountGet (string id, string nk, string where = null)
 
 Counts imageFolders of Portal.
 
@@ -14192,7 +14750,7 @@ namespace Example
             try
             {
                 // Counts imageFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkImageFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkImageFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -14214,7 +14772,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14849,7 +15407,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkmemberscountget"></a>
 # **TeamsIdPortalsNkMembersCountGet**
-> InlineResponse200 TeamsIdPortalsNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of Portal.
 
@@ -14881,7 +15439,7 @@ namespace Example
             try
             {
                 // Counts members of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -14903,7 +15461,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -15811,7 +16369,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnkportalmemberscountget"></a>
 # **TeamsIdPortalsNkPortalMembersCountGet**
-> InlineResponse200 TeamsIdPortalsNkPortalMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkPortalMembersCountGet (string id, string nk, string where = null)
 
 Counts portalMembers of Portal.
 
@@ -15843,7 +16401,7 @@ namespace Example
             try
             {
                 // Counts portalMembers of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkPortalMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkPortalMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -15865,7 +16423,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -16361,7 +16919,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplatefolderscountget"></a>
 # **TeamsIdPortalsNkTemplateFoldersCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplateFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplateFoldersCountGet (string id, string nk, string where = null)
 
 Counts templateFolders of Portal.
 
@@ -16393,7 +16951,7 @@ namespace Example
             try
             {
                 // Counts templateFolders of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplateFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplateFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -16415,7 +16973,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -16842,7 +17400,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplaterelscountget"></a>
 # **TeamsIdPortalsNkTemplateRelsCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplateRelsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplateRelsCountGet (string id, string nk, string where = null)
 
 Counts templateRels of Portal.
 
@@ -16874,7 +17432,7 @@ namespace Example
             try
             {
                 // Counts templateRels of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplateRelsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplateRelsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -16896,7 +17454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -17323,7 +17881,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidportalsnktemplatescountget"></a>
 # **TeamsIdPortalsNkTemplatesCountGet**
-> InlineResponse200 TeamsIdPortalsNkTemplatesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdPortalsNkTemplatesCountGet (string id, string nk, string where = null)
 
 Counts templates of Portal.
 
@@ -17355,7 +17913,7 @@ namespace Example
             try
             {
                 // Counts templates of Portal.
-                InlineResponse200 result = apiInstance.TeamsIdPortalsNkTemplatesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdPortalsNkTemplatesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -17377,7 +17935,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18079,7 +18637,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductmaterialscountget"></a>
 # **TeamsIdProductMaterialsCountGet**
-> InlineResponse200 TeamsIdProductMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductMaterialsCountGet (string id, string where = null)
 
 Counts productMaterials of Team.
 
@@ -18110,7 +18668,7 @@ namespace Example
             try
             {
                 // Counts productMaterials of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -18131,7 +18689,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18682,7 +19240,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductpdfcolorprofilescountget"></a>
 # **TeamsIdProductPdfColorProfilesCountGet**
-> InlineResponse200 TeamsIdProductPdfColorProfilesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductPdfColorProfilesCountGet (string id, string where = null)
 
 Counts productPdfColorProfiles of Team.
 
@@ -18713,7 +19271,7 @@ namespace Example
             try
             {
                 // Counts productPdfColorProfiles of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductPdfColorProfilesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductPdfColorProfilesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -18734,7 +19292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -19147,7 +19705,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidproductsizematerialscountget"></a>
 # **TeamsIdProductSizeMaterialsCountGet**
-> InlineResponse200 TeamsIdProductSizeMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdProductSizeMaterialsCountGet (string id, string where = null)
 
 Counts productSizeMaterials of Team.
 
@@ -19178,7 +19736,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of Team.
-                InlineResponse200 result = apiInstance.TeamsIdProductSizeMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdProductSizeMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -19199,7 +19757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -20024,7 +20582,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteamdatadesignscountget"></a>
 # **TeamsIdTeamDataDesignsCountGet**
-> InlineResponse200 TeamsIdTeamDataDesignsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamDataDesignsCountGet (string id, string where = null)
 
 Counts designs of DynamicData.
 
@@ -20055,7 +20613,7 @@ namespace Example
             try
             {
                 // Counts designs of DynamicData.
-                InlineResponse200 result = apiInstance.TeamsIdTeamDataDesignsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamDataDesignsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -20076,7 +20634,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -20558,7 +21116,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteamdatarecordscountget"></a>
 # **TeamsIdTeamDataRecordsCountGet**
-> InlineResponse200 TeamsIdTeamDataRecordsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamDataRecordsCountGet (string id, string where = null)
 
 Count Dynamic Data records
 
@@ -20589,7 +21147,7 @@ namespace Example
             try
             {
                 // Count Dynamic Data records
-                InlineResponse200 result = apiInstance.TeamsIdTeamDataRecordsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamDataRecordsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -20610,7 +21168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21301,7 +21859,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidteammemberscountget"></a>
 # **TeamsIdTeamMembersCountGet**
-> InlineResponse200 TeamsIdTeamMembersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTeamMembersCountGet (string id, string where = null)
 
 Counts teamMembers of Team.
 
@@ -21332,7 +21890,7 @@ namespace Example
             try
             {
                 // Counts teamMembers of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTeamMembersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTeamMembersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -21353,7 +21911,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21835,7 +22393,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatefolderscountget"></a>
 # **TeamsIdTemplateFoldersCountGet**
-> InlineResponse200 TeamsIdTemplateFoldersCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTemplateFoldersCountGet (string id, string where = null)
 
 Counts templateFolders of Team.
 
@@ -21866,7 +22424,7 @@ namespace Example
             try
             {
                 // Counts templateFolders of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTemplateFoldersCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplateFoldersCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -21887,7 +22445,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -22302,7 +22860,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatescountget"></a>
 # **TeamsIdTemplatesCountGet**
-> InlineResponse200 TeamsIdTemplatesCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdTemplatesCountGet (string id, string where = null)
 
 Counts templates of Team.
 
@@ -22333,7 +22891,7 @@ namespace Example
             try
             {
                 // Counts templates of Team.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -22354,7 +22912,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -22702,7 +23260,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkdesignscountget"></a>
 # **TeamsIdTemplatesNkDesignsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkDesignsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkDesignsCountGet (string id, string nk, string where = null)
 
 Counts designs of Template.
 
@@ -22734,7 +23292,7 @@ namespace Example
             try
             {
                 // Counts designs of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkDesignsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkDesignsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -22756,7 +23314,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -23183,7 +23741,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkmemberscountget"></a>
 # **TeamsIdTemplatesNkMembersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkMembersCountGet (string id, string nk, string where = null)
 
 Counts members of Template.
 
@@ -23215,7 +23773,7 @@ namespace Example
             try
             {
                 // Counts members of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -23237,7 +23795,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -24145,7 +24703,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkportalfolderscountget"></a>
 # **TeamsIdTemplatesNkPortalFoldersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkPortalFoldersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkPortalFoldersCountGet (string id, string nk, string where = null)
 
 Counts portalFolders of Template.
 
@@ -24177,7 +24735,7 @@ namespace Example
             try
             {
                 // Counts portalFolders of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkPortalFoldersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkPortalFoldersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -24199,7 +24757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -24834,7 +25392,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnkportalscountget"></a>
 # **TeamsIdTemplatesNkPortalsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkPortalsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkPortalsCountGet (string id, string nk, string where = null)
 
 Counts portals of Template.
 
@@ -24866,7 +25424,7 @@ namespace Example
             try
             {
                 // Counts portals of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkPortalsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkPortalsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -24888,7 +25446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -25523,7 +26081,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnktagscountget"></a>
 # **TeamsIdTemplatesNkTagsCountGet**
-> InlineResponse200 TeamsIdTemplatesNkTagsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkTagsCountGet (string id, string nk, string where = null)
 
 Counts tags of Template.
 
@@ -25555,7 +26113,7 @@ namespace Example
             try
             {
                 // Counts tags of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkTagsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkTagsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -25577,7 +26135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -26350,7 +26908,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidtemplatesnktemplatememberscountget"></a>
 # **TeamsIdTemplatesNkTemplateMembersCountGet**
-> InlineResponse200 TeamsIdTemplatesNkTemplateMembersCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamsIdTemplatesNkTemplateMembersCountGet (string id, string nk, string where = null)
 
 Counts templateMembers of Template.
 
@@ -26382,7 +26940,7 @@ namespace Example
             try
             {
                 // Counts templateMembers of Template.
-                InlineResponse200 result = apiInstance.TeamsIdTemplatesNkTemplateMembersCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamsIdTemplatesNkTemplateMembersCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -26404,7 +26962,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -27105,7 +27663,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsidworkflowscountget"></a>
 # **TeamsIdWorkflowsCountGet**
-> InlineResponse200 TeamsIdWorkflowsCountGet (string id, string where = null)
+> InlineResponse2001 TeamsIdWorkflowsCountGet (string id, string where = null)
 
 Counts workflows of Team.
 
@@ -27136,7 +27694,7 @@ namespace Example
             try
             {
                 // Counts workflows of Team.
-                InlineResponse200 result = apiInstance.TeamsIdWorkflowsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamsIdWorkflowsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27157,7 +27715,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -27572,7 +28130,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsnamenameexistsget"></a>
 # **TeamsNameNameExistsGet**
-> InlineResponse2001 TeamsNameNameExistsGet (string name)
+> InlineResponse2002 TeamsNameNameExistsGet (string name)
 
 Define whether team exists or not
 
@@ -27602,7 +28160,7 @@ namespace Example
             try
             {
                 // Define whether team exists or not
-                InlineResponse2001 result = apiInstance.TeamsNameNameExistsGet(name);
+                InlineResponse2002 result = apiInstance.TeamsNameNameExistsGet(name);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27622,7 +28180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -27897,7 +28455,7 @@ Name | Type | Description  | Notes
 
 <a name="teamssubdomainsubdomainexistsget"></a>
 # **TeamsSubdomainSubdomainExistsGet**
-> InlineResponse2001 TeamsSubdomainSubdomainExistsGet (string subdomain)
+> InlineResponse2002 TeamsSubdomainSubdomainExistsGet (string subdomain)
 
 Define whether team exists or not
 
@@ -27927,7 +28485,7 @@ namespace Example
             try
             {
                 // Define whether team exists or not
-                InlineResponse2001 result = apiInstance.TeamsSubdomainSubdomainExistsGet(subdomain);
+                InlineResponse2002 result = apiInstance.TeamsSubdomainSubdomainExistsGet(subdomain);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -27947,7 +28505,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -27962,7 +28520,7 @@ Name | Type | Description  | Notes
 
 <a name="teamsupdatepost"></a>
 # **TeamsUpdatePost**
-> InlineResponse2002 TeamsUpdatePost (string where = null, Team data = null)
+> InlineResponse2003 TeamsUpdatePost (string where = null, Team data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -27993,7 +28551,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -28014,7 +28572,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

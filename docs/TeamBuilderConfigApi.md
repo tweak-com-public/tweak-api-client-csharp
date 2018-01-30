@@ -14,6 +14,13 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdGet**](TeamBuilderConfigApi.md#teambuilderconfigsidget) | **GET** /TeamBuilderConfigs/{id} | Find a model instance by {{id}} from the data source.
 [**TeamBuilderConfigsIdHead**](TeamBuilderConfigApi.md#teambuilderconfigsidhead) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**TeamBuilderConfigsIdPatch**](TeamBuilderConfigApi.md#teambuilderconfigsidpatch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
+[**TeamBuilderConfigsIdPortalsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalscountget) | **GET** /TeamBuilderConfigs/{id}/portals/count | Counts portals of TeamBuilderConfig.
+[**TeamBuilderConfigsIdPortalsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsdelete) | **DELETE** /TeamBuilderConfigs/{id}/portals | Deletes all portals of this model.
+[**TeamBuilderConfigsIdPortalsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/portals/{fk} | Delete a related item by id for portals.
+[**TeamBuilderConfigsIdPortalsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkget) | **GET** /TeamBuilderConfigs/{id}/portals/{fk} | Find a related item by id for portals.
+[**TeamBuilderConfigsIdPortalsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkput) | **PUT** /TeamBuilderConfigs/{id}/portals/{fk} | Update a related item by id for portals.
+[**TeamBuilderConfigsIdPortalsGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsget) | **GET** /TeamBuilderConfigs/{id}/portals | Queries portals of TeamBuilderConfig.
+[**TeamBuilderConfigsIdPortalsPost**](TeamBuilderConfigApi.md#teambuilderconfigsidportalspost) | **POST** /TeamBuilderConfigs/{id}/portals | Creates a new instance in portals of this model.
 [**TeamBuilderConfigsIdProductGroupsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupscountget) | **GET** /TeamBuilderConfigs/{id}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**TeamBuilderConfigsIdProductGroupsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups | Deletes all productGroups of this model.
 [**TeamBuilderConfigsIdProductGroupsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{fk} | Delete a related item by id for productGroups.
@@ -252,7 +259,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigscountget"></a>
 # **TeamBuilderConfigsCountGet**
-> InlineResponse200 TeamBuilderConfigsCountGet (string where = null)
+> InlineResponse2001 TeamBuilderConfigsCountGet (string where = null)
 
 Count instances of the model matched by where from the data source.
 
@@ -282,7 +289,7 @@ namespace Example
             try
             {
                 // Count instances of the model matched by where from the data source.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsCountGet(where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsCountGet(where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -302,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -512,7 +519,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidexistsget"></a>
 # **TeamBuilderConfigsIdExistsGet**
-> InlineResponse2001 TeamBuilderConfigsIdExistsGet (string id)
+> InlineResponse2002 TeamBuilderConfigsIdExistsGet (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -542,7 +549,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdExistsGet(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigsIdExistsGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -562,7 +569,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -644,7 +651,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidhead"></a>
 # **TeamBuilderConfigsIdHead**
-> InlineResponse2001 TeamBuilderConfigsIdHead (string id)
+> InlineResponse2002 TeamBuilderConfigsIdHead (string id)
 
 Check whether a model instance exists in the data source.
 
@@ -674,7 +681,7 @@ namespace Example
             try
             {
                 // Check whether a model instance exists in the data source.
-                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdHead(id);
+                InlineResponse2002 result = apiInstance.TeamBuilderConfigsIdHead(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -694,7 +701,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -774,9 +781,476 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teambuilderconfigsidportalscountget"></a>
+# **TeamBuilderConfigsIdPortalsCountGet**
+> InlineResponse2001 TeamBuilderConfigsIdPortalsCountGet (string id, string where = null)
+
+Counts portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts portals of TeamBuilderConfig.
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdPortalsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalsdelete"></a>
+# **TeamBuilderConfigsIdPortalsDelete**
+> void TeamBuilderConfigsIdPortalsDelete (string id)
+
+Deletes all portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+
+            try
+            {
+                // Deletes all portals of this model.
+                apiInstance.TeamBuilderConfigsIdPortalsDelete(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalsfkdelete"></a>
+# **TeamBuilderConfigsIdPortalsFkDelete**
+> void TeamBuilderConfigsIdPortalsFkDelete (string id, string fk)
+
+Delete a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Delete a related item by id for portals.
+                apiInstance.TeamBuilderConfigsIdPortalsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalsfkget"></a>
+# **TeamBuilderConfigsIdPortalsFkGet**
+> Portal TeamBuilderConfigsIdPortalsFkGet (string id, string fk)
+
+Find a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var fk = fk_example;  // string | Foreign key for portals
+
+            try
+            {
+                // Find a related item by id for portals.
+                Portal result = apiInstance.TeamBuilderConfigsIdPortalsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **fk** | **string**| Foreign key for portals | 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalsfkput"></a>
+# **TeamBuilderConfigsIdPortalsFkPut**
+> Portal TeamBuilderConfigsIdPortalsFkPut (string id, string fk, Portal data = null)
+
+Update a related item by id for portals.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var fk = fk_example;  // string | Foreign key for portals
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Update a related item by id for portals.
+                Portal result = apiInstance.TeamBuilderConfigsIdPortalsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **fk** | **string**| Foreign key for portals | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalsget"></a>
+# **TeamBuilderConfigsIdPortalsGet**
+> List<Portal> TeamBuilderConfigsIdPortalsGet (string id, string filter = null)
+
+Queries portals of TeamBuilderConfig.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries portals of TeamBuilderConfig.
+                List&lt;Portal&gt; result = apiInstance.TeamBuilderConfigsIdPortalsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<Portal>**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teambuilderconfigsidportalspost"></a>
+# **TeamBuilderConfigsIdPortalsPost**
+> Portal TeamBuilderConfigsIdPortalsPost (string id, Portal data = null)
+
+Creates a new instance in portals of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsIdPortalsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+            var id = id_example;  // string | TeamBuilderConfig id
+            var data = new Portal(); // Portal |  (optional) 
+
+            try
+            {
+                // Creates a new instance in portals of this model.
+                Portal result = apiInstance.TeamBuilderConfigsIdPortalsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamBuilderConfig id | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teambuilderconfigsidproductgroupscountget"></a>
 # **TeamBuilderConfigsIdProductGroupsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductGroupsCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductGroupsCountGet (string id, string where = null)
 
 Counts productGroups of TeamBuilderConfig.
 
@@ -807,7 +1281,7 @@ namespace Example
             try
             {
                 // Counts productGroups of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductGroupsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductGroupsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -828,7 +1302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1176,7 +1650,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductgroupsnktypescountget"></a>
 # **TeamBuilderConfigsIdProductGroupsNkTypesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductGroupsNkTypesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductGroupsNkTypesCountGet (string id, string nk, string where = null)
 
 Counts types of ProductGroup.
 
@@ -1208,7 +1682,7 @@ namespace Example
             try
             {
                 // Counts types of ProductGroup.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductGroupsNkTypesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductGroupsNkTypesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1230,7 +1704,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1926,7 +2400,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizematerialscountget"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizeMaterialsCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizeMaterialsCountGet (string id, string where = null)
 
 Counts productSizeMaterials of TeamBuilderConfig.
 
@@ -1957,7 +2431,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterials of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1978,7 +2452,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2669,7 +3143,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizematerialsrelcountget"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsRelCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizeMaterialsRelCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizeMaterialsRelCountGet (string id, string where = null)
 
 Counts productSizeMaterialsRel of TeamBuilderConfig.
 
@@ -2700,7 +3174,7 @@ namespace Example
             try
             {
                 // Counts productSizeMaterialsRel of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2721,7 +3195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3545,7 +4019,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizescountget"></a>
 # **TeamBuilderConfigsIdProductSizesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesCountGet (string id, string where = null)
 
 Counts productSizes of TeamBuilderConfig.
 
@@ -3576,7 +4050,7 @@ namespace Example
             try
             {
                 // Counts productSizes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3597,7 +4071,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3945,7 +4419,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnkmaterialscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkMaterialsCountGet (string id, string nk, string where = null)
 
 Counts materials of ProductSize.
 
@@ -3977,7 +4451,7 @@ namespace Example
             try
             {
                 // Counts materials of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3999,7 +4473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4703,7 +5177,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnkproductscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkProductsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkProductsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkProductsCountGet (string id, string nk, string where = null)
 
 Counts products of ProductSize.
 
@@ -4735,7 +5209,7 @@ namespace Example
             try
             {
                 // Counts products of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkProductsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkProductsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4757,7 +5231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5184,7 +5658,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproductsizesnksizematerialscountget"></a>
 # **TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet (string id, string nk, string where = null)
 
 Counts sizeMaterials of ProductSize.
 
@@ -5216,7 +5690,7 @@ namespace Example
             try
             {
                 // Counts sizeMaterials of ProductSize.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -5238,7 +5712,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6003,7 +6477,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproducttypescountget"></a>
 # **TeamBuilderConfigsIdProductTypesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductTypesCountGet (string id, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductTypesCountGet (string id, string where = null)
 
 Counts productTypes of TeamBuilderConfig.
 
@@ -6034,7 +6508,7 @@ namespace Example
             try
             {
                 // Counts productTypes of TeamBuilderConfig.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductTypesCountGet(id, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductTypesCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6055,7 +6529,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6472,7 +6946,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsidproducttypesnksizescountget"></a>
 # **TeamBuilderConfigsIdProductTypesNkSizesCountGet**
-> InlineResponse200 TeamBuilderConfigsIdProductTypesNkSizesCountGet (string id, string nk, string where = null)
+> InlineResponse2001 TeamBuilderConfigsIdProductTypesNkSizesCountGet (string id, string nk, string where = null)
 
 Counts sizes of ProductType.
 
@@ -6504,7 +6978,7 @@ namespace Example
             try
             {
                 // Counts sizes of ProductType.
-                InlineResponse200 result = apiInstance.TeamBuilderConfigsIdProductTypesNkSizesCountGet(id, nk, where);
+                InlineResponse2001 result = apiInstance.TeamBuilderConfigsIdProductTypesNkSizesCountGet(id, nk, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6526,7 +7000,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7683,7 +8157,7 @@ Name | Type | Description  | Notes
 
 <a name="teambuilderconfigsupdatepost"></a>
 # **TeamBuilderConfigsUpdatePost**
-> InlineResponse2002 TeamBuilderConfigsUpdatePost (string where = null, TeamBuilderConfig data = null)
+> InlineResponse2003 TeamBuilderConfigsUpdatePost (string where = null, TeamBuilderConfig data = null)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -7714,7 +8188,7 @@ namespace Example
             try
             {
                 // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2002 result = apiInstance.TeamBuilderConfigsUpdatePost(where, data);
+                InlineResponse2003 result = apiInstance.TeamBuilderConfigsUpdatePost(where, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7735,7 +8209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
