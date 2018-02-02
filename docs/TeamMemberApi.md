@@ -146,6 +146,7 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBrandPut**](TeamMemberApi.md#teammembersidteambrandput) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
 [**TeamMembersIdTeamBuilderConfigsCountGet**](TeamMemberApi.md#teammembersidteambuilderconfigscountget) | **GET** /TeamMembers/{id}/team/builderConfigs/count | Counts builderConfigs of Team.
 [**TeamMembersIdTeamBuilderConfigsDefaultGet**](TeamMemberApi.md#teammembersidteambuilderconfigsdefaultget) | **GET** /TeamMembers/{id}/team/builderConfigs/default | Get default Team Builder Config
+[**TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet**](TeamMemberApi.md#teammembersidteambuilderconfigsdefaultproductsizematerialget) | **GET** /TeamMembers/{id}/team/builderConfigs/default/productSizeMaterial | Get default Team Builder Config Product Size Materials
 [**TeamMembersIdTeamBuilderConfigsDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs | Deletes all builderConfigs of this model.
 [**TeamMembersIdTeamBuilderConfigsFkDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsfkdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**TeamMembersIdTeamBuilderConfigsFkGet**](TeamMemberApi.md#teammembersidteambuilderconfigsfkget) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -9786,6 +9787,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambuilderconfigsdefaultproductsizematerialget"></a>
+# **TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet**
+> List<ProductSizeMaterial> TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet (string id)
+
+Get default Team Builder Config Product Size Materials
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Get default Team Builder Config Product Size Materials
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
 
 ### Authorization
 
