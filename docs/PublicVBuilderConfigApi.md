@@ -75,7 +75,7 @@ This endpoint does not need any parameter.
 
 <a name="v1builderconfigdefaultproductsizematerialsget"></a>
 # **V1BuilderConfigDefaultProductSizeMaterialsGet**
-> ProductSizeMaterial V1BuilderConfigDefaultProductSizeMaterialsGet ()
+> List<ProductSizeMaterial> V1BuilderConfigDefaultProductSizeMaterialsGet ()
 
 Get default BuilderConfig ProductSizeMaterial
 
@@ -108,7 +108,7 @@ namespace Example
             try
             {
                 // Get default BuilderConfig ProductSizeMaterial
-                ProductSizeMaterial result = apiInstance.V1BuilderConfigDefaultProductSizeMaterialsGet();
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.V1BuilderConfigDefaultProductSizeMaterialsGet();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -125,7 +125,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProductSizeMaterial**](ProductSizeMaterial.md)
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
 
 ### Authorization
 
