@@ -109,6 +109,22 @@ namespace TweakApi.Test
             // TODO unit test for the property 'CompanyCard'
         }
         /// <summary>
+        /// Test the property 'CompanyBankAccount'
+        /// </summary>
+        [Test]
+        public void CompanyBankAccountTest()
+        {
+            // TODO unit test for the property 'CompanyBankAccount'
+        }
+        /// <summary>
+        /// Test the property 'CompanySource'
+        /// </summary>
+        [Test]
+        public void CompanySourceTest()
+        {
+            // TODO unit test for the property 'CompanySource'
+        }
+        /// <summary>
         /// Test the property 'Subscription'
         /// </summary>
         [Test]
@@ -147,6 +163,22 @@ namespace TweakApi.Test
         public void StripeCardIdTest()
         {
             // TODO unit test for the property 'StripeCardId'
+        }
+        /// <summary>
+        /// Test the property 'StripeBankAccountId'
+        /// </summary>
+        [Test]
+        public void StripeBankAccountIdTest()
+        {
+            // TODO unit test for the property 'StripeBankAccountId'
+        }
+        /// <summary>
+        /// Test the property 'StripeSourceId'
+        /// </summary>
+        [Test]
+        public void StripeSourceIdTest()
+        {
+            // TODO unit test for the property 'StripeSourceId'
         }
         /// <summary>
         /// Test the property 'StripeSubscriptionId'

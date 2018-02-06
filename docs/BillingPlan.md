@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **StatementDescription** | **string** |  | [optional] 
 **TrialPeriodDays** | **double?** |  | [optional] 
 **Type** | **string** |  | [optional] 
+**TeamId** | **string** |  | [optional] 
 **Limit** | [**BillingLimit**](BillingLimit.md) |  | [optional] 
 **Created** | **DateTime?** |  | [optional] 
 

@@ -1716,6 +1716,57 @@ namespace TweakApi.Test
         }
         
         /// <summary>
+        /// Test TeamMembersIdTeamBillingBankAccountDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingBankAccountDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingBankAccountDelete(id);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingBankAccountPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingBankAccountPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingBankAccountPost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingBankAccountPut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingBankAccountPutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingBankAccountPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingBankAccountVerifyPost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingBankAccountVerifyPostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingBankAccountVerifyPost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
         /// Test TeamMembersIdTeamBillingCachedGet
         /// </summary>
         [Test]
@@ -1813,6 +1864,44 @@ namespace TweakApi.Test
             //string id = null;
             //TeamMember data = null;
             //var response = instance.TeamMembersIdTeamBillingPut(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingSourceDelete
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingSourceDeleteTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //var response = instance.TeamMembersIdTeamBillingSourceDelete(id);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingSourcePost
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingSourcePostTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingSourcePost(id, data);
+            //Assert.IsInstanceOf<Billing> (response, "response is Billing");
+        }
+        
+        /// <summary>
+        /// Test TeamMembersIdTeamBillingSourcePut
+        /// </summary>
+        [Test]
+        public void TeamMembersIdTeamBillingSourcePutTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string id = null;
+            //TeamMember data = null;
+            //var response = instance.TeamMembersIdTeamBillingSourcePut(id, data);
             //Assert.IsInstanceOf<Billing> (response, "response is Billing");
         }
         

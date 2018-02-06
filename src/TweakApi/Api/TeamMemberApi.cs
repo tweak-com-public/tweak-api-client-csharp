@@ -2940,6 +2940,96 @@ namespace TweakApi.Api
         /// <returns>ApiResponse of List&lt;BillingPlan&gt;</returns>
         ApiResponse<List<BillingPlan>> TeamMembersIdTeamBillingAvailablePlansGetWithHttpInfo (string id, string filter = null);
         /// <summary>
+        /// Delete Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingBankAccountDelete (string id);
+
+        /// <summary>
+        /// Delete Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingBankAccountDeleteWithHttpInfo (string id);
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingBankAccountPost (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingBankAccountPostWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Update Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingBankAccountPut (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Update Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingBankAccountPutWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingBankAccountVerifyPost (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingBankAccountVerifyPostWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
         /// Get Cached version of Team Billing
         /// </summary>
         /// <remarks>
@@ -3117,6 +3207,73 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>ApiResponse of Billing</returns>
         ApiResponse<Billing> TeamMembersIdTeamBillingPutWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Delete Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingSourceDelete (string id);
+
+        /// <summary>
+        /// Delete Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingSourceDeleteWithHttpInfo (string id);
+        /// <summary>
+        /// Create Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingSourcePost (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingSourcePostWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Update Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        Billing TeamMembersIdTeamBillingSourcePut (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Update Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        ApiResponse<Billing> TeamMembersIdTeamBillingSourcePutWithHttpInfo (string id, TeamMember data = null);
         /// <summary>
         /// Update Team Billing Subscription Plan
         /// </summary>
@@ -9786,6 +9943,96 @@ namespace TweakApi.Api
         /// <returns>Task of ApiResponse (List&lt;BillingPlan&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<BillingPlan>>> TeamMembersIdTeamBillingAvailablePlansGetAsyncWithHttpInfo (string id, string filter = null);
         /// <summary>
+        /// Delete Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountDeleteAsync (string id);
+
+        /// <summary>
+        /// Delete Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountDeleteAsyncWithHttpInfo (string id);
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountPostAsync (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountPostAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Update Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountPutAsync (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Update Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountPutAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountVerifyPostAsync (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing BankAccount
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountVerifyPostAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
         /// Get Cached version of Team Billing
         /// </summary>
         /// <remarks>
@@ -9963,6 +10210,73 @@ namespace TweakApi.Api
         /// <param name="data"> (optional)</param>
         /// <returns>Task of ApiResponse (Billing)</returns>
         System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingPutAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Delete Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourceDeleteAsync (string id);
+
+        /// <summary>
+        /// Delete Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourceDeleteAsyncWithHttpInfo (string id);
+        /// <summary>
+        /// Create Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourcePostAsync (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Create Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourcePostAsyncWithHttpInfo (string id, TeamMember data = null);
+        /// <summary>
+        /// Update Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourcePutAsync (string id, TeamMember data = null);
+
+        /// <summary>
+        /// Update Team Billing Source
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourcePutAsyncWithHttpInfo (string id, TeamMember data = null);
         /// <summary>
         /// Update Team Billing Subscription Plan
         /// </summary>
@@ -36533,6 +36847,738 @@ namespace TweakApi.Api
         }
 
         /// <summary>
+        /// Delete Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingBankAccountDelete (string id)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingBankAccountDeleteWithHttpInfo(id);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingBankAccountDeleteWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Delete Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountDeleteAsync (string id)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingBankAccountDeleteAsyncWithHttpInfo(id);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Delete Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountDeleteAsyncWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingBankAccountPost (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingBankAccountPostWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingBankAccountPostWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountPostAsync (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingBankAccountPostAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountPostAsyncWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingBankAccountPut (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingBankAccountPutWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingBankAccountPutWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountPut");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountPutAsync (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingBankAccountPutAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountPutAsyncWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountPut");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingBankAccountVerifyPost (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingBankAccountVerifyPostWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingBankAccountVerifyPostWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountVerifyPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount/verify";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountVerifyPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingBankAccountVerifyPostAsync (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingBankAccountVerifyPostAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create Team Billing BankAccount 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingBankAccountVerifyPostAsyncWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingBankAccountVerifyPost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/bankAccount/verify";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingBankAccountVerifyPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
         /// Get Cached version of Team Billing 
         /// </summary>
         /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
@@ -37945,6 +38991,550 @@ namespace TweakApi.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("TeamMembersIdTeamBillingPut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Delete Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingSourceDelete (string id)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingSourceDeleteWithHttpInfo(id);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingSourceDeleteWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourceDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourceDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Delete Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourceDeleteAsync (string id)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingSourceDeleteAsyncWithHttpInfo(id);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Delete Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourceDeleteAsyncWithHttpInfo (string id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourceDelete");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourceDelete", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingSourcePost (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingSourcePostWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingSourcePostWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourcePost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourcePost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Create Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourcePostAsync (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingSourcePostAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourcePostAsyncWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourcePost");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourcePost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Billing</returns>
+        public Billing TeamMembersIdTeamBillingSourcePut (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = TeamMembersIdTeamBillingSourcePutWithHttpInfo(id, data);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>ApiResponse of Billing</returns>
+        public ApiResponse< Billing > TeamMembersIdTeamBillingSourcePutWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourcePut");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourcePut", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Billing>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Billing) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Billing)));
+            
+        }
+
+        /// <summary>
+        /// Update Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of Billing</returns>
+        public async System.Threading.Tasks.Task<Billing> TeamMembersIdTeamBillingSourcePutAsync (string id, TeamMember data = null)
+        {
+             ApiResponse<Billing> localVarResponse = await TeamMembersIdTeamBillingSourcePutAsyncWithHttpInfo(id, data);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update Team Billing Source 
+        /// </summary>
+        /// <exception cref="TweakApi.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">TeamMember id</param>
+        /// <param name="data"> (optional)</param>
+        /// <returns>Task of ApiResponse (Billing)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Billing>> TeamMembersIdTeamBillingSourcePutAsyncWithHttpInfo (string id, TeamMember data = null)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling TeamMemberApi->TeamMembersIdTeamBillingSourcePut");
+
+            var localVarPath = "/TeamMembers/{id}/team/billing/source";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json", 
+                "application/x-www-form-urlencoded", 
+                "application/xml", 
+                "text/xml"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json", 
+                "application/xml", 
+                "text/xml", 
+                "application/javascript", 
+                "text/javascript"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            if (id != null) localVarPathParams.Add("id", Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (data != null && data.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(data); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = data; // byte array
+            }
+
+            // authentication (access_token) required
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("access_token")))
+            {
+                localVarQueryParams["access_token"] = Configuration.GetApiKeyWithPrefix("access_token");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("TeamMembersIdTeamBillingSourcePut", localVarResponse);
                 if (exception != null) throw exception;
             }
 
