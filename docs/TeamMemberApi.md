@@ -129,6 +129,10 @@ Method | HTTP request | Description
 [**TeamMembersIdTargetModelTargetIdInviteInviteePost**](TeamMemberApi.md#teammembersidtargetmodeltargetidinviteinviteepost) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite/{invitee} | Invite somebody to join a team, portal or other targets
 [**TeamMembersIdTargetModelTargetIdInvitePost**](TeamMemberApi.md#teammembersidtargetmodeltargetidinvitepost) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite | Invite a group of people to join a team, portal or other targets
 [**TeamMembersIdTeamBillingAvailablePlansGet**](TeamMemberApi.md#teammembersidteambillingavailableplansget) | **GET** /TeamMembers/{id}/team/billing/availablePlans | Get Available Plans
+[**TeamMembersIdTeamBillingBankAccountDelete**](TeamMemberApi.md#teammembersidteambillingbankaccountdelete) | **DELETE** /TeamMembers/{id}/team/billing/bankAccount | Delete Team Billing BankAccount
+[**TeamMembersIdTeamBillingBankAccountPost**](TeamMemberApi.md#teammembersidteambillingbankaccountpost) | **POST** /TeamMembers/{id}/team/billing/bankAccount | Create Team Billing BankAccount
+[**TeamMembersIdTeamBillingBankAccountPut**](TeamMemberApi.md#teammembersidteambillingbankaccountput) | **PUT** /TeamMembers/{id}/team/billing/bankAccount | Update Team Billing BankAccount
+[**TeamMembersIdTeamBillingBankAccountVerifyPost**](TeamMemberApi.md#teammembersidteambillingbankaccountverifypost) | **POST** /TeamMembers/{id}/team/billing/bankAccount/verify | Create Team Billing BankAccount
 [**TeamMembersIdTeamBillingCachedGet**](TeamMemberApi.md#teammembersidteambillingcachedget) | **GET** /TeamMembers/{id}/team/billing/cached | Get Cached version of Team Billing
 [**TeamMembersIdTeamBillingCardDelete**](TeamMemberApi.md#teammembersidteambillingcarddelete) | **DELETE** /TeamMembers/{id}/team/billing/card | Delete Team Billing Card
 [**TeamMembersIdTeamBillingCardPost**](TeamMemberApi.md#teammembersidteambillingcardpost) | **POST** /TeamMembers/{id}/team/billing/card | Create Team Billing Card
@@ -136,7 +140,12 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBillingInvoicesFkPost**](TeamMemberApi.md#teammembersidteambillinginvoicesfkpost) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
 [**TeamMembersIdTeamBillingInvoicesGet**](TeamMemberApi.md#teammembersidteambillinginvoicesget) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
 [**TeamMembersIdTeamBillingInvoicesUpcomingGet**](TeamMemberApi.md#teammembersidteambillinginvoicesupcomingget) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
+[**TeamMembersIdTeamBillingLimitLimitIncreasePost**](TeamMemberApi.md#teammembersidteambillinglimitlimitincreasepost) | **POST** /TeamMembers/{id}/team/billing/limit/{limit}/increase | Increase Team Billing Limit by Limit
+[**TeamMembersIdTeamBillingLimitLimitIncreaseValueGet**](TeamMemberApi.md#teammembersidteambillinglimitlimitincreasevalueget) | **GET** /TeamMembers/{id}/team/billing/limit/{limit}/increase/{value} | Check if Team Billing Limit can be increased by Limit
 [**TeamMembersIdTeamBillingPut**](TeamMemberApi.md#teammembersidteambillingput) | **PUT** /TeamMembers/{id}/team/billing | Update Team Billing
+[**TeamMembersIdTeamBillingSourceDelete**](TeamMemberApi.md#teammembersidteambillingsourcedelete) | **DELETE** /TeamMembers/{id}/team/billing/source | Delete Team Billing Source
+[**TeamMembersIdTeamBillingSourcePost**](TeamMemberApi.md#teammembersidteambillingsourcepost) | **POST** /TeamMembers/{id}/team/billing/source | Create Team Billing Source
+[**TeamMembersIdTeamBillingSourcePut**](TeamMemberApi.md#teammembersidteambillingsourceput) | **PUT** /TeamMembers/{id}/team/billing/source | Update Team Billing Source
 [**TeamMembersIdTeamBillingSubscriptionPlanPut**](TeamMemberApi.md#teammembersidteambillingsubscriptionplanput) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 [**TeamMembersIdTeamBillingTaxEvidenceGet**](TeamMemberApi.md#teammembersidteambillingtaxevidenceget) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 [**TeamMembersIdTeamBillingUncachedGet**](TeamMemberApi.md#teammembersidteambillinguncachedget) | **GET** /TeamMembers/{id}/team/billing/uncached | Get Team Billing
@@ -146,6 +155,7 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamBrandPut**](TeamMemberApi.md#teammembersidteambrandput) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
 [**TeamMembersIdTeamBuilderConfigsCountGet**](TeamMemberApi.md#teammembersidteambuilderconfigscountget) | **GET** /TeamMembers/{id}/team/builderConfigs/count | Counts builderConfigs of Team.
 [**TeamMembersIdTeamBuilderConfigsDefaultGet**](TeamMemberApi.md#teammembersidteambuilderconfigsdefaultget) | **GET** /TeamMembers/{id}/team/builderConfigs/default | Get default Team Builder Config
+[**TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet**](TeamMemberApi.md#teammembersidteambuilderconfigsdefaultproductsizematerialget) | **GET** /TeamMembers/{id}/team/builderConfigs/default/productSizeMaterial | Get default Team Builder Config Product Size Materials
 [**TeamMembersIdTeamBuilderConfigsDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs | Deletes all builderConfigs of this model.
 [**TeamMembersIdTeamBuilderConfigsFkDelete**](TeamMemberApi.md#teammembersidteambuilderconfigsfkdelete) | **DELETE** /TeamMembers/{id}/team/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**TeamMembersIdTeamBuilderConfigsFkGet**](TeamMemberApi.md#teammembersidteambuilderconfigsfkget) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -8674,6 +8684,272 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teammembersidteambillingbankaccountdelete"></a>
+# **TeamMembersIdTeamBillingBankAccountDelete**
+> Billing TeamMembersIdTeamBillingBankAccountDelete (string id)
+
+Delete Team Billing BankAccount
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingBankAccountDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Delete Team Billing BankAccount
+                Billing result = apiInstance.TeamMembersIdTeamBillingBankAccountDelete(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingBankAccountDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingbankaccountpost"></a>
+# **TeamMembersIdTeamBillingBankAccountPost**
+> Billing TeamMembersIdTeamBillingBankAccountPost (string id, TeamMember data = null)
+
+Create Team Billing BankAccount
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingBankAccountPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Create Team Billing BankAccount
+                Billing result = apiInstance.TeamMembersIdTeamBillingBankAccountPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingBankAccountPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingbankaccountput"></a>
+# **TeamMembersIdTeamBillingBankAccountPut**
+> Billing TeamMembersIdTeamBillingBankAccountPut (string id, TeamMember data = null)
+
+Update Team Billing BankAccount
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingBankAccountPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Update Team Billing BankAccount
+                Billing result = apiInstance.TeamMembersIdTeamBillingBankAccountPut(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingBankAccountPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingbankaccountverifypost"></a>
+# **TeamMembersIdTeamBillingBankAccountVerifyPost**
+> Billing TeamMembersIdTeamBillingBankAccountVerifyPost (string id, TeamMember data = null)
+
+Create Team Billing BankAccount
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingBankAccountVerifyPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Create Team Billing BankAccount
+                Billing result = apiInstance.TeamMembersIdTeamBillingBankAccountVerifyPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingBankAccountVerifyPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teammembersidteambillingcachedget"></a>
 # **TeamMembersIdTeamBillingCachedGet**
 > Billing TeamMembersIdTeamBillingCachedGet (string id)
@@ -9137,6 +9413,144 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teammembersidteambillinglimitlimitincreasepost"></a>
+# **TeamMembersIdTeamBillingLimitLimitIncreasePost**
+> Object TeamMembersIdTeamBillingLimitLimitIncreasePost (string id, string limit, BillingLimitLog data = null)
+
+Increase Team Billing Limit by Limit
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingLimitLimitIncreasePostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var limit = limit_example;  // string | Limit name
+            var data = new BillingLimitLog(); // BillingLimitLog |  (optional) 
+
+            try
+            {
+                // Increase Team Billing Limit by Limit
+                Object result = apiInstance.TeamMembersIdTeamBillingLimitLimitIncreasePost(id, limit, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingLimitLimitIncreasePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **limit** | **string**| Limit name | 
+ **data** | [**BillingLimitLog**](BillingLimitLog.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillinglimitlimitincreasevalueget"></a>
+# **TeamMembersIdTeamBillingLimitLimitIncreaseValueGet**
+> InlineResponse2005 TeamMembersIdTeamBillingLimitLimitIncreaseValueGet (string id, string limit, string value)
+
+Check if Team Billing Limit can be increased by Limit
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingLimitLimitIncreaseValueGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var limit = limit_example;  // string | Limit name
+            var value = value_example;  // string | Value
+
+            try
+            {
+                // Check if Team Billing Limit can be increased by Limit
+                InlineResponse2005 result = apiInstance.TeamMembersIdTeamBillingLimitLimitIncreaseValueGet(id, limit, value);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingLimitLimitIncreaseValueGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **limit** | **string**| Limit name | 
+ **value** | **string**| Value | 
+
+### Return type
+
+[**InlineResponse2005**](InlineResponse2005.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teammembersidteambillingput"></a>
 # **TeamMembersIdTeamBillingPut**
 > Billing TeamMembersIdTeamBillingPut (string id, TeamMember data = null)
@@ -9176,6 +9590,205 @@ namespace Example
             catch (Exception e)
             {
                 Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingsourcedelete"></a>
+# **TeamMembersIdTeamBillingSourceDelete**
+> Billing TeamMembersIdTeamBillingSourceDelete (string id)
+
+Delete Team Billing Source
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingSourceDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Delete Team Billing Source
+                Billing result = apiInstance.TeamMembersIdTeamBillingSourceDelete(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingSourceDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingsourcepost"></a>
+# **TeamMembersIdTeamBillingSourcePost**
+> Billing TeamMembersIdTeamBillingSourcePost (string id, TeamMember data = null)
+
+Create Team Billing Source
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingSourcePostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Create Team Billing Source
+                Billing result = apiInstance.TeamMembersIdTeamBillingSourcePost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingSourcePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambillingsourceput"></a>
+# **TeamMembersIdTeamBillingSourcePut**
+> Billing TeamMembersIdTeamBillingSourcePut (string id, TeamMember data = null)
+
+Update Team Billing Source
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBillingSourcePutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+            var data = new TeamMember(); // TeamMember |  (optional) 
+
+            try
+            {
+                // Update Team Billing Source
+                Billing result = apiInstance.TeamMembersIdTeamBillingSourcePut(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBillingSourcePut: " + e.Message );
             }
         }
     }
@@ -9786,6 +10399,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teammembersidteambuilderconfigsdefaultproductsizematerialget"></a>
+# **TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet**
+> List<ProductSizeMaterial> TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet (string id)
+
+Get default Team Builder Config Product Size Materials
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamMemberApi();
+            var id = id_example;  // string | TeamMember id
+
+            try
+            {
+                // Get default Team Builder Config Product Size Materials
+                List&lt;ProductSizeMaterial&gt; result = apiInstance.TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamBuilderConfigsDefaultProductSizeMaterialGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| TeamMember id | 
+
+### Return type
+
+[**List<ProductSizeMaterial>**](ProductSizeMaterial.md)
 
 ### Authorization
 
