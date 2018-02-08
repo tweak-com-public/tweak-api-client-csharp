@@ -9,10 +9,10 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigscountget) | **GET** /TeamBuilderConfigs/count | Count instances of the model matched by where from the data source.
 [**TeamBuilderConfigsFindOneGet**](TeamBuilderConfigApi.md#teambuilderconfigsfindoneget) | **GET** /TeamBuilderConfigs/findOne | Find first instance of the model matched by filter from the data source.
 [**TeamBuilderConfigsGet**](TeamBuilderConfigApi.md#teambuilderconfigsget) | **GET** /TeamBuilderConfigs | Find all instances of the model matched by filter from the data source.
+[**TeamBuilderConfigsGlobalGet**](TeamBuilderConfigApi.md#teambuilderconfigsglobalget) | **GET** /TeamBuilderConfigs/global | Reset Team keys
 [**TeamBuilderConfigsIdDelete**](TeamBuilderConfigApi.md#teambuilderconfigsiddelete) | **DELETE** /TeamBuilderConfigs/{id} | Delete a model instance by {{id}} from the data source.
 [**TeamBuilderConfigsIdExistsGet**](TeamBuilderConfigApi.md#teambuilderconfigsidexistsget) | **GET** /TeamBuilderConfigs/{id}/exists | Check whether a model instance exists in the data source.
 [**TeamBuilderConfigsIdGet**](TeamBuilderConfigApi.md#teambuilderconfigsidget) | **GET** /TeamBuilderConfigs/{id} | Find a model instance by {{id}} from the data source.
-[**TeamBuilderConfigsIdGlobalGet**](TeamBuilderConfigApi.md#teambuilderconfigsidglobalget) | **GET** /TeamBuilderConfigs/{id}/global | Reset Team keys
 [**TeamBuilderConfigsIdHead**](TeamBuilderConfigApi.md#teambuilderconfigsidhead) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**TeamBuilderConfigsIdPatch**](TeamBuilderConfigApi.md#teambuilderconfigsidpatch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
 [**TeamBuilderConfigsIdPortalsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalscountget) | **GET** /TeamBuilderConfigs/{id}/portals/count | Counts portals of TeamBuilderConfig.
@@ -453,6 +453,67 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teambuilderconfigsglobalget"></a>
+# **TeamBuilderConfigsGlobalGet**
+> TeamBuilderConfig TeamBuilderConfigsGlobalGet ()
+
+Reset Team keys
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamBuilderConfigsGlobalGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamBuilderConfigApi();
+
+            try
+            {
+                // Reset Team keys
+                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsGlobalGet();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsGlobalGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teambuilderconfigsiddelete"></a>
 # **TeamBuilderConfigsIdDelete**
 > Object TeamBuilderConfigsIdDelete (string id)
@@ -634,71 +695,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| Model id | 
  **filter** | **string**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
-
-### Return type
-
-[**TeamBuilderConfig**](TeamBuilderConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsidglobalget"></a>
-# **TeamBuilderConfigsIdGlobalGet**
-> TeamBuilderConfig TeamBuilderConfigsIdGlobalGet (string id)
-
-Reset Team keys
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdGlobalGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Reset Team keys
-                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsIdGlobalGet(id);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdGlobalGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
 
 ### Return type
 
