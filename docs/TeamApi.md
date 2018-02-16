@@ -80,13 +80,6 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsNkProductTypesRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproducttypesrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Add a related item by id for productTypes.
 [**TeamsIdBuilderConfigsNkTeamGet**](TeamApi.md#teamsidbuilderconfigsnkteamget) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
 [**TeamsIdBuilderConfigsPost**](TeamApi.md#teamsidbuilderconfigspost) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
-[**TeamsIdDataSourcesCountGet**](TeamApi.md#teamsiddatasourcescountget) | **GET** /Teams/{id}/dataSources/count | Counts dataSources of Team.
-[**TeamsIdDataSourcesDelete**](TeamApi.md#teamsiddatasourcesdelete) | **DELETE** /Teams/{id}/dataSources | Deletes all dataSources of this model.
-[**TeamsIdDataSourcesFkDelete**](TeamApi.md#teamsiddatasourcesfkdelete) | **DELETE** /Teams/{id}/dataSources/{fk} | Delete a related item by id for dataSources.
-[**TeamsIdDataSourcesFkGet**](TeamApi.md#teamsiddatasourcesfkget) | **GET** /Teams/{id}/dataSources/{fk} | Find a related item by id for dataSources.
-[**TeamsIdDataSourcesFkPut**](TeamApi.md#teamsiddatasourcesfkput) | **PUT** /Teams/{id}/dataSources/{fk} | Update a related item by id for dataSources.
-[**TeamsIdDataSourcesGet**](TeamApi.md#teamsiddatasourcesget) | **GET** /Teams/{id}/dataSources | Queries dataSources of Team.
-[**TeamsIdDataSourcesPost**](TeamApi.md#teamsiddatasourcespost) | **POST** /Teams/{id}/dataSources | Creates a new instance in dataSources of this model.
 [**TeamsIdDelete**](TeamApi.md#teamsiddelete) | **DELETE** /Teams/{id} | Delete a model instance by {{id}} from the data source.
 [**TeamsIdDynamicDatasCountGet**](TeamApi.md#teamsiddynamicdatascountget) | **GET** /Teams/{id}/dynamicDatas/count | Counts dynamicDatas of Team.
 [**TeamsIdDynamicDatasDelete**](TeamApi.md#teamsiddynamicdatasdelete) | **DELETE** /Teams/{id}/dynamicDatas | Deletes all dynamicDatas of this model.
@@ -94,6 +87,13 @@ Method | HTTP request | Description
 [**TeamsIdDynamicDatasFkGet**](TeamApi.md#teamsiddynamicdatasfkget) | **GET** /Teams/{id}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasFkPut**](TeamApi.md#teamsiddynamicdatasfkput) | **PUT** /Teams/{id}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasGet**](TeamApi.md#teamsiddynamicdatasget) | **GET** /Teams/{id}/dynamicDatas | Queries dynamicDatas of Team.
+[**TeamsIdDynamicDatasNkDataSourceMongoGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcemongoget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**TeamsIdDynamicDatasNkDataSourceMsSqlGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcemssqlget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**TeamsIdDynamicDatasNkDataSourceMySqlGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcemysqlget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**TeamsIdDynamicDatasNkDataSourceOracleGet**](TeamApi.md#teamsiddynamicdatasnkdatasourceoracleget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**TeamsIdDynamicDatasNkDataSourcePostgreSqlGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcepostgresqlget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**TeamsIdDynamicDatasNkDataSourceRestGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcerestget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**TeamsIdDynamicDatasNkDataSourceSoapGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcesoapget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**TeamsIdDynamicDatasNkDesignsCountGet**](TeamApi.md#teamsiddynamicdatasnkdesignscountget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/count | Counts designs of DynamicData.
 [**TeamsIdDynamicDatasNkDesignsDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs | Deletes all designs of this model.
 [**TeamsIdDynamicDatasNkDesignsFkDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Delete a related item by id for designs.
@@ -301,6 +301,13 @@ Method | HTTP request | Description
 [**TeamsIdProductSizeMaterialsPost**](TeamApi.md#teamsidproductsizematerialspost) | **POST** /Teams/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
 [**TeamsIdPut**](TeamApi.md#teamsidput) | **PUT** /Teams/{id} | Replace attributes for a model instance and persist it into the data source.
 [**TeamsIdReplacePost**](TeamApi.md#teamsidreplacepost) | **POST** /Teams/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+[**TeamsIdTeamDataDataSourceMongoGet**](TeamApi.md#teamsidteamdatadatasourcemongoget) | **GET** /Teams/{id}/teamData/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**TeamsIdTeamDataDataSourceMsSqlGet**](TeamApi.md#teamsidteamdatadatasourcemssqlget) | **GET** /Teams/{id}/teamData/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**TeamsIdTeamDataDataSourceMySqlGet**](TeamApi.md#teamsidteamdatadatasourcemysqlget) | **GET** /Teams/{id}/teamData/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**TeamsIdTeamDataDataSourceOracleGet**](TeamApi.md#teamsidteamdatadatasourceoracleget) | **GET** /Teams/{id}/teamData/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**TeamsIdTeamDataDataSourcePostgreSqlGet**](TeamApi.md#teamsidteamdatadatasourcepostgresqlget) | **GET** /Teams/{id}/teamData/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**TeamsIdTeamDataDataSourceRestGet**](TeamApi.md#teamsidteamdatadatasourcerestget) | **GET** /Teams/{id}/teamData/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**TeamsIdTeamDataDataSourceSoapGet**](TeamApi.md#teamsidteamdatadatasourcesoapget) | **GET** /Teams/{id}/teamData/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**TeamsIdTeamDataDesignsCountGet**](TeamApi.md#teamsidteamdatadesignscountget) | **GET** /Teams/{id}/teamData/designs/count | Counts designs of DynamicData.
 [**TeamsIdTeamDataDesignsDelete**](TeamApi.md#teamsidteamdatadesignsdelete) | **DELETE** /Teams/{id}/teamData/designs | Deletes all designs of this model.
 [**TeamsIdTeamDataDesignsFkDelete**](TeamApi.md#teamsidteamdatadesignsfkdelete) | **DELETE** /Teams/{id}/teamData/designs/{fk} | Delete a related item by id for designs.
@@ -5599,473 +5606,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsiddatasourcescountget"></a>
-# **TeamsIdDataSourcesCountGet**
-> InlineResponse2001 TeamsIdDataSourcesCountGet (string id, string where = null)
-
-Counts dataSources of Team.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesCountGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-
-            try
-            {
-                // Counts dataSources of Team.
-                InlineResponse2001 result = apiInstance.TeamsIdDataSourcesCountGet(id, where);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesCountGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **where** | **string**| Criteria to match model instances | [optional] 
-
-### Return type
-
-[**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcesdelete"></a>
-# **TeamsIdDataSourcesDelete**
-> void TeamsIdDataSourcesDelete (string id)
-
-Deletes all dataSources of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-
-            try
-            {
-                // Deletes all dataSources of this model.
-                apiInstance.TeamsIdDataSourcesDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcesfkdelete"></a>
-# **TeamsIdDataSourcesFkDelete**
-> void TeamsIdDataSourcesFkDelete (string id, string fk)
-
-Delete a related item by id for dataSources.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesFkDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var fk = fk_example;  // string | Foreign key for dataSources
-
-            try
-            {
-                // Delete a related item by id for dataSources.
-                apiInstance.TeamsIdDataSourcesFkDelete(id, fk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesFkDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **fk** | **string**| Foreign key for dataSources | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcesfkget"></a>
-# **TeamsIdDataSourcesFkGet**
-> DataSource TeamsIdDataSourcesFkGet (string id, string fk)
-
-Find a related item by id for dataSources.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesFkGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var fk = fk_example;  // string | Foreign key for dataSources
-
-            try
-            {
-                // Find a related item by id for dataSources.
-                DataSource result = apiInstance.TeamsIdDataSourcesFkGet(id, fk);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesFkGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **fk** | **string**| Foreign key for dataSources | 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcesfkput"></a>
-# **TeamsIdDataSourcesFkPut**
-> DataSource TeamsIdDataSourcesFkPut (string id, string fk, DataSource data = null)
-
-Update a related item by id for dataSources.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesFkPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var fk = fk_example;  // string | Foreign key for dataSources
-            var data = new DataSource(); // DataSource |  (optional) 
-
-            try
-            {
-                // Update a related item by id for dataSources.
-                DataSource result = apiInstance.TeamsIdDataSourcesFkPut(id, fk, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesFkPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **fk** | **string**| Foreign key for dataSources | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcesget"></a>
-# **TeamsIdDataSourcesGet**
-> List<DataSource> TeamsIdDataSourcesGet (string id, string filter = null)
-
-Queries dataSources of Team.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesGetExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var filter = filter_example;  // string |  (optional) 
-
-            try
-            {
-                // Queries dataSources of Team.
-                List&lt;DataSource&gt; result = apiInstance.TeamsIdDataSourcesGet(id, filter);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesGet: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **filter** | **string**|  | [optional] 
-
-### Return type
-
-[**List<DataSource>**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddatasourcespost"></a>
-# **TeamsIdDataSourcesPost**
-> DataSource TeamsIdDataSourcesPost (string id, DataSource data = null)
-
-Creates a new instance in dataSources of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDataSourcesPostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var data = new DataSource(); // DataSource |  (optional) 
-
-            try
-            {
-                // Creates a new instance in dataSources of this model.
-                DataSource result = apiInstance.TeamsIdDataSourcesPost(id, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourcesPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsiddelete"></a>
 # **TeamsIdDelete**
 > Object TeamsIdDelete (string id)
@@ -6519,6 +6059,489 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<DynamicData>**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcemongoget"></a>
+# **TeamsIdDynamicDatasNkDataSourceMongoGet**
+> DataSourceMongo TeamsIdDynamicDatasNkDataSourceMongoGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceMongoGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMongo.
+                DataSourceMongo result = apiInstance.TeamsIdDynamicDatasNkDataSourceMongoGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceMongoGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcemssqlget"></a>
+# **TeamsIdDynamicDatasNkDataSourceMsSqlGet**
+> DataSourceMsSql TeamsIdDynamicDatasNkDataSourceMsSqlGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceMsSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMsSql.
+                DataSourceMsSql result = apiInstance.TeamsIdDynamicDatasNkDataSourceMsSqlGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceMsSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcemysqlget"></a>
+# **TeamsIdDynamicDatasNkDataSourceMySqlGet**
+> DataSourceMySql TeamsIdDynamicDatasNkDataSourceMySqlGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceMySqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMySql.
+                DataSourceMySql result = apiInstance.TeamsIdDynamicDatasNkDataSourceMySqlGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceMySqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourceoracleget"></a>
+# **TeamsIdDynamicDatasNkDataSourceOracleGet**
+> DataSourceOracle TeamsIdDynamicDatasNkDataSourceOracleGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceOracleGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceOracle.
+                DataSourceOracle result = apiInstance.TeamsIdDynamicDatasNkDataSourceOracleGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceOracleGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcepostgresqlget"></a>
+# **TeamsIdDynamicDatasNkDataSourcePostgreSqlGet**
+> DataSourcePostgreSql TeamsIdDynamicDatasNkDataSourcePostgreSqlGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourcePostgreSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourcePostgreSql.
+                DataSourcePostgreSql result = apiInstance.TeamsIdDynamicDatasNkDataSourcePostgreSqlGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourcePostgreSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcerestget"></a>
+# **TeamsIdDynamicDatasNkDataSourceRestGet**
+> DataSourceRest TeamsIdDynamicDatasNkDataSourceRestGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceRestGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceRest.
+                DataSourceRest result = apiInstance.TeamsIdDynamicDatasNkDataSourceRestGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceRestGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddynamicdatasnkdatasourcesoapget"></a>
+# **TeamsIdDynamicDatasNkDataSourceSoapGet**
+> DataSourceSoap TeamsIdDynamicDatasNkDataSourceSoapGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDynamicDatasNkDataSourceSoapGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dynamicDatas.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceSoap.
+                DataSourceSoap result = apiInstance.TeamsIdDynamicDatasNkDataSourceSoapGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDataSourceSoapGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -20634,6 +20657,475 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcemongoget"></a>
+# **TeamsIdTeamDataDataSourceMongoGet**
+> DataSourceMongo TeamsIdTeamDataDataSourceMongoGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceMongoGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMongo.
+                DataSourceMongo result = apiInstance.TeamsIdTeamDataDataSourceMongoGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceMongoGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcemssqlget"></a>
+# **TeamsIdTeamDataDataSourceMsSqlGet**
+> DataSourceMsSql TeamsIdTeamDataDataSourceMsSqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceMsSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMsSql.
+                DataSourceMsSql result = apiInstance.TeamsIdTeamDataDataSourceMsSqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceMsSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcemysqlget"></a>
+# **TeamsIdTeamDataDataSourceMySqlGet**
+> DataSourceMySql TeamsIdTeamDataDataSourceMySqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceMySqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMySql.
+                DataSourceMySql result = apiInstance.TeamsIdTeamDataDataSourceMySqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceMySqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourceoracleget"></a>
+# **TeamsIdTeamDataDataSourceOracleGet**
+> DataSourceOracle TeamsIdTeamDataDataSourceOracleGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceOracleGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceOracle.
+                DataSourceOracle result = apiInstance.TeamsIdTeamDataDataSourceOracleGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceOracleGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcepostgresqlget"></a>
+# **TeamsIdTeamDataDataSourcePostgreSqlGet**
+> DataSourcePostgreSql TeamsIdTeamDataDataSourcePostgreSqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourcePostgreSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourcePostgreSql.
+                DataSourcePostgreSql result = apiInstance.TeamsIdTeamDataDataSourcePostgreSqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourcePostgreSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcerestget"></a>
+# **TeamsIdTeamDataDataSourceRestGet**
+> DataSourceRest TeamsIdTeamDataDataSourceRestGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceRestGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceRest.
+                DataSourceRest result = apiInstance.TeamsIdTeamDataDataSourceRestGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceRestGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsidteamdatadatasourcesoapget"></a>
+# **TeamsIdTeamDataDataSourceSoapGet**
+> DataSourceSoap TeamsIdTeamDataDataSourceSoapGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdTeamDataDataSourceSoapGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceSoap.
+                DataSourceSoap result = apiInstance.TeamsIdTeamDataDataSourceSoapGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDataSourceSoapGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
