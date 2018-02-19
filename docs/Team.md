@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **Members** | [**List&lt;Customer&gt;**](Customer.md) |  | [optional] 
 **BuilderConfigs** | [**List&lt;TeamBuilderConfig&gt;**](TeamBuilderConfig.md) |  | [optional] 
 **DynamicDatas** | [**List&lt;DynamicData&gt;**](DynamicData.md) |  | [optional] 
+**DataSourceSoaps** | [**List&lt;DataSourceSoap&gt;**](DataSourceSoap.md) |  | [optional] 
 **TeamMembers** | [**List&lt;TeamMember&gt;**](TeamMember.md) |  | [optional] 
 **Portals** | [**List&lt;Portal&gt;**](Portal.md) |  | [optional] 
 **Templates** | [**List&lt;Template&gt;**](Template.md) |  | [optional] 

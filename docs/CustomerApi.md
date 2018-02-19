@@ -57,8 +57,13 @@ Method | HTTP request | Description
 [**CustomersIdTeamsNkBuilderConfigsFkPut**](CustomerApi.md#customersidteamsnkbuilderconfigsfkput) | **PUT** /Customers/{id}/teams/{nk}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**CustomersIdTeamsNkBuilderConfigsGet**](CustomerApi.md#customersidteamsnkbuilderconfigsget) | **GET** /Customers/{id}/teams/{nk}/builderConfigs | Queries builderConfigs of Team.
 [**CustomersIdTeamsNkBuilderConfigsPost**](CustomerApi.md#customersidteamsnkbuilderconfigspost) | **POST** /Customers/{id}/teams/{nk}/builderConfigs | Creates a new instance in builderConfigs of this model.
+[**CustomersIdTeamsNkDataSourceSoapsCountGet**](CustomerApi.md#customersidteamsnkdatasourcesoapscountget) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps/count | Counts dataSourceSoaps of Team.
+[**CustomersIdTeamsNkDataSourceSoapsFkDelete**](CustomerApi.md#customersidteamsnkdatasourcesoapsfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Delete a related item by id for dataSourceSoaps.
+[**CustomersIdTeamsNkDataSourceSoapsFkGet**](CustomerApi.md#customersidteamsnkdatasourcesoapsfkget) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Find a related item by id for dataSourceSoaps.
+[**CustomersIdTeamsNkDataSourceSoapsFkPut**](CustomerApi.md#customersidteamsnkdatasourcesoapsfkput) | **PUT** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Update a related item by id for dataSourceSoaps.
+[**CustomersIdTeamsNkDataSourceSoapsGet**](CustomerApi.md#customersidteamsnkdatasourcesoapsget) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps | Queries dataSourceSoaps of Team.
+[**CustomersIdTeamsNkDataSourceSoapsPost**](CustomerApi.md#customersidteamsnkdatasourcesoapspost) | **POST** /Customers/{id}/teams/{nk}/dataSourceSoaps | Creates a new instance in dataSourceSoaps of this model.
 [**CustomersIdTeamsNkDynamicDatasCountGet**](CustomerApi.md#customersidteamsnkdynamicdatascountget) | **GET** /Customers/{id}/teams/{nk}/dynamicDatas/count | Counts dynamicDatas of Team.
-[**CustomersIdTeamsNkDynamicDatasDelete**](CustomerApi.md#customersidteamsnkdynamicdatasdelete) | **DELETE** /Customers/{id}/teams/{nk}/dynamicDatas | Deletes all dynamicDatas of this model.
 [**CustomersIdTeamsNkDynamicDatasFkDelete**](CustomerApi.md#customersidteamsnkdynamicdatasfkdelete) | **DELETE** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
 [**CustomersIdTeamsNkDynamicDatasFkGet**](CustomerApi.md#customersidteamsnkdynamicdatasfkget) | **GET** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**CustomersIdTeamsNkDynamicDatasFkPut**](CustomerApi.md#customersidteamsnkdynamicdatasfkput) | **PUT** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
@@ -162,16 +167,11 @@ Method | HTTP request | Description
 [**CustomersLogoutPost**](CustomerApi.md#customerslogoutpost) | **POST** /Customers/logout | Logout a user with access token.
 [**CustomersMeTokenGet**](CustomerApi.md#customersmetokenget) | **GET** /Customers/me/token | Get token info
 [**CustomersMeTokenRefreshGet**](CustomerApi.md#customersmetokenrefreshget) | **GET** /Customers/me/token/refresh | Refresh current access token
-[**CustomersPatch**](CustomerApi.md#customerspatch) | **PATCH** /Customers | Patch an existing model instance or insert a new one into the data source.
 [**CustomersPost**](CustomerApi.md#customerspost) | **POST** /Customers | Create a new instance of the model and persist it into the data source.
-[**CustomersPut**](CustomerApi.md#customersput) | **PUT** /Customers | Replace an existing model instance or insert a new one into the data source.
 [**CustomersRegisterPost**](CustomerApi.md#customersregisterpost) | **POST** /Customers/register | Create customer and assign it to a team
-[**CustomersReplaceOrCreatePost**](CustomerApi.md#customersreplaceorcreatepost) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 [**CustomersResetPasswordPost**](CustomerApi.md#customersresetpasswordpost) | **POST** /Customers/reset-password | Reset user&#39;s password via a password-reset token.
 [**CustomersResetPasswordTokenGet**](CustomerApi.md#customersresetpasswordtokenget) | **GET** /Customers/reset-password/token | Get token info for reset password token
 [**CustomersResetPost**](CustomerApi.md#customersresetpost) | **POST** /Customers/reset | Reset password for a user with email.
-[**CustomersUpdatePost**](CustomerApi.md#customersupdatepost) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
-[**CustomersUpsertWithWherePost**](CustomerApi.md#customersupsertwithwherepost) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 <a name="customerschangepasswordpost"></a>
@@ -1167,7 +1167,7 @@ Name | Type | Description  | Notes
 
 <a name="customersidactiveget"></a>
 # **CustomersIdActiveGet**
-> InlineResponse2004 CustomersIdActiveGet (string id)
+> InlineResponse2003 CustomersIdActiveGet (string id)
 
 Define whether customer is active or not
 
@@ -1197,7 +1197,7 @@ namespace Example
             try
             {
                 // Define whether customer is active or not
-                InlineResponse2004 result = apiInstance.CustomersIdActiveGet(id);
+                InlineResponse2003 result = apiInstance.CustomersIdActiveGet(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1217,7 +1217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -3715,6 +3715,421 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="customersidteamsnkdatasourcesoapscountget"></a>
+# **CustomersIdTeamsNkDataSourceSoapsCountGet**
+> InlineResponse2001 CustomersIdTeamsNkDataSourceSoapsCountGet (string id, string nk, string where = null)
+
+Counts dataSourceSoaps of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts dataSourceSoaps of Team.
+                InlineResponse2001 result = apiInstance.CustomersIdTeamsNkDataSourceSoapsCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkdatasourcesoapsfkdelete"></a>
+# **CustomersIdTeamsNkDataSourceSoapsFkDelete**
+> void CustomersIdTeamsNkDataSourceSoapsFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+
+            try
+            {
+                // Delete a related item by id for dataSourceSoaps.
+                apiInstance.CustomersIdTeamsNkDataSourceSoapsFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkdatasourcesoapsfkget"></a>
+# **CustomersIdTeamsNkDataSourceSoapsFkGet**
+> DataSourceSoap CustomersIdTeamsNkDataSourceSoapsFkGet (string id, string nk, string fk)
+
+Find a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+
+            try
+            {
+                // Find a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.CustomersIdTeamsNkDataSourceSoapsFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkdatasourcesoapsfkput"></a>
+# **CustomersIdTeamsNkDataSourceSoapsFkPut**
+> DataSourceSoap CustomersIdTeamsNkDataSourceSoapsFkPut (string id, string nk, string fk, DataSourceSoap data = null)
+
+Update a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
+
+            try
+            {
+                // Update a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.CustomersIdTeamsNkDataSourceSoapsFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkdatasourcesoapsget"></a>
+# **CustomersIdTeamsNkDataSourceSoapsGet**
+> List<DataSourceSoap> CustomersIdTeamsNkDataSourceSoapsGet (string id, string nk, string filter = null)
+
+Queries dataSourceSoaps of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries dataSourceSoaps of Team.
+                List&lt;DataSourceSoap&gt; result = apiInstance.CustomersIdTeamsNkDataSourceSoapsGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DataSourceSoap>**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="customersidteamsnkdatasourcesoapspost"></a>
+# **CustomersIdTeamsNkDataSourceSoapsPost**
+> DataSourceSoap CustomersIdTeamsNkDataSourceSoapsPost (string id, string nk, DataSourceSoap data = null)
+
+Creates a new instance in dataSourceSoaps of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class CustomersIdTeamsNkDataSourceSoapsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var id = id_example;  // string | Customer id
+            var nk = nk_example;  // string | Foreign key for teams.
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
+
+            try
+            {
+                // Creates a new instance in dataSourceSoaps of this model.
+                DataSourceSoap result = apiInstance.CustomersIdTeamsNkDataSourceSoapsPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDataSourceSoapsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Customer id | 
+ **nk** | **string**| Foreign key for teams. | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="customersidteamsnkdynamicdatascountget"></a>
 # **CustomersIdTeamsNkDynamicDatasCountGet**
 > InlineResponse2001 CustomersIdTeamsNkDynamicDatasCountGet (string id, string nk, string where = null)
@@ -3772,72 +4187,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersidteamsnkdynamicdatasdelete"></a>
-# **CustomersIdTeamsNkDynamicDatasDelete**
-> void CustomersIdTeamsNkDynamicDatasDelete (string id, string nk)
-
-Deletes all dynamicDatas of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersIdTeamsNkDynamicDatasDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var id = id_example;  // string | Customer id
-            var nk = nk_example;  // string | Foreign key for teams.
-
-            try
-            {
-                // Deletes all dynamicDatas of this model.
-                apiInstance.CustomersIdTeamsNkDynamicDatasDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersIdTeamsNkDynamicDatasDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Customer id | 
- **nk** | **string**| Foreign key for teams. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -10893,71 +11242,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="customerspatch"></a>
-# **CustomersPatch**
-> Customer CustomersPatch (Customer data = null)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersPatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var data = new Customer(); // Customer | Model instance data (optional) 
-
-            try
-            {
-                // Patch an existing model instance or insert a new one into the data source.
-                Customer result = apiInstance.CustomersPatch(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersPatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="customerspost"></a>
 # **CustomersPost**
 > Customer CustomersPost (Customer data = null)
@@ -10996,71 +11280,6 @@ namespace Example
             catch (Exception e)
             {
                 Debug.Print("Exception when calling CustomerApi.CustomersPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersput"></a>
-# **CustomersPut**
-> Customer CustomersPut (Customer data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var data = new Customer(); // Customer | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                Customer result = apiInstance.CustomersPut(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersPut: " + e.Message );
             }
         }
     }
@@ -11141,71 +11360,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersreplaceorcreatepost"></a>
-# **CustomersReplaceOrCreatePost**
-> Customer CustomersReplaceOrCreatePost (Customer data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersReplaceOrCreatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var data = new Customer(); // Customer | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                Customer result = apiInstance.CustomersReplaceOrCreatePost(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersReplaceOrCreatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
 
 ### Authorization
 
@@ -11399,140 +11553,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersupdatepost"></a>
-# **CustomersUpdatePost**
-> InlineResponse2003 CustomersUpdatePost (string where = null, Customer data = null)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersUpdatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new Customer(); // Customer | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2003 result = apiInstance.CustomersUpdatePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersUpdatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**Customer**](Customer.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="customersupsertwithwherepost"></a>
-# **CustomersUpsertWithWherePost**
-> Customer CustomersUpsertWithWherePost (string where = null, Customer data = null)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class CustomersUpsertWithWherePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new CustomerApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new Customer(); // Customer | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update an existing model instance or insert a new one into the data source based on the where criteria.
-                Customer result = apiInstance.CustomersUpsertWithWherePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling CustomerApi.CustomersUpsertWithWherePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**Customer**](Customer.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
 
 ### Authorization
 

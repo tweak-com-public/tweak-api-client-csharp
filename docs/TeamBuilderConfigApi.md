@@ -16,14 +16,12 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdHead**](TeamBuilderConfigApi.md#teambuilderconfigsidhead) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**TeamBuilderConfigsIdPatch**](TeamBuilderConfigApi.md#teambuilderconfigsidpatch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
 [**TeamBuilderConfigsIdPortalsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalscountget) | **GET** /TeamBuilderConfigs/{id}/portals/count | Counts portals of TeamBuilderConfig.
-[**TeamBuilderConfigsIdPortalsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsdelete) | **DELETE** /TeamBuilderConfigs/{id}/portals | Deletes all portals of this model.
 [**TeamBuilderConfigsIdPortalsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/portals/{fk} | Delete a related item by id for portals.
 [**TeamBuilderConfigsIdPortalsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkget) | **GET** /TeamBuilderConfigs/{id}/portals/{fk} | Find a related item by id for portals.
 [**TeamBuilderConfigsIdPortalsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsfkput) | **PUT** /TeamBuilderConfigs/{id}/portals/{fk} | Update a related item by id for portals.
 [**TeamBuilderConfigsIdPortalsGet**](TeamBuilderConfigApi.md#teambuilderconfigsidportalsget) | **GET** /TeamBuilderConfigs/{id}/portals | Queries portals of TeamBuilderConfig.
 [**TeamBuilderConfigsIdPortalsPost**](TeamBuilderConfigApi.md#teambuilderconfigsidportalspost) | **POST** /TeamBuilderConfigs/{id}/portals | Creates a new instance in portals of this model.
 [**TeamBuilderConfigsIdProductGroupsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupscountget) | **GET** /TeamBuilderConfigs/{id}/productGroups/count | Counts productGroups of TeamBuilderConfig.
-[**TeamBuilderConfigsIdProductGroupsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups | Deletes all productGroups of this model.
 [**TeamBuilderConfigsIdProductGroupsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{fk} | Delete a related item by id for productGroups.
 [**TeamBuilderConfigsIdProductGroupsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsfkget) | **GET** /TeamBuilderConfigs/{id}/productGroups/{fk} | Find a related item by id for productGroups.
 [**TeamBuilderConfigsIdProductGroupsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsfkput) | **PUT** /TeamBuilderConfigs/{id}/productGroups/{fk} | Update a related item by id for productGroups.
@@ -40,7 +38,6 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductGroupsRelFkHead**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsrelfkhead) | **HEAD** /TeamBuilderConfigs/{id}/productGroups/rel/{fk} | Check the existence of productGroups relation to an item by id.
 [**TeamBuilderConfigsIdProductGroupsRelFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductgroupsrelfkput) | **PUT** /TeamBuilderConfigs/{id}/productGroups/rel/{fk} | Add a related item by id for productGroups.
 [**TeamBuilderConfigsIdProductSizeMaterialsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialscountget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/count | Counts productSizeMaterials of TeamBuilderConfig.
-[**TeamBuilderConfigsIdProductSizeMaterialsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials | Deletes all productSizeMaterials of this model.
 [**TeamBuilderConfigsIdProductSizeMaterialsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
 [**TeamBuilderConfigsIdProductSizeMaterialsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsfkget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
 [**TeamBuilderConfigsIdProductSizeMaterialsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
@@ -51,7 +48,6 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizeMaterialsNkTeamGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsnkteamget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/team | Fetches belongsTo relation team.
 [**TeamBuilderConfigsIdProductSizeMaterialsPost**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialspost) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelcountget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/count | Counts productSizeMaterialsRel of TeamBuilderConfig.
-[**TeamBuilderConfigsIdProductSizeMaterialsRelDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsreldelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Deletes all productSizeMaterialsRel of this model.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk} | Remove the productSizeMaterials relation to an item by id.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelFkDelete_0**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelfkdelete_0) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Delete a related item by id for productSizeMaterialsRel.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelfkget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Find a related item by id for productSizeMaterialsRel.
@@ -64,13 +60,11 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizeMaterialsRelNkProductSizeMaterialGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelnkproductsizematerialget) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
 [**TeamBuilderConfigsIdProductSizeMaterialsRelPost**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizematerialsrelpost) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
 [**TeamBuilderConfigsIdProductSizesCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizescountget) | **GET** /TeamBuilderConfigs/{id}/productSizes/count | Counts productSizes of TeamBuilderConfig.
-[**TeamBuilderConfigsIdProductSizesDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes | Deletes all productSizes of this model.
 [**TeamBuilderConfigsIdProductSizesFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{fk} | Delete a related item by id for productSizes.
 [**TeamBuilderConfigsIdProductSizesFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesfkget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{fk} | Find a related item by id for productSizes.
 [**TeamBuilderConfigsIdProductSizesFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{fk} | Update a related item by id for productSizes.
 [**TeamBuilderConfigsIdProductSizesGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesget) | **GET** /TeamBuilderConfigs/{id}/productSizes | Queries productSizes of TeamBuilderConfig.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialscountget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/count | Counts materials of ProductSize.
-[**TeamBuilderConfigsIdProductSizesNkMaterialsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials | Deletes all materials of this model.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Delete a related item by id for materials.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsfkget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Find a related item by id for materials.
 [**TeamBuilderConfigsIdProductSizesNkMaterialsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkmaterialsfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Update a related item by id for materials.
@@ -88,7 +82,6 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizesNkProductsGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkproductsget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Queries products of ProductSize.
 [**TeamBuilderConfigsIdProductSizesNkProductsPost**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnkproductspost) | **POST** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Creates a new instance in products of this model.
 [**TeamBuilderConfigsIdProductSizesNkSizeMaterialsCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnksizematerialscountget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/count | Counts sizeMaterials of ProductSize.
-[**TeamBuilderConfigsIdProductSizesNkSizeMaterialsDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnksizematerialsdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials | Deletes all sizeMaterials of this model.
 [**TeamBuilderConfigsIdProductSizesNkSizeMaterialsFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnksizematerialsfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Delete a related item by id for sizeMaterials.
 [**TeamBuilderConfigsIdProductSizesNkSizeMaterialsFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnksizematerialsfkget) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Find a related item by id for sizeMaterials.
 [**TeamBuilderConfigsIdProductSizesNkSizeMaterialsFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesnksizematerialsfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Update a related item by id for sizeMaterials.
@@ -100,14 +93,12 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdProductSizesRelFkHead**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesrelfkhead) | **HEAD** /TeamBuilderConfigs/{id}/productSizes/rel/{fk} | Check the existence of productSizes relation to an item by id.
 [**TeamBuilderConfigsIdProductSizesRelFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproductsizesrelfkput) | **PUT** /TeamBuilderConfigs/{id}/productSizes/rel/{fk} | Add a related item by id for productSizes.
 [**TeamBuilderConfigsIdProductTypesCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypescountget) | **GET** /TeamBuilderConfigs/{id}/productTypes/count | Counts productTypes of TeamBuilderConfig.
-[**TeamBuilderConfigsIdProductTypesDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesdelete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes | Deletes all productTypes of this model.
 [**TeamBuilderConfigsIdProductTypesFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{fk} | Delete a related item by id for productTypes.
 [**TeamBuilderConfigsIdProductTypesFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesfkget) | **GET** /TeamBuilderConfigs/{id}/productTypes/{fk} | Find a related item by id for productTypes.
 [**TeamBuilderConfigsIdProductTypesFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesfkput) | **PUT** /TeamBuilderConfigs/{id}/productTypes/{fk} | Update a related item by id for productTypes.
 [**TeamBuilderConfigsIdProductTypesGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesget) | **GET** /TeamBuilderConfigs/{id}/productTypes | Queries productTypes of TeamBuilderConfig.
 [**TeamBuilderConfigsIdProductTypesNkGroupGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnkgroupget) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/group | Fetches belongsTo relation group.
 [**TeamBuilderConfigsIdProductTypesNkSizesCountGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnksizescountget) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/count | Counts sizes of ProductType.
-[**TeamBuilderConfigsIdProductTypesNkSizesDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnksizesdelete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes | Deletes all sizes of this model.
 [**TeamBuilderConfigsIdProductTypesNkSizesFkDelete**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnksizesfkdelete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Delete a related item by id for sizes.
 [**TeamBuilderConfigsIdProductTypesNkSizesFkGet**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnksizesfkget) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Find a related item by id for sizes.
 [**TeamBuilderConfigsIdProductTypesNkSizesFkPut**](TeamBuilderConfigApi.md#teambuilderconfigsidproducttypesnksizesfkput) | **PUT** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Update a related item by id for sizes.
@@ -120,12 +111,7 @@ Method | HTTP request | Description
 [**TeamBuilderConfigsIdPut**](TeamBuilderConfigApi.md#teambuilderconfigsidput) | **PUT** /TeamBuilderConfigs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**TeamBuilderConfigsIdReplacePost**](TeamBuilderConfigApi.md#teambuilderconfigsidreplacepost) | **POST** /TeamBuilderConfigs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**TeamBuilderConfigsIdTeamGet**](TeamBuilderConfigApi.md#teambuilderconfigsidteamget) | **GET** /TeamBuilderConfigs/{id}/team | Fetches belongsTo relation team.
-[**TeamBuilderConfigsPatch**](TeamBuilderConfigApi.md#teambuilderconfigspatch) | **PATCH** /TeamBuilderConfigs | Patch an existing model instance or insert a new one into the data source.
 [**TeamBuilderConfigsPost**](TeamBuilderConfigApi.md#teambuilderconfigspost) | **POST** /TeamBuilderConfigs | Create a new instance of the model and persist it into the data source.
-[**TeamBuilderConfigsPut**](TeamBuilderConfigApi.md#teambuilderconfigsput) | **PUT** /TeamBuilderConfigs | Replace an existing model instance or insert a new one into the data source.
-[**TeamBuilderConfigsReplaceOrCreatePost**](TeamBuilderConfigApi.md#teambuilderconfigsreplaceorcreatepost) | **POST** /TeamBuilderConfigs/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**TeamBuilderConfigsUpdatePost**](TeamBuilderConfigApi.md#teambuilderconfigsupdatepost) | **POST** /TeamBuilderConfigs/update | Update instances of the model matched by {{where}} from the data source.
-[**TeamBuilderConfigsUpsertWithWherePost**](TeamBuilderConfigApi.md#teambuilderconfigsupsertwithwherepost) | **POST** /TeamBuilderConfigs/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 <a name="teambuilderconfigschangestreamget"></a>
@@ -910,70 +896,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigsidportalsdelete"></a>
-# **TeamBuilderConfigsIdPortalsDelete**
-> void TeamBuilderConfigsIdPortalsDelete (string id)
-
-Deletes all portals of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdPortalsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all portals of this model.
-                apiInstance.TeamBuilderConfigsIdPortalsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdPortalsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigsidportalsfkdelete"></a>
 # **TeamBuilderConfigsIdPortalsFkDelete**
 > void TeamBuilderConfigsIdPortalsFkDelete (string id, string fk)
@@ -1365,70 +1287,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsidproductgroupsdelete"></a>
-# **TeamBuilderConfigsIdProductGroupsDelete**
-> void TeamBuilderConfigsIdProductGroupsDelete (string id)
-
-Deletes all productGroups of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductGroupsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all productGroups of this model.
-                apiInstance.TeamBuilderConfigsIdProductGroupsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductGroupsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -2527,70 +2385,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigsidproductsizematerialsdelete"></a>
-# **TeamBuilderConfigsIdProductSizeMaterialsDelete**
-> void TeamBuilderConfigsIdProductSizeMaterialsDelete (string id)
-
-Deletes all productSizeMaterials of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductSizeMaterialsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all productSizeMaterials of this model.
-                apiInstance.TeamBuilderConfigsIdProductSizeMaterialsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizeMaterialsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigsidproductsizematerialsfkdelete"></a>
 # **TeamBuilderConfigsIdProductSizeMaterialsFkDelete**
 > void TeamBuilderConfigsIdProductSizeMaterialsFkDelete (string id, string fk)
@@ -3258,70 +3052,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsidproductsizematerialsreldelete"></a>
-# **TeamBuilderConfigsIdProductSizeMaterialsRelDelete**
-> void TeamBuilderConfigsIdProductSizeMaterialsRelDelete (string id)
-
-Deletes all productSizeMaterialsRel of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductSizeMaterialsRelDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all productSizeMaterialsRel of this model.
-                apiInstance.TeamBuilderConfigsIdProductSizeMaterialsRelDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizeMaterialsRelDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -4146,70 +3876,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigsidproductsizesdelete"></a>
-# **TeamBuilderConfigsIdProductSizesDelete**
-> void TeamBuilderConfigsIdProductSizesDelete (string id)
-
-Deletes all productSizes of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductSizesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all productSizes of this model.
-                apiInstance.TeamBuilderConfigsIdProductSizesDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigsidproductsizesfkdelete"></a>
 # **TeamBuilderConfigsIdProductSizesFkDelete**
 > void TeamBuilderConfigsIdProductSizesFkDelete (string id, string fk)
@@ -4536,72 +4202,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsidproductsizesnkmaterialsdelete"></a>
-# **TeamBuilderConfigsIdProductSizesNkMaterialsDelete**
-> void TeamBuilderConfigsIdProductSizesNkMaterialsDelete (string id, string nk)
-
-Deletes all materials of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductSizesNkMaterialsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-            var nk = nk_example;  // string | Foreign key for productSizes.
-
-            try
-            {
-                // Deletes all materials of this model.
-                apiInstance.TeamBuilderConfigsIdProductSizesNkMaterialsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizesNkMaterialsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
- **nk** | **string**| Foreign key for productSizes. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -5787,72 +5387,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigsidproductsizesnksizematerialsdelete"></a>
-# **TeamBuilderConfigsIdProductSizesNkSizeMaterialsDelete**
-> void TeamBuilderConfigsIdProductSizesNkSizeMaterialsDelete (string id, string nk)
-
-Deletes all sizeMaterials of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductSizesNkSizeMaterialsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-            var nk = nk_example;  // string | Foreign key for productSizes.
-
-            try
-            {
-                // Deletes all sizeMaterials of this model.
-                apiInstance.TeamBuilderConfigsIdProductSizesNkSizeMaterialsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductSizesNkSizeMaterialsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
- **nk** | **string**| Foreign key for productSizes. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigsidproductsizesnksizematerialsfkdelete"></a>
 # **TeamBuilderConfigsIdProductSizesNkSizeMaterialsFkDelete**
 > void TeamBuilderConfigsIdProductSizesNkSizeMaterialsFkDelete (string id, string nk, string fk)
@@ -6604,70 +6138,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigsidproducttypesdelete"></a>
-# **TeamBuilderConfigsIdProductTypesDelete**
-> void TeamBuilderConfigsIdProductTypesDelete (string id)
-
-Deletes all productTypes of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductTypesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-
-            try
-            {
-                // Deletes all productTypes of this model.
-                apiInstance.TeamBuilderConfigsIdProductTypesDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductTypesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigsidproducttypesfkdelete"></a>
 # **TeamBuilderConfigsIdProductTypesFkDelete**
 > void TeamBuilderConfigsIdProductTypesFkDelete (string id, string fk)
@@ -7063,72 +6533,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsidproducttypesnksizesdelete"></a>
-# **TeamBuilderConfigsIdProductTypesNkSizesDelete**
-> void TeamBuilderConfigsIdProductTypesNkSizesDelete (string id, string nk)
-
-Deletes all sizes of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsIdProductTypesNkSizesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var id = id_example;  // string | TeamBuilderConfig id
-            var nk = nk_example;  // string | Foreign key for productTypes.
-
-            try
-            {
-                // Deletes all sizes of this model.
-                apiInstance.TeamBuilderConfigsIdProductTypesNkSizesDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsIdProductTypesNkSizesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamBuilderConfig id | 
- **nk** | **string**| Foreign key for productTypes. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -7957,71 +7361,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teambuilderconfigspatch"></a>
-# **TeamBuilderConfigsPatch**
-> TeamBuilderConfig TeamBuilderConfigsPatch (TeamBuilderConfig data = null)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsPatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var data = new TeamBuilderConfig(); // TeamBuilderConfig | Model instance data (optional) 
-
-            try
-            {
-                // Patch an existing model instance or insert a new one into the data source.
-                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsPatch(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsPatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamBuilderConfig**](TeamBuilderConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teambuilderconfigspost"></a>
 # **TeamBuilderConfigsPost**
 > TeamBuilderConfig TeamBuilderConfigsPost (TeamBuilderConfig data = null)
@@ -8071,270 +7410,6 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamBuilderConfig**](TeamBuilderConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsput"></a>
-# **TeamBuilderConfigsPut**
-> TeamBuilderConfig TeamBuilderConfigsPut (TeamBuilderConfig data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var data = new TeamBuilderConfig(); // TeamBuilderConfig | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsPut(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamBuilderConfig**](TeamBuilderConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsreplaceorcreatepost"></a>
-# **TeamBuilderConfigsReplaceOrCreatePost**
-> TeamBuilderConfig TeamBuilderConfigsReplaceOrCreatePost (TeamBuilderConfig data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsReplaceOrCreatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var data = new TeamBuilderConfig(); // TeamBuilderConfig | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsReplaceOrCreatePost(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsReplaceOrCreatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamBuilderConfig**](TeamBuilderConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsupdatepost"></a>
-# **TeamBuilderConfigsUpdatePost**
-> InlineResponse2003 TeamBuilderConfigsUpdatePost (string where = null, TeamBuilderConfig data = null)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsUpdatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new TeamBuilderConfig(); // TeamBuilderConfig | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2003 result = apiInstance.TeamBuilderConfigsUpdatePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsUpdatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teambuilderconfigsupsertwithwherepost"></a>
-# **TeamBuilderConfigsUpsertWithWherePost**
-> TeamBuilderConfig TeamBuilderConfigsUpsertWithWherePost (string where = null, TeamBuilderConfig data = null)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamBuilderConfigsUpsertWithWherePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamBuilderConfigApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new TeamBuilderConfig(); // TeamBuilderConfig | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update an existing model instance or insert a new one into the data source based on the where criteria.
-                TeamBuilderConfig result = apiInstance.TeamBuilderConfigsUpsertWithWherePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamBuilderConfigApi.TeamBuilderConfigsUpsertWithWherePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 

@@ -25,14 +25,12 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsFkWatermarkPut**](TeamApi.md#teamsidbuilderconfigsfkwatermarkput) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**TeamsIdBuilderConfigsGet**](TeamApi.md#teamsidbuilderconfigsget) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
 [**TeamsIdBuilderConfigsNkPortalsCountGet**](TeamApi.md#teamsidbuilderconfigsnkportalscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/count | Counts portals of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkPortalsDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals | Deletes all portals of this model.
 [**TeamsIdBuilderConfigsNkPortalsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkportalsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Delete a related item by id for portals.
 [**TeamsIdBuilderConfigsNkPortalsFkGet**](TeamApi.md#teamsidbuilderconfigsnkportalsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Find a related item by id for portals.
 [**TeamsIdBuilderConfigsNkPortalsFkPut**](TeamApi.md#teamsidbuilderconfigsnkportalsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Update a related item by id for portals.
 [**TeamsIdBuilderConfigsNkPortalsGet**](TeamApi.md#teamsidbuilderconfigsnkportalsget) | **GET** /Teams/{id}/builderConfigs/{nk}/portals | Queries portals of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkPortalsPost**](TeamApi.md#teamsidbuilderconfigsnkportalspost) | **POST** /Teams/{id}/builderConfigs/{nk}/portals | Creates a new instance in portals of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkProductGroupsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
 [**TeamsIdBuilderConfigsNkProductGroupsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Delete a related item by id for productGroups.
 [**TeamsIdBuilderConfigsNkProductGroupsFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Find a related item by id for productGroups.
 [**TeamsIdBuilderConfigsNkProductGroupsFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Update a related item by id for productGroups.
@@ -42,14 +40,12 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsNkProductGroupsRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productGroups/rel/{fk} | Check the existence of productGroups relation to an item by id.
 [**TeamsIdBuilderConfigsNkProductGroupsRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductgroupsrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productGroups/rel/{fk} | Add a related item by id for productGroups.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialscountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/count | Counts productSizeMaterials of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkProductSizeMaterialsDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Deletes all productSizeMaterials of this model.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Queries productSizeMaterials of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsPost**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialspost) | **POST** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelcountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/count | Counts productSizeMaterialsRel of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsreldelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Deletes all productSizeMaterialsRel of this model.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterials/rel/{fk} | Remove the productSizeMaterials relation to an item by id.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkDelete_0**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkdelete_0) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/{fk} | Delete a related item by id for productSizeMaterialsRel.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel/{fk} | Find a related item by id for productSizeMaterialsRel.
@@ -59,7 +55,6 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Queries productSizeMaterialsRel of TeamBuilderConfig.
 [**TeamsIdBuilderConfigsNkProductSizeMaterialsRelPost**](TeamApi.md#teamsidbuilderconfigsnkproductsizematerialsrelpost) | **POST** /Teams/{id}/builderConfigs/{nk}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
 [**TeamsIdBuilderConfigsNkProductSizesCountGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizescountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizes/count | Counts productSizes of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkProductSizesDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizesdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizes | Deletes all productSizes of this model.
 [**TeamsIdBuilderConfigsNkProductSizesFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Delete a related item by id for productSizes.
 [**TeamsIdBuilderConfigsNkProductSizesFkGet**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Find a related item by id for productSizes.
 [**TeamsIdBuilderConfigsNkProductSizesFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizesfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizes/{fk} | Update a related item by id for productSizes.
@@ -69,7 +64,6 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsNkProductSizesRelFkHead**](TeamApi.md#teamsidbuilderconfigsnkproductsizesrelfkhead) | **HEAD** /Teams/{id}/builderConfigs/{nk}/productSizes/rel/{fk} | Check the existence of productSizes relation to an item by id.
 [**TeamsIdBuilderConfigsNkProductSizesRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproductsizesrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productSizes/rel/{fk} | Add a related item by id for productSizes.
 [**TeamsIdBuilderConfigsNkProductTypesCountGet**](TeamApi.md#teamsidbuilderconfigsnkproducttypescountget) | **GET** /Teams/{id}/builderConfigs/{nk}/productTypes/count | Counts productTypes of TeamBuilderConfig.
-[**TeamsIdBuilderConfigsNkProductTypesDelete**](TeamApi.md#teamsidbuilderconfigsnkproducttypesdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productTypes | Deletes all productTypes of this model.
 [**TeamsIdBuilderConfigsNkProductTypesFkDelete**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkdelete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Delete a related item by id for productTypes.
 [**TeamsIdBuilderConfigsNkProductTypesFkGet**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkget) | **GET** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Find a related item by id for productTypes.
 [**TeamsIdBuilderConfigsNkProductTypesFkPut**](TeamApi.md#teamsidbuilderconfigsnkproducttypesfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/{fk} | Update a related item by id for productTypes.
@@ -80,9 +74,22 @@ Method | HTTP request | Description
 [**TeamsIdBuilderConfigsNkProductTypesRelFkPut**](TeamApi.md#teamsidbuilderconfigsnkproducttypesrelfkput) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Add a related item by id for productTypes.
 [**TeamsIdBuilderConfigsNkTeamGet**](TeamApi.md#teamsidbuilderconfigsnkteamget) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
 [**TeamsIdBuilderConfigsPost**](TeamApi.md#teamsidbuilderconfigspost) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
+[**TeamsIdDataSourceSoapsCountGet**](TeamApi.md#teamsiddatasourcesoapscountget) | **GET** /Teams/{id}/dataSourceSoaps/count | Counts dataSourceSoaps of Team.
+[**TeamsIdDataSourceSoapsFkDelete**](TeamApi.md#teamsiddatasourcesoapsfkdelete) | **DELETE** /Teams/{id}/dataSourceSoaps/{fk} | Delete a related item by id for dataSourceSoaps.
+[**TeamsIdDataSourceSoapsFkGet**](TeamApi.md#teamsiddatasourcesoapsfkget) | **GET** /Teams/{id}/dataSourceSoaps/{fk} | Find a related item by id for dataSourceSoaps.
+[**TeamsIdDataSourceSoapsFkPut**](TeamApi.md#teamsiddatasourcesoapsfkput) | **PUT** /Teams/{id}/dataSourceSoaps/{fk} | Update a related item by id for dataSourceSoaps.
+[**TeamsIdDataSourceSoapsGet**](TeamApi.md#teamsiddatasourcesoapsget) | **GET** /Teams/{id}/dataSourceSoaps | Queries dataSourceSoaps of Team.
+[**TeamsIdDataSourceSoapsNkDynamicDatasCountGet**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatascountget) | **GET** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas/count | Counts dynamicDatas of DataSourceSoap.
+[**TeamsIdDataSourceSoapsNkDynamicDatasDelete**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatasdelete) | **DELETE** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas | Deletes all dynamicDatas of this model.
+[**TeamsIdDataSourceSoapsNkDynamicDatasFkDelete**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatasfkdelete) | **DELETE** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
+[**TeamsIdDataSourceSoapsNkDynamicDatasFkGet**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatasfkget) | **GET** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
+[**TeamsIdDataSourceSoapsNkDynamicDatasFkPut**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatasfkput) | **PUT** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
+[**TeamsIdDataSourceSoapsNkDynamicDatasGet**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdatasget) | **GET** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas | Queries dynamicDatas of DataSourceSoap.
+[**TeamsIdDataSourceSoapsNkDynamicDatasPost**](TeamApi.md#teamsiddatasourcesoapsnkdynamicdataspost) | **POST** /Teams/{id}/dataSourceSoaps/{nk}/dynamicDatas | Creates a new instance in dynamicDatas of this model.
+[**TeamsIdDataSourceSoapsNkTeamGet**](TeamApi.md#teamsiddatasourcesoapsnkteamget) | **GET** /Teams/{id}/dataSourceSoaps/{nk}/team | Fetches belongsTo relation team.
+[**TeamsIdDataSourceSoapsPost**](TeamApi.md#teamsiddatasourcesoapspost) | **POST** /Teams/{id}/dataSourceSoaps | Creates a new instance in dataSourceSoaps of this model.
 [**TeamsIdDelete**](TeamApi.md#teamsiddelete) | **DELETE** /Teams/{id} | Delete a model instance by {{id}} from the data source.
 [**TeamsIdDynamicDatasCountGet**](TeamApi.md#teamsiddynamicdatascountget) | **GET** /Teams/{id}/dynamicDatas/count | Counts dynamicDatas of Team.
-[**TeamsIdDynamicDatasDelete**](TeamApi.md#teamsiddynamicdatasdelete) | **DELETE** /Teams/{id}/dynamicDatas | Deletes all dynamicDatas of this model.
 [**TeamsIdDynamicDatasFkDelete**](TeamApi.md#teamsiddynamicdatasfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasFkGet**](TeamApi.md#teamsiddynamicdatasfkget) | **GET** /Teams/{id}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**TeamsIdDynamicDatasFkPut**](TeamApi.md#teamsiddynamicdatasfkput) | **PUT** /Teams/{id}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
@@ -95,7 +102,6 @@ Method | HTTP request | Description
 [**TeamsIdDynamicDatasNkDataSourceRestGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcerestget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceRest | Fetches belongsTo relation dataSourceRest.
 [**TeamsIdDynamicDatasNkDataSourceSoapGet**](TeamApi.md#teamsiddynamicdatasnkdatasourcesoapget) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**TeamsIdDynamicDatasNkDesignsCountGet**](TeamApi.md#teamsiddynamicdatasnkdesignscountget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/count | Counts designs of DynamicData.
-[**TeamsIdDynamicDatasNkDesignsDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs | Deletes all designs of this model.
 [**TeamsIdDynamicDatasNkDesignsFkDelete**](TeamApi.md#teamsiddynamicdatasnkdesignsfkdelete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Delete a related item by id for designs.
 [**TeamsIdDynamicDatasNkDesignsFkGet**](TeamApi.md#teamsiddynamicdatasnkdesignsfkget) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Find a related item by id for designs.
 [**TeamsIdDynamicDatasNkDesignsFkPut**](TeamApi.md#teamsiddynamicdatasnkdesignsfkput) | **PUT** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Update a related item by id for designs.
@@ -123,7 +129,6 @@ Method | HTTP request | Description
 [**TeamsIdImageFoldersFkPut**](TeamApi.md#teamsidimagefoldersfkput) | **PUT** /Teams/{id}/imageFolders/{fk} | Update a related item by id for imageFolders.
 [**TeamsIdImageFoldersGet**](TeamApi.md#teamsidimagefoldersget) | **GET** /Teams/{id}/imageFolders | Queries imageFolders of Team.
 [**TeamsIdImageFoldersNkChildrenCountGet**](TeamApi.md#teamsidimagefoldersnkchildrencountget) | **GET** /Teams/{id}/imageFolders/{nk}/children/count | Counts children of ImageFolder.
-[**TeamsIdImageFoldersNkChildrenDelete**](TeamApi.md#teamsidimagefoldersnkchildrendelete) | **DELETE** /Teams/{id}/imageFolders/{nk}/children | Deletes all children of this model.
 [**TeamsIdImageFoldersNkChildrenFkDelete**](TeamApi.md#teamsidimagefoldersnkchildrenfkdelete) | **DELETE** /Teams/{id}/imageFolders/{nk}/children/{fk} | Delete a related item by id for children.
 [**TeamsIdImageFoldersNkChildrenFkGet**](TeamApi.md#teamsidimagefoldersnkchildrenfkget) | **GET** /Teams/{id}/imageFolders/{nk}/children/{fk} | Find a related item by id for children.
 [**TeamsIdImageFoldersNkChildrenFkPut**](TeamApi.md#teamsidimagefoldersnkchildrenfkput) | **PUT** /Teams/{id}/imageFolders/{nk}/children/{fk} | Update a related item by id for children.
@@ -137,7 +142,6 @@ Method | HTTP request | Description
 [**TeamsIdImageFoldersNkFolderMembersGet**](TeamApi.md#teamsidimagefoldersnkfoldermembersget) | **GET** /Teams/{id}/imageFolders/{nk}/folderMembers | Queries folderMembers of ImageFolder.
 [**TeamsIdImageFoldersNkFolderMembersPost**](TeamApi.md#teamsidimagefoldersnkfoldermemberspost) | **POST** /Teams/{id}/imageFolders/{nk}/folderMembers | Creates a new instance in folderMembers of this model.
 [**TeamsIdImageFoldersNkImagesCountGet**](TeamApi.md#teamsidimagefoldersnkimagescountget) | **GET** /Teams/{id}/imageFolders/{nk}/images/count | Counts images of ImageFolder.
-[**TeamsIdImageFoldersNkImagesDelete**](TeamApi.md#teamsidimagefoldersnkimagesdelete) | **DELETE** /Teams/{id}/imageFolders/{nk}/images | Deletes all images of this model.
 [**TeamsIdImageFoldersNkImagesFkDelete**](TeamApi.md#teamsidimagefoldersnkimagesfkdelete) | **DELETE** /Teams/{id}/imageFolders/{nk}/images/{fk} | Delete a related item by id for images.
 [**TeamsIdImageFoldersNkImagesFkGet**](TeamApi.md#teamsidimagefoldersnkimagesfkget) | **GET** /Teams/{id}/imageFolders/{nk}/images/{fk} | Find a related item by id for images.
 [**TeamsIdImageFoldersNkImagesFkPut**](TeamApi.md#teamsidimagefoldersnkimagesfkput) | **PUT** /Teams/{id}/imageFolders/{nk}/images/{fk} | Update a related item by id for images.
@@ -209,7 +213,6 @@ Method | HTTP request | Description
 [**TeamsIdPortalsNkDesignFoldersGet**](TeamApi.md#teamsidportalsnkdesignfoldersget) | **GET** /Teams/{id}/portals/{nk}/designFolders | Queries designFolders of Portal.
 [**TeamsIdPortalsNkDesignFoldersPost**](TeamApi.md#teamsidportalsnkdesignfolderspost) | **POST** /Teams/{id}/portals/{nk}/designFolders | Creates a new instance in designFolders of this model.
 [**TeamsIdPortalsNkDesignsCountGet**](TeamApi.md#teamsidportalsnkdesignscountget) | **GET** /Teams/{id}/portals/{nk}/designs/count | Counts designs of Portal.
-[**TeamsIdPortalsNkDesignsDelete**](TeamApi.md#teamsidportalsnkdesignsdelete) | **DELETE** /Teams/{id}/portals/{nk}/designs | Deletes all designs of this model.
 [**TeamsIdPortalsNkDesignsFkDelete**](TeamApi.md#teamsidportalsnkdesignsfkdelete) | **DELETE** /Teams/{id}/portals/{nk}/designs/{fk} | Delete a related item by id for designs.
 [**TeamsIdPortalsNkDesignsFkGet**](TeamApi.md#teamsidportalsnkdesignsfkget) | **GET** /Teams/{id}/portals/{nk}/designs/{fk} | Find a related item by id for designs.
 [**TeamsIdPortalsNkDesignsFkPut**](TeamApi.md#teamsidportalsnkdesignsfkput) | **PUT** /Teams/{id}/portals/{nk}/designs/{fk} | Update a related item by id for designs.
@@ -309,7 +312,6 @@ Method | HTTP request | Description
 [**TeamsIdTeamDataDataSourceRestGet**](TeamApi.md#teamsidteamdatadatasourcerestget) | **GET** /Teams/{id}/teamData/dataSourceRest | Fetches belongsTo relation dataSourceRest.
 [**TeamsIdTeamDataDataSourceSoapGet**](TeamApi.md#teamsidteamdatadatasourcesoapget) | **GET** /Teams/{id}/teamData/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**TeamsIdTeamDataDesignsCountGet**](TeamApi.md#teamsidteamdatadesignscountget) | **GET** /Teams/{id}/teamData/designs/count | Counts designs of DynamicData.
-[**TeamsIdTeamDataDesignsDelete**](TeamApi.md#teamsidteamdatadesignsdelete) | **DELETE** /Teams/{id}/teamData/designs | Deletes all designs of this model.
 [**TeamsIdTeamDataDesignsFkDelete**](TeamApi.md#teamsidteamdatadesignsfkdelete) | **DELETE** /Teams/{id}/teamData/designs/{fk} | Delete a related item by id for designs.
 [**TeamsIdTeamDataDesignsFkGet**](TeamApi.md#teamsidteamdatadesignsfkget) | **GET** /Teams/{id}/teamData/designs/{fk} | Find a related item by id for designs.
 [**TeamsIdTeamDataDesignsFkPut**](TeamApi.md#teamsidteamdatadesignsfkput) | **PUT** /Teams/{id}/teamData/designs/{fk} | Update a related item by id for designs.
@@ -349,7 +351,6 @@ Method | HTTP request | Description
 [**TeamsIdTemplatesFkPut**](TeamApi.md#teamsidtemplatesfkput) | **PUT** /Teams/{id}/templates/{fk} | Update a related item by id for templates.
 [**TeamsIdTemplatesGet**](TeamApi.md#teamsidtemplatesget) | **GET** /Teams/{id}/templates | Queries templates of Team.
 [**TeamsIdTemplatesNkDesignsCountGet**](TeamApi.md#teamsidtemplatesnkdesignscountget) | **GET** /Teams/{id}/templates/{nk}/designs/count | Counts designs of Template.
-[**TeamsIdTemplatesNkDesignsDelete**](TeamApi.md#teamsidtemplatesnkdesignsdelete) | **DELETE** /Teams/{id}/templates/{nk}/designs | Deletes all designs of this model.
 [**TeamsIdTemplatesNkDesignsFkDelete**](TeamApi.md#teamsidtemplatesnkdesignsfkdelete) | **DELETE** /Teams/{id}/templates/{nk}/designs/{fk} | Delete a related item by id for designs.
 [**TeamsIdTemplatesNkDesignsFkGet**](TeamApi.md#teamsidtemplatesnkdesignsfkget) | **GET** /Teams/{id}/templates/{nk}/designs/{fk} | Find a related item by id for designs.
 [**TeamsIdTemplatesNkDesignsFkPut**](TeamApi.md#teamsidtemplatesnkdesignsfkput) | **PUT** /Teams/{id}/templates/{nk}/designs/{fk} | Update a related item by id for designs.
@@ -420,13 +421,8 @@ Method | HTTP request | Description
 [**TeamsIdWorkflowsGet**](TeamApi.md#teamsidworkflowsget) | **GET** /Teams/{id}/workflows | Queries workflows of Team.
 [**TeamsIdWorkflowsPost**](TeamApi.md#teamsidworkflowspost) | **POST** /Teams/{id}/workflows | Creates a new instance in workflows of this model.
 [**TeamsNameNameExistsGet**](TeamApi.md#teamsnamenameexistsget) | **GET** /Teams/name/{name}/exists | Define whether team exists or not
-[**TeamsPatch**](TeamApi.md#teamspatch) | **PATCH** /Teams | Patch an existing model instance or insert a new one into the data source.
 [**TeamsPost**](TeamApi.md#teamspost) | **POST** /Teams | Create a new instance of the model and persist it into the data source.
-[**TeamsPut**](TeamApi.md#teamsput) | **PUT** /Teams | Replace an existing model instance or insert a new one into the data source.
-[**TeamsReplaceOrCreatePost**](TeamApi.md#teamsreplaceorcreatepost) | **POST** /Teams/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 [**TeamsSubdomainSubdomainExistsGet**](TeamApi.md#teamssubdomainsubdomainexistsget) | **GET** /Teams/subdomain/{subdomain}/exists | Define whether team exists or not
-[**TeamsUpdatePost**](TeamApi.md#teamsupdatepost) | **POST** /Teams/update | Update instances of the model matched by {{where}} from the data source.
-[**TeamsUpsertWithWherePost**](TeamApi.md#teamsupsertwithwherepost) | **POST** /Teams/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 <a name="teamschangestreamget"></a>
@@ -1821,72 +1817,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsidbuilderconfigsnkportalsdelete"></a>
-# **TeamsIdBuilderConfigsNkPortalsDelete**
-> void TeamsIdBuilderConfigsNkPortalsDelete (string id, string nk)
-
-Deletes all portals of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkPortalsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all portals of this model.
-                apiInstance.TeamsIdBuilderConfigsNkPortalsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkPortalsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsidbuilderconfigsnkportalsfkdelete"></a>
 # **TeamsIdBuilderConfigsNkPortalsFkDelete**
 > void TeamsIdBuilderConfigsNkPortalsFkDelete (string id, string nk, string fk)
@@ -2290,72 +2220,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidbuilderconfigsnkproductgroupsdelete"></a>
-# **TeamsIdBuilderConfigsNkProductGroupsDelete**
-> void TeamsIdBuilderConfigsNkProductGroupsDelete (string id, string nk)
-
-Deletes all productGroups of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkProductGroupsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all productGroups of this model.
-                apiInstance.TeamsIdBuilderConfigsNkProductGroupsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductGroupsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -2991,72 +2855,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsidbuilderconfigsnkproductsizematerialsdelete"></a>
-# **TeamsIdBuilderConfigsNkProductSizeMaterialsDelete**
-> void TeamsIdBuilderConfigsNkProductSizeMaterialsDelete (string id, string nk)
-
-Deletes all productSizeMaterials of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkProductSizeMaterialsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all productSizeMaterials of this model.
-                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsidbuilderconfigsnkproductsizematerialsfkdelete"></a>
 # **TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete**
 > void TeamsIdBuilderConfigsNkProductSizeMaterialsFkDelete (string id, string nk, string fk)
@@ -3460,72 +3258,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidbuilderconfigsnkproductsizematerialsreldelete"></a>
-# **TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete**
-> void TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete (string id, string nk)
-
-Deletes all productSizeMaterialsRel of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkProductSizeMaterialsRelDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all productSizeMaterialsRel of this model.
-                apiInstance.TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizeMaterialsRelDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -4161,72 +3893,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsidbuilderconfigsnkproductsizesdelete"></a>
-# **TeamsIdBuilderConfigsNkProductSizesDelete**
-> void TeamsIdBuilderConfigsNkProductSizesDelete (string id, string nk)
-
-Deletes all productSizes of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkProductSizesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all productSizes of this model.
-                apiInstance.TeamsIdBuilderConfigsNkProductSizesDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductSizesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsidbuilderconfigsnkproductsizesfkdelete"></a>
 # **TeamsIdBuilderConfigsNkProductSizesFkDelete**
 > void TeamsIdBuilderConfigsNkProductSizesFkDelete (string id, string nk, string fk)
@@ -4838,72 +4504,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidbuilderconfigsnkproducttypesdelete"></a>
-# **TeamsIdBuilderConfigsNkProductTypesDelete**
-> void TeamsIdBuilderConfigsNkProductTypesDelete (string id, string nk)
-
-Deletes all productTypes of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdBuilderConfigsNkProductTypesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for builderConfigs.
-
-            try
-            {
-                // Deletes all productTypes of this model.
-                apiInstance.TeamsIdBuilderConfigsNkProductTypesDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdBuilderConfigsNkProductTypesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for builderConfigs. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -5606,6 +5206,959 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="teamsiddatasourcesoapscountget"></a>
+# **TeamsIdDataSourceSoapsCountGet**
+> InlineResponse2001 TeamsIdDataSourceSoapsCountGet (string id, string where = null)
+
+Counts dataSourceSoaps of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts dataSourceSoaps of Team.
+                InlineResponse2001 result = apiInstance.TeamsIdDataSourceSoapsCountGet(id, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsfkdelete"></a>
+# **TeamsIdDataSourceSoapsFkDelete**
+> void TeamsIdDataSourceSoapsFkDelete (string id, string fk)
+
+Delete a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+
+            try
+            {
+                // Delete a related item by id for dataSourceSoaps.
+                apiInstance.TeamsIdDataSourceSoapsFkDelete(id, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsfkget"></a>
+# **TeamsIdDataSourceSoapsFkGet**
+> DataSourceSoap TeamsIdDataSourceSoapsFkGet (string id, string fk)
+
+Find a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+
+            try
+            {
+                // Find a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.TeamsIdDataSourceSoapsFkGet(id, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsfkput"></a>
+# **TeamsIdDataSourceSoapsFkPut**
+> DataSourceSoap TeamsIdDataSourceSoapsFkPut (string id, string fk, DataSourceSoap data = null)
+
+Update a related item by id for dataSourceSoaps.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
+
+            try
+            {
+                // Update a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.TeamsIdDataSourceSoapsFkPut(id, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsget"></a>
+# **TeamsIdDataSourceSoapsGet**
+> List<DataSourceSoap> TeamsIdDataSourceSoapsGet (string id, string filter = null)
+
+Queries dataSourceSoaps of Team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries dataSourceSoaps of Team.
+                List&lt;DataSourceSoap&gt; result = apiInstance.TeamsIdDataSourceSoapsGet(id, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DataSourceSoap>**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatascountget"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasCountGet**
+> InlineResponse2001 TeamsIdDataSourceSoapsNkDynamicDatasCountGet (string id, string nk, string where = null)
+
+Counts dynamicDatas of DataSourceSoap.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasCountGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var where = where_example;  // string | Criteria to match model instances (optional) 
+
+            try
+            {
+                // Counts dynamicDatas of DataSourceSoap.
+                InlineResponse2001 result = apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasCountGet(id, nk, where);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasCountGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **where** | **string**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatasdelete"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasDelete**
+> void TeamsIdDataSourceSoapsNkDynamicDatasDelete (string id, string nk)
+
+Deletes all dynamicDatas of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+
+            try
+            {
+                // Deletes all dynamicDatas of this model.
+                apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasDelete(id, nk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatasfkdelete"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasFkDelete**
+> void TeamsIdDataSourceSoapsNkDynamicDatasFkDelete (string id, string nk, string fk)
+
+Delete a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasFkDeleteExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+
+            try
+            {
+                // Delete a related item by id for dynamicDatas.
+                apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasFkDelete(id, nk, fk);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasFkDelete: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatasfkget"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasFkGet**
+> DynamicData TeamsIdDataSourceSoapsNkDynamicDatasFkGet (string id, string nk, string fk)
+
+Find a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasFkGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+
+            try
+            {
+                // Find a related item by id for dynamicDatas.
+                DynamicData result = apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasFkGet(id, nk, fk);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasFkGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatasfkput"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasFkPut**
+> DynamicData TeamsIdDataSourceSoapsNkDynamicDatasFkPut (string id, string nk, string fk, DynamicData data = null)
+
+Update a related item by id for dynamicDatas.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasFkPutExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var fk = fk_example;  // string | Foreign key for dynamicDatas
+            var data = new DynamicData(); // DynamicData |  (optional) 
+
+            try
+            {
+                // Update a related item by id for dynamicDatas.
+                DynamicData result = apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasFkPut(id, nk, fk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasFkPut: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **fk** | **string**| Foreign key for dynamicDatas | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdatasget"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasGet**
+> List<DynamicData> TeamsIdDataSourceSoapsNkDynamicDatasGet (string id, string nk, string filter = null)
+
+Queries dynamicDatas of DataSourceSoap.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var filter = filter_example;  // string |  (optional) 
+
+            try
+            {
+                // Queries dynamicDatas of DataSourceSoap.
+                List&lt;DynamicData&gt; result = apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasGet(id, nk, filter);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **filter** | **string**|  | [optional] 
+
+### Return type
+
+[**List<DynamicData>**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkdynamicdataspost"></a>
+# **TeamsIdDataSourceSoapsNkDynamicDatasPost**
+> DynamicData TeamsIdDataSourceSoapsNkDynamicDatasPost (string id, string nk, DynamicData data = null)
+
+Creates a new instance in dynamicDatas of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkDynamicDatasPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var data = new DynamicData(); // DynamicData |  (optional) 
+
+            try
+            {
+                // Creates a new instance in dynamicDatas of this model.
+                DynamicData result = apiInstance.TeamsIdDataSourceSoapsNkDynamicDatasPost(id, nk, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkDynamicDatasPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapsnkteamget"></a>
+# **TeamsIdDataSourceSoapsNkTeamGet**
+> Team TeamsIdDataSourceSoapsNkTeamGet (string id, string nk, bool? refresh = null)
+
+Fetches belongsTo relation team.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsNkTeamGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var nk = nk_example;  // string | Foreign key for dataSourceSoaps.
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation team.
+                Team result = apiInstance.TeamsIdDataSourceSoapsNkTeamGet(id, nk, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsNkTeamGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **nk** | **string**| Foreign key for dataSourceSoaps. | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="teamsiddatasourcesoapspost"></a>
+# **TeamsIdDataSourceSoapsPost**
+> DataSourceSoap TeamsIdDataSourceSoapsPost (string id, DataSourceSoap data = null)
+
+Creates a new instance in dataSourceSoaps of this model.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class TeamsIdDataSourceSoapsPostExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new TeamApi();
+            var id = id_example;  // string | Team id
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
+
+            try
+            {
+                // Creates a new instance in dataSourceSoaps of this model.
+                DataSourceSoap result = apiInstance.TeamsIdDataSourceSoapsPost(id, data);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling TeamApi.TeamsIdDataSourceSoapsPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| Team id | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="teamsiddelete"></a>
 # **TeamsIdDelete**
 > Object TeamsIdDelete (string id)
@@ -5726,70 +6279,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddynamicdatasdelete"></a>
-# **TeamsIdDynamicDatasDelete**
-> void TeamsIdDynamicDatasDelete (string id)
-
-Deletes all dynamicDatas of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDynamicDatasDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-
-            try
-            {
-                // Deletes all dynamicDatas of this model.
-                apiInstance.TeamsIdDynamicDatasDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -6611,72 +7100,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsiddynamicdatasnkdesignsdelete"></a>
-# **TeamsIdDynamicDatasNkDesignsDelete**
-> void TeamsIdDynamicDatasNkDesignsDelete (string id, string nk)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdDynamicDatasNkDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for dynamicDatas.
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.TeamsIdDynamicDatasNkDesignsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdDynamicDatasNkDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for dynamicDatas. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -8533,72 +8956,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsidimagefoldersnkchildrendelete"></a>
-# **TeamsIdImageFoldersNkChildrenDelete**
-> void TeamsIdImageFoldersNkChildrenDelete (string id, string nk)
-
-Deletes all children of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdImageFoldersNkChildrenDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for imageFolders.
-
-            try
-            {
-                // Deletes all children of this model.
-                apiInstance.TeamsIdImageFoldersNkChildrenDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdImageFoldersNkChildrenDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for imageFolders. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsidimagefoldersnkchildrenfkdelete"></a>
 # **TeamsIdImageFoldersNkChildrenFkDelete**
 > void TeamsIdImageFoldersNkChildrenFkDelete (string id, string nk, string fk)
@@ -9483,72 +9840,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidimagefoldersnkimagesdelete"></a>
-# **TeamsIdImageFoldersNkImagesDelete**
-> void TeamsIdImageFoldersNkImagesDelete (string id, string nk)
-
-Deletes all images of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdImageFoldersNkImagesDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for imageFolders.
-
-            try
-            {
-                // Deletes all images of this model.
-                apiInstance.TeamsIdImageFoldersNkImagesDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdImageFoldersNkImagesDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for imageFolders. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -14381,72 +14672,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidportalsnkdesignsdelete"></a>
-# **TeamsIdPortalsNkDesignsDelete**
-> void TeamsIdPortalsNkDesignsDelete (string id, string nk)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdPortalsNkDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for portals.
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.TeamsIdPortalsNkDesignsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdPortalsNkDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for portals. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -21205,70 +21430,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamsidteamdatadesignsdelete"></a>
-# **TeamsIdTeamDataDesignsDelete**
-> void TeamsIdTeamDataDesignsDelete (string id)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdTeamDataDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.TeamsIdTeamDataDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdTeamDataDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamsidteamdatadesignsfkdelete"></a>
 # **TeamsIdTeamDataDesignsFkDelete**
 > void TeamsIdTeamDataDesignsFkDelete (string id, string fk)
@@ -23873,72 +24034,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsidtemplatesnkdesignsdelete"></a>
-# **TeamsIdTemplatesNkDesignsDelete**
-> void TeamsIdTemplatesNkDesignsDelete (string id, string nk)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsIdTemplatesNkDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var id = id_example;  // string | Team id
-            var nk = nk_example;  // string | Foreign key for templates.
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.TeamsIdTemplatesNkDesignsDelete(id, nk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsIdTemplatesNkDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| Team id | 
- **nk** | **string**| Foreign key for templates. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -28751,71 +28846,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teamspatch"></a>
-# **TeamsPatch**
-> Team TeamsPatch (Team data = null)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsPatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var data = new Team(); // Team | Model instance data (optional) 
-
-            try
-            {
-                // Patch an existing model instance or insert a new one into the data source.
-                Team result = apiInstance.TeamsPatch(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsPatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Team**](Team.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Team**](Team.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teamspost"></a>
 # **TeamsPost**
 > Team TeamsPost (Team data = null)
@@ -28854,136 +28884,6 @@ namespace Example
             catch (Exception e)
             {
                 Debug.Print("Exception when calling TeamApi.TeamsPost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Team**](Team.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Team**](Team.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsput"></a>
-# **TeamsPut**
-> Team TeamsPut (Team data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var data = new Team(); // Team | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                Team result = apiInstance.TeamsPut(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Team**](Team.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Team**](Team.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsreplaceorcreatepost"></a>
-# **TeamsReplaceOrCreatePost**
-> Team TeamsReplaceOrCreatePost (Team data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsReplaceOrCreatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var data = new Team(); // Team | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                Team result = apiInstance.TeamsReplaceOrCreatePost(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsReplaceOrCreatePost: " + e.Message );
             }
         }
     }
@@ -29064,140 +28964,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2002**](InlineResponse2002.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsupdatepost"></a>
-# **TeamsUpdatePost**
-> InlineResponse2003 TeamsUpdatePost (string where = null, Team data = null)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsUpdatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new Team(); // Team | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2003 result = apiInstance.TeamsUpdatePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsUpdatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**Team**](Team.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teamsupsertwithwherepost"></a>
-# **TeamsUpsertWithWherePost**
-> Team TeamsUpsertWithWherePost (string where = null, Team data = null)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamsUpsertWithWherePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new Team(); // Team | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update an existing model instance or insert a new one into the data source based on the where criteria.
-                Team result = apiInstance.TeamsUpsertWithWherePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamApi.TeamsUpsertWithWherePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**Team**](Team.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**Team**](Team.md)
 
 ### Authorization
 
