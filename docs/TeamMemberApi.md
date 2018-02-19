@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**TeamMembersFindOneGet**](TeamMemberApi.md#teammembersfindoneget) | **GET** /TeamMembers/findOne | Find first instance of the model matched by filter from the data source.
 [**TeamMembersGet**](TeamMemberApi.md#teammembersget) | **GET** /TeamMembers | Find all instances of the model matched by filter from the data source.
 [**TeamMembersIdAssignedDesignsCountGet**](TeamMemberApi.md#teammembersidassigneddesignscountget) | **GET** /TeamMembers/{id}/assignedDesigns/count | Counts assignedDesigns of TeamMember.
-[**TeamMembersIdAssignedDesignsDelete**](TeamMemberApi.md#teammembersidassigneddesignsdelete) | **DELETE** /TeamMembers/{id}/assignedDesigns | Deletes all assignedDesigns of this model.
 [**TeamMembersIdAssignedDesignsFkDelete**](TeamMemberApi.md#teammembersidassigneddesignsfkdelete) | **DELETE** /TeamMembers/{id}/assignedDesigns/{fk} | Delete a related item by id for assignedDesigns.
 [**TeamMembersIdAssignedDesignsFkGet**](TeamMemberApi.md#teammembersidassigneddesignsfkget) | **GET** /TeamMembers/{id}/assignedDesigns/{fk} | Find a related item by id for assignedDesigns.
 [**TeamMembersIdAssignedDesignsFkPut**](TeamMemberApi.md#teammembersidassigneddesignsfkput) | **PUT** /TeamMembers/{id}/assignedDesigns/{fk} | Update a related item by id for assignedDesigns.
@@ -103,14 +102,12 @@ Method | HTTP request | Description
 [**TeamMembersIdRequestedDesignExportsGet**](TeamMemberApi.md#teammembersidrequesteddesignexportsget) | **GET** /TeamMembers/{id}/requestedDesignExports | Queries requestedDesignExports of TeamMember.
 [**TeamMembersIdRequestedDesignExportsPost**](TeamMemberApi.md#teammembersidrequesteddesignexportspost) | **POST** /TeamMembers/{id}/requestedDesignExports | Creates a new instance in requestedDesignExports of this model.
 [**TeamMembersIdRequestedDesignsCountGet**](TeamMemberApi.md#teammembersidrequesteddesignscountget) | **GET** /TeamMembers/{id}/requestedDesigns/count | Counts requestedDesigns of TeamMember.
-[**TeamMembersIdRequestedDesignsDelete**](TeamMemberApi.md#teammembersidrequesteddesignsdelete) | **DELETE** /TeamMembers/{id}/requestedDesigns | Deletes all requestedDesigns of this model.
 [**TeamMembersIdRequestedDesignsFkDelete**](TeamMemberApi.md#teammembersidrequesteddesignsfkdelete) | **DELETE** /TeamMembers/{id}/requestedDesigns/{fk} | Delete a related item by id for requestedDesigns.
 [**TeamMembersIdRequestedDesignsFkGet**](TeamMemberApi.md#teammembersidrequesteddesignsfkget) | **GET** /TeamMembers/{id}/requestedDesigns/{fk} | Find a related item by id for requestedDesigns.
 [**TeamMembersIdRequestedDesignsFkPut**](TeamMemberApi.md#teammembersidrequesteddesignsfkput) | **PUT** /TeamMembers/{id}/requestedDesigns/{fk} | Update a related item by id for requestedDesigns.
 [**TeamMembersIdRequestedDesignsGet**](TeamMemberApi.md#teammembersidrequesteddesignsget) | **GET** /TeamMembers/{id}/requestedDesigns | Queries requestedDesigns of TeamMember.
 [**TeamMembersIdRequestedDesignsPost**](TeamMemberApi.md#teammembersidrequesteddesignspost) | **POST** /TeamMembers/{id}/requestedDesigns | Creates a new instance in requestedDesigns of this model.
 [**TeamMembersIdReviewedDesignsCountGet**](TeamMemberApi.md#teammembersidrevieweddesignscountget) | **GET** /TeamMembers/{id}/reviewedDesigns/count | Counts reviewedDesigns of TeamMember.
-[**TeamMembersIdReviewedDesignsDelete**](TeamMemberApi.md#teammembersidrevieweddesignsdelete) | **DELETE** /TeamMembers/{id}/reviewedDesigns | Deletes all reviewedDesigns of this model.
 [**TeamMembersIdReviewedDesignsFkDelete**](TeamMemberApi.md#teammembersidrevieweddesignsfkdelete) | **DELETE** /TeamMembers/{id}/reviewedDesigns/{fk} | Delete a related item by id for reviewedDesigns.
 [**TeamMembersIdReviewedDesignsFkGet**](TeamMemberApi.md#teammembersidrevieweddesignsfkget) | **GET** /TeamMembers/{id}/reviewedDesigns/{fk} | Find a related item by id for reviewedDesigns.
 [**TeamMembersIdReviewedDesignsFkPut**](TeamMemberApi.md#teammembersidrevieweddesignsfkput) | **PUT** /TeamMembers/{id}/reviewedDesigns/{fk} | Update a related item by id for reviewedDesigns.
@@ -167,15 +164,13 @@ Method | HTTP request | Description
 [**TeamMembersIdTeamDataRecordGet**](TeamMemberApi.md#teammembersidteamdatarecordget) | **GET** /TeamMembers/{id}/teamData/record | Get TeamData Record
 [**TeamMembersIdTeamDataRecordPost**](TeamMemberApi.md#teammembersidteamdatarecordpost) | **POST** /TeamMembers/{id}/teamData/record | Create TeamData Record
 [**TeamMembersIdTeamDataRecordPut**](TeamMemberApi.md#teammembersidteamdatarecordput) | **PUT** /TeamMembers/{id}/teamData/record | Update TeamData Record
-[**TeamMembersIdTeamDataSourcesCountGet**](TeamMemberApi.md#teammembersidteamdatasourcescountget) | **GET** /TeamMembers/{id}/team/dataSources/count | Counts dataSources of Team.
-[**TeamMembersIdTeamDataSourcesDelete**](TeamMemberApi.md#teammembersidteamdatasourcesdelete) | **DELETE** /TeamMembers/{id}/team/dataSources | Deletes all dataSources of this model.
-[**TeamMembersIdTeamDataSourcesFkDelete**](TeamMemberApi.md#teammembersidteamdatasourcesfkdelete) | **DELETE** /TeamMembers/{id}/team/dataSources/{fk} | Delete a related item by id for dataSources.
-[**TeamMembersIdTeamDataSourcesFkGet**](TeamMemberApi.md#teammembersidteamdatasourcesfkget) | **GET** /TeamMembers/{id}/team/dataSources/{fk} | Find a related item by id for dataSources.
-[**TeamMembersIdTeamDataSourcesFkPut**](TeamMemberApi.md#teammembersidteamdatasourcesfkput) | **PUT** /TeamMembers/{id}/team/dataSources/{fk} | Update a related item by id for dataSources.
-[**TeamMembersIdTeamDataSourcesGet**](TeamMemberApi.md#teammembersidteamdatasourcesget) | **GET** /TeamMembers/{id}/team/dataSources | Queries dataSources of Team.
-[**TeamMembersIdTeamDataSourcesPost**](TeamMemberApi.md#teammembersidteamdatasourcespost) | **POST** /TeamMembers/{id}/team/dataSources | Creates a new instance in dataSources of this model.
+[**TeamMembersIdTeamDataSourceSoapsCountGet**](TeamMemberApi.md#teammembersidteamdatasourcesoapscountget) | **GET** /TeamMembers/{id}/team/dataSourceSoaps/count | Counts dataSourceSoaps of Team.
+[**TeamMembersIdTeamDataSourceSoapsFkDelete**](TeamMemberApi.md#teammembersidteamdatasourcesoapsfkdelete) | **DELETE** /TeamMembers/{id}/team/dataSourceSoaps/{fk} | Delete a related item by id for dataSourceSoaps.
+[**TeamMembersIdTeamDataSourceSoapsFkGet**](TeamMemberApi.md#teammembersidteamdatasourcesoapsfkget) | **GET** /TeamMembers/{id}/team/dataSourceSoaps/{fk} | Find a related item by id for dataSourceSoaps.
+[**TeamMembersIdTeamDataSourceSoapsFkPut**](TeamMemberApi.md#teammembersidteamdatasourcesoapsfkput) | **PUT** /TeamMembers/{id}/team/dataSourceSoaps/{fk} | Update a related item by id for dataSourceSoaps.
+[**TeamMembersIdTeamDataSourceSoapsGet**](TeamMemberApi.md#teammembersidteamdatasourcesoapsget) | **GET** /TeamMembers/{id}/team/dataSourceSoaps | Queries dataSourceSoaps of Team.
+[**TeamMembersIdTeamDataSourceSoapsPost**](TeamMemberApi.md#teammembersidteamdatasourcesoapspost) | **POST** /TeamMembers/{id}/team/dataSourceSoaps | Creates a new instance in dataSourceSoaps of this model.
 [**TeamMembersIdTeamDynamicDatasCountGet**](TeamMemberApi.md#teammembersidteamdynamicdatascountget) | **GET** /TeamMembers/{id}/team/dynamicDatas/count | Counts dynamicDatas of Team.
-[**TeamMembersIdTeamDynamicDatasDelete**](TeamMemberApi.md#teammembersidteamdynamicdatasdelete) | **DELETE** /TeamMembers/{id}/team/dynamicDatas | Deletes all dynamicDatas of this model.
 [**TeamMembersIdTeamDynamicDatasFkDelete**](TeamMemberApi.md#teammembersidteamdynamicdatasfkdelete) | **DELETE** /TeamMembers/{id}/team/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
 [**TeamMembersIdTeamDynamicDatasFkGet**](TeamMemberApi.md#teammembersidteamdynamicdatasfkget) | **GET** /TeamMembers/{id}/team/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**TeamMembersIdTeamDynamicDatasFkPut**](TeamMemberApi.md#teammembersidteamdynamicdatasfkput) | **PUT** /TeamMembers/{id}/team/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
@@ -303,12 +298,7 @@ Method | HTTP request | Description
 [**TeamMembersIdWorkflowsFkPut**](TeamMemberApi.md#teammembersidworkflowsfkput) | **PUT** /TeamMembers/{id}/workflows/{fk} | Update a related item by id for workflows.
 [**TeamMembersIdWorkflowsGet**](TeamMemberApi.md#teammembersidworkflowsget) | **GET** /TeamMembers/{id}/workflows | Queries workflows of TeamMember.
 [**TeamMembersIdWorkflowsPost**](TeamMemberApi.md#teammembersidworkflowspost) | **POST** /TeamMembers/{id}/workflows | Creates a new instance in workflows of this model.
-[**TeamMembersPatch**](TeamMemberApi.md#teammemberspatch) | **PATCH** /TeamMembers | Patch an existing model instance or insert a new one into the data source.
 [**TeamMembersPost**](TeamMemberApi.md#teammemberspost) | **POST** /TeamMembers | Create a new instance of the model and persist it into the data source.
-[**TeamMembersPut**](TeamMemberApi.md#teammembersput) | **PUT** /TeamMembers | Replace an existing model instance or insert a new one into the data source.
-[**TeamMembersReplaceOrCreatePost**](TeamMemberApi.md#teammembersreplaceorcreatepost) | **POST** /TeamMembers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**TeamMembersUpdatePost**](TeamMemberApi.md#teammembersupdatepost) | **POST** /TeamMembers/update | Update instances of the model matched by {{where}} from the data source.
-[**TeamMembersUpsertWithWherePost**](TeamMemberApi.md#teammembersupsertwithwherepost) | **POST** /TeamMembers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 <a name="teammemberschangestreamget"></a>
@@ -691,70 +681,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersidassigneddesignsdelete"></a>
-# **TeamMembersIdAssignedDesignsDelete**
-> void TeamMembersIdAssignedDesignsDelete (string id)
-
-Deletes all assignedDesigns of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdAssignedDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-
-            try
-            {
-                // Deletes all assignedDesigns of this model.
-                apiInstance.TeamMembersIdAssignedDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdAssignedDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -6933,70 +6859,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidrequesteddesignsdelete"></a>
-# **TeamMembersIdRequestedDesignsDelete**
-> void TeamMembersIdRequestedDesignsDelete (string id)
-
-Deletes all requestedDesigns of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdRequestedDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-
-            try
-            {
-                // Deletes all requestedDesigns of this model.
-                apiInstance.TeamMembersIdRequestedDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdRequestedDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teammembersidrequesteddesignsfkdelete"></a>
 # **TeamMembersIdRequestedDesignsFkDelete**
 > void TeamMembersIdRequestedDesignsFkDelete (string id, string fk)
@@ -7388,70 +7250,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersidrevieweddesignsdelete"></a>
-# **TeamMembersIdReviewedDesignsDelete**
-> void TeamMembersIdReviewedDesignsDelete (string id)
-
-Deletes all reviewedDesigns of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdReviewedDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-
-            try
-            {
-                // Deletes all reviewedDesigns of this model.
-                apiInstance.TeamMembersIdReviewedDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdReviewedDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -9484,7 +9282,7 @@ Name | Type | Description  | Notes
 
 <a name="teammembersidteambillinglimitlimitincreasevalueget"></a>
 # **TeamMembersIdTeamBillingLimitLimitIncreaseValueGet**
-> InlineResponse2005 TeamMembersIdTeamBillingLimitLimitIncreaseValueGet (string id, string limit, string value)
+> InlineResponse2004 TeamMembersIdTeamBillingLimitLimitIncreaseValueGet (string id, string limit, string value)
 
 Check if Team Billing Limit can be increased by Limit
 
@@ -9516,7 +9314,7 @@ namespace Example
             try
             {
                 // Check if Team Billing Limit can be increased by Limit
-                InlineResponse2005 result = apiInstance.TeamMembersIdTeamBillingLimitLimitIncreaseValueGet(id, limit, value);
+                InlineResponse2004 result = apiInstance.TeamMembersIdTeamBillingLimitLimitIncreaseValueGet(id, limit, value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9538,7 +9336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -11213,11 +11011,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcescountget"></a>
-# **TeamMembersIdTeamDataSourcesCountGet**
-> InlineResponse2001 TeamMembersIdTeamDataSourcesCountGet (string id, string where = null)
+<a name="teammembersidteamdatasourcesoapscountget"></a>
+# **TeamMembersIdTeamDataSourceSoapsCountGet**
+> InlineResponse2001 TeamMembersIdTeamDataSourceSoapsCountGet (string id, string where = null)
 
-Counts dataSources of Team.
+Counts dataSourceSoaps of Team.
 
 ### Example
 ```csharp
@@ -11229,7 +11027,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesCountGetExample
+    public class TeamMembersIdTeamDataSourceSoapsCountGetExample
     {
         public void main()
         {
@@ -11245,13 +11043,13 @@ namespace Example
 
             try
             {
-                // Counts dataSources of Team.
-                InlineResponse2001 result = apiInstance.TeamMembersIdTeamDataSourcesCountGet(id, where);
+                // Counts dataSourceSoaps of Team.
+                InlineResponse2001 result = apiInstance.TeamMembersIdTeamDataSourceSoapsCountGet(id, where);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesCountGet: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsCountGet: " + e.Message );
             }
         }
     }
@@ -11280,11 +11078,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcesdelete"></a>
-# **TeamMembersIdTeamDataSourcesDelete**
-> void TeamMembersIdTeamDataSourcesDelete (string id)
+<a name="teammembersidteamdatasourcesoapsfkdelete"></a>
+# **TeamMembersIdTeamDataSourceSoapsFkDelete**
+> void TeamMembersIdTeamDataSourceSoapsFkDelete (string id, string fk)
 
-Deletes all dataSources of this model.
+Delete a related item by id for dataSourceSoaps.
 
 ### Example
 ```csharp
@@ -11296,7 +11094,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesDeleteExample
+    public class TeamMembersIdTeamDataSourceSoapsFkDeleteExample
     {
         public void main()
         {
@@ -11308,15 +11106,16 @@ namespace Example
 
             var apiInstance = new TeamMemberApi();
             var id = id_example;  // string | TeamMember id
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
 
             try
             {
-                // Deletes all dataSources of this model.
-                apiInstance.TeamMembersIdTeamDataSourcesDelete(id);
+                // Delete a related item by id for dataSourceSoaps.
+                apiInstance.TeamMembersIdTeamDataSourceSoapsFkDelete(id, fk);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesDelete: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsFkDelete: " + e.Message );
             }
         }
     }
@@ -11328,6 +11127,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
 
 ### Return type
 
@@ -11344,77 +11144,11 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcesfkdelete"></a>
-# **TeamMembersIdTeamDataSourcesFkDelete**
-> void TeamMembersIdTeamDataSourcesFkDelete (string id, string fk)
+<a name="teammembersidteamdatasourcesoapsfkget"></a>
+# **TeamMembersIdTeamDataSourceSoapsFkGet**
+> DataSourceSoap TeamMembersIdTeamDataSourceSoapsFkGet (string id, string fk)
 
-Delete a related item by id for dataSources.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdTeamDataSourcesFkDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-            var fk = fk_example;  // string | Foreign key for dataSources
-
-            try
-            {
-                // Delete a related item by id for dataSources.
-                apiInstance.TeamMembersIdTeamDataSourcesFkDelete(id, fk);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
- **fk** | **string**| Foreign key for dataSources | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersidteamdatasourcesfkget"></a>
-# **TeamMembersIdTeamDataSourcesFkGet**
-> DataSource TeamMembersIdTeamDataSourcesFkGet (string id, string fk)
-
-Find a related item by id for dataSources.
+Find a related item by id for dataSourceSoaps.
 
 ### Example
 ```csharp
@@ -11426,7 +11160,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesFkGetExample
+    public class TeamMembersIdTeamDataSourceSoapsFkGetExample
     {
         public void main()
         {
@@ -11438,17 +11172,17 @@ namespace Example
 
             var apiInstance = new TeamMemberApi();
             var id = id_example;  // string | TeamMember id
-            var fk = fk_example;  // string | Foreign key for dataSources
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
 
             try
             {
-                // Find a related item by id for dataSources.
-                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesFkGet(id, fk);
+                // Find a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.TeamMembersIdTeamDataSourceSoapsFkGet(id, fk);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkGet: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsFkGet: " + e.Message );
             }
         }
     }
@@ -11460,11 +11194,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
- **fk** | **string**| Foreign key for dataSources | 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -11477,11 +11211,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcesfkput"></a>
-# **TeamMembersIdTeamDataSourcesFkPut**
-> DataSource TeamMembersIdTeamDataSourcesFkPut (string id, string fk, DataSource data = null)
+<a name="teammembersidteamdatasourcesoapsfkput"></a>
+# **TeamMembersIdTeamDataSourceSoapsFkPut**
+> DataSourceSoap TeamMembersIdTeamDataSourceSoapsFkPut (string id, string fk, DataSourceSoap data = null)
 
-Update a related item by id for dataSources.
+Update a related item by id for dataSourceSoaps.
 
 ### Example
 ```csharp
@@ -11493,7 +11227,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesFkPutExample
+    public class TeamMembersIdTeamDataSourceSoapsFkPutExample
     {
         public void main()
         {
@@ -11505,18 +11239,18 @@ namespace Example
 
             var apiInstance = new TeamMemberApi();
             var id = id_example;  // string | TeamMember id
-            var fk = fk_example;  // string | Foreign key for dataSources
-            var data = new DataSource(); // DataSource |  (optional) 
+            var fk = fk_example;  // string | Foreign key for dataSourceSoaps
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
 
             try
             {
-                // Update a related item by id for dataSources.
-                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesFkPut(id, fk, data);
+                // Update a related item by id for dataSourceSoaps.
+                DataSourceSoap result = apiInstance.TeamMembersIdTeamDataSourceSoapsFkPut(id, fk, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesFkPut: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsFkPut: " + e.Message );
             }
         }
     }
@@ -11528,12 +11262,12 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
- **fk** | **string**| Foreign key for dataSources | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
+ **fk** | **string**| Foreign key for dataSourceSoaps | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -11546,11 +11280,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcesget"></a>
-# **TeamMembersIdTeamDataSourcesGet**
-> List<DataSource> TeamMembersIdTeamDataSourcesGet (string id, string filter = null)
+<a name="teammembersidteamdatasourcesoapsget"></a>
+# **TeamMembersIdTeamDataSourceSoapsGet**
+> List<DataSourceSoap> TeamMembersIdTeamDataSourceSoapsGet (string id, string filter = null)
 
-Queries dataSources of Team.
+Queries dataSourceSoaps of Team.
 
 ### Example
 ```csharp
@@ -11562,7 +11296,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesGetExample
+    public class TeamMembersIdTeamDataSourceSoapsGetExample
     {
         public void main()
         {
@@ -11578,13 +11312,13 @@ namespace Example
 
             try
             {
-                // Queries dataSources of Team.
-                List&lt;DataSource&gt; result = apiInstance.TeamMembersIdTeamDataSourcesGet(id, filter);
+                // Queries dataSourceSoaps of Team.
+                List&lt;DataSourceSoap&gt; result = apiInstance.TeamMembersIdTeamDataSourceSoapsGet(id, filter);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesGet: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsGet: " + e.Message );
             }
         }
     }
@@ -11600,7 +11334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<DataSource>**](DataSource.md)
+[**List<DataSourceSoap>**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -11613,11 +11347,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammembersidteamdatasourcespost"></a>
-# **TeamMembersIdTeamDataSourcesPost**
-> DataSource TeamMembersIdTeamDataSourcesPost (string id, DataSource data = null)
+<a name="teammembersidteamdatasourcesoapspost"></a>
+# **TeamMembersIdTeamDataSourceSoapsPost**
+> DataSourceSoap TeamMembersIdTeamDataSourceSoapsPost (string id, DataSourceSoap data = null)
 
-Creates a new instance in dataSources of this model.
+Creates a new instance in dataSourceSoaps of this model.
 
 ### Example
 ```csharp
@@ -11629,7 +11363,7 @@ using TweakApi.Model;
 
 namespace Example
 {
-    public class TeamMembersIdTeamDataSourcesPostExample
+    public class TeamMembersIdTeamDataSourceSoapsPostExample
     {
         public void main()
         {
@@ -11641,17 +11375,17 @@ namespace Example
 
             var apiInstance = new TeamMemberApi();
             var id = id_example;  // string | TeamMember id
-            var data = new DataSource(); // DataSource |  (optional) 
+            var data = new DataSourceSoap(); // DataSourceSoap |  (optional) 
 
             try
             {
-                // Creates a new instance in dataSources of this model.
-                DataSource result = apiInstance.TeamMembersIdTeamDataSourcesPost(id, data);
+                // Creates a new instance in dataSourceSoaps of this model.
+                DataSourceSoap result = apiInstance.TeamMembersIdTeamDataSourceSoapsPost(id, data);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourcesPost: " + e.Message );
+                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDataSourceSoapsPost: " + e.Message );
             }
         }
     }
@@ -11663,11 +11397,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| TeamMember id | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -11735,70 +11469,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersidteamdynamicdatasdelete"></a>
-# **TeamMembersIdTeamDynamicDatasDelete**
-> void TeamMembersIdTeamDynamicDatasDelete (string id)
-
-Deletes all dynamicDatas of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersIdTeamDynamicDatasDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var id = id_example;  // string | TeamMember id
-
-            try
-            {
-                // Deletes all dynamicDatas of this model.
-                apiInstance.TeamMembersIdTeamDynamicDatasDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersIdTeamDynamicDatasDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| TeamMember id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -20320,71 +19990,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="teammemberspatch"></a>
-# **TeamMembersPatch**
-> TeamMember TeamMembersPatch (TeamMember data = null)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersPatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var data = new TeamMember(); // TeamMember | Model instance data (optional) 
-
-            try
-            {
-                // Patch an existing model instance or insert a new one into the data source.
-                TeamMember result = apiInstance.TeamMembersPatch(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersPatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamMember**](TeamMember.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="teammemberspost"></a>
 # **TeamMembersPost**
 > TeamMember TeamMembersPost (TeamMember data = null)
@@ -20434,270 +20039,6 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**TeamMember**](TeamMember.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersput"></a>
-# **TeamMembersPut**
-> TeamMember TeamMembersPut (TeamMember data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var data = new TeamMember(); // TeamMember | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                TeamMember result = apiInstance.TeamMembersPut(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamMember**](TeamMember.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersreplaceorcreatepost"></a>
-# **TeamMembersReplaceOrCreatePost**
-> TeamMember TeamMembersReplaceOrCreatePost (TeamMember data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersReplaceOrCreatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var data = new TeamMember(); // TeamMember | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                TeamMember result = apiInstance.TeamMembersReplaceOrCreatePost(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersReplaceOrCreatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamMember**](TeamMember.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersupdatepost"></a>
-# **TeamMembersUpdatePost**
-> InlineResponse2003 TeamMembersUpdatePost (string where = null, TeamMember data = null)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersUpdatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new TeamMember(); // TeamMember | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2003 result = apiInstance.TeamMembersUpdatePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersUpdatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**TeamMember**](TeamMember.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="teammembersupsertwithwherepost"></a>
-# **TeamMembersUpsertWithWherePost**
-> TeamMember TeamMembersUpsertWithWherePost (string where = null, TeamMember data = null)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class TeamMembersUpsertWithWherePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new TeamMemberApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new TeamMember(); // TeamMember | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update an existing model instance or insert a new one into the data source based on the where criteria.
-                TeamMember result = apiInstance.TeamMembersUpsertWithWherePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling TeamMemberApi.TeamMembersUpsertWithWherePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**TeamMember**](TeamMember.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 
