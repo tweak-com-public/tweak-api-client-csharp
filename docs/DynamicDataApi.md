@@ -9,15 +9,22 @@ Method | HTTP request | Description
 [**DynamicDataCountGet**](DynamicDataApi.md#dynamicdatacountget) | **GET** /DynamicData/count | Count instances of the model matched by where from the data source.
 [**DynamicDataFindOneGet**](DynamicDataApi.md#dynamicdatafindoneget) | **GET** /DynamicData/findOne | Find first instance of the model matched by filter from the data source.
 [**DynamicDataGet**](DynamicDataApi.md#dynamicdataget) | **GET** /DynamicData | Find all instances of the model matched by filter from the data source.
+[**DynamicDataIdDataSourceMongoGet**](DynamicDataApi.md#dynamicdataiddatasourcemongoget) | **GET** /DynamicData/{id}/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**DynamicDataIdDataSourceMsSqlGet**](DynamicDataApi.md#dynamicdataiddatasourcemssqlget) | **GET** /DynamicData/{id}/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**DynamicDataIdDataSourceMySqlGet**](DynamicDataApi.md#dynamicdataiddatasourcemysqlget) | **GET** /DynamicData/{id}/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**DynamicDataIdDataSourceOracleGet**](DynamicDataApi.md#dynamicdataiddatasourceoracleget) | **GET** /DynamicData/{id}/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**DynamicDataIdDataSourcePostgreSqlGet**](DynamicDataApi.md#dynamicdataiddatasourcepostgresqlget) | **GET** /DynamicData/{id}/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**DynamicDataIdDataSourceRestGet**](DynamicDataApi.md#dynamicdataiddatasourcerestget) | **GET** /DynamicData/{id}/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**DynamicDataIdDataSourceSoapGet**](DynamicDataApi.md#dynamicdataiddatasourcesoapget) | **GET** /DynamicData/{id}/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**DynamicDataIdDelete**](DynamicDataApi.md#dynamicdataiddelete) | **DELETE** /DynamicData/{id} | Delete a model instance by {{id}} from the data source.
 [**DynamicDataIdDesignsCountGet**](DynamicDataApi.md#dynamicdataiddesignscountget) | **GET** /DynamicData/{id}/designs/count | Counts designs of DynamicData.
-[**DynamicDataIdDesignsDelete**](DynamicDataApi.md#dynamicdataiddesignsdelete) | **DELETE** /DynamicData/{id}/designs | Deletes all designs of this model.
 [**DynamicDataIdDesignsFkDelete**](DynamicDataApi.md#dynamicdataiddesignsfkdelete) | **DELETE** /DynamicData/{id}/designs/{fk} | Delete a related item by id for designs.
 [**DynamicDataIdDesignsFkGet**](DynamicDataApi.md#dynamicdataiddesignsfkget) | **GET** /DynamicData/{id}/designs/{fk} | Find a related item by id for designs.
 [**DynamicDataIdDesignsFkPut**](DynamicDataApi.md#dynamicdataiddesignsfkput) | **PUT** /DynamicData/{id}/designs/{fk} | Update a related item by id for designs.
 [**DynamicDataIdDesignsGet**](DynamicDataApi.md#dynamicdataiddesignsget) | **GET** /DynamicData/{id}/designs | Queries designs of DynamicData.
 [**DynamicDataIdDesignsPost**](DynamicDataApi.md#dynamicdataiddesignspost) | **POST** /DynamicData/{id}/designs | Creates a new instance in designs of this model.
 [**DynamicDataIdExistsGet**](DynamicDataApi.md#dynamicdataidexistsget) | **GET** /DynamicData/{id}/exists | Check whether a model instance exists in the data source.
+[**DynamicDataIdFetchRawGet**](DynamicDataApi.md#dynamicdataidfetchrawget) | **GET** /DynamicData/{id}/fetch/raw | Fetch raw datas from external servers.
 [**DynamicDataIdGet**](DynamicDataApi.md#dynamicdataidget) | **GET** /DynamicData/{id} | Find a model instance by {{id}} from the data source.
 [**DynamicDataIdHead**](DynamicDataApi.md#dynamicdataidhead) | **HEAD** /DynamicData/{id} | Check whether a model instance exists in the data source.
 [**DynamicDataIdPatch**](DynamicDataApi.md#dynamicdataidpatch) | **PATCH** /DynamicData/{id} | Patch attributes for a model instance and persist it into the data source.
@@ -34,12 +41,7 @@ Method | HTTP request | Description
 [**DynamicDataIdRecordsUploadCsvPost**](DynamicDataApi.md#dynamicdataidrecordsuploadcsvpost) | **POST** /DynamicData/{id}/records/upload/csv | Upload CSV for this Dynamic Data
 [**DynamicDataIdReplacePost**](DynamicDataApi.md#dynamicdataidreplacepost) | **POST** /DynamicData/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**DynamicDataIdTeamGet**](DynamicDataApi.md#dynamicdataidteamget) | **GET** /DynamicData/{id}/team | Fetches belongsTo relation team.
-[**DynamicDataPatch**](DynamicDataApi.md#dynamicdatapatch) | **PATCH** /DynamicData | Patch an existing model instance or insert a new one into the data source.
 [**DynamicDataPost**](DynamicDataApi.md#dynamicdatapost) | **POST** /DynamicData | Create a new instance of the model and persist it into the data source.
-[**DynamicDataPut**](DynamicDataApi.md#dynamicdataput) | **PUT** /DynamicData | Replace an existing model instance or insert a new one into the data source.
-[**DynamicDataReplaceOrCreatePost**](DynamicDataApi.md#dynamicdatareplaceorcreatepost) | **POST** /DynamicData/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**DynamicDataUpdatePost**](DynamicDataApi.md#dynamicdataupdatepost) | **POST** /DynamicData/update | Update instances of the model matched by {{where}} from the data source.
-[**DynamicDataUpsertWithWherePost**](DynamicDataApi.md#dynamicdataupsertwithwherepost) | **POST** /DynamicData/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 <a name="dynamicdatachangestreamget"></a>
@@ -367,6 +369,475 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="dynamicdataiddatasourcemongoget"></a>
+# **DynamicDataIdDataSourceMongoGet**
+> DataSourceMongo DynamicDataIdDataSourceMongoGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceMongoGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMongo.
+                DataSourceMongo result = apiInstance.DynamicDataIdDataSourceMongoGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceMongoGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourcemssqlget"></a>
+# **DynamicDataIdDataSourceMsSqlGet**
+> DataSourceMsSql DynamicDataIdDataSourceMsSqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceMsSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMsSql.
+                DataSourceMsSql result = apiInstance.DynamicDataIdDataSourceMsSqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceMsSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourcemysqlget"></a>
+# **DynamicDataIdDataSourceMySqlGet**
+> DataSourceMySql DynamicDataIdDataSourceMySqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceMySqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceMySql.
+                DataSourceMySql result = apiInstance.DynamicDataIdDataSourceMySqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceMySqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourceoracleget"></a>
+# **DynamicDataIdDataSourceOracleGet**
+> DataSourceOracle DynamicDataIdDataSourceOracleGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceOracleGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceOracle.
+                DataSourceOracle result = apiInstance.DynamicDataIdDataSourceOracleGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceOracleGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourcepostgresqlget"></a>
+# **DynamicDataIdDataSourcePostgreSqlGet**
+> DataSourcePostgreSql DynamicDataIdDataSourcePostgreSqlGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourcePostgreSqlGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourcePostgreSql.
+                DataSourcePostgreSql result = apiInstance.DynamicDataIdDataSourcePostgreSqlGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourcePostgreSqlGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourcerestget"></a>
+# **DynamicDataIdDataSourceRestGet**
+> DataSourceRest DynamicDataIdDataSourceRestGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceRestGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceRest.
+                DataSourceRest result = apiInstance.DynamicDataIdDataSourceRestGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceRestGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataiddatasourcesoapget"></a>
+# **DynamicDataIdDataSourceSoapGet**
+> DataSourceSoap DynamicDataIdDataSourceSoapGet (string id, bool? refresh = null)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdDataSourceSoapGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var refresh = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Fetches belongsTo relation dataSourceSoap.
+                DataSourceSoap result = apiInstance.DynamicDataIdDataSourceSoapGet(id, refresh);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDataSourceSoapGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **refresh** | **bool?**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="dynamicdataiddelete"></a>
 # **DynamicDataIdDelete**
 > Object DynamicDataIdDelete (string id)
@@ -487,70 +958,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="dynamicdataiddesignsdelete"></a>
-# **DynamicDataIdDesignsDelete**
-> void DynamicDataIdDesignsDelete (string id)
-
-Deletes all designs of this model.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataIdDesignsDeleteExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var id = id_example;  // string | DynamicData id
-
-            try
-            {
-                // Deletes all designs of this model.
-                apiInstance.DynamicDataIdDesignsDelete(id);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdDesignsDelete: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| DynamicData id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -952,6 +1359,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="dynamicdataidfetchrawget"></a>
+# **DynamicDataIdFetchRawGet**
+> XAny DynamicDataIdFetchRawGet (string id, string _params = null)
+
+Fetch raw datas from external servers.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using TweakApi.Api;
+using TweakApi.Client;
+using TweakApi.Model;
+
+namespace Example
+{
+    public class DynamicDataIdFetchRawGetExample
+    {
+        public void main()
+        {
+            
+            // Configure API key authorization: access_token
+            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
+
+            var apiInstance = new DynamicDataApi();
+            var id = id_example;  // string | DynamicData id
+            var _params = _params_example;  // string | Request parameters (optional) 
+
+            try
+            {
+                // Fetch raw datas from external servers.
+                XAny result = apiInstance.DynamicDataIdFetchRawGet(id, _params);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DynamicDataApi.DynamicDataIdFetchRawGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| DynamicData id | 
+ **_params** | **string**| Request parameters | [optional] 
+
+### Return type
+
+[**XAny**](XAny.md)
 
 ### Authorization
 
@@ -2040,71 +2514,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="dynamicdatapatch"></a>
-# **DynamicDataPatch**
-> DynamicData DynamicDataPatch (DynamicData data = null)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataPatchExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var data = new DynamicData(); // DynamicData | Model instance data (optional) 
-
-            try
-            {
-                // Patch an existing model instance or insert a new one into the data source.
-                DynamicData result = apiInstance.DynamicDataPatch(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataPatch: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DynamicData**](DynamicData.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="dynamicdatapost"></a>
 # **DynamicDataPost**
 > DynamicData DynamicDataPost (DynamicData data = null)
@@ -2154,270 +2563,6 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DynamicData**](DynamicData.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="dynamicdataput"></a>
-# **DynamicDataPut**
-> DynamicData DynamicDataPut (DynamicData data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataPutExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var data = new DynamicData(); // DynamicData | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                DynamicData result = apiInstance.DynamicDataPut(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataPut: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DynamicData**](DynamicData.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="dynamicdatareplaceorcreatepost"></a>
-# **DynamicDataReplaceOrCreatePost**
-> DynamicData DynamicDataReplaceOrCreatePost (DynamicData data = null)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataReplaceOrCreatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var data = new DynamicData(); // DynamicData | Model instance data (optional) 
-
-            try
-            {
-                // Replace an existing model instance or insert a new one into the data source.
-                DynamicData result = apiInstance.DynamicDataReplaceOrCreatePost(data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataReplaceOrCreatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DynamicData**](DynamicData.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="dynamicdataupdatepost"></a>
-# **DynamicDataUpdatePost**
-> InlineResponse2003 DynamicDataUpdatePost (string where = null, DynamicData data = null)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataUpdatePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new DynamicData(); // DynamicData | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update instances of the model matched by {{where}} from the data source.
-                InlineResponse2003 result = apiInstance.DynamicDataUpdatePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataUpdatePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**DynamicData**](DynamicData.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="dynamicdataupsertwithwherepost"></a>
-# **DynamicDataUpsertWithWherePost**
-> DynamicData DynamicDataUpsertWithWherePost (string where = null, DynamicData data = null)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using TweakApi.Api;
-using TweakApi.Client;
-using TweakApi.Model;
-
-namespace Example
-{
-    public class DynamicDataUpsertWithWherePostExample
-    {
-        public void main()
-        {
-            
-            // Configure API key authorization: access_token
-            Configuration.Default.ApiKey.Add("access_token", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("access_token", "Bearer");
-
-            var apiInstance = new DynamicDataApi();
-            var where = where_example;  // string | Criteria to match model instances (optional) 
-            var data = new DynamicData(); // DynamicData | An object of model property name/value pairs (optional) 
-
-            try
-            {
-                // Update an existing model instance or insert a new one into the data source based on the where criteria.
-                DynamicData result = apiInstance.DynamicDataUpsertWithWherePost(where, data);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DynamicDataApi.DynamicDataUpsertWithWherePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **string**| Criteria to match model instances | [optional] 
- **data** | [**DynamicData**](DynamicData.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 
